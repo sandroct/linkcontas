@@ -1,0 +1,375 @@
+/* =====================================
+   LINKCONTAS — Páginas de Empresa (artigos)
+   Layout acessível, otimizado para leitura
+   ===================================== */
+
+/* ===== Breadcrumb (migalhas) ===== */
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: var(--cor-texto-suave);
+  margin-bottom: 20px;
+}
+
+.breadcrumb a {
+  color: var(--cor-primaria);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-separador {
+  color: var(--cor-texto-claro);
+}
+
+/* ===== Artigo ===== */
+.pagina-empresa {
+  padding: 24px 0 80px;
+}
+
+.artigo {
+  background: var(--cor-card);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--radius);
+  padding: 40px 40px 32px;
+  transition: background-color 0.4s ease, border-color 0.4s ease;
+}
+
+.artigo h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.25;
+  color: var(--cor-texto);
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.artigo h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--cor-texto);
+  margin: 40px 0 16px;
+  padding-top: 8px;
+}
+
+.artigo h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--cor-texto);
+  margin: 24px 0 10px;
+}
+
+.artigo p {
+  font-size: 1.15rem;
+  line-height: 1.85;
+  color: var(--cor-texto-suave);
+  margin-bottom: 18px;
+}
+
+.artigo strong {
+  color: var(--cor-texto);
+  font-weight: 700;
+}
+
+.artigo ul,
+.artigo ol {
+  margin: 0 0 20px 0;
+  padding-left: 30px;
+}
+
+.artigo li {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--cor-texto-suave);
+  margin-bottom: 12px;
+}
+
+.artigo li strong {
+  color: var(--cor-texto);
+}
+
+.atualizacao {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  color: var(--cor-texto-claro);
+  background: var(--cor-fundo-secao);
+  border: 1px solid var(--cor-borda);
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 24px;
+}
+
+/* ===== Botão principal de ação ===== */
+.cta-principal {
+  display: block;
+  background: linear-gradient(135deg, #22c55e 0%, #15a34a 100%);
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 800;
+  padding: 22px 24px;
+  border-radius: 14px;
+  margin: 28px 0;
+  border: none;
+  box-shadow: 0 8px 16px rgba(22, 163, 74, 0.28);
+  transition: var(--transicao);
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.cta-principal:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 20px rgba(22, 163, 74, 0.35);
+}
+
+.cta-principal:active {
+  transform: translateY(-1px) scale(0.99);
+}
+
+.cta-nota {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--cor-texto-claro);
+  margin: -14px 0 28px;
+}
+
+/* ===== Marcador de dado a verificar ===== */
+.verificar-dado {
+  display: inline-block;
+  background: #fff7ed;
+  border: 2px dashed #fb923c;
+  color: #9a3412;
+  padding: 2px 12px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.95em;
+}
+
+[data-tema="escuro"] .verificar-dado {
+  background: rgba(251, 146, 60, 0.12);
+  color: #fdba74;
+  border-color: rgba(251, 146, 60, 0.45);
+}
+
+/* ===== Contato oficial (telefone/WhatsApp clicáveis) ===== */
+.canal-oficial {
+  background: var(--cor-fundo-secao);
+  border: 1px solid var(--cor-borda);
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin: 16px 0;
+}
+
+.canal-oficial p {
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+}
+
+.canal-oficial p:last-child {
+  margin-bottom: 0;
+}
+
+.canal-oficial a {
+  color: var(--cor-primaria);
+  font-weight: 700;
+}
+
+/* ===== Caixa de alerta de golpe ===== */
+.alerta-golpe {
+  background: #fff1f2;
+  border-left: 6px solid #e11d48;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin: 16px 0 4px;
+}
+
+[data-tema="escuro"] .alerta-golpe {
+  background: rgba(225, 29, 72, 0.12);
+}
+
+.alerta-golpe p {
+  font-size: 1.1rem;
+  color: #9f1239;
+  margin-bottom: 10px;
+}
+
+[data-tema="escuro"] .alerta-golpe p {
+  color: #fda4af;
+}
+
+.alerta-golpe p:last-child {
+  margin-bottom: 0;
+}
+
+/* ===== FAQ ===== */
+.faq details {
+  background: var(--cor-fundo-secao);
+  border: 1px solid var(--cor-borda);
+  border-radius: 12px;
+  padding: 18px 22px;
+  margin-bottom: 14px;
+  transition: var(--transicao);
+}
+
+.faq details[open] {
+  border-color: var(--cor-primaria);
+}
+
+.faq summary {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--cor-texto);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq summary::after {
+  content: "+";
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--cor-primaria);
+  flex-shrink: 0;
+}
+
+.faq details[open] summary::after {
+  content: "−";
+}
+
+.faq details p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--cor-texto-suave);
+  margin: 14px 0 0;
+}
+
+/* ===== "Este artigo ajudou?" ===== */
+.ajudou {
+  background: var(--cor-fundo-secao);
+  border: 1px solid var(--cor-borda);
+  border-radius: 12px;
+  padding: 28px 24px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.ajudou h3 {
+  font-size: 1.25rem;
+  color: var(--cor-texto);
+  margin-bottom: 16px;
+}
+
+.ajudou-botoes {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.ajudou-btn {
+  background: var(--cor-primaria);
+  color: #fff;
+  border: 2px solid var(--cor-primaria);
+  border-radius: 10px;
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  transition: var(--transicao);
+  touch-action: manipulation;
+}
+
+.ajudou-btn:hover {
+  background: var(--cor-primaria-hover);
+  transform: scale(1.04);
+}
+
+.ajudou-btn.nao {
+  background: transparent;
+  color: var(--cor-texto-suave);
+  border-color: var(--cor-borda);
+}
+
+.ajudou-btn.nao:hover {
+  background: var(--cor-card-hover);
+  color: var(--cor-texto);
+}
+
+.ajudou-obrigado {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--cor-sucesso);
+  margin-top: 8px;
+}
+
+/* ===== Navegação entre páginas ===== */
+.nav-empresas {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.nav-empresas a {
+  color: var(--cor-primaria);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 12px 20px;
+  border: 2px solid var(--cor-borda);
+  border-radius: 10px;
+  background: var(--cor-card);
+  transition: var(--transicao);
+}
+
+.nav-empresas a:hover {
+  border-color: var(--cor-primaria);
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 640px) {
+  .artigo {
+    padding: 28px 20px 24px;
+  }
+
+  .artigo h1 {
+    font-size: 1.6rem;
+  }
+
+  .artigo h2 {
+    font-size: 1.25rem;
+    margin-top: 32px;
+  }
+
+  .artigo p,
+  .artigo li {
+    font-size: 1.1rem;
+  }
+
+  .cta-principal {
+    font-size: 1.15rem;
+    padding: 20px 18px;
+  }
+
+  .faq summary {
+    font-size: 1.08rem;
+  }
+}

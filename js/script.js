@@ -11,6 +11,7 @@ const empresas = [
     url: 'https://www.enel.com.br/content/enel-br/pt-saopaulo/login.html',
     urlPagamento: 'https://www.enel.com.br/content/enel-br/pt-saopaulo/login.html',
     logo: 'assets/logos/enel.png',
+    pagina: 'enel-sp.html',
     cor: '#E2001A',
     sigla: 'EN',
     icone: '⚡',
@@ -310,6 +311,10 @@ function renderEmpresas() {
 
   grid.innerHTML = filtradas.map(emp => {
     const link = emp.urlPagamento || emp.url;
+    const pagina = emp.pagina || null; // página interna, quando existir
+    const destinoCard = pagina || link;
+    const attrsCard = pagina ? '' : ' target="_blank" rel="noopener noreferrer"';
+
     // Badge colorido com a sigla da marca fica atrás; a logo real aparece por cima quando carrega
     const logoTipo = `
       <div class="logo-empresa" style="background: ${emp.cor}">
@@ -319,19 +324,22 @@ function renderEmpresas() {
     `;
 
     return `
-      <a href="${link}" target="_blank" rel="noopener noreferrer" class="card-empresa">
-        <div class="card-header">
-          ${logoTipo}
-          <div class="empresa-info">
-            <h3>${emp.nome}</h3>
-            <p>${emp.descricao}</p>
+      <div class="card-empresa">
+        <a href="${destinoCard}"${attrsCard} class="card-link">
+          <div class="card-header">
+            ${logoTipo}
+            <div class="empresa-info">
+              <h3>${emp.nome}</h3>
+              <p>${emp.descricao}</p>
+            </div>
           </div>
-        </div>
+        </a>
         <div class="categoria-tag tag-${emp.categoria}">${emp.categoria === 'energia' ? 'Energia' : emp.categoria === 'telefone' ? 'Telefone' : emp.categoria === 'agua' ? 'Água' : 'Internet'}</div>
         <div class="card-footer">
-          <span class="btn-acessar">Pagar conta ↗</span>
+          ${pagina ? '<span class="dica-pagina">📖 Como pagar</span>' : ''}
+          <a href="${link}" target="_blank" rel="noopener noreferrer" class="btn-acessar">Pagar conta ↗</a>
         </div>
-      </a>
+      </div>
     `;
   }).join('');
 }

@@ -383,6 +383,38 @@ body {
   overflow: hidden;
 }
 
+/* Link do card: cobre o card inteiro (o botão fica acima) */
+.card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-link::after {
+  content: "";
+  position: absolute;
+  top: -24px;
+  right: -24px;
+  bottom: -24px;
+  left: -24px;
+  z-index: 1;
+}
+
+.dica-pagina {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--cor-primaria);
+  background: var(--cor-primaria-suave);
+  border: 1px solid var(--cor-borda);
+  padding: 5px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+[data-tema="escuro"] .dica-pagina {
+  border-color: var(--cor-borda-foco);
+}
+
 .card-empresa::before {
   content: "";
   position: absolute;
@@ -497,6 +529,8 @@ body {
 }
 
 .btn-acessar {
+  position: relative;
+  z-index: 2;
   background: var(--cor-primaria);
   color: #fff;
   text-decoration: none;
