@@ -210,6 +210,34 @@
   margin-bottom: 0;
 }
 
+/* ===== Caixa de observação importante ===== */
+.obs-box {
+  background: #fffbeb;
+  border: 2px solid #fcd34d;
+  border-radius: 12px;
+  padding: 18px 22px;
+  margin: 20px 0;
+}
+
+[data-tema="escuro"] .obs-box {
+  background: rgba(251, 191, 36, 0.1);
+  border-color: rgba(251, 191, 36, 0.35);
+}
+
+.obs-box p {
+  font-size: 1.1rem;
+  color: #78350f;
+  margin-bottom: 8px;
+}
+
+[data-tema="escuro"] .obs-box p {
+  color: #fcd34d;
+}
+
+.obs-box p:last-child {
+  margin-bottom: 0;
+}
+
 /* ===== FAQ ===== */
 .faq details {
   background: var(--cor-fundo-secao);

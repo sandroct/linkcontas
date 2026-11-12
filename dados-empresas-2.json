@@ -1,0 +1,347 @@
+[
+  {
+    "id": "claro",
+    "arquivo": "claro.html",
+    "categoriaLabel": "Telefone",
+    "categoriaSlug": "telefone",
+    "titulo": "Claro: 2a via e pagamento da fatura | LinkContas",
+    "metaDesc": "Passo a passo simples para tirar a 2a via e pagar a fatura da Claro pelo site oficial. Feito para idosos, com dicas contra golpe.",
+    "h1": "Claro: como tirar a 2a via e pagar sua fatura com seguranca",
+    "intro": [
+      "Se voce e cliente da Claro, seja de celular, telefone fixo ou internet, esta pagina e para voce. Vamos mostrar, em palavras simples, como entrar no site oficial da Claro para tirar a segunda via da fatura e pagar sem complicacao.",
+      "A Claro atende milhoes de brasileiros. Com poucos cliques voce resolve tudo sem sair de casa."
+    ],
+    "urlBotao": "https://minhaclaro.claro.com.br/acesso-rapido/",
+    "textoBotao": "Ir para o site oficial da Claro",
+    "documentos": [
+      "<strong>O CPF do titular.</strong> A pessoa cujo nome esta no contrato.",
+      "<strong>O numero do telefone.</strong> O numero da linha Claro que aparece no topo da fatura.",
+      "<strong>Um celular ou e-mail.</strong> Para criar o acesso e recuperar a senha.",
+      "<strong>A fatura do mes anterior.</strong> Para conferir os valores."
+    ],
+    "passos": [
+      "Clique no botao verde no alto desta pagina. Ele abre o <strong>Minha Claro</strong>, o site oficial de acesso rapido.",
+      "Procure <strong>Entrar</strong>. Se for a primeira vez, escolha <strong>Cadastrar</strong> ou <strong>Primeiro acesso</strong>.",
+      "Informe o <strong>CPF</strong> do titular. Se pedirem, informe tambem o <strong>numero do telefone</strong>.",
+      "Crie sua senha e anote em um papel. Guarde em lugar seguro.",
+      "Dentro do site, procure <strong>Faturas</strong>, <strong>Contas</strong> ou <strong>2a via</strong>.",
+      "Toque na fatura do mes para ver o valor e a data de vencimento.",
+      "Escolha <strong>Pagar agora</strong>. A Claro oferece <strong>Pix</strong>, <strong>boleto</strong> ou <strong>cartao</strong>.",
+      "Guardeo comprovante. A Claro confirma em um ou dois dias."
+    ],
+    "observacao": "Se voce tem mais de uma linha Claro (celular e internet, por exemplo), todas aparecem no mesmo acesso, uma em cada aba. Confira o numero de cada uma antes de pagar, para nao pagar a conta errada.",
+    "dicasGolpe": [
+      "<strong>Confira o nome do recebedor.</strong> No Pix ou no boleto, o nome deve ser o da Claro. Nome de pessoa comum, cancline na hora.",
+      "<strong>Nunca clique em links patrocinados.</strong> Golpistas pagam anuncios no Google com o nome Claro. Use o botao desta pagina.",
+      "<strong>Cuidado com SMS de premio.</strong> Mensagens dizendo que voce ganhou pontos ou credito com link para pagar sao golpe."
+    ],
+    "faqs": [
+      { "q": "Como tirar a segunda via da fatura da Claro?", "a": "Entre no Minha Claro pelo botao desta pagina, faca acesso com CPF e senha e procure por Faturas. La esta a fatura do mes com opcao de pagamento por Pix, boleto ou cartao." },
+      { "q": "Posso pagar a fatura da Claro com Pix?", "a": "Sim. Dentro da area do cliente, ao pagar a fatura aparece a opcao Pix. Copie o codigo e cole no aplicativo do seu banco, sempre conferindo o nome do recebedor." },
+      { "q": "Tenho duas linhas Claro. Pago as duas juntas?", "a": "Nao. Cada linha tem sua propria fatura. No site, as faturas aparecem separadas. Pague uma de cada vez, conferindo o numero do telefone." },
+      { "q": "Esqueci minha senha. E agora?", "a": "Na tela de entrada, clique em Esqueci minha senha. A Claro envia um codigo para o celular ou e-mail cadastrados e voce cria uma nova senha." },
+      { "q": "Este site e a Claro?", "a": "Nao. O LinkContas e um site independente que organiza os links oficiais. Nao somos a Claro e nao pedimos dados bancarios de ninguem." }
+    ]
+  },
+  {
+    "id": "vivo",
+    "arquivo": "vivo.html",
+    "categoriaLabel": "Telefone",
+    "categoriaSlug": "telefone",
+    "titulo": "Vivo: 2a via e pagamento da fatura | LinkContas",
+    "metaDesc": "Passo a passo simples para tirar a 2a via e pagar a fatura da Vivo pelo site oficial. Feito para idosos, com dicas contra golpe.",
+    "h1": "Vivo: como tirar a 2a via e pagar sua fatura com seguranca",
+    "intro": [
+      "Se voce e cliente da Vivo, de celular, telefone fixo, internet ou TV, esta pagina foi feita para voce. Aqui explicamos, sem palavras dificeis, como entrar no site oficial da Vivo para tirar a segunda via da fatura e pagar com seguranca.",
+      "Sao poucos cliques e tudo resolvido, sem fila e sem precisar ligar para ninguem."
+    ],
+    "urlBotao": "https://app.vivo.com.br/web",
+    "textoBotao": "Ir para o site oficial da Vivo",
+    "documentos": [
+      "<strong>O CPF do titular.</strong> A pessoa cujo nome esta no contrato.",
+      "<strong>O numero Vivo.</strong> Pode ser o numero do celular ou o codigo do cliente, que fica no topo da fatura.",
+      "<strong>Um celular ou e-mail.</strong> Para criar o acesso e recuperar a senha.",
+      "<strong>A fatura do mes anterior.</strong> Para conferir os valores."
+    ],
+    "passos": [
+      "Clique no botao verde no alto desta pagina. Ele abre o site oficial da Vivo, no caminho <strong>Minha Vivo</strong>.",
+      "Procure <strong>Entrar</strong>. Na primeira vez, escolha <strong>Cadastrar</strong> ou <strong>Primeiro acesso</strong>.",
+      "Informe o <strong>CPF</strong> do titular e, se pedirem, o <strong>numero Vivo</strong>.",
+      "Crie sua senha. Anote em um papel e guarde em lugar seguro.",
+      "Dentro do site, procure <strong>Faturas</strong>, <strong>Contas</strong> ou <strong>2a via</strong>.",
+      "Toque na fatura do mes, confira o valor e escolha <strong>Pagar</strong>.",
+      "A Vivo oferece <strong>Pix</strong>, <strong>boleto</strong> ou <strong>cartao</strong>. Guardeo comprovante."
+    ],
+    "observacao": "A Vivo tem um aplicativo oficial muito usado, o Meu Vivo. Se preferir o celular, o aplicativo funciona bem. Mas o site pelo botao desta pagina resolve tudo igual, sem instalar nada.",
+    "dicasGolpe": [
+      "<strong>Confira o nome do recebedor.</strong> No Pix ou no boleto, o nome deve ser o da Vivo. Qualquer outro nome, nao pague.",
+      "<strong>Nunca clique em links patrocinados.</strong> Anuncios pagos no Google com o nome Vivo podem ser golpe. Use o botao desta pagina.",
+      "<strong>Desconfie de mensagens de milhagem.</strong> Avisos de que seus pontos vao expirar com link de pagamento sao, quase sempre, golpe."
+    ],
+    "faqs": [
+      { "q": "Como tirar a segunda via da fatura da Vivo?", "a": "Entre no site oficial pelo botao desta pagina, faca acesso com CPF e senha e procure por Faturas. La esta a fatura do mes para pagar." },
+      { "q": "Posso pagar a fatura da Vivo com Pix?", "a": "Sim. Dentro da area do cliente, ao pagar a fatura aparece a opcao Pix. Copie o codigo e cole no aplicativo do seu banco, conferindo o nome do recebedor." },
+      { "q": "Tenho celular e internet da Vivo. Pago junto?", "a": "As faturas aparecem separadas por servico no site. Confira o numero de cada uma e pague uma de cada vez, para nao errar." },
+      { "q": "Esqueci minha senha. O que faco?", "a": "Na tela de entrada, clique em Esqueci minha senha. A Vivo envia um codigo para o celular ou e-mail cadastrados e voce cria uma nova senha." },
+      { "q": "Este site e a Vivo?", "a": "Nao. O LinkContas e um site independente que organiza os links oficiais. Nao somos a Vivo e nao pedimos dados bancarios." }
+    ]
+  },
+  {
+    "id": "tim",
+    "arquivo": "tim.html",
+    "categoriaLabel": "Telefone",
+    "categoriaSlug": "telefone",
+    "titulo": "TIM: 2a via e pagamento da fatura | LinkContas",
+    "metaDesc": "Passo a passo simples para tirar a 2a via e pagar a fatura da TIM pelo site oficial. Feito para idosos, com dicas contra golpe.",
+    "h1": "TIM: como tirar a 2a via e pagar sua fatura com seguranca",
+    "intro": [
+      "Se voce e cliente da TIM, esta pagina e para voce. Vamos te mostrar, com palavras faceis, como entrar no site oficial da TIM para tirar a segunda via da fatura e pagar sem complicacao.",
+      "Tudo pelo celular ou computador, sem precisar ir a uma loja."
+    ],
+    "urlBotao": "https://meutim.onelink.me/0IuD/u3fep93q",
+    "textoBotao": "Ir para o site oficial da TIM",
+    "documentos": [
+      "<strong>O CPF do titular.</strong> A pessoa cujo nome esta no contrato.",
+      "<strong>O numero TIM.</strong> O numero do celular que aparece no topo da fatura.",
+      "<strong>Um celular ou e-mail.</strong> Para criar o acesso e recuperar a senha.",
+      "<strong>A fatura do mes anterior.</strong> Para conferir os valores."
+    ],
+    "passos": [
+      "Clique no botao verde no alto desta pagina. Ele abre o <strong>Meu TIM</strong>, o site oficial da empresa.",
+      "Procure <strong>Entrar</strong>. Na primeira vez, escolha <strong>Cadastrar</strong>.",
+      "Informe o <strong>CPF</strong> do titular e, se pedirem, o <strong>numero do celular</strong>.",
+      "Crie sua senha e guarde em um papel, em lugar seguro.",
+      "Dentro do site, procure <strong>Faturas</strong>, <strong>Contas</strong> ou <strong>2a via</strong>.",
+      "Toque na fatura do mes e escolha <strong>Pagar</strong>.",
+      "Use <strong>Pix</strong>, <strong>boleto</strong> ou <strong>cartao</strong>. Guardeo comprovante."
+    ],
+    "observacao": "A TIM tem um aplicativo oficial, o Meu TIM, muito pratico para recargas e consultas. Se preferir o celular, ele funciona bem. Mas o site pelo botao desta pagina resolve tudo igual.",
+    "dicasGolpe": [
+      "<strong>Confira o nome do recebedor.</strong> No Pix ou no boleto, o nome deve ser o da TIM. Nome de pessoa, nao pague.",
+      "<strong>Nunca clique em links patrocinados.</strong> Golpistas pagam anuncios no Google com o nome TIM. Use o botao desta pagina.",
+      "<strong>Cuidado com recarga falsa.</strong> Ofertas de recarga com desconto por link de WhatsApp sao golpe."
+    ],
+    "faqs": [
+      { "q": "Como tirar a segunda via da fatura da TIM?", "a": "Entre no site oficial pelo botao desta pagina, faca acesso com CPF e senha e procure por Faturas. La esta a fatura do mes para pagar." },
+      { "q": "Posso pagar a fatura da TIM com Pix?", "a": "Sim. Dentro da area do cliente, ao pagar a fatura aparece a opcao Pix. Copie o codigo e cole no aplicativo do seu banco, conferindo o nome do recebedor." },
+      { "q": "Tenho linha pos-paga e pre-paga. Funciona igual?", "a": "Para linha pos-paga, voce tira e paga a fatura normalmente. Para pre-paga, o site serve mais para recargas e consultas." },
+      { "q": "Esqueci minha senha. E agora?", "a": "Na tela de entrada, clique em Esqueci minha senha. A TIM envia um codigo para o celular ou e-mail cadastrados e voce cria uma nova senha." },
+      { "q": "Este site e a TIM?", "a": "Nao. O LinkContas e um site independente que organiza os links oficiais. Nao somos a TIM e nao pedimos dados bancarios." }
+    ]
+  },
+  {
+    "id": "oi",
+    "arquivo": "oi.html",
+    "categoriaLabel": "Telefone",
+    "categoriaSlug": "telefone",
+    "titulo": "Oi: 2a via e pagamento da fatura | LinkContas",
+    "metaDesc": "Passo a passo simples para tirar a 2a via e pagar a fatura da Oi pelo site oficial. Feito para idosos, com dicas contra golpe.",
+    "h1": "Oi: como tirar a 2a via e pagar sua fatura com seguranca",
+    "intro": [
+      "Se voce e cliente da Oi, de celular, telefone fixo ou internet, esta pagina foi feita para voce. Aqui explicamos, sem palavras dificeis, como entrar no site oficial da Oi para tirar a segunda via da fatura e pagar com seguranca.",
+      "Poucos cliques e a conta esta resolvida."
+    ],
+    "urlBotao": "https://www.oi.com.br/minha-oi/",
+    "textoBotao": "Ir para o site oficial da Oi",
+    "documentos": [
+      "<strong>O CPF do titular.</strong> A pessoa cujo nome esta no contrato.",
+      "<strong>O numero Oi.</strong> Pode ser o numero do celular ou o codigo do cliente, no topo da fatura.",
+      "<strong>Um celular ou e-mail.</strong> Para criar o acesso e recuperar a senha.",
+      "<strong>A fatura do mes anterior.</strong> Para conferir valores."
+    ],
+    "passos": [
+      "Clique no botao verde no alto desta pagina. Ele abre o <strong>Minha Oi</strong>, o site oficial da empresa.",
+      "Procure <strong>Entrar</strong>. Na primeira vez, escolha <strong>Cadastrar</strong>.",
+      "Informe o <strong>CPF</strong> do titular e, se pedirem, o <strong>numero</strong>.",
+      "Crie sua senha e anote em um papel, em lugar seguro.",
+      "Dentro do site, procure <strong>Faturas</strong>, <strong>Contas</strong> ou <strong>2a via</strong>.",
+      "Toque na fatura do mes e escolha <strong>Pagar</strong>.",
+      "A Oi oferece <strong>Pix</strong> ou <strong>boleto</strong>. Guardeo comprovante ate a confirmacao."
+    ],
+    "observacao": "Se voce tambem tem Oi TV ou Oi Fibra, os servicos podem aparecer juntos na mesma fatura ou separados. Confira a descricao antes de pagar.",
+    "dicasGolpe": [
+      "<strong>Confira o nome do recebedor.</strong> No Pix ou no boleto, o nome deve ser o da Oi. Qualquer outro nome, cancline.",
+      "<strong>Nunca clique em links patrocinados.</strong> Anuncios no Google com nome Oi podem ser falsos. Use o botao desta pagina.",
+      "<strong>Desconfie de promocao boa demais.</strong> Ofertas de plano com desconto por link de WhatsApp sao golpe."
+    ],
+    "faqs": [
+      { "q": "Como tirar a segunda via da fatura da Oi?", "a": "Entre no site oficial pelo botao desta pagina, faca acesso com CPF e senha e procure por Faturas. La esta a fatura do mes para pagar." },
+      { "q": "Posso pagar a fatura da Oi com Pix?", "a": "Sim. Dentro da area do cliente, ao pagar a fatura aparece a opcao Pix. Copie o codigo e cole no aplicativo do seu banco, conferindo o nome do recebedor." },
+      { "q": "Tenho mais de um servico Oi. Como faco?", "a": "Celular, fixo, internet e TV podem aparecer separados. Confira o servico de cada fatura e pague uma de cada vez." },
+      { "q": "Esqueci minha senha. O que faco?", "a": "Na tela de entrada, clique em Esqueci minha senha. A Oi envia um codigo para o celular ou e-mail cadastrados e voce cria uma nova senha." },
+      { "q": "Este site e a Oi?", "a": "Nao. O LinkContas e um site independente que organiza os links oficiais. Nao somos a Oi e nao pedimos dados bancarios." }
+    ]
+  },
+  {
+    "id": "gigamaisfibra",
+    "arquivo": "gigamaisfibra.html",
+    "categoriaLabel": "Internet",
+    "categoriaSlug": "internet",
+    "titulo": "Giga Mais Fibra: 2a via e pagamento da fatura | LinkContas",
+    "metaDesc": "Passo a passo simples para tirar a 2a via e pagar a fatura da Giga Mais Fibra pelo site oficial. Feito para idosos, com dicas contra golpe.",
+    "h1": "Giga Mais Fibra: como tirar a 2a via e pagar sua fatura com seguranca",
+    "intro": [
+      "Se voce e cliente da Giga Mais Fibra, a operadora de internet por fibra otica, esta pagina e para voce. Vamos mostrar, em palavras simples, como entrar no site oficial para tirar a segunda via da fatura e pagar com seguranca.",
+      "Operadoras menores as vezes tem sites menos conhecidos. Por isso esta pagina existe: para te levar direto ao lugar certo, sem risco."
+    ],
+    "urlBotao": "https://sso.gigamaisfibra.com.br/auth/realms/gigamaisfibra/protocol/openid-connect/auth?client_id=central-do-assinante&redirect_uri=https%3A%2F%2Fcentral-assinante.gigamaisfibra.com.br%2F&state=39905a12-b4a7-4c8a-8f72-907e48512e0e&response_mode=fragment&response_type=code&scope=openid&nonce=56e49886-464e-4f8d-8a39-1f8f40b704ad",
+    "textoBotao": "Ir para o site oficial da Giga Mais Fibra",
+    "documentos": [
+      "<strong>O CPF do titular.</strong> A pessoa cujo nome esta no contrato de internet.",
+      "<strong>O numero do contrato ou do CPF cadastrado.</strong> Algumas operadoras usam o proprio CPF como usuario.",
+      "<strong>Um celular ou e-mail.</strong> Para criar o acesso e recuperar a senha.",
+      "<strong>A fatura do mes anterior.</strong> Para conferir o valor do plano."
+    ],
+    "passos": [
+      "Clique no botao verde no alto desta pagina. Ele abre a <strong>Central do Assinante</strong> da Giga Mais Fibra, o site oficial.",
+      "Procure <strong>Entrar</strong>. Na primeira vez, escolha <strong>Cadastrar</strong> ou <strong>Criar conta</strong>.",
+      "Informe o <strong>CPF</strong> do titular e crie sua senha.",
+      "Anote a senha em um papel e guarde em lugar seguro.",
+      "Dentro da central, procure <strong>Faturas</strong>, <strong>Financeiro</strong> ou <strong>2a via</strong>.",
+      "Toque na fatura do mes e escolha <strong>Pagar</strong>.",
+      "Geralmente aparece <strong>Pix</strong> ou <strong>boleto</strong>. Guardeo comprovante."
+    ],
+    "observacao": "A Giga Mais Fibra atende regioes especificas do pais. Se voce mudou de cidade, o atendimento oficial precisa verificar se ha cobertura no novo endereco.",
+    "dicasGolpe": [
+      "<strong>Confira o nome do recebedor.</strong> No Pix ou no boleto, o nome deve ser o da Giga Mais Fibra. Nome de pessoa comum, cancline.",
+      "<strong>Nunca clique em links patrocinados.</strong> Operadoras menores sao menos conhecidas, e golpistas se aproveitam disso. Use o botao desta pagina.",
+      "<strong>Cuidado com instalacao falsa.</strong> Agendamento de instalacao com pagamento por link de WhatsApp e golpe. Confirme sempre pelo site oficial."
+    ],
+    "faqs": [
+      { "q": "Como tirar a segunda via da fatura da Giga Mais Fibra?", "a": "Entre na Central do Assinante pelo botao desta pagina, faca acesso com CPF e senha e procure por Faturas ou Financeiro. La esta a fatura do mes." },
+      { "q": "Posso pagar com Pix?", "a": "Sim, a maioria das operadoras oferece Pix ou boleto na area financeira. Copie o codigo e cole no aplicativo do seu banco, conferindo o nome do recebedor." },
+      { "q": "Esqueci minha senha. O que faco?", "a": "Na tela de entrada, clique em Esqueci minha senha. A operadora envia um codigo para o celular ou e-mail cadastrados e voce cria uma nova senha." },
+      { "q": "O site nao abre. O que faco?", "a": "Verifique se voce esta usando o link desta pagina, e nao um link de mensagem. Se ainda assim nao abrir, tente por outro navegador ou fale com o atendimento oficial." },
+      { "q": "Este site e a Giga Mais Fibra?", "a": "Nao. O LinkContas e um site independente que organiza os links oficiais. Nao somos a Giga Mais Fibra e nao pedimos dados bancarios." }
+    ]
+  },
+  {
+    "id": "sky",
+    "arquivo": "sky.html",
+    "categoriaLabel": "Internet",
+    "categoriaSlug": "internet",
+    "titulo": "SKY: 2a via e pagamento da fatura | LinkContas",
+    "metaDesc": "Passo a passo simples para tirar a 2a via e pagar a fatura da SKY pelo site oficial. Feito para idosos, com dicas contra golpe.",
+    "h1": "SKY: como tirar a 2a via e pagar sua fatura com seguranca",
+    "intro": [
+      "Se voce tem SKY, seja TV por assinatura ou internet, esta pagina foi feita para voce. Aqui explicamos, em palavras simples, como entrar no site oficial da SKY para tirar a segunda via da fatura e pagar com seguranca.",
+      "Poucos cliques e a conta esta resolvida, sem precisar ligar para ninguem."
+    ],
+    "urlBotao": "https://www.sky.com.br/minha-sky/login",
+    "textoBotao": "Ir para o site oficial da SKY",
+    "documentos": [
+      "<strong>O CPF do titular.</strong> A pessoa cujo nome esta no contrato.",
+      "<strong>O numero do cliente ou do telefone.</strong> Fica no topo da fatura.",
+      "<strong>Um celular ou e-mail.</strong> Para criar o acesso e recuperar a senha.",
+      "<strong>A fatura do mes anterior.</strong> Para conferir valores e pontos."
+    ],
+    "passos": [
+      "Clique no botao verde no alto desta pagina. Ele abre o <strong>Minha SKY</strong>, o site oficial de acesso.",
+      "Procure <strong>Entrar</strong>. Na primeira vez, escolha <strong>Cadastrar</strong>.",
+      "Informe o <strong>CPF</strong> do titular e, se pedirem, o <strong>numero do cliente</strong>.",
+      "Crie sua senha e anote em um papel, em lugar seguro.",
+      "Dentro do site, procure <strong>Faturas</strong>, <strong>Contas</strong> ou <strong>2a via</strong>.",
+      "Toque na fatura do mes e escolha <strong>Pagar</strong>.",
+      "A SKY oferece <strong>Pix</strong>, <strong>boleto</strong> ou <strong>cartao</strong>. Guardeo comprovante."
+    ],
+    "observacao": "Se voce tem programa de pontos ou pacotes adicionais, eles aparecem como itens na fatura. Confira a descricao de cada item antes de pagar.",
+    "dicasGolpe": [
+      "<strong>Confira o nome do recebedor.</strong> No Pix ou no boleto, o nome deve ser o da SKY. Qualquer outro nome, nao pague.",
+      "<strong>Nunca clique em links patrocinados.</strong> Anuncios no Google com nome SKY podem ser falsos. Use o botao desta pagina.",
+      "<strong>Cuidado com sorteio falso.</strong> Mensagens de que voce ganhou pontos ou premios com link de pagamento sao golpe."
+    ],
+    "faqs": [
+      { "q": "Como tirar a segunda via da fatura da SKY?", "a": "Entre no Minha SKY pelo botao desta pagina, faca acesso com CPF e senha e procure por Faturas. La esta a fatura do mes para pagar." },
+      { "q": "Posso pagar a fatura da SKY com Pix?", "a": "Sim. Dentro da area do cliente, ao pagar aparece a opcao Pix. Copie o codigo e cole no aplicativo do seu banco, conferindo o nome do recebedor." },
+      { "q": "O que sao os itens extras na fatura?", "a": "Podem ser pacotes adicionais, pay-per-view ou servicos extras contratados. Se voce nao reconhece um item, fale com o atendimento oficial antes de pagar." },
+      { "q": "Esqueci minha senha. E agora?", "a": "Na tela de entrada, clique em Esqueci minha senha. A SKY envia um codigo para o celular ou e-mail cadastrados e voce cria uma nova senha." },
+      { "q": "Este site e a SKY?", "a": "Nao. O LinkContas e um site independente que organiza os links oficiais. Nao somos a SKY e nao pedimos dados bancarios." }
+    ]
+  },
+  {
+    "id": "algar",
+    "arquivo": "algar.html",
+    "categoriaLabel": "Internet",
+    "categoriaSlug": "internet",
+    "titulo": "Algar Telecom: 2a via e pagamento da fatura | LinkContas",
+    "metaDesc": "Passo a passo simples para tirar a 2a via e pagar a fatura da Algar Telecom pelo site oficial. Feito para idosos, com dicas contra golpe.",
+    "h1": "Algar Telecom: como tirar a 2a via e pagar sua fatura com seguranca",
+    "intro": [
+      "Se voce e cliente da Algar Telecom, de telefone, internet ou TV, esta pagina e para voce. Vamos te mostrar, com palavras faceis, como entrar no site oficial da Algar para tirar a segunda via da fatura e pagar com seguranca.",
+      "A Algar atende principalmente Minas Gerais, Goias e parte de Sao Paulo. O caminho e sempre o mesmo: site oficial, poucos cliques."
+    ],
+    "urlBotao": "https://algar.com.br/AreaCliente/portal-usuario/minhas-faturas.html/",
+    "textoBotao": "Ir para o site oficial da Algar",
+    "documentos": [
+      "<strong>O CPF do titular.</strong> A pessoa cujo nome esta no contrato.",
+      "<strong>O numero do telefone ou do cliente.</strong> Fica no topo da fatura.",
+      "<strong>Um celular ou e-mail.</strong> Para criar o acesso e recuperar a senha.",
+      "<strong>A fatura do mes anterior.</strong> Para conferir valores."
+    ],
+    "passos": [
+      "Clique no botao verde no alto desta pagina. Ele abre o site oficial da Algar, na area do cliente.",
+      "Procure <strong>Entrar</strong> ou <strong>Minhas Faturas</strong>. Na primeira vez, escolha <strong>Cadastrar</strong>.",
+      "Informe o <strong>CPF</strong> do titular e, se pedirem, o <strong>numero do telefone</strong>.",
+      "Crie sua senha e guarde em um papel, em lugar seguro.",
+      "Dentro da area do cliente, procure <strong>Minhas Faturas</strong> ou <strong>Financeiro</strong>.",
+      "Toque na fatura do mes para ver o valor e escolha <strong>Pagar</strong>.",
+      "Use <strong>Pix</strong> ou <strong>boleto</strong>. Guardeo comprovante ate a confirmacao."
+    ],
+    "observacao": "Se voce tem mais de um servico Algar (telefone e internet, por exemplo), as faturas podem aparecer separadas. Confira o servico antes de pagar.",
+    "dicasGolpe": [
+      "<strong>Confira o nome do recebedor.</strong> No Pix ou no boleto, o nome deve ser o da Algar. Nome de pessoa comum, cancline.",
+      "<strong>Nunca clique em links patrocinados.</strong> Operadoras regionais tem sites menos conhecidos, e golpistas se aproveitam disso. Use o botao desta pagina.",
+      "<strong>Desconfie de urgencia.</strong> Avisos de corte com link para pagamento por WhatsApp sao, quase sempre, golpe."
+    ],
+    "faqs": [
+      { "q": "Como tirar a segunda via da fatura da Algar?", "a": "Entre no site oficial pelo botao desta pagina, faca acesso com CPF e senha e procure por Minhas Faturas. La esta a fatura do mes para pagar." },
+      { "q": "Posso pagar a fatura da Algar com Pix?", "a": "Sim. Dentro da area do cliente, ao pagar a fatura aparece a opcao Pix. Copie o codigo e cole no aplicativo do seu banco, conferindo o nome do recebedor." },
+      { "q": "A Algar atende minha cidade?", "a": "A Algar Telecom atende principalmente Minas Gerais, Goias e parte de Sao Paulo. Se voce esta nessa regiao e e cliente, esta pagina e para voce." },
+      { "q": "Esqueci minha senha. O que faco?", "a": "Na tela de entrada, clique em Esqueci minha senha. A Algar envia um codigo para o celular ou e-mail cadastrados e voce cria uma nova senha." },
+      { "q": "Este site e a Algar?", "a": "Nao. O LinkContas e um site independente que organiza os links oficiais. Nao somos a Algar Telecom e nao pedimos dados bancarios." }
+    ]
+  },
+  {
+    "id": "sanepar",
+    "arquivo": "sanepar.html",
+    "categoriaLabel": "Agua",
+    "categoriaSlug": "agua",
+    "titulo": "Sanepar: 2a via e pagamento da conta de agua | LinkContas",
+    "metaDesc": "Passo a passo simples para tirar a 2a via e pagar a conta de agua da Sanepar no Parana pelo site oficial. Feito para idosos, com dicas contra golpe.",
+    "h1": "Sanepar: como tirar a 2a via e pagar sua conta com seguranca",
+    "intro": [
+      "Se voce mora no Parana e recebe a conta de agua da Sanepar, esta pagina foi feita para voce. Aqui explicamos, sem palavras dificeis, como entrar no site oficial da Sanepar para tirar a segunda via e pagar com seguranca.",
+      "A Sanepar usa um sistema de acesso do Governo do Parana. Parece complicador, mas e simples: so o CPF e a senha que voce ja usa em servicos do governo."
+    ],
+    "urlBotao": "https://clientes.sanepar.com.br/",
+    "textoBotao": "Ir para o site oficial da Sanepar",
+    "documentos": [
+      "<strong>O CPF do titular.</strong> A pessoa cujo nome esta na conta de agua.",
+      "<strong>A matricula do imovel.</strong> E o numero que identifica a sua casa, e fica na parte de cima da conta.",
+      "<strong>Um celular ou e-mail.</strong> Para o acesso pelo sistema do Governo do Parana.",
+      "<strong>A conta do mes anterior.</strong> Para comparar o consumo."
+    ],
+    "passos": [
+      "Clique no botao verde no alto desta pagina para abrir a area de clientes da Sanepar.",
+      "O site vai pedir para voce entrar pelo <strong>sistema do Governo do Parana</strong>. Nao estranhe: e o caminho oficial e seguro.",
+      "Escolha entrar com o <strong>CPF</strong>. Se voce ja tem cadastro em servicos do governo, a senha e a mesma.",
+      "Se for a primeira vez, faca o <strong>cadastro</strong> rapido no proprio site.",
+      "Dentro da area do cliente, procure <strong>Contas</strong>, <strong>Faturas</strong> ou <strong>2a via</strong>.",
+      "Toque na conta do mes e escolha <strong>Pagar</strong>.",
+      "Use <strong>Pix</strong> ou <strong>boleto</strong>. Guardeo comprovante ate a confirmacao."
+    ],
+    "observacao": "O acesso pelo Governo do Parana e obrigatorio para clientes Sanepar. Ele serve para varios servicos do estado. Se voce ja usa o cadastro do governo, nao precisa criar nada novo.",
+    "dicasGolpe": [
+      "<strong>Confira o nome do recebedor.</strong> No Pix ou no boleto, o nome deve ser o da Sanepar. Qualquer outro nome, nao pague.",
+      "<strong>Cuidado com sites falsos do governo.</strong> So entre pelo botao desta pagina. Sites parecidos com o do governo sao usados em golpes.",
+      "<strong>Nunca clique em links patrocinados.</strong> Anuncios no Google com nome Sanepar podem ser falsos. Use sempre o link desta pagina."
+    ],
+    "faqs": [
+      { "q": "Por que o site da Sanepar pede acesso do governo?", "a": "A Sanepar usa o sistema de identidade digital do Governo do Parana. E o caminho oficial e seguro. Se voce ja tem cadastro em servicos do governo, usa a mesma senha." },
+      { "q": "Como tirar a segunda via da conta de agua?", "a": "Entre pelo botao desta pagina, faca o acesso pelo CPF e procure por Contas ou Faturas. La esta a conta do mes para pagar." },
+      { "q": "O que e a matricula?", "a": "E o numero que identifica o seu imovel, como se fosse o endereco em forma de numero. Fica na parte de cima da conta de agua." },
+      { "q": "Posso pagar a conta da Sanepar com Pix?", "a": "Sim. Dentro da area do cliente, ao pagar aparece a opcao Pix. Copie o codigo e cole no aplicativo do seu banco, conferindo o nome do recebedor." },
+      { "q": "Este site e a Sanepar?", "a": "Nao. O LinkContas e um site independente que organiza os links oficiais. Nao somos a Sanepar e nao pedimos dados bancarios." }
+    ]
+  }
+]
