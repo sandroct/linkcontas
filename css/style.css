@@ -413,24 +413,39 @@ body {
 }
 
 .logo-empresa {
+  position: relative;
   width: 64px;
   height: 64px;
   border-radius: 16px;
-  background: var(--cor-fundo-secao);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
   flex-shrink: 0;
   overflow: hidden;
   border: 2px solid var(--cor-borda);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  transition: var(--transicao);
+}
+
+.logo-empresa:hover {
+  transform: scale(1.06);
+}
+
+.logo-sigla {
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+  user-select: none;
 }
 
 .logo-empresa img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: contain;
-  padding: 8px;
+  padding: 7px;
   background: #fff;
 }
 
@@ -456,11 +471,32 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  align-self: flex-start;
 }
 
-[data-tema="escuro"] .categoria-tag {
-  background: rgba(30, 58, 138, 0.3);
-  color: #60a5fa;
+/* Cores por categoria */
+.categoria-tag.tag-energia { background: #fef3c7; color: #b45309; }
+.categoria-tag.tag-telefone { background: #ede9fe; color: #6d28d9; }
+.categoria-tag.tag-agua { background: #e0f2fe; color: #0369a1; }
+.categoria-tag.tag-internet { background: #d1fae5; color: #047857; }
+
+[data-tema="escuro"] .categoria-tag.tag-energia { background: rgba(245, 158, 11, 0.2); color: #fbbf24; }
+[data-tema="escuro"] .categoria-tag.tag-telefone { background: rgba(139, 92, 246, 0.2); color: #a78bfa; }
+[data-tema="escuro"] .categoria-tag.tag-agua { background: rgba(14, 165, 233, 0.2); color: #38bdf8; }
+[data-tema="escuro"] .categoria-tag.tag-internet { background: rgba(16, 185, 129, 0.2); color: #34d399; }
+
+.dominio-chip {
+  font-size: 0.75rem;
+  color: var(--cor-texto-claro);
+  background: var(--cor-fundo-secao);
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  border: 1px solid var(--cor-borda);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 55%;
 }
 
 .card-footer {
@@ -497,14 +533,209 @@ body {
   transform: scale(0.97);
 }
 
-.categoria-chip-rodape {
-  font-size: 0.75rem;
-  background: var(--cor-fundo-secao);
-  color: var(--cor-texto-claro);
-  padding: 4px 10px;
-  border-radius: 6px;
-  font-weight: 600;
-  border: 1px solid var(--cor-borda);
+/* ===== Fundo decorativo animado ===== */
+.fundo-decorativo {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.forma {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(70px);
+  opacity: 0.35;
+  animation: flutuarForma 22s ease-in-out infinite;
+}
+
+.forma-1 { width: 420px; height: 420px; background: #93c5fd; top: -120px; left: -100px; }
+.forma-2 { width: 320px; height: 320px; background: #fbbf24; top: 45%; right: -100px; animation-delay: -6s; }
+.forma-3 { width: 380px; height: 380px; background: #6ee7b7; bottom: -140px; left: 35%; animation-delay: -12s; }
+.forma-4 { width: 260px; height: 260px; background: #f9a8d4; top: 8%; right: 25%; animation-delay: -17s; }
+
+[data-tema="escuro"] .forma { opacity: 0.13; }
+
+@keyframes flutuarForma {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(40px, -50px) scale(1.12); }
+  66% { transform: translate(-30px, 40px) scale(0.92); }
+}
+
+/* Garante que o conteúdo fique acima do fundo */
+.header, .hero, .aviso-acessibilidade, .ad-slot, .categorias, .empresas, .footer {
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== Hero (descrição do site) ===== */
+.hero {
+  padding: 64px 0 56px;
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.hero-texto h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--cor-texto);
+  margin-bottom: 18px;
+  letter-spacing: -0.5px;
+  animation: subirSuave 0.7s ease both;
+}
+
+.hero-destaque {
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-texto p {
+  font-size: 1.1rem;
+  color: var(--cor-texto-suave);
+  line-height: 1.75;
+  margin-bottom: 24px;
+  animation: subirSuave 0.7s ease 0.1s both;
+}
+
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  animation: subirSuave 0.7s ease 0.2s both;
+}
+
+.hero-tag {
+  padding: 9px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border: 2px solid;
+  transition: var(--transicao);
+}
+
+.hero-tag:hover {
+  transform: translateY(-2px) scale(1.04);
+}
+
+.hero-tag-energia { color: #b45309; border-color: #fbbf24; background: #fffbeb; }
+.hero-tag-telefone { color: #6d28d9; border-color: #c4b5fd; background: #f5f3ff; }
+.hero-tag-agua { color: #0369a1; border-color: #7dd3fc; background: #f0f9ff; }
+.hero-tag-internet { color: #047857; border-color: #6ee7b7; background: #ecfdf5; }
+
+[data-tema="escuro"] .hero-tag-energia { background: rgba(245, 158, 11, 0.12); color: #fbbf24; }
+[data-tema="escuro"] .hero-tag-telefone { background: rgba(139, 92, 246, 0.12); color: #a78bfa; }
+[data-tema="escuro"] .hero-tag-agua { background: rgba(14, 165, 233, 0.12); color: #38bdf8; }
+[data-tema="escuro"] .hero-tag-internet { background: rgba(16, 185, 129, 0.12); color: #34d399; }
+
+.hero-ilustracao {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-ilustracao svg {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  animation: subirSuave 0.8s ease 0.25s both;
+}
+
+.ilustracao-card {
+  animation: flutuarCard 4.5s ease-in-out infinite;
+}
+
+.ilustracao-card-2 { animation-delay: -1.5s; }
+.ilustracao-card-3 { animation-delay: -3s; }
+
+@keyframes flutuarCard {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-9px); }
+}
+
+.ilustracao-brilho {
+  animation: pulsarBrilho 2.6s ease-in-out infinite;
+}
+
+.ilustracao-brilho-2 { animation-delay: -0.9s; }
+.ilustracao-brilho-3 { animation-delay: -1.8s; }
+
+@keyframes pulsarBrilho {
+  0%, 100% { opacity: 0.35; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.25); }
+}
+
+@keyframes subirSuave {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== Logo boleto animado ===== */
+.logo-boleto {
+  width: 21px;
+  height: 23px;
+  display: block;
+  animation: boletoFlutuar 3s ease-in-out infinite;
+}
+
+@keyframes boletoFlutuar {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-2px) rotate(-3deg); }
+}
+
+.barcode rect {
+  animation: barcodePisca 1.8s ease-in-out infinite;
+}
+
+.barcode rect:nth-child(2) { animation-delay: 0.15s; }
+.barcode rect:nth-child(3) { animation-delay: 0.3s; }
+.barcode rect:nth-child(4) { animation-delay: 0.45s; }
+.barcode rect:nth-child(5) { animation-delay: 0.6s; }
+
+@keyframes barcodePisca {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+/* ===== Animação dos cards em cascata ===== */
+.card-empresa:nth-child(2) { animation-delay: 0.05s; }
+.card-empresa:nth-child(3) { animation-delay: 0.1s; }
+.card-empresa:nth-child(4) { animation-delay: 0.15s; }
+.card-empresa:nth-child(5) { animation-delay: 0.2s; }
+.card-empresa:nth-child(6) { animation-delay: 0.25s; }
+.card-empresa:nth-child(7) { animation-delay: 0.3s; }
+.card-empresa:nth-child(8) { animation-delay: 0.35s; }
+.card-empresa:nth-child(9) { animation-delay: 0.4s; }
+
+/* ===== Responsivo ===== */
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 0;
+  }
+
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .hero-ilustracao {
+    display: none;
+  }
+
+  .hero-texto h1 {
+    font-size: 1.9rem;
+  }
+
+  .hero-texto p {
+    font-size: 1.02rem;
+  }
 }
 
 /* Estado vazio */

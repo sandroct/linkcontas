@@ -6,15 +6,38 @@
   <title>LinkContas — Suas contas em um só lugar</title>
   <meta name="description" content="Encontre rapidamente os sites oficiais para pagar suas contas de luz, água, telefone, internet e mais.">
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Formas decorativas de fundo -->
+  <div class="fundo-decorativo" aria-hidden="true">
+    <div class="forma forma-1"></div>
+    <div class="forma forma-2"></div>
+    <div class="forma forma-3"></div>
+    <div class="forma forma-4"></div>
+  </div>
 
   <!-- Header -->
   <header class="header">
     <div class="container header-inner">
       <div class="logo">
-        <span class="logo-icon">💳</span>
+        <span class="logo-icon">
+          <!-- Boleto animado (SVG) -->
+          <svg class="logo-boleto" viewBox="0 0 32 36" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="2" width="26" height="32" rx="4" fill="#ffffff" stroke="#1d4ed8" stroke-width="2.5"/>
+            <rect x="8" y="8" width="16" height="2.6" rx="1.3" fill="#2563eb"/>
+            <rect x="8" y="13.5" width="11" height="2.2" rx="1.1" fill="#cbd5e1"/>
+            <rect x="8" y="17.8" width="14" height="2.2" rx="1.1" fill="#e2e8f0"/>
+            <g class="barcode">
+              <rect x="8" y="23" width="2.4" height="8" fill="#0f172a"/>
+              <rect x="11.8" y="23" width="1.4" height="8" fill="#0f172a"/>
+              <rect x="14.6" y="23" width="3" height="8" fill="#0f172a"/>
+              <rect x="19" y="23" width="1.4" height="8" fill="#0f172a"/>
+              <rect x="21.8" y="23" width="2.4" height="8" fill="#0f172a"/>
+            </g>
+          </svg>
+        </span>
         <span class="logo-text">LinkContas</span>
       </div>
 
@@ -30,6 +53,52 @@
       </div>
     </div>
   </header>
+
+  <!-- Hero: descrição do site -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-texto">
+        <h1>Todas as suas contas em <span class="hero-destaque">um só lugar</span></h1>
+        <p>O <strong>LinkContas</strong> reúne em uma única página os sites oficiais de pagamento de <strong>luz, água, telefone e internet</strong>. Chega de ficar procurando app por app: busque a empresa, clique em <strong>"Pagar conta"</strong> e pronto — você é levado direto para a página de pagamento oficial.</p>
+        <div class="hero-tags">
+          <span class="hero-tag hero-tag-energia">⚡ Luz</span>
+          <span class="hero-tag hero-tag-telefone">📱 Telefone</span>
+          <span class="hero-tag hero-tag-agua">💧 Água</span>
+          <span class="hero-tag hero-tag-internet">📺 Internet</span>
+        </div>
+      </div>
+      <div class="hero-ilustracao" aria-hidden="true">
+        <svg viewBox="0 0 220 180" xmlns="http://www.w3.org/2000/svg">
+          <!-- Cartões de contas flutuando -->
+          <g class="ilustracao-card ilustracao-card-1">
+            <rect x="10" y="20" width="120" height="70" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+            <rect x="22" y="34" width="26" height="26" rx="7" fill="#f59e0b"/>
+            <text x="35" y="52" text-anchor="middle" font-size="14" fill="#ffffff" font-weight="bold">⚡</text>
+            <rect x="56" y="36" width="60" height="5" rx="2.5" fill="#e2e8f0"/>
+            <rect x="56" y="46" width="40" height="4" rx="2" fill="#f1f5f9"/>
+          </g>
+          <g class="ilustracao-card ilustracao-card-2">
+            <rect x="40" y="70" width="120" height="70" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+            <rect x="52" y="84" width="26" height="26" rx="7" fill="#0ea5e9"/>
+            <text x="65" y="102" text-anchor="middle" font-size="14" fill="#ffffff" font-weight="bold">💧</text>
+            <rect x="86" y="86" width="60" height="5" rx="2.5" fill="#e2e8f0"/>
+            <rect x="86" y="96" width="40" height="4" rx="2" fill="#f1f5f9"/>
+          </g>
+          <g class="ilustracao-card ilustracao-card-3">
+            <rect x="80" y="30" width="120" height="70" rx="10" fill="#ffffff" stroke="#bfdbfe" stroke-width="2.5"/>
+            <rect x="92" y="44" width="26" height="26" rx="7" fill="#2563eb"/>
+            <text x="105" y="62" text-anchor="middle" font-size="14" fill="#ffffff" font-weight="bold">💳</text>
+            <rect x="126" y="46" width="60" height="5" rx="2.5" fill="#dbeafe"/>
+            <rect x="126" y="56" width="40" height="4" rx="2" fill="#eff6ff"/>
+          </g>
+          <!-- Moedas / brilhos -->
+          <circle class="ilustracao-brilho" cx="35" cy="140" r="6" fill="#fbbf24"/>
+          <circle class="ilustracao-brilho ilustracao-brilho-2" cx="190" cy="18" r="5" fill="#34d399"/>
+          <circle class="ilustracao-brilho ilustracao-brilho-3" cx="200" cy="120" r="4" fill="#f472b6"/>
+        </svg>
+      </div>
+    </div>
+  </section>
 
   <!-- Aviso de acessibilidade -->
   <div class="aviso-acessibilidade">
