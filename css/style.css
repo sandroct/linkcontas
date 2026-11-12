@@ -429,7 +429,9 @@ body {
 .logo-empresa img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  padding: 8px;
+  background: #fff;
 }
 
 .empresa-info h3 {
@@ -568,6 +570,22 @@ body {
   font-size: 0.95rem;
   color: var(--cor-texto-suave);
   line-height: 1.7;
+}
+
+.footer-lema {
+  margin-top: 14px;
+  padding: 12px 16px;
+  background: var(--cor-primaria-suave);
+  border-left: 4px solid var(--cor-primaria);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--cor-primaria);
+}
+
+[data-tema="escuro"] .footer-lema {
+  background: rgba(30, 58, 138, 0.3);
+  color: #60a5fa;
 }
 
 .copyright {

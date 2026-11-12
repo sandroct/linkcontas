@@ -10,6 +10,7 @@ const empresas = [
     categoria: 'energia',
     url: 'https://www.enel.com.br/content/enel-br/pt-saopaulo/login.html',
     urlPagamento: 'https://www.enel.com.br/content/enel-br/pt-saopaulo/login.html',
+    logo: 'https://www.google.com/s2/favicons?domain=enel.com.br&sz=128',
     icone: '⚡',
     descricao: 'Conta de luz — São Paulo (link pode variar por estado)'
   },
@@ -19,6 +20,7 @@ const empresas = [
     categoria: 'energia',
     url: 'https://agenciavirtual.light.com.br/portal/',
     urlPagamento: 'https://agenciavirtual.light.com.br/portal/',
+    logo: 'https://www.google.com/s2/favicons?domain=light.com.br&sz=128',
     icone: '⚡',
     descricao: 'Conta de luz — Rio de Janeiro'
   },
@@ -28,6 +30,7 @@ const empresas = [
     categoria: 'energia',
     url: 'https://atende.cemig.com.br/Login',
     urlPagamento: 'https://atende.cemig.com.br/Login',
+    logo: 'https://www.google.com/s2/favicons?domain=cemig.com.br&sz=128',
     icone: '⚡',
     descricao: 'Conta de luz — Minas Gerais'
   },
@@ -37,6 +40,7 @@ const empresas = [
     categoria: 'energia',
     url: 'https://cpflb2cprd.b2clogin.com/cpflb2cprd.onmicrosoft.com/b2c_1a_signup_signin_mfa_front/oauth2/v2.0/authorize?p=B2C_1A_SIGNUP_SIGNIN_MFA_FRONT&client_id=17d5831d-6741-4670-8085-d1d34e37aec1&nonce=defaultNonce&redirect_uri=https%3A%2F%2Fwww.cpfl.com.br%2Fb2c-auth%2Freceive-token&scope=17d5831d-6741-4670-8085-d1d34e37aec1%20offline_access&response_type=code&prompt=login&response_mode=query',
     urlPagamento: 'https://cpflb2cprd.b2clogin.com/cpflb2cprd.onmicrosoft.com/b2c_1a_signup_signin_mfa_front/oauth2/v2.0/authorize?p=B2C_1A_SIGNUP_SIGNIN_MFA_FRONT&client_id=17d5831d-6741-4670-8085-d1d34e37aec1&nonce=defaultNonce&redirect_uri=https%3A%2F%2Fwww.cpfl.com.br%2Fb2c-auth%2Freceive-token&scope=17d5831d-6741-4670-8085-d1d34e37aec1%20offline_access&response_type=code&prompt=login&response_mode=query',
+    logo: 'https://www.google.com/s2/favicons?domain=cpfl.com.br&sz=128',
     icone: '⚡',
     descricao: 'Conta de luz — São Paulo e outras regiões'
   },
@@ -44,17 +48,19 @@ const empresas = [
     id: 'edp',
     nome: 'EDP',
     categoria: 'energia',
-    url: 'https://www.edponline.com.br',
-    urlPagamento: 'https://www.edponline.com.br',
+    url: 'https://www.edponline.com.br/para-sua-casa/login',
+    urlPagamento: 'https://www.edponline.com.br/para-sua-casa/login',
+    logo: 'https://www.google.com/s2/favicons?domain=edponline.com.br&sz=128',
     icone: '⚡',
     descricao: 'Conta de luz — Espírito Santo e São Paulo'
   },
   {
-    id: 'cee',
+    id: 'ceee',
     nome: 'CEEE',
     categoria: 'energia',
-    url: 'https://www.ceee.com.br',
-    urlPagamento: 'https://www.ceee.com.br',
+    url: 'https://ceee.equatorialenergia.com.br/#!',
+    urlPagamento: 'https://ceee.equatorialenergia.com.br/#!',
+    logo: 'https://www.google.com/s2/favicons?domain=equatorialenergia.com.br&sz=128',
     icone: '⚡',
     descricao: 'Conta de luz — Rio Grande do Sul'
   },
@@ -66,6 +72,7 @@ const empresas = [
     categoria: 'telefone',
     url: 'https://minhaclaro.claro.com.br/acesso-rapido/',
     urlPagamento: 'https://minhaclaro.claro.com.br/acesso-rapido/',
+    logo: 'https://www.google.com/s2/favicons?domain=claro.com.br&sz=128',
     icone: '📱',
     descricao: 'Telefone fixo, móvel e internet'
   },
@@ -75,6 +82,7 @@ const empresas = [
     categoria: 'telefone',
     url: 'https://app.vivo.com.br/web',
     urlPagamento: 'https://app.vivo.com.br/web',
+    logo: 'https://www.google.com/s2/favicons?domain=vivo.com.br&sz=128',
     icone: '📱',
     descricao: 'Telefone, internet e TV'
   },
@@ -82,8 +90,9 @@ const empresas = [
     id: 'tim',
     nome: 'TIM',
     categoria: 'telefone',
-    url: 'https://www.tim.com.br/meu-tim',
-    urlPagamento: 'https://www.tim.com.br/meu-tim',
+    url: 'https://meutim.onelink.me/0IuD/u3fep93q',
+    urlPagamento: 'https://meutim.onelink.me/0IuD/u3fep93q',
+    logo: 'https://www.google.com/s2/favicons?domain=tim.com.br&sz=128',
     icone: '📱',
     descricao: 'Telefone móvel e internet'
   },
@@ -91,8 +100,9 @@ const empresas = [
     id: 'oi',
     nome: 'Oi',
     categoria: 'telefone',
-    url: 'https://www.oi.com.br',
-    urlPagamento: 'https://www.oi.com.br',
+    url: 'https://www.oi.com.br/minha-oi/',
+    urlPagamento: 'https://www.oi.com.br/minha-oi/',
+    logo: 'https://www.google.com/s2/favicons?domain=oi.com.br&sz=128',
     icone: '📱',
     descricao: 'Telefone fixo, móvel e internet'
   },
@@ -102,8 +112,9 @@ const empresas = [
     id: 'sabesp',
     nome: 'Sabesp',
     categoria: 'agua',
-    url: 'https://www.sabesp.com.br/agenciavirtual',
-    urlPagamento: 'https://www.sabesp.com.br/agenciavirtual',
+    url: 'https://novaagenciavirtual.sabesp.com.br/',
+    urlPagamento: 'https://novaagenciavirtual.sabesp.com.br/',
+    logo: 'https://www.google.com/s2/favicons?domain=sabesp.com.br&sz=128',
     icone: '💧',
     descricao: 'Conta de água — São Paulo'
   },
@@ -111,8 +122,9 @@ const empresas = [
     id: 'copasa',
     nome: 'Copasa',
     categoria: 'agua',
-    url: 'https://www.copasa.com.br',
-    urlPagamento: 'https://www.copasa.com.br',
+    url: 'https://copasaportalprd.azurewebsites.net/Copasa.Portal/Login/Index',
+    urlPagamento: 'https://copasaportalprd.azurewebsites.net/Copasa.Portal/Login/Index',
+    logo: 'https://www.google.com/s2/favicons?domain=copasa.com.br&sz=128',
     icone: '💧',
     descricao: 'Conta de água — Minas Gerais'
   },
@@ -120,8 +132,9 @@ const empresas = [
     id: 'cedae',
     nome: 'CEDAE',
     categoria: 'agua',
-    url: 'https://www.cedae.com.br',
-    urlPagamento: 'https://www.cedae.com.br',
+    url: 'https://agenciavirtual.cedae.com.br/csp?id=csp_segunda_via',
+    urlPagamento: 'https://agenciavirtual.cedae.com.br/csp?id=csp_segunda_via',
+    logo: 'https://www.google.com/s2/favicons?domain=cedae.com.br&sz=128',
     icone: '💧',
     descricao: 'Conta de água — Rio de Janeiro'
   },
@@ -129,19 +142,31 @@ const empresas = [
     id: 'sanepar',
     nome: 'Sanepar',
     categoria: 'agua',
-    url: 'https://www.sanepar.com.br',
-    urlPagamento: 'https://www.sanepar.com.br',
+    url: 'https://auth-cs.identidadedigital.pr.gov.br/centralautenticacao/login.html?response_type=code&client_id=1019c8091693ef5c5f55970346633f92&redirect_uri=https%3A%2F%2Fclientes.sanepar.com.br%2Fopenid-connect%2Fcentral&scope=null&state=EytqGemPy_rKobGvpWHsBxsCPMONo95TW6Sg_tjy2pc&urlCert=https://certauth-cs.identidadedigital.pr.gov.br&dnsCidadao=https://cidadao-cs.identidadedigital.pr.gov.br/centralcidadao&loginPadrao=btnCentral&labelCentral=CPF&modulosDeAutenticacao=btnGovbr,btnCertificado,btnCpf,btnGoogle,btnCentral&urlLogo=https%3A%2F%2Fclientes.sanepar.com.br%2Fsites%2Fportalcliente%2Ffiles%2FLogo-Sanepar-Hor-Azul.png&acesso=2091&tokenFormat=jwt&exibirLinkAutoCadastro=true&exibirLinkRecuperarSenha=true&exibirLinkAutoCadastroCertificado=false&exibirAviso=true&captcha=false',
+    urlPagamento: 'https://auth-cs.identidadedigital.pr.gov.br/centralautenticacao/login.html?response_type=code&client_id=1019c8091693ef5c5f55970346633f92&redirect_uri=https%3A%2F%2Fclientes.sanepar.com.br%2Fopenid-connect%2Fcentral&scope=null&state=EytqGemPy_rKobGvpWHsBxsCPMONo95TW6Sg_tjy2pc&urlCert=https://certauth-cs.identidadedigital.pr.gov.br&dnsCidadao=https://cidadao-cs.identidadedigital.pr.gov.br/centralcidadao&loginPadrao=btnCentral&labelCentral=CPF&modulosDeAutenticacao=btnGovbr,btnCertificado,btnCpf,btnGoogle,btnCentral&urlLogo=https%3A%2F%2Fclientes.sanepar.com.br%2Fsites%2Fportalcliente%2Ffiles%2FLogo-Sanepar-Hor-Azul.png&acesso=2091&tokenFormat=jwt&exibirLinkAutoCadastro=true&exibirLinkRecuperarSenha=true&exibirLinkAutoCadastroCertificado=false&exibirAviso=true&captcha=false',
+    logo: 'https://www.google.com/s2/favicons?domain=sanepar.com.br&sz=128',
     icone: '💧',
     descricao: 'Conta de água — Paraná'
   },
 
   // Internet / TV
   {
+    id: 'gigamaisfibra',
+    nome: 'Giga Mais Fibra',
+    categoria: 'internet',
+    url: 'https://sso.gigamaisfibra.com.br/auth/realms/gigamaisfibra/protocol/openid-connect/auth?client_id=central-do-assinante&redirect_uri=https%3A%2F%2Fcentral-assinante.gigamaisfibra.com.br%2F&state=39905a12-b4a7-4c8a-8f72-907e48512e0e&response_mode=fragment&response_type=code&scope=openid&nonce=56e49886-464e-4f8d-8a39-1f8f40b704ad',
+    urlPagamento: 'https://sso.gigamaisfibra.com.br/auth/realms/gigamaisfibra/protocol/openid-connect/auth?client_id=central-do-assinante&redirect_uri=https%3A%2F%2Fcentral-assinante.gigamaisfibra.com.br%2F&state=39905a12-b4a7-4c8a-8f72-907e48512e0e&response_mode=fragment&response_type=code&scope=openid&nonce=56e49886-464e-4f8d-8a39-1f8f40b704ad',
+    logo: 'https://www.google.com/s2/favicons?domain=gigamaisfibra.com.br&sz=128',
+    icone: '📺',
+    descricao: 'Internet fibra ótica'
+  },
+  {
     id: 'sky',
     nome: 'SKY',
     categoria: 'internet',
-    url: 'https://www.sky.com.br',
-    urlPagamento: 'https://www.sky.com.br',
+    url: 'https://www.sky.com.br/minha-sky/login',
+    urlPagamento: 'https://www.sky.com.br/minha-sky/login',
+    logo: 'https://www.google.com/s2/favicons?domain=sky.com.br&sz=128',
     icone: '📺',
     descricao: 'TV por assinatura e internet'
   },
@@ -149,8 +174,9 @@ const empresas = [
     id: 'algar',
     nome: 'Algar Telecom',
     categoria: 'internet',
-    url: 'https://www.algartelecom.com.br',
-    urlPagamento: 'https://www.algartelecom.com.br',
+    url: 'https://algar.com.br/AreaCliente/portal-usuario/minhas-faturas.html/',
+    urlPagamento: 'https://algar.com.br/AreaCliente/portal-usuario/minhas-faturas.html/',
+    logo: 'https://www.google.com/s2/favicons?domain=algar.com.br&sz=128',
     icone: '📺',
     descricao: 'Internet, telefone e TV'
   }
@@ -251,11 +277,15 @@ function renderEmpresas() {
 
   grid.innerHTML = filtradas.map(emp => {
     const link = emp.urlPagamento || emp.url;
+    // Usa a logo original se disponível, senão usa o emoji como fallback
+    const logoTipo = emp.logo
+      ? `<img src="${emp.logo}" alt="${emp.nome}" loading="lazy" onerror="this.parentElement.textContent='${emp.icone}'">`
+      : emp.icone;
 
     return `
       <a href="${link}" target="_blank" rel="noopener noreferrer" class="card-empresa">
         <div class="card-header">
-          <div class="logo-empresa">${emp.icone}</div>
+          <div class="logo-empresa">${logoTipo}</div>
           <div class="empresa-info">
             <h3>${emp.nome}</h3>
             <p>${emp.descricao}</p>

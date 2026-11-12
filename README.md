@@ -2,6 +2,8 @@
 
 Site elegante e acessível que centraliza links oficiais para pagamento de contas de consumo (luz, água, telefone, internet, etc.).
 
+> **💙 Criando SITES E APPS para ajudar a população. Fazer o bem é o meu lema.**
+
 ## ✨ Funcionalidades
 
 - **Busca em tempo real** por nome da empresa
