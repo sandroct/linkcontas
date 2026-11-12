@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkContas — Suas contas em um só lugar</title>
+  <meta name="description" content="Encontre rapidamente os sites oficiais para pagar suas contas de luz, água, telefone, internet e mais.">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-icon">💳</span>
+        <span class="logo-text">LinkContas</span>
+      </div>
+
+      <div class="search-wrap">
+        <input type="search" id="busca" placeholder="Busque por empresa (Ex: Enel, Claro, Sabesp)..." autocomplete="off">
+      </div>
+
+      <div class="user-actions">
+        <button id="tema-toggle" class="btn-tema" aria-label="Alternar tema claro/escuro" title="Alternar tema">
+          <span class="icone-tema">🌙</span>
+        </button>
+        <a href="sobre.html" class="btn btn-outline">Sobre</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Aviso de acessibilidade -->
+  <div class="aviso-acessibilidade">
+    <p>💡 Dica: todos os botões abrem o site da empresa em uma <strong>nova aba</strong>, para você não perder esta página.</p>
+  </div>
+
+  <!-- Anúncio topo (opcional - AdSense ou banner) -->
+  <div class="ad-slot ad-topo">
+    <div class="ad-placeholder">Anúncio aqui</div>
+  </div>
+
+  <!-- Categorias -->
+  <section class="categorias">
+    <div class="container">
+      <h2>Categorias</h2>
+      <div class="categoria-lista" id="categorias">
+        <!-- Inserido via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Empresas -->
+  <section class="empresas">
+    <div class="container">
+      <div class="empresas-header">
+        <h2 id="titulo-lista">Empresas</h2>
+        <span id="contagem" class="badge">0 empresas</span>
+      </div>
+      <div class="grid" id="grid-empresas">
+        <!-- Inserido via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Anúncio rodapé (opcional) -->
+  <div class="ad-slot ad-rodape">
+    <div class="ad-placeholder">Anúncio aqui</div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <h4>LinkContas</h4>
+        <p>Central de links para os sites oficiais de empresas de contas de consumo.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="termos.html">Termos de Uso</a></li>
+          <li><a href="privacidade.html">Política de Privacidade</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Aviso legal</h4>
+        <p>O LinkContas é um indicador de links. Não somos responsáveis pelos conteúdos, valores ou serviços das empresas terceiras. Sempre confirme os dados no site oficial da concessionária.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright">
+        &copy; 2026 LinkContas. Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
