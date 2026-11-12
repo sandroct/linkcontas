@@ -1,20 +1,20 @@
 /* =====================================
-   LINKCONTAS â€” Script
+   LINKCONTAS — Script
    ===================================== */
 
 const empresas = [
-  // Energia elÃ©trica
+  // Energia elétrica
   {
     id: 'enel',
-    nome: 'Enel DistribuiÃ§Ã£o',
+    nome: 'Enel Distribuição',
     categoria: 'energia',
     url: 'https://www.enel.com.br/content/enel-br/pt-saopaulo/login.html',
     urlPagamento: 'https://www.enel.com.br/content/enel-br/pt-saopaulo/login.html',
     logo: 'assets/logos/enel.png',
     cor: '#E2001A',
     sigla: 'EN',
-    icone: 'âš¡',
-    descricao: 'Conta de luz â€” SÃ£o Paulo (link pode variar por estado)'
+    icone: '⚡',
+    descricao: 'Conta de luz — São Paulo (link pode variar por estado)'
   },
   {
     id: 'light',
@@ -25,8 +25,8 @@ const empresas = [
     logo: 'assets/logos/light.png',
     cor: '#F58220',
     sigla: 'LI',
-    icone: 'âš¡',
-    descricao: 'Conta de luz â€” Rio de Janeiro'
+    icone: '⚡',
+    descricao: 'Conta de luz — Rio de Janeiro'
   },
   {
     id: 'cemig',
@@ -37,8 +37,8 @@ const empresas = [
     logo: 'assets/logos/cemig.png',
     cor: '#003A70',
     sigla: 'CM',
-    icone: 'âš¡',
-    descricao: 'Conta de luz â€” Minas Gerais'
+    icone: '⚡',
+    descricao: 'Conta de luz — Minas Gerais'
   },
   {
     id: 'cpfl',
@@ -49,8 +49,8 @@ const empresas = [
     logo: 'assets/logos/cpfl.png',
     cor: '#0033A0',
     sigla: 'CP',
-    icone: 'âš¡',
-    descricao: 'Conta de luz â€” SÃ£o Paulo e outras regiÃµes'
+    icone: '⚡',
+    descricao: 'Conta de luz — São Paulo e outras regiões'
   },
   {
     id: 'edp',
@@ -61,8 +61,8 @@ const empresas = [
     logo: 'assets/logos/edp.png',
     cor: '#E30613',
     sigla: 'ED',
-    icone: 'âš¡',
-    descricao: 'Conta de luz â€” EspÃ­rito Santo e SÃ£o Paulo'
+    icone: '⚡',
+    descricao: 'Conta de luz — Espírito Santo e São Paulo'
   },
   {
     id: 'ceee',
@@ -73,8 +73,8 @@ const empresas = [
     logo: 'assets/logos/ceee.png',
     cor: '#00539F',
     sigla: 'CS',
-    icone: 'âš¡',
-    descricao: 'Conta de luz â€” Rio Grande do Sul'
+    icone: '⚡',
+    descricao: 'Conta de luz — Rio Grande do Sul'
   },
 
   // Telefone / Celular
@@ -87,8 +87,8 @@ const empresas = [
     logo: 'assets/logos/claro.png',
     cor: '#DA291C',
     sigla: 'CL',
-    icone: 'ðŸ“±',
-    descricao: 'Telefone fixo, mÃ³vel e internet'
+    icone: '📱',
+    descricao: 'Telefone fixo, móvel e internet'
   },
   {
     id: 'vivo',
@@ -99,7 +99,7 @@ const empresas = [
     logo: 'assets/logos/vivo.png',
     cor: '#6A1B9A',
     sigla: 'VI',
-    icone: 'ðŸ“±',
+    icone: '📱',
     descricao: 'Telefone, internet e TV'
   },
   {
@@ -111,8 +111,8 @@ const empresas = [
     logo: 'assets/logos/tim.png',
     cor: '#0F4C81',
     sigla: 'TI',
-    icone: 'ðŸ“±',
-    descricao: 'Telefone mÃ³vel e internet'
+    icone: '📱',
+    descricao: 'Telefone móvel e internet'
   },
   {
     id: 'oi',
@@ -123,11 +123,11 @@ const empresas = [
     logo: 'assets/logos/oi.png',
     cor: '#F75B00',
     sigla: 'OI',
-    icone: 'ðŸ“±',
-    descricao: 'Telefone fixo, mÃ³vel e internet'
+    icone: '📱',
+    descricao: 'Telefone fixo, móvel e internet'
   },
 
-  // Ãgua e esgoto
+  // Água e esgoto
   {
     id: 'sabesp',
     nome: 'Sabesp',
@@ -137,8 +137,8 @@ const empresas = [
     logo: 'assets/logos/sabesp.png',
     cor: '#004B8D',
     sigla: 'SA',
-    icone: 'ðŸ’§',
-    descricao: 'Conta de Ã¡gua â€” SÃ£o Paulo'
+    icone: '💧',
+    descricao: 'Conta de água — São Paulo'
   },
   {
     id: 'copasa',
@@ -149,8 +149,8 @@ const empresas = [
     logo: 'assets/logos/copasa.png',
     cor: '#0055A5',
     sigla: 'CO',
-    icone: 'ðŸ’§',
-    descricao: 'Conta de Ã¡gua â€” Minas Gerais'
+    icone: '💧',
+    descricao: 'Conta de água — Minas Gerais'
   },
   {
     id: 'cedae',
@@ -161,8 +161,8 @@ const empresas = [
     logo: 'assets/logos/cedae.png',
     cor: '#003DA5',
     sigla: 'CD',
-    icone: 'ðŸ’§',
-    descricao: 'Conta de Ã¡gua â€” Rio de Janeiro'
+    icone: '💧',
+    descricao: 'Conta de água — Rio de Janeiro'
   },
   {
     id: 'sanepar',
@@ -173,8 +173,8 @@ const empresas = [
     logo: 'assets/logos/sanepar.png',
     cor: '#003DA5',
     sigla: 'SN',
-    icone: 'ðŸ’§',
-    descricao: 'Conta de Ã¡gua â€” ParanÃ¡'
+    icone: '💧',
+    descricao: 'Conta de água — Paraná'
   },
 
   // Internet / TV
@@ -187,8 +187,8 @@ const empresas = [
     logo: 'assets/logos/gigamaisfibra.png',
     cor: '#00A859',
     sigla: 'GM',
-    icone: 'ðŸ“º',
-    descricao: 'Internet fibra Ã³tica'
+    icone: '📺',
+    descricao: 'Internet fibra ótica'
   },
   {
     id: 'sky',
@@ -199,7 +199,7 @@ const empresas = [
     logo: 'assets/logos/sky.png',
     cor: '#003A70',
     sigla: 'SK',
-    icone: 'ðŸ“º',
+    icone: '📺',
     descricao: 'TV por assinatura e internet'
   },
   {
@@ -208,20 +208,19 @@ const empresas = [
     categoria: 'internet',
     url: 'https://algar.com.br/AreaCliente/portal-usuario/minhas-faturas.html/',
     urlPagamento: 'https://algar.com.br/AreaCliente/portal-usuario/minhas-faturas.html/',
-    logo: 'assets/logos/algar.png',
     cor: '#F26522',
     sigla: 'AL',
-    icone: 'ðŸ“º',
+    icone: '📺',
     descricao: 'Internet, telefone e TV'
   }
 ];
 
 const categorias = [
   { chave: 'todos', label: 'Todas' },
-  { chave: 'energia', label: 'Energia ElÃ©trica', icone: 'âš¡' },
-  { chave: 'telefone', label: 'Telefone / Celular', icone: 'ðŸ“±' },
-  { chave: 'agua', label: 'Ãgua / Esgoto', icone: 'ðŸ’§' },
-  { chave: 'internet', label: 'Internet / TV', icone: 'ðŸ“º' }
+  { chave: 'energia', label: 'Energia Elétrica', icone: '⚡' },
+  { chave: 'telefone', label: 'Telefone / Celular', icone: '📱' },
+  { chave: 'agua', label: 'Água / Esgoto', icone: '💧' },
+  { chave: 'internet', label: 'Internet / TV', icone: '📺' }
 ];
 
 // Elementos DOM
@@ -252,11 +251,11 @@ function aplicarTema(tema) {
 
   if (tema === 'escuro') {
     html.setAttribute('data-tema', 'escuro');
-    iconeTema.textContent = 'â˜€ï¸';
+    iconeTema.textContent = '☀️';
     localStorage.setItem('linkcontas-tema', 'escuro');
   } else {
     html.removeAttribute('data-tema');
-    iconeTema.textContent = 'ðŸŒ™';
+    iconeTema.textContent = '🌙';
     localStorage.setItem('linkcontas-tema', 'claro');
   }
 }
@@ -267,7 +266,7 @@ function alternarTema() {
   aplicarTema(estaEscuro ? 'claro' : 'escuro');
 }
 
-// ========== RENDERIZAÃ‡ÃƒO ==========
+// ========== RENDERIZAÇÃO ==========
 
 function renderCategorias() {
   categoriaLista.innerHTML = categorias.map(cat => {
@@ -311,7 +310,7 @@ function renderEmpresas() {
 
   grid.innerHTML = filtradas.map(emp => {
     const link = emp.urlPagamento || emp.url;
-    // Badge colorido com a sigla da marca fica atrÃ¡s; a logo real aparece por cima quando carrega
+    // Badge colorido com a sigla da marca fica atrás; a logo real aparece por cima quando carrega
     const logoTipo = `
       <div class="logo-empresa" style="background: ${emp.cor}">
         <span class="logo-sigla">${emp.sigla}</span>
@@ -328,9 +327,9 @@ function renderEmpresas() {
             <p>${emp.descricao}</p>
           </div>
         </div>
-        <div class="categoria-tag tag-${emp.categoria}">${emp.categoria === 'energia' ? 'Energia' : emp.categoria === 'telefone' ? 'Telefone' : emp.categoria === 'agua' ? 'Ãgua' : 'Internet'}</div>
+        <div class="categoria-tag tag-${emp.categoria}">${emp.categoria === 'energia' ? 'Energia' : emp.categoria === 'telefone' ? 'Telefone' : emp.categoria === 'agua' ? 'Água' : 'Internet'}</div>
         <div class="card-footer">
-          <span class="btn-acessar">Pagar conta â†—</span>
+          <span class="btn-acessar">Pagar conta ↗</span>
         </div>
       </a>
     `;
@@ -346,7 +345,7 @@ busca.addEventListener('input', (e) => {
 
 temaToggle.addEventListener('click', alternarTema);
 
-// ========== INICIALIZAÃ‡ÃƒO ==========
+// ========== INICIALIZAÇÃO ==========
 
 carregarTema();
 renderCategorias();
