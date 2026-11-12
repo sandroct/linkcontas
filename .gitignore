@@ -5,3 +5,5 @@ patch-*.ps1
 validar*.ps1
 dados-empresas-*.json
 conteudo-enel-sp.md
+injetar-ezoic.ps1
+fix-index-ezoic.ps1
