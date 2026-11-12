@@ -704,30 +704,6 @@ body {
 .card-empresa:nth-child(8) { animation-delay: 0.35s; }
 .card-empresa:nth-child(9) { animation-delay: 0.4s; }
 
-/* ===== Responsivo ===== */
-@media (max-width: 768px) {
-  .hero {
-    padding: 40px 0;
-  }
-
-  .hero-inner {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-
-  .hero-ilustracao {
-    display: none;
-  }
-
-  .hero-texto h1 {
-    font-size: 1.9rem;
-  }
-
-  .hero-texto p {
-    font-size: 1.02rem;
-  }
-}
-
 /* Estado vazio */
 .estado-vazio {
   grid-column: 1 / -1;
@@ -820,51 +796,110 @@ body {
 }
 
 /* ===== Responsivo ===== */
+
+/* Tablets e celulares */
 @media (max-width: 768px) {
+  /* Cabeçalho em 2 linhas: logo+ações em cima, busca embaixo (largura total) */
   .header-inner {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "logo acoes"
+      "busca busca";
+    align-items: center;
     height: auto;
-    padding: 20px 0;
-    gap: 16px;
+    padding: 12px 0;
+    gap: 12px 10px;
   }
 
-  .search-wrap {
-    min-width: unset;
-    width: 100%;
-  }
+  .logo { grid-area: logo; }
+  .user-actions { grid-area: acoes; }
+  .search-wrap { grid-area: busca; width: 100%; min-width: 0; }
 
-  .user-actions {
-    width: 100%;
-    justify-content: flex-end;
-  }
+  .logo-text { font-size: 1.2rem; }
+  .btn-tema { width: 40px; height: 40px; font-size: 1.2rem; }
+  .btn-outline { padding: 9px 14px; font-size: 0.9rem; }
 
-  .logo-text {
-    font-size: 1.2rem;
-  }
+  /* Hero */
+  .hero { padding: 36px 0; }
+  .hero-inner { grid-template-columns: 1fr; gap: 20px; }
+  .hero-ilustracao { display: none; }
+  .hero-texto h1 { font-size: 1.85rem; margin-bottom: 14px; }
+  .hero-texto p { font-size: 1.02rem; margin-bottom: 18px; }
 
-  .grid {
-    grid-template-columns: 1fr;
-  }
+  /* Seções */
+  .categorias { padding: 40px 0 28px; }
+  .empresas { padding: 36px 0 56px; }
+  .empresas-header { margin-bottom: 24px; }
+  .empresas-header h2 { font-size: 1.4rem; }
 
-  .empresas-header h2 {
-    font-size: 1.4rem;
-  }
+  /* Cards em coluna única */
+  .grid { grid-template-columns: 1fr; gap: 18px; }
+
+  /* Botão grande e confortável para toque */
+  .card-footer { padding-top: 16px; }
+  .btn-acessar { padding: 16px 20px; font-size: 1.05rem; }
+
+  /* Avisos e anúncios */
+  .aviso-acessibilidade { padding: 12px 14px; font-size: 0.9rem; margin-bottom: 24px; }
+  .ad-slot { padding: 22px 0; }
+  .ad-placeholder { height: 90px; }
+
+  /* Rodapé */
+  .footer { margin-top: 56px; padding: 44px 0 24px; }
+  .footer-inner { gap: 28px; margin-bottom: 28px; }
 }
 
+/* Celulares pequenos */
 @media (max-width: 480px) {
-  .card-empresa {
-    padding: 20px;
-  }
+  .container { padding: 0 16px; }
 
-  .logo-empresa {
-    width: 56px;
-    height: 56px;
-    font-size: 1.75rem;
-  }
+  .card-empresa { padding: 18px; }
+  .card-header { gap: 12px; margin-bottom: 14px; }
+  .logo-empresa { width: 54px; height: 54px; border-radius: 14px; }
+  .logo-sigla { font-size: 1.3rem; }
+  .empresa-info h3 { font-size: 1.05rem; }
+  .empresa-info p { font-size: 0.88rem; }
+  .categoria-tag { font-size: 0.72rem; padding: 5px 10px; }
 
-  .btn-acessar {
-    padding: 12px 20px;
-    font-size: 0.95rem;
+  .hero-texto h1 { font-size: 1.65rem; }
+  .hero-tags { gap: 8px; }
+  .hero-tag { padding: 8px 14px; font-size: 0.88rem; }
+
+  .search-wrap input { padding: 12px 16px; font-size: 1rem; }
+  .ad-placeholder { height: 80px; }
+  .copyright { font-size: 0.8rem; }
+}
+
+/* Telas grandes (desktop): ajustes finos */
+@media (min-width: 1200px) {
+  .container { max-width: 1100px; }
+  .grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* ===== Polimento para toque/mobile ===== */
+html, body { overflow-x: hidden; }
+
+body { -webkit-tap-highlight-color: transparent; }
+
+.card-empresa,
+.chip-categoria,
+.btn-acessar,
+.btn-tema,
+.hero-tag,
+.btn,
+.logo { touch-action: manipulation; }
+
+.card-header,
+.card-footer { user-select: none; }
+
+.categoria-lista { -webkit-overflow-scrolling: touch; }
+
+/* Respeita o notch do iPhone */
+@supports (padding: env(safe-area-inset-left)) {
+  .container {
+    padding-left: max(20px, env(safe-area-inset-left));
+    padding-right: max(20px, env(safe-area-inset-right));
   }
 }
 
