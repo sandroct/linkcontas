@@ -490,26 +490,8 @@ body {
 [data-tema="escuro"] .categoria-tag.tag-agua { background: rgba(14, 165, 233, 0.2); color: #38bdf8; }
 [data-tema="escuro"] .categoria-tag.tag-internet { background: rgba(16, 185, 129, 0.2); color: #34d399; }
 
-.dominio-chip {
-  font-size: 0.75rem;
-  color: var(--cor-texto-claro);
-  background: var(--cor-fundo-secao);
-  padding: 4px 10px;
-  border-radius: 6px;
-  font-weight: 600;
-  border: 1px solid var(--cor-borda);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 55%;
-}
-
 .card-footer {
   margin-top: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
   padding-top: 20px;
   border-top: 1px solid var(--cor-borda);
 }
@@ -523,7 +505,9 @@ body {
   font-size: 1rem;
   font-weight: 700;
   transition: var(--transicao);
-  display: inline-block;
+  display: block;
+  width: 100%;
+  text-align: center;
   border: 2px solid var(--cor-primaria);
   box-shadow: 0 4px 8px rgba(37, 99, 235, 0.2);
 }

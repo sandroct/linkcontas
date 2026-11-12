@@ -224,27 +224,6 @@ const categorias = [
   { chave: 'internet', label: 'Internet / TV', icone: '📺' }
 ];
 
-// Domínios oficiais exibidos nos cards (evita mostrar URLs técnicas longas)
-const dominios = {
-  enel: 'enel.com.br',
-  light: 'light.com.br',
-  cemig: 'cemig.com.br',
-  cpfl: 'cpfl.com.br',
-  edp: 'edponline.com.br',
-  ceee: 'equatorialenergia.com.br',
-  claro: 'claro.com.br',
-  vivo: 'vivo.com.br',
-  tim: 'tim.com.br',
-  oi: 'oi.com.br',
-  sabesp: 'sabesp.com.br',
-  copasa: 'copasa.com.br',
-  cedae: 'cedae.com.br',
-  sanepar: 'sanepar.com.br',
-  gigamaisfibra: 'gigamaisfibra.com.br',
-  sky: 'sky.com.br',
-  algar: 'algar.com.br'
-};
-
 // Elementos DOM
 const grid = document.getElementById('grid-empresas');
 const busca = document.getElementById('busca');
@@ -351,7 +330,6 @@ function renderEmpresas() {
         </div>
         <div class="categoria-tag tag-${emp.categoria}">${emp.categoria === 'energia' ? 'Energia' : emp.categoria === 'telefone' ? 'Telefone' : emp.categoria === 'agua' ? 'Água' : 'Internet'}</div>
         <div class="card-footer">
-          <span class="dominio-chip" title="Site oficial da empresa">🔗 ${dominios[emp.id] || ''}</span>
           <span class="btn-acessar">Pagar conta ↗</span>
         </div>
       </a>
