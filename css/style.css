@@ -3,46 +3,46 @@
    Tema Claro / Escuro com persistência
    ===================================== */
 
-/* Variáveis — Tema Claro (padrão) */
+/* Variáveis — Tema Claro (azul suave, não branco liso) */
 :root {
   --cor-primaria: #2563eb;
   --cor-primaria-hover: #1d4ed8;
-  --cor-primaria-suave: #eff6ff;
-  --cor-secundaria: #64748b;
+  --cor-primaria-suave: #e3ecff;
+  --cor-secundaria: #5d7099;
   --cor-sucesso: #16a34a;
-  --cor-fundo: #f8fafc;
+  --cor-fundo: #e9f0fd;
   --cor-fundo-secao: #ffffff;
   --cor-card: #ffffff;
-  --cor-card-hover: #f8fafc;
-  --cor-texto: #0f172a;
-  --cor-texto-suave: #475569;
-  --cor-texto-claro: #94a3b8;
-  --cor-borda: #e2e8f0;
+  --cor-card-hover: #f3f8ff;
+  --cor-texto: #16233f;
+  --cor-texto-suave: #4a5f85;
+  --cor-texto-claro: #7e91b5;
+  --cor-borda: #cddcf5;
   --cor-borda-foco: #2563eb;
   --radius: 14px;
-  --sombra: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-  --sombra-hover: 0 12px 20px -4px rgba(37, 99, 235, 0.12), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+  --sombra: 0 4px 6px -1px rgba(30, 58, 138, 0.06), 0 2px 4px -1px rgba(30, 58, 138, 0.04);
+  --sombra-hover: 0 14px 24px -6px rgba(37, 99, 235, 0.16), 0 4px 8px -2px rgba(30, 58, 138, 0.06);
   --transicao: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Variáveis — Tema Escuro */
+/* Variáveis — Tema Escuro (azul marinho profundo, não preto liso) */
 [data-tema="escuro"] {
-  --cor-primaria: #3b82f6;
-  --cor-primaria-hover: #60a5fa;
-  --cor-primaria-suave: #1e3a8a;
-  --cor-secundaria: #94a3b8;
-  --cor-sucesso: #22c55e;
-  --cor-fundo: #0f172a;
-  --cor-fundo-secao: #1e293b;
-  --cor-card: #1e293b;
-  --cor-card-hover: #334155;
-  --cor-texto: #f8fafc;
-  --cor-texto-suave: #cbd5e1;
-  --cor-texto-claro: #64748b;
-  --cor-borda: #334155;
-  --cor-borda-foco: #3b82f6;
+  --cor-primaria: #638dff;
+  --cor-primaria-hover: #8aa9ff;
+  --cor-primaria-suave: #1d2d68;
+  --cor-secundaria: #93a5d4;
+  --cor-sucesso: #34d399;
+  --cor-fundo: #0a1240;
+  --cor-fundo-secao: #182456;
+  --cor-card: #16224f;
+  --cor-card-hover: #1e2f6b;
+  --cor-texto: #eaf1ff;
+  --cor-texto-suave: #b7c5ea;
+  --cor-texto-claro: #8496c9;
+  --cor-borda: #2a3a78;
+  --cor-borda-foco: #638dff;
   --sombra: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
-  --sombra-hover: 0 12px 20px -4px rgba(59, 130, 246, 0.18), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+  --sombra-hover: 0 14px 24px -6px rgba(99, 141, 255, 0.22), 0 4px 8px -2px rgba(0, 0, 0, 0.3);
 }
 
 /* Reset e base */
@@ -59,6 +59,7 @@ html {
 body {
   font-family: 'Inter', sans-serif;
   background: var(--cor-fundo);
+  background-image: linear-gradient(180deg, rgba(37, 99, 235, 0.06) 0%, transparent 340px);
   color: var(--cor-texto);
   line-height: 1.6;
   font-size: 1rem;
@@ -77,14 +78,18 @@ body {
   outline-offset: 2px;
 }
 
-/* ===== Header ===== */
 .header {
-  background: var(--cor-card);
+  background: linear-gradient(135deg, var(--cor-card) 0%, var(--cor-fundo-secao) 100%);
   border-bottom: 1px solid var(--cor-borda);
   position: sticky;
   top: 0;
   z-index: 100;
   transition: background-color 0.4s ease, border-color 0.4s ease;
+  box-shadow: 0 4px 16px rgba(30, 58, 138, 0.06);
+}
+
+[data-tema="escuro"] .header {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
 }
 
 .header-inner {
@@ -160,7 +165,7 @@ body {
 
 /* Botão tema */
 .btn-tema {
-  background: var(--cor-fundo-secao);
+  background: var(--cor-primaria-suave);
   border: 2px solid var(--cor-borda);
   border-radius: 10px;
   width: 44px;
@@ -177,7 +182,7 @@ body {
 .btn-tema:hover {
   border-color: var(--cor-borda-foco);
   background: var(--cor-card-hover);
-  transform: scale(1.05);
+  transform: scale(1.08) rotate(10deg);
 }
 
 /* Botões gerais */
@@ -504,6 +509,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 12px;
   padding-top: 20px;
   border-top: 1px solid var(--cor-borda);
 }
@@ -759,8 +765,9 @@ body {
 
 /* ===== Footer ===== */
 .footer {
-  background: var(--cor-card);
-  border-top: 1px solid var(--cor-borda);
+  background: linear-gradient(180deg, var(--cor-card) 0%, var(--cor-fundo-secao) 100%);
+  border-top: 3px solid transparent;
+  border-image: linear-gradient(90deg, #2563eb, #7c3aed, #0ea5e9) 1;
   margin-top: 80px;
   padding: 60px 0 32px;
   transition: background-color 0.4s ease, border-color 0.4s ease;
