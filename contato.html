@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contato — LinkContas</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    :root { --cor-primaria: #2563eb; --cor-fundo: #f8fafc; --cor-texto: #0f172a; --cor-suave: #475569; --borda: #e2e8f0; }
+    :root { --cor-primaria: #2563eb; --cor-fundo: #e9f0fd; --cor-texto: #16233f; --cor-suave: #4a5f85; --borda: #cddcf5; --cor-sucesso: #16a34a; }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: 'Inter', sans-serif; background: var(--cor-fundo); color: var(--cor-texto); line-height: 1.6; padding: 20px; }
-    .container { max-width: 760px; margin: 0 auto; background: #fff; padding: 40px 32px; border-radius: 12px; border: 1px solid var(--borda); }
+    .container { max-width: 760px; margin: 0 auto; background: #fff; padding: 40px 32px; border-radius: 14px; border: 1px solid var(--borda); box-shadow: 0 8px 20px rgba(30, 58, 138, 0.07); }
     header { margin-bottom: 32px; border-bottom: 1px solid var(--borda); padding-bottom: 16px; }
     h1 { color: var(--cor-primaria); font-size: 1.6rem; margin-bottom: 8px; }
     .meta { color: var(--cor-suave); font-size: 0.9rem; }
@@ -17,8 +17,59 @@
     h2 { font-size: 1.15rem; margin-top: 24px; margin-bottom: 10px; color: var(--cor-texto); }
     .contato-box { background: #f1f5f9; border: 1px solid var(--borda); border-radius: 10px; padding: 20px; margin-top: 16px; }
     .contato-box strong { color: var(--cor-texto); }
+
+    /* Campo do Pix */
+    .pix-campo {
+      background: #ffffff;
+      border: 2px dashed var(--cor-primaria);
+      border-radius: 12px;
+      padding: 18px;
+      margin: 16px 0;
+    }
+    .pix-campo > strong { color: var(--cor-texto); font-size: 1rem; display: block; margin-bottom: 4px; }
+    .pix-chave-wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 8px; }
+    .pix-chave {
+      font-family: 'Consolas', 'Courier New', monospace;
+      font-size: 0.95rem;
+      background: #f1f5f9;
+      border: 1px solid var(--borda);
+      border-radius: 8px;
+      padding: 12px 14px;
+      word-break: break-all;
+      flex: 1;
+      min-width: 220px;
+      color: var(--cor-texto);
+      user-select: all;
+    }
+    .btn-copiar {
+      background: var(--cor-sucesso);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 14px 20px;
+      font-size: 1rem;
+      font-weight: 700;
+      font-family: inherit;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 10px rgba(22, 163, 74, 0.25);
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .btn-copiar:hover { background: #15803d; transform: scale(1.04); }
+    .btn-copiar:active { transform: scale(0.97); }
+    .btn-copiar.copiado { background: #0f766e; box-shadow: 0 4px 10px rgba(15, 118, 110, 0.25); }
+    .pix-dica { display: block; margin-top: 12px; font-size: 0.85rem; color: var(--cor-suave); }
+
     .voltar { display: inline-block; margin-top: 30px; color: var(--cor-suave); font-size: 0.9rem; }
     .voltar:hover { color: var(--cor-primaria); }
+
+    @media (max-width: 480px) {
+      body { padding: 12px; }
+      .container { padding: 28px 20px; }
+      .pix-chave { min-width: 100%; }
+      .btn-copiar { width: 100%; }
+    }
   </style>
 </head>
 <body>
@@ -32,16 +83,67 @@
 
     <div class="contato-box">
       <p><strong>E-mail:</strong> alessandrobr2012@gmail.com</p>
-      <p><strong>Pix (doações/apoio):</strong> a5dccde0-8045-4dbd-89b4-905b4e44701c</p>
     </div>
 
     <h2>Apoie o projeto ☕</h2>
-    <p>O LinkContas é gratuito. Se ele te ajudou, considere fazer uma doação via Pix. Basta copiar a chave acima e colar no app do seu banco — funciona de qualquer banco (Itaú, Nubank, Bradesco, etc.).</p>
-    <p>Qualquer valor é bem-vindo e ajuda a manter o site no ar. Obrigado! 💙</p>
+    <p>O LinkContas é gratuito. Se ele te ajudou, considere fazer uma doação via Pix. Funciona de qualquer banco (Itaú, Nubank, Bradesco, etc.) — basta copiar a chave e colar no app do seu banco.</p>
+
+    <div class="pix-campo">
+      <strong>Chave Pix (doações/apoio)</strong>
+      <div class="pix-chave-wrap">
+        <code id="pix-chave" class="pix-chave">a5dccde0-8045-4dbd-89b4-905b4e44701c</code>
+        <button id="btn-copiar-pix" class="btn-copiar" type="button">📋 Copiar chave</button>
+      </div>
+      <small class="pix-dica">Toque em "Copiar chave", abra o app do seu banco, escolha Pix → Colar e pronto! Qualquer valor é bem-vindo. Obrigado! 💙</small>
+    </div>
 
     <p>Respondemos em até 3 dias úteis.</p>
 
     <a href="index.html" class="voltar">← Voltar ao site</a>
   </div>
+
+  <script>
+    (function () {
+      var btn = document.getElementById('btn-copiar-pix');
+      var campo = document.getElementById('pix-chave');
+      var textoOriginal = btn.textContent;
+
+      function copiar(texto) {
+        // Tenta a API moderna primeiro
+        if (navigator.clipboard && window.isSecureContext) {
+          return navigator.clipboard.writeText(texto);
+        }
+        // Alternativa para navegadores antigos
+        return new Promise(function (resolve, reject) {
+          var temp = document.createElement('textarea');
+          temp.value = texto;
+          temp.style.position = 'fixed';
+          temp.style.opacity = '0';
+          document.body.appendChild(temp);
+          temp.select();
+          try { document.execCommand('copy'); resolve(); }
+          catch (e) { reject(e); }
+          document.body.removeChild(temp);
+        });
+      }
+
+      btn.addEventListener('click', function () {
+        var chave = campo.textContent.trim();
+        copiar(chave).then(function () {
+          btn.textContent = '✅ Copiado!';
+          btn.classList.add('copiado');
+          setTimeout(function () {
+            btn.textContent = textoOriginal;
+            btn.classList.remove('copiado');
+          }, 2500);
+        }).catch(function () {
+          btn.textContent = '⚠️ Toque na chave e copie manualmente';
+          setTimeout(function () {
+            btn.textContent = textoOriginal;
+          }, 3000);
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
