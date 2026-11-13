@@ -57,6 +57,7 @@
           <span class="icone-tema">🌙</span>
         </button>
         <a href="sobre.html" class="btn btn-outline">Sobre</a>
+        <div class="relogio" id="relogio" aria-label="Horário de Brasília">--:--:--</div>
       </div>
     </div>
   </header>
@@ -221,6 +222,23 @@
 
   <script src="js/contador.js"></script>
   <script src="js/script.js?v=3"></script>
+  <script>
+    // Relógio com horário de Brasília (UTC-3, sem horário de verão no Brasil)
+    (function () {
+      var el = document.getElementById('relogio');
+      if (!el) return;
+      function atualizar() {
+        var agora = new Date();
+        var br = new Date(agora.toLocaleString('en-US', { timeZone: 'America/Sao_Paulo' }));
+        var h = String(br.getHours()).padStart(2, '0');
+        var m = String(br.getMinutes()).padStart(2, '0');
+        var s = String(br.getSeconds()).padStart(2, '0');
+        el.textContent = h + ':' + m + ':' + s;
+      }
+      atualizar();
+      setInterval(atualizar, 1000);
+    })();
+  </script>
   <script>
     // Exibe estatísticas do contador assim que o DOM estiver pronto
     document.addEventListener('DOMContentLoaded', function () {

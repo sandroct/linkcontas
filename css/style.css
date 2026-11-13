@@ -1192,3 +1192,23 @@ body { -webkit-tap-highlight-color: transparent; }
   .estat-card { min-width: 140px; padding: 20px 12px; }
   .estat-valor { font-size: 1.75rem; }
 }
+
+/* ===== Relógio de Brasília ===== */
+.relogio {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 0.9rem;
+  color: #ffffff;
+  margin-left: 12px;
+}
+
+[data-tema="escuro"] .relogio {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+}

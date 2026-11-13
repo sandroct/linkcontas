@@ -7,8 +7,9 @@
    ===================================== */
 
 // ---------------- CONFIGURAÇÃO ----------------
-// Substitua pelo seu Measurement ID do Google Analytics (ex: G-XXXXXXXXXX)
-// Veja instruções no final deste arquivo.
+// ⚠️ ATENÇÃO: Para ativar a contagem global real, crie uma conta gratuita em
+// https://analytics.google.com, crie uma propriedade GA4 para linkcontas.com.br
+// e cole aqui o Measurement ID (formato G-XXXXXXXXXX).
 const GA_MEASUREMENT_ID = ''; // ex: 'G-1234567890'
 
 // ---------------- CONTAGEM LOCAL (apenas exibição na tela) ----------------
