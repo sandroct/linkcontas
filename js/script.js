@@ -279,6 +279,16 @@ const categorias = [
   { chave: 'consultas', label: 'Consultas / Pendências', icone: '🔍' }
 ];
 
+// Ícones SVG por categoria (Lucide)
+const ICONES_CATEGORIA = {
+  todos: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>',
+  energia: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
+  telefone: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg>',
+  agua: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.7 6.7 8a7.5 7.5 0 1 0 10.6 0z"/></svg>',
+  internet: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5a10 10 0 0 1 14 0"/><path d="M8.5 16a5 5 0 0 1 7 0"/><path d="M12 19.5h.01"/></svg>',
+  consultas: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>'
+};
+
 // Elementos DOM
 const grid = document.getElementById('grid-empresas');
 const busca = document.getElementById('busca');
@@ -302,16 +312,20 @@ function carregarTema() {
   aplicarTema(tema);
 }
 
+// Ícones SVG do tema (Lucide: sol / lua)
+const SVG_SOL = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.9 4.9 1.4 1.4"/><path d="m17.7 17.7 1.4 1.4"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.3 17.7-1.4 1.4"/><path d="m19.1 4.9-1.4 1.4"/></svg>';
+const SVG_LUA = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+
 function aplicarTema(tema) {
   const html = document.documentElement;
 
   if (tema === 'escuro') {
     html.setAttribute('data-tema', 'escuro');
-    iconeTema.textContent = '☀️';
+    if (iconeTema) iconeTema.innerHTML = SVG_SOL;
     localStorage.setItem('linkcontas-tema', 'escuro');
   } else {
     html.removeAttribute('data-tema');
-    iconeTema.textContent = '🌙';
+    if (iconeTema) iconeTema.innerHTML = SVG_LUA;
     localStorage.setItem('linkcontas-tema', 'claro');
   }
 }
@@ -329,7 +343,7 @@ function renderCategorias() {
     const ativo = categoriaAtiva === cat.chave ? 'ativo' : '';
     return `
       <button class="chip-categoria ${ativo}" data-categoria="${cat.chave}">
-        ${cat.icone || ''} ${cat.label}
+        <span class="chip-ico">${ICONES_CATEGORIA[cat.chave] || ''}</span> ${cat.label}
       </button>
     `;
   }).join('');
@@ -391,7 +405,7 @@ function renderEmpresas() {
         </a>
         <div class="categoria-tag tag-${emp.categoria}">${emp.categoria === 'energia' ? 'Energia' : emp.categoria === 'telefone' ? 'Telefone' : emp.categoria === 'agua' ? 'Água' : emp.categoria === 'consultas' ? 'Consultas' : 'Internet'}</div>
         <div class="card-footer">
-          ${pagina ? '<span class="dica-pagina">📖 Como pagar</span>' : ''}
+          ${pagina ? '<span class="dica-pagina"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Como pagar</span>' : ''}
           <a href="${link}" target="_blank" rel="noopener noreferrer" class="btn-acessar" data-empresa="${emp.id}">Pagar conta ↗</a>
         </div>
       </div>
@@ -424,3 +438,101 @@ temaToggle.addEventListener('click', alternarTema);
 carregarTema();
 renderCategorias();
 renderEmpresas();
+
+// ========== PACOTE ESSENCIAL — Polimento visual ==========
+
+const semMovimento = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// 1. Animação de entrada (fade-up) nas seções
+const secoesReveal = document.querySelectorAll('.reveal');
+if (semMovimento || !('IntersectionObserver' in window)) {
+  secoesReveal.forEach(secao => secao.classList.add('visivel'));
+} else {
+  const observer = new IntersectionObserver((entradas) => {
+    entradas.forEach(entrada => {
+      if (entrada.isIntersecting) {
+        entrada.target.classList.add('visivel');
+        observer.unobserve(entrada.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  secoesReveal.forEach(secao => observer.observe(secao));
+}
+
+// 2. Header ganha sombra ao rolar a página
+const header = document.querySelector('.header');
+let ultimaRolagem = -1;
+function atualizarSombraHeader() {
+  if (!header) return;
+  const topo = window.scrollY || document.documentElement.scrollTop;
+  if (topo === ultimaRolagem) return;
+  ultimaRolagem = topo;
+  header.classList.toggle('sombra', topo > 8);
+}
+window.addEventListener('scroll', atualizarSombraHeader, { passive: true });
+atualizarSombraHeader();
+
+// 3. Contador animado (tabular-nums no CSS mantém os dígitos alinhados)
+function animarContador(elemento, alvo, duracao = 1200) {
+  if (!elemento) return;
+  if (semMovimento) { elemento.textContent = alvo.toLocaleString('pt-BR'); return; }
+  const inicio = performance.now();
+  let concluido = false;
+  function passo(agora) {
+    const progresso = Math.min((agora - inicio) / duracao, 1);
+    const suave = 1 - Math.pow(1 - progresso, 3); // ease-out cubic
+    elemento.textContent = Math.round(alvo * suave).toLocaleString('pt-BR');
+    if (progresso < 1) requestAnimationFrame(passo);
+    else concluido = true;
+  }
+  requestAnimationFrame(passo);
+  // Fallback: se o navegador não disparar rAF (aba oculta), garante o valor final
+  setTimeout(() => {
+    if (!concluido) elemento.textContent = alvo.toLocaleString('pt-BR');
+  }, duracao + 120);
+}
+
+function popularEstatisticas() {
+  const elEmpresas = document.getElementById('contador-empresas');
+  const elVisitas = document.getElementById('contador-visitas');
+
+  // Número real: total de empresas cadastradas
+  if (elEmpresas) {
+    animarContador(elEmpresas, empresas.length);
+  }
+
+  // Visitas: contador LOCAL honesto (navegador deste dispositivo) — nunca inventa números
+  const visitas = (window.linkcontas && window.linkcontas.contador)
+    ? window.linkcontas.contador.visitasLocal()
+    : 0;
+  if (elVisitas) animarContador(elVisitas, visitas);
+
+  // "Suas mais acessadas": cliques salvos neste dispositivo
+  const top = document.getElementById('top-empresas');
+  if (!top) return;
+  const cliques = (window.linkcontas && window.linkcontas.contador)
+    ? window.linkcontas.contador.todosCliquesLocal()
+    : {};
+  const ordenadas = Object.entries(cliques)
+    .filter(([, qtd]) => qtd > 0)
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 5);
+
+  if (ordenadas.length === 0) return; // mantém a mensagem de "lista vazia"
+
+  top.innerHTML = ordenadas.map(([id, qtd], i) => {
+    const emp = empresas.find(e => e.id === id);
+    if (!emp) return '';
+    return `
+      <div class="top-item">
+        <span class="top-nome">
+          <span class="logo-sigla" style="background:${emp.cor};width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:0.7rem;color:#fff;">${emp.sigla}</span>
+          ${emp.nome}
+        </span>
+        <span class="top-vezes">${i + 1}º · ${qtd} ${qtd === 1 ? 'clique' : 'cliques'}</span>
+      </div>
+    `;
+  }).join('');
+}
+
+popularEstatisticas();
