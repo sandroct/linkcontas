@@ -1207,6 +1207,7 @@ body { -webkit-tap-highlight-color: transparent; }
   margin-left: 12px;
 }
 
+#relogio-hora,
 .relogio-hora {
   font-family: 'Consolas', 'Courier New', monospace;
   font-size: 0.95rem;
@@ -1214,6 +1215,7 @@ body { -webkit-tap-highlight-color: transparent; }
   line-height: 1;
 }
 
+#relogio-data,
 .relogio-data {
   font-size: 0.72rem;
   opacity: 0.85;
@@ -1226,19 +1228,27 @@ body { -webkit-tap-highlight-color: transparent; }
   background: rgba(0, 0, 0, 0.05);
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
+:not([data-tema="escuro"]) #relogio-hora,
+:not([data-tema="escuro"]) #relogio-data,
 :not([data-tema="escuro"]) .relogio-hora,
 :not([data-tema="escuro"]) .relogio-data {
   color: #16233f;
 }
 
-/* Tema escuro: relógio com texto branco */
+/* Tema escuro: relógio com texto claro e fundo mais visível */
 [data-tema="escuro"] .relogio {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(148, 163, 218, 0.18);
+  border: 1px solid rgba(148, 163, 184, 0.45);
 }
+[data-tema="escuro"] #relogio-hora,
+[data-tema="escuro"] #relogio-data,
 [data-tema="escuro"] .relogio-hora,
 [data-tema="escuro"] .relogio-data {
-  color: #ffffff;
+  color: #eef3ff;
+}
+[data-tema="escuro"] #relogio-data,
+[data-tema="escuro"] .relogio-data {
+  color: #b9c6e8;
 }
 
 /* =====================================
@@ -1325,8 +1335,8 @@ body { -webkit-tap-highlight-color: transparent; }
     border-radius: 6px;
     white-space: nowrap;
   }
-  .relogio-hora { font-size: 0.8rem; line-height: 1; }
-  .relogio-data { font-size: 0.6rem; line-height: 1; }
+  #relogio-hora, .relogio-hora { font-size: 0.8rem; line-height: 1; }
+  #relogio-data, .relogio-data { font-size: 0.6rem; line-height: 1; }
 
   /* Evitar cortes de texto longo */
   p, li, span, div { word-wrap: break-word; overflow-wrap: break-word; }
@@ -1355,8 +1365,8 @@ body { -webkit-tap-highlight-color: transparent; }
     border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 6px;
   }
-  .relogio-hora { font-size: 0.75rem; line-height: 1; }
-  .relogio-data { font-size: 0.55rem; line-height: 1; }
+  #relogio-hora, .relogio-hora { font-size: 0.75rem; line-height: 1; }
+  #relogio-data, .relogio-data { font-size: 0.55rem; line-height: 1; }
 }
 
 /* Ícone do tema no relógio - garantir que não quebre */

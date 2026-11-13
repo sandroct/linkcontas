@@ -233,28 +233,6 @@
 
   <script src="js/contador.js?v=2"></script>
   <script src="js/script.js?v=4"></script>
-  <script>
-    // Relógio com horário de Brasília (UTC-3, sem horário de verão no Brasil)
-    (function () {
-      var elHora = document.getElementById('relogio-hora');
-      var elData = document.getElementById('relogio-data');
-      if (!elHora || !elData) return;
-      var meses = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'];
-      function atualizar() {
-        var agora = new Date();
-        var br = new Date(agora.toLocaleString('en-US', { timeZone: 'America/Sao_Paulo' }));
-        var h = String(br.getHours()).padStart(2, '0');
-        var m = String(br.getMinutes()).padStart(2, '0');
-        var s = String(br.getSeconds()).padStart(2, '0');
-        var d = String(br.getDate()).padStart(2, '0');
-        var mes = meses[br.getMonth()];
-        var ano = br.getFullYear();
-        elHora.textContent = h + ':' + m + ':' + s;
-        elData.textContent = d + '/' + mes + '/' + ano;
-      }
-      atualizar();
-      setInterval(atualizar, 1000);
-    })();
-  </script>
+  <script src="js/relogio.js?v=1"></script>
 </body>
 </html>

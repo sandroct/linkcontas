@@ -154,7 +154,10 @@
       .container { padding: 28px 20px; }
       .chat-msg { max-width: 100%; }
     }
-  </style>
+    .relogio { margin-left: auto; display: inline-flex; flex-direction: column; align-items: flex-end; gap: 2px; padding: 6px 10px; background: rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.1); border-radius: 8px; color: #16233f; }
+    #relogio-hora { font-family: Consolas, "Courier New", monospace; font-size: 0.95rem; font-weight: 700; line-height: 1; }
+    #relogio-data { font-size: 0.72rem; opacity: 0.85; line-height: 1; white-space: nowrap; }
+    </style>
     
   </head>
 <body>
@@ -162,6 +165,10 @@
     <header>
       <h1>Contato</h1>
       <div class="meta">LinkContas</div>
+          <div class="relogio" id="relogio" aria-label="Horário e data de Brasília">
+        <span id="relogio-hora">--:--:--</span>
+        <span id="relogio-data">--/--/----</span>
+      </div>
     </header>
 
     <p>Tem sugestão de empresa para adicionar? Encontrou um link quebrado? Quer anunciar no site? Entre em contato:</p>
@@ -481,5 +488,6 @@
       });
     });
   </script>
-  </body>
+    <script src="js/relogio.js?v=1"></script>
+</body>
 </html>
