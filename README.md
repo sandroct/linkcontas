@@ -12,21 +12,28 @@ Site elegante e acessível que centraliza links oficiais para pagamento de conta
 - **Tema claro e escuro** com escolha do usuário (salvo automaticamente)
 - **Design responsivo** (funciona bem no celular)
 - **Acessibilidade para idosos** (botões grandes, fonte maior, links abrem em nova aba)
-- **Espaços para anúncios** (Google AdSense ou banners diretos)
+- **Faixa "Doações / Cafézinho"** no rodapé da página inicial (chave Pix com botão de copiar)
+- **Chat de feedback** na página de contato (nome, assunto, descrição — mensagens salvas no navegador e apagadas automaticamente após 30 dias)
+- **Espaços para anúncios** (Ezoic já integrado em todas as páginas)
 
 ## 📁 Estrutura
 
 ```
 linkcontas/
-├── index.html          (página principal com toggle de tema)
+├── index.html          (página principal com toggle de tema + faixa de doações)
 ├── sobre.html
-├── contato.html        (e-mail e Pix para contato/doações)
+├── contato.html        (e-mail + formulário/chat de feedback)
 ├── termos.html
 ├── privacidade.html
 ├── css/
-│   └── style.css       (estilos elegantes com tema claro/escuro)
+│   └── style.css       (estilos elegantes com tema claro/escuro + doações)
 ├── js/
 │   └── script.js       (empresas, busca, filtro, toggle de tema)
+├── robots.txt          (permite indexação + aponta para o sitemap)
+├── sitemap.xml         (mapa do site para o Google)
+├── ads.txt             (Google AdSense ativo; Ezoic entra quando o painel liberar)
+├── paginas de empresa  (enel-sp, light, cemig, cpfl, edp, ceee, claro, vivo,
+│                        tim, oi, sabesp, copasa, cedae, sanepar, sky, algar)
 └── README.md           (este arquivo)
 ```
 

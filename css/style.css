@@ -962,3 +962,103 @@ body { -webkit-tap-highlight-color: transparent; }
 .card-empresa {
   animation: fadeIn 0.5s ease forwards;
 }
+
+/* ===== Faixa de doações (Pix / cafézinho) ===== */
+.doacoes {
+  background: linear-gradient(135deg, var(--cor-primaria) 0%, #1e40af 100%);
+  color: #ffffff;
+  padding: 34px 0;
+  margin-top: 8px;
+}
+
+.doacoes-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+}
+
+.doacoes-texto h3 {
+  font-size: 1.25rem;
+  margin-bottom: 6px;
+  color: #ffffff;
+}
+
+.doacoes-texto p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.92rem;
+  max-width: 520px;
+  margin-bottom: 0;
+}
+
+.doacoes-pix {
+  background: rgba(255, 255, 255, 0.12);
+  border: 2px dashed rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+  padding: 16px 18px;
+  min-width: 300px;
+  flex: 1;
+  max-width: 460px;
+}
+
+.doacoes-pix-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #ffffff;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.doacoes-chave-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.doacoes-chave {
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 0.92rem;
+  background: rgba(255, 255, 255, 0.95);
+  color: #16233f;
+  border-radius: 8px;
+  padding: 11px 13px;
+  word-break: break-all;
+  flex: 1;
+  min-width: 200px;
+  user-select: all;
+}
+
+.btn-copiar-doacao {
+  background: var(--cor-sucesso);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 13px 20px;
+  font-size: 0.98rem;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn-copiar-doacao:hover { filter: brightness(1.1); transform: scale(1.04); }
+.btn-copiar-doacao:active { transform: scale(0.97); }
+.btn-copiar-doacao.copiado { background: #0f766e; }
+
+.doacoes-dica {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 640px) {
+  .doacoes-inner { flex-direction: column; align-items: stretch; }
+  .doacoes-pix { max-width: 100%; }
+  .btn-copiar-doacao { width: 100%; }
+}

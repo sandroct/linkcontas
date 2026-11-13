@@ -160,6 +160,7 @@
           <li><a href="termos.html">Termos de Uso</a></li>
           <li><a href="privacidade.html">Política de Privacidade</a></li>
           <li><a href="contato.html">Contato</a></li>
+          <li><a href="#doacoes">Doações ☕</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -174,6 +175,89 @@
     </div>
   </footer>
 
+  <!-- Doações / Cafézinho -->
+  <section class="doacoes" id="doacoes">
+    <div class="container doacoes-inner">
+      <div class="doacoes-texto">
+        <h3>☕ Doações / Cafézinho</h3>
+        <p>O LinkContas é gratuito e sem anúncios intrusivos. Se ele te ajudou a pagar uma conta, qualquer valor é bem-vindo para manter o site no ar. Obrigado! 💙</p>
+      </div>
+      <div class="doacoes-pix">
+        <strong class="doacoes-pix-label">Chave Pix aleatória (doações/apoio)</strong>
+        <div class="doacoes-chave-wrap">
+          <code id="pix-chave-doacoes" class="doacoes-chave">a5dccde0-8045-4dbd-89b4-905b4e44701c</code>
+          <button id="btn-copiar-doacao" class="btn-copiar-doacao" type="button">📋 Copiar chave</button>
+        </div>
+        <small class="doacoes-dica">Chave aleatória — aceita transferência de qualquer banco. Toque em "Copiar chave", abra o app do seu banco, escolha Pix → Colar e pronto!</small>
+      </div>
+    </div>
+  </section>
+
   <script src="js/script.js"></script>
+  <script>
+    (function () {
+      var btn = document.getElementById('btn-copiar-doacao');
+      var campo = document.getElementById('pix-chave-doacoes');
+      if (!btn || !campo) return;
+      var textoOriginal = btn.textContent;
+
+      function copiar(texto) {
+        return new Promise(function (resolve, reject) {
+          var concluido = false;
+          function terminou(ok) {
+            if (!concluido) { concluido = true; ok ? resolve() : reject(); }
+          }
+
+          function modoAntigo() {
+            try {
+              var temp = document.createElement('textarea');
+              temp.value = texto;
+              temp.setAttribute('readonly', '');
+              temp.style.position = 'fixed';
+              temp.style.top = '0';
+              temp.style.left = '0';
+              temp.style.opacity = '0';
+              document.body.appendChild(temp);
+              temp.focus();
+              temp.select();
+              temp.setSelectionRange(0, 99999);
+              var ok = document.execCommand('copy');
+              document.body.removeChild(temp);
+              terminou(ok);
+            } catch (e) { terminou(false); }
+          }
+
+          // Caminho moderno, com tempo limite: se travar, usa o modo classico
+          if (navigator.clipboard && window.isSecureContext) {
+            var limite = new Promise(function (_, r) {
+              setTimeout(function () { r(new Error('tempo esgotado')); }, 800);
+            });
+            Promise.race([navigator.clipboard.writeText(texto), limite])
+              .then(function () { terminou(true); })
+              .catch(function () { modoAntigo(); });
+          } else {
+            modoAntigo();
+          }
+        });
+      }
+
+      btn.addEventListener('click', function () {
+        var chave = campo.textContent.trim();
+        copiar(chave).then(function () {
+          btn.textContent = '✅ Copiado!';
+          btn.classList.add('copiado');
+          setTimeout(function () {
+            btn.textContent = textoOriginal;
+            btn.classList.remove('copiado');
+          }, 2500);
+        }).catch(function () {
+          btn.textContent = '⚠️ Toque na chave e copie manualmente';
+          setTimeout(function () {
+            btn.textContent = textoOriginal;
+          }, 3000);
+        });
+      });
+    })();
+  </script>
 </body>
 </html>

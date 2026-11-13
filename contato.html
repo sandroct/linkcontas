@@ -26,48 +26,89 @@
     .contato-box strong { color: var(--cor-texto); }
     .prazo-resposta { font-size: 0.88rem; color: var(--cor-suave); margin-top: 12px; margin-bottom: 0; padding-top: 12px; border-top: 1px dashed #e2e8f0; }
 
-    /* Campo do Pix */
-    .pix-campo {
-      background: #ffffff;
-      border: 2px dashed var(--cor-primaria);
-      border-radius: 12px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-    .pix-campo > strong { color: var(--cor-texto); font-size: 1rem; display: block; margin-bottom: 4px; }
-    .pix-chave-wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 8px; }
-    .pix-chave {
-      font-family: 'Consolas', 'Courier New', monospace;
-      font-size: 0.95rem;
-      background: #f1f5f9;
+    /* ===== Formulário de feedback (estilo chat) ===== */
+    .feedback-form { margin-top: 14px; }
+    .campo { margin-bottom: 16px; }
+    .campo label { display: block; font-size: 0.92rem; font-weight: 600; color: var(--cor-texto); margin-bottom: 6px; }
+    .campo input,
+    .campo textarea {
+      width: 100%;
+      padding: 13px 14px;
       border: 1px solid var(--borda);
-      border-radius: 8px;
-      padding: 12px 14px;
-      word-break: break-all;
-      flex: 1;
-      min-width: 220px;
+      border-radius: 10px;
+      font-family: inherit;
+      font-size: 0.98rem;
       color: var(--cor-texto);
-      user-select: all;
+      background: #f8fafc;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
     }
-    .btn-copiar {
-      background: var(--cor-sucesso);
+    .campo input:focus,
+    .campo textarea:focus {
+      outline: none;
+      border-color: var(--cor-primaria);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+      background: #ffffff;
+    }
+    .campo textarea { resize: vertical; min-height: 110px; }
+    .btn-enviar-feedback {
+      background: var(--cor-primaria);
       color: #fff;
       border: none;
       border-radius: 10px;
-      padding: 14px 20px;
+      padding: 15px 26px;
       font-size: 1rem;
       font-weight: 700;
       font-family: inherit;
       cursor: pointer;
       transition: all 0.2s ease;
-      box-shadow: 0 4px 10px rgba(22, 163, 74, 0.25);
+      box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
       touch-action: manipulation;
       -webkit-tap-highlight-color: transparent;
     }
-    .btn-copiar:hover { background: #15803d; transform: scale(1.04); }
-    .btn-copiar:active { transform: scale(0.97); }
-    .btn-copiar.copiado { background: #0f766e; box-shadow: 0 4px 10px rgba(15, 118, 110, 0.25); }
-    .pix-dica { display: block; margin-top: 12px; font-size: 0.85rem; color: var(--cor-suave); }
+    .btn-enviar-feedback:hover { background: #1d4ed8; transform: scale(1.03); }
+    .btn-enviar-feedback:active { transform: scale(0.97); }
+    .feedback-aviso { font-size: 0.85rem; color: var(--cor-suave); margin-top: 10px; margin-bottom: 0; }
+
+    .chat-box {
+      margin-top: 22px;
+      border-top: 1px solid var(--borda);
+      padding-top: 20px;
+    }
+    .chat-titulo { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+    .chat-contador { font-size: 0.82rem; color: var(--cor-suave); background: #f1f5f9; border: 1px solid var(--borda); border-radius: 999px; padding: 4px 12px; }
+    .chat-lista { margin-top: 14px; display: flex; flex-direction: column; gap: 12px; max-height: 380px; overflow-y: auto; padding-right: 4px; }
+    .chat-vazio { font-size: 0.9rem; color: var(--cor-suave); font-style: italic; padding: 12px 4px; }
+    .chat-msg {
+      max-width: 92%;
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 14px 14px 14px 4px;
+      padding: 12px 14px;
+      animation: chatIn 0.3s ease;
+    }
+    .chat-msg-topo { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 4px; }
+    .chat-msg-nome { font-weight: 700; font-size: 0.9rem; color: #1e40af; }
+    .chat-msg-data { font-size: 0.75rem; color: var(--cor-suave); white-space: nowrap; }
+    .chat-msg-assunto { font-size: 0.85rem; font-weight: 600; color: var(--cor-texto); margin-bottom: 4px; }
+    .chat-msg-texto { font-size: 0.92rem; color: #334155; word-break: break-word; white-space: pre-wrap; }
+    .feedback-sucesso {
+      display: none;
+      margin-top: 14px;
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      color: #15803d;
+      border-radius: 10px;
+      padding: 12px 16px;
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+    .feedback-sucesso.visivel { display: block; animation: chatIn 0.3s ease; }
+    .erro-campo { border-color: #dc2626 !important; }
+
+    @keyframes chatIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
 
     .voltar { display: inline-block; margin-top: 30px; color: var(--cor-suave); font-size: 0.9rem; }
     .voltar:hover { color: var(--cor-primaria); }
@@ -75,8 +116,7 @@
     @media (max-width: 480px) {
       body { padding: 12px; }
       .container { padding: 28px 20px; }
-      .pix-chave { min-width: 100%; }
-      .btn-copiar { width: 100%; }
+      .chat-msg { max-width: 100%; }
     }
   </style>
 </head>
@@ -94,16 +134,33 @@
       <p class="prazo-resposta">Respondemos em até 3 dias úteis.</p>
     </div>
 
-    <h2>Apoie o projeto ☕</h2>
-    <p>O LinkContas é gratuito. Se ele te ajudou, considere fazer uma doação via Pix. Funciona de qualquer banco (Itaú, Nubank, Bradesco, etc.) — basta copiar a chave e colar no app do seu banco.</p>
+    <h2>💬 Deixe seu feedback</h2>
+    <p>Conte o que achou do site, sugira melhorias ou avise se algo não funcionou. Leva menos de um minuto:</p>
 
-    <div class="pix-campo">
-      <strong>Chave Pix aleatória (doações/apoio)</strong>
-      <div class="pix-chave-wrap">
-        <code id="pix-chave" class="pix-chave">a5dccde0-8045-4dbd-89b4-905b4e44701c</code>
-        <button id="btn-copiar-pix" class="btn-copiar" type="button">📋 Copiar chave</button>
+    <form class="feedback-form" id="feedback-form" novalidate>
+      <div class="campo">
+        <label for="fb-nome">Seu nome</label>
+        <input type="text" id="fb-nome" maxlength="60" placeholder="Como devemos te chamar?" autocomplete="name">
       </div>
-      <small class="pix-dica">Chave aleatória — aceita transferência de qualquer banco. Toque em "Copiar chave", abra o app do seu banco, escolha Pix → Colar e pronto! Qualquer valor é bem-vindo. Obrigado! 💙</small>
+      <div class="campo">
+        <label for="fb-assunto">Assunto</label>
+        <input type="text" id="fb-assunto" maxlength="100" placeholder="Ex: sugestão, elogio, problema em um link...">
+      </div>
+      <div class="campo">
+        <label for="fb-texto">Descrição</label>
+        <textarea id="fb-texto" maxlength="2000" placeholder="Escreva sua mensagem aqui..."></textarea>
+      </div>
+      <button type="submit" class="btn-enviar-feedback" id="btn-enviar">💬 Enviar feedback</button>
+      <div class="feedback-sucesso" id="feedback-sucesso" role="status">✅ Feedback enviado! Obrigado por ajudar a melhorar o LinkContas. 💙</div>
+      <p class="feedback-aviso">As mensagens ficam salvas neste navegador e são apagadas automaticamente após 30 dias.</p>
+    </form>
+
+    <div class="chat-box">
+      <div class="chat-titulo">
+        <h2 style="margin: 0;">Mensagens recentes</h2>
+        <span class="chat-contador" id="chat-contador">0 mensagens</span>
+      </div>
+      <div class="chat-lista" id="chat-lista" aria-live="polite"></div>
     </div>
 
     <a href="index.html" class="voltar">← Voltar ao site</a>
@@ -111,45 +168,136 @@
 
   <script>
     (function () {
-      var btn = document.getElementById('btn-copiar-pix');
-      var campo = document.getElementById('pix-chave');
-      var textoOriginal = btn.textContent;
+      var CHAVE_STORAGE = 'linkcontas-feedbacks';
+      var TRINTA_DIAS_MS = 30 * 24 * 60 * 60 * 1000;
+      var LIMITE_MSGS = 100;
 
-      function copiar(texto) {
-        // Tenta a API moderna primeiro
-        if (navigator.clipboard && window.isSecureContext) {
-          return navigator.clipboard.writeText(texto);
-        }
-        // Alternativa para navegadores antigos
-        return new Promise(function (resolve, reject) {
-          var temp = document.createElement('textarea');
-          temp.value = texto;
-          temp.style.position = 'fixed';
-          temp.style.opacity = '0';
-          document.body.appendChild(temp);
-          temp.select();
-          try { document.execCommand('copy'); resolve(); }
-          catch (e) { reject(e); }
-          document.body.removeChild(temp);
-        });
+      // Gancho opcional: se um dia quiser receber os feedbacks por e-mail
+      // (ex: cadastro gratuito no Formspree), coloque a URL do endpoint aqui
+      // e as mensagens passarao a ser enviadas tambem para o seu e-mail.
+      // var FORM_ENDPOINT = 'https://formspree.io/f/SEU_ID';
+      var FORM_ENDPOINT = null;
+
+      var form = document.getElementById('feedback-form');
+      var inputNome = document.getElementById('fb-nome');
+      var inputAssunto = document.getElementById('fb-assunto');
+      var inputTexto = document.getElementById('fb-texto');
+      var avisoSucesso = document.getElementById('feedback-sucesso');
+      var lista = document.getElementById('chat-lista');
+      var contador = document.getElementById('chat-contador');
+      var textoBotao = document.getElementById('btn-enviar').textContent;
+
+      function agora() { return Date.now(); }
+
+      function carregar() {
+        try {
+          var dados = JSON.parse(localStorage.getItem(CHAVE_STORAGE) || '[]');
+          if (!Array.isArray(dados)) return [];
+          return dados.filter(function (m) { return m && m.ts && typeof m.ts === 'number'; });
+        } catch (e) { return []; }
       }
 
-      btn.addEventListener('click', function () {
-        var chave = campo.textContent.trim();
-        copiar(chave).then(function () {
-          btn.textContent = '✅ Copiado!';
-          btn.classList.add('copiado');
-          setTimeout(function () {
-            btn.textContent = textoOriginal;
-            btn.classList.remove('copiado');
-          }, 2500);
-        }).catch(function () {
-          btn.textContent = '⚠️ Toque na chave e copie manualmente';
-          setTimeout(function () {
-            btn.textContent = textoOriginal;
-          }, 3000);
-        });
+      function salvar(msgs) {
+        try { localStorage.setItem(CHAVE_STORAGE, JSON.stringify(msgs)); } catch (e) { /* memoria cheia */ }
+      }
+
+      // Remove automaticamente mensagens com mais de 30 dias
+      function limparAntigos(msgs) {
+        var limite = agora() - TRINTA_DIAS_MS;
+        var recentes = msgs.filter(function (m) { return m.ts >= limite; });
+        if (recentes.length !== msgs.length) { salvar(recentes); }
+        return recentes;
+      }
+
+      function formatarData(ts) {
+        var d = new Date(ts);
+        var dia = String(d.getDate()).padStart(2, '0');
+        var mes = String(d.getMonth() + 1).padStart(2, '0');
+        var hora = String(d.getHours()).padStart(2, '0');
+        var min = String(d.getMinutes()).padStart(2, '0');
+        return dia + '/' + mes + ' ' + hora + ':' + min;
+      }
+
+      function escapar(txt) {
+        var div = document.createElement('div');
+        div.textContent = txt;
+        return div.innerHTML;
+      }
+
+      function renderizar(msgs) {
+        lista.innerHTML = '';
+        if (msgs.length === 0) {
+          lista.innerHTML = '<div class="chat-vazio">Nenhuma mensagem ainda. Seja o primeiro a deixar um feedback! 💬</div>';
+        } else {
+          msgs.slice().reverse().forEach(function (m) {
+            var item = document.createElement('div');
+            item.className = 'chat-msg';
+            item.innerHTML =
+              '<div class="chat-msg-topo">' +
+                '<span class="chat-msg-nome">' + escapar(m.nome) + '</span>' +
+                '<span class="chat-msg-data">' + formatarData(m.ts) + '</span>' +
+              '</div>' +
+              '<div class="chat-msg-assunto">' + escapar(m.assunto) + '</div>' +
+              '<div class="chat-msg-texto">' + escapar(m.texto) + '</div>';
+            lista.appendChild(item);
+          });
+        }
+        contador.textContent = msgs.length + (msgs.length === 1 ? ' mensagem' : ' mensagens');
+      }
+
+      function marcarErro(campo, temErro) {
+        campo.classList.toggle('erro-campo', temErro);
+      }
+
+      [inputNome, inputAssunto, inputTexto].forEach(function (c) {
+        c.addEventListener('input', function () { marcarErro(c, false); });
       });
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        var nome = inputNome.value.trim();
+        var assunto = inputAssunto.value.trim();
+        var texto = inputTexto.value.trim();
+
+        marcarErro(inputNome, !nome);
+        marcarErro(inputAssunto, !assunto);
+        marcarErro(inputTexto, !texto);
+
+        if (!nome || !assunto || !texto) {
+          if (!nome) inputNome.focus();
+          else if (!assunto) inputAssunto.focus();
+          else inputTexto.focus();
+          return;
+        }
+
+        var msgs = limparAntigos(carregar());
+        msgs.push({ nome: nome, assunto: assunto, texto: texto, ts: agora() });
+        if (msgs.length > LIMITE_MSGS) { msgs = msgs.slice(-LIMITE_MSGS); }
+        salvar(msgs);
+        renderizar(msgs);
+
+        // Envio opcional para e-mail (se FORM_ENDPOINT estiver configurado)
+        if (FORM_ENDPOINT) {
+          fetch(FORM_ENDPOINT, {
+            method: 'POST',
+            headers: { 'Accept': 'application/json' },
+            body: JSON.stringify({ nome: nome, assunto: assunto, mensagem: texto })
+          }).catch(function () { /* silencioso: msg ja foi salva localmente */ });
+        }
+
+        form.reset();
+        avisoSucesso.classList.add('visivel');
+        var botao = document.getElementById('btn-enviar');
+        botao.textContent = '✅ Enviado!';
+        setTimeout(function () {
+          botao.textContent = textoBotao;
+          avisoSucesso.classList.remove('visivel');
+        }, 4000);
+      });
+
+      // Ao abrir a pagina: limpa antigos e mostra as mensagens dos ultimos 30 dias
+      renderizar(limparAntigos(carregar()));
     })();
   </script>
 </body>
