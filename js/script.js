@@ -300,6 +300,7 @@ const iconeTema = document.querySelector('.icone-tema');
 
 let categoriaAtiva = 'todos';
 let termoBusca = '';
+let termoBuscaExibicao = '';
 
 // ========== TEMA CLARO / ESCURO ==========
 
@@ -357,16 +358,27 @@ function renderCategorias() {
   });
 }
 
+// Normaliza texto para busca: minúsculas, sem acentos, sem espaços extras
+function normalizarBusca(txt) {
+  return String(txt)
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .trim();
+}
+
 function renderEmpresas() {
   const filtradas = empresas.filter(emp => {
     const matchCategoria = categoriaAtiva === 'todos' || emp.categoria === categoriaAtiva;
-    const matchBusca = emp.nome.toLowerCase().includes(termoBusca) ||
-                       emp.descricao.toLowerCase().includes(termoBusca);
+    const alvo = normalizarBusca(
+      `${emp.nome} ${emp.descricao} ${emp.sigla || ''} ${emp.categoria || ''}`
+    );
+    const matchBusca = !termoBusca || alvo.includes(termoBusca);
     return matchCategoria && matchBusca;
   });
 
   contagem.textContent = `${filtradas.length} empresa${filtradas.length !== 1 ? 's' : ''}`;
-  tituloLista.textContent = termoBusca ? `Resultados para "${termoBusca}"` : 'Empresas';
+  tituloLista.textContent = termoBuscaExibicao ? `Resultados para "${termoBuscaExibicao}"` : 'Empresas';
 
   if (filtradas.length === 0) {
     grid.innerHTML = `
@@ -427,7 +439,8 @@ function renderEmpresas() {
 // ========== EVENTOS ==========
 
 busca.addEventListener('input', (e) => {
-  termoBusca = e.target.value.toLowerCase().trim();
+  termoBuscaExibicao = e.target.value.trim();
+  termoBusca = normalizarBusca(e.target.value);
   renderEmpresas();
 });
 

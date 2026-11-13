@@ -2,6 +2,16 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <!-- Aplica o tema ANTES da renderizacao (evita flash claro no tema escuro) -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('linkcontas-tema') ||
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'escuro' : 'claro');
+        if (t === 'escuro') document.documentElement.setAttribute('data-tema', 'escuro');
+      } catch (e) {}
+    })();
+  </script>
   <!-- Google Tag Manager -->
   <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-KTZBMW3W"></script>
   <script>
@@ -28,7 +38,7 @@
   <meta property="og:title" content="Light: 2ª via e pagamento da conta de luz | LinkContas">
   <meta property="og:description" content="Passo a passo simples para tirar a 2ª via e pagar a conta de luz da Light no Rio de Janeiro pelo site oficial. Feito para idosos, com dicas contra golpe.">
   <meta property="og:type" content="article">
-  <link rel="stylesheet" href="css/style.css?v=7">
+  <link rel="stylesheet" href="css/style.css?v=8">
   <link rel="stylesheet" href="css/pagina-empresa.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="js/contador.js"></script>

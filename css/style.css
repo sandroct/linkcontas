@@ -1506,3 +1506,100 @@ body { -webkit-tap-highlight-color: transparent; }
   .skeleton-linha { animation: none; }
   html { scroll-behavior: auto; }
 }
+
+/* =====================================
+   TIPOGRAFIA DISPLAY — Sora nos títulos
+   ===================================== */
+h1, h2, h3, h4,
+.hero-texto h1,
+.secao-titulo-ico,
+.empresas-header h2,
+.estatisticas h2 {
+  font-family: 'Sora', 'Inter', sans-serif;
+  letter-spacing: -0.02em;
+}
+h1 { font-weight: 800; }
+h2 { font-weight: 700; }
+h3, h4 { font-weight: 600; }
+
+/* =====================================
+   COMO FUNCIONA — 3 passos
+   ===================================== */
+.como-funciona {
+  padding: 48px 0 12px;
+}
+.como-funciona h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 28px;
+}
+.passos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.passo {
+  position: relative;
+  background: var(--cor-card);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--radius);
+  padding: 24px 20px 22px;
+  text-align: center;
+  transition: transform var(--transicao), box-shadow var(--transicao), border-color var(--transicao);
+}
+.passo:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--sombra-hover);
+  border-color: var(--cor-primaria);
+}
+.passo-numero {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--cor-primaria);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Sora', sans-serif;
+}
+.passo-ico {
+  width: 52px;
+  height: 52px;
+  margin: 6px auto 12px;
+  border-radius: 14px;
+  background: var(--cor-primaria-suave);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.passo-ico svg {
+  width: 26px;
+  height: 26px;
+  stroke: var(--cor-primaria);
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.passo h3 {
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+  color: var(--cor-texto);
+}
+.passo p {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--cor-texto-suave);
+  margin: 0;
+}
+@media (max-width: 700px) {
+  .passos { grid-template-columns: 1fr; gap: 22px; }
+  .como-funciona { padding-top: 36px; }
+}

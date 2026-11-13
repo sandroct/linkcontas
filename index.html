@@ -2,6 +2,16 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <!-- Aplica o tema ANTES da renderização (evita flash claro no tema escuro) -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('linkcontas-tema') ||
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'escuro' : 'claro');
+        if (t === 'escuro') document.documentElement.setAttribute('data-tema', 'escuro');
+      } catch (e) {}
+    })();
+  </script>
   <!-- Google Tag Manager -->
   <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-KTZBMW3W"></script>
   <script>
@@ -28,8 +38,8 @@
   <meta property="og:title" content="LinkContas — Suas contas em um só lugar">
   <meta property="og:description" content="Encontre rapidamente os sites oficiais para pagar suas contas de luz, água, telefone, internet e mais.">
   <meta property="og:type" content="website">
-  <link rel="stylesheet" href="css/style.css?v=7">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=8">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="header">
@@ -125,6 +135,33 @@
     <div class="ad-slot ad-topo">
       <div class="ad-placeholder"><script>ezstandalone.cmd.push(function () { ezstandalone.showAds(); });</script></div>
     </div>
+
+    <!-- Como funciona -->
+    <section class="como-funciona reveal">
+      <div class="container">
+        <h2 class="secao-titulo-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Como funciona</h2>
+        <div class="passos">
+          <div class="passo">
+            <span class="passo-numero">1</span>
+            <div class="passo-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div>
+            <h3>Busque</h3>
+            <p>Digite o nome da empresa ou escolha uma categoria: luz, água, telefone, internet e consultas.</p>
+          </div>
+          <div class="passo">
+            <span class="passo-numero">2</span>
+            <div class="passo-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></div>
+            <h3>Clique</h3>
+            <p>Abra o link oficial da empresa em uma nova aba — você não perde esta página.</p>
+          </div>
+          <div class="passo">
+            <span class="passo-numero">3</span>
+            <div class="passo-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/><path d="M6 15h4"/></svg></div>
+            <h3>Pague no site oficial</h3>
+            <p>Faça o pagamento direto no site da concessionária, com segurança.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Categorias -->
     <section class="categorias reveal">
@@ -232,7 +269,7 @@
   </section>
 
   <script src="js/contador.js?v=2"></script>
-  <script src="js/script.js?v=4"></script>
+  <script src="js/script.js?v=5"></script>
   <script src="js/relogio.js?v=1"></script>
 </body>
 </html>
