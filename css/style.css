@@ -1203,7 +1203,7 @@ body { -webkit-tap-highlight-color: transparent; }
   background: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 8px;
-  color: #ffffff;
+  color: #16233f;
   margin-left: 12px;
 }
 
@@ -1221,20 +1221,24 @@ body { -webkit-tap-highlight-color: transparent; }
   white-space: nowrap;
 }
 
+/* Tema claro (padrão): relógio com texto escuro */
+:not([data-tema="escuro"]) .relogio {
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+:not([data-tema="escuro"]) .relogio-hora,
+:not([data-tema="escuro"]) .relogio-data {
+  color: #16233f;
+}
+
+/* Tema escuro: relógio com texto branco */
 [data-tema="escuro"] .relogio {
   background: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.2);
 }
-
 [data-tema="escuro"] .relogio-hora,
 [data-tema="escuro"] .relogio-data {
   color: #ffffff;
-}
-
-/* Tema claro (padrão): relógio com texto escuro para ficar visível */
-:not([data-tema="escuro"]) .relogio-hora,
-:not([data-tema="escuro"]) .relogio-data {
-  color: #16233f;
 }
 
 /* =====================================
