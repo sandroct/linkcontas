@@ -1040,7 +1040,7 @@ body { -webkit-tap-highlight-color: transparent; }
 }
 
 .btn-copiar-doacao {
-  background: var(--cor-sucesso);
+  background: #047857;
   color: #ffffff;
   border: none;
   border-radius: 10px;
@@ -1055,9 +1055,9 @@ body { -webkit-tap-highlight-color: transparent; }
   -webkit-tap-highlight-color: transparent;
 }
 
-.btn-copiar-doacao:hover { filter: brightness(1.1); transform: scale(1.04); }
+.btn-copiar-doacao:hover { background: #065f46; transform: scale(1.04); }
 .btn-copiar-doacao:active { transform: scale(0.97); }
-.btn-copiar-doacao.copiado { background: #0f766e; }
+.btn-copiar-doacao.copiado { background: #065f46; }
 
 .doacoes-dica {
   display: block;
