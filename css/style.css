@@ -7,6 +7,9 @@
 :root {
   --cor-primaria: #2563eb;
   --cor-primaria-hover: #1d4ed8;
+  /* Fundo dos botoes de acao: azul escuro para contraste AA com texto branco */
+  --cor-btn-fundo: #1d4ed8;
+  --cor-btn-fundo-hover: #1e40af;
   --cor-primaria-suave: #e3ecff;
   --cor-secundaria: #5d7099;
   --cor-sucesso: #16a34a;
@@ -29,6 +32,8 @@
 [data-tema="escuro"] {
   --cor-primaria: #638dff;
   --cor-primaria-hover: #8aa9ff;
+  --cor-btn-fundo: #1d4ed8;
+  --cor-btn-fundo-hover: #1e40af;
   --cor-primaria-suave: #1d2d68;
   --cor-secundaria: #93a5d4;
   --cor-sucesso: #34d399;
@@ -320,9 +325,9 @@ body {
 }
 
 .chip-categoria.ativo {
-  background: var(--cor-primaria);
+  background: var(--cor-btn-fundo);
   color: #fff;
-  border-color: var(--cor-primaria);
+  border-color: var(--cor-btn-fundo);
   box-shadow: 0 4px 8px rgba(37, 99, 235, 0.25);
 }
 
@@ -549,7 +554,7 @@ body {
 .btn-acessar {
   position: relative;
   z-index: 2;
-  background: var(--cor-primaria);
+  background: var(--cor-btn-fundo);
   color: #fff;
   text-decoration: none;
   padding: 14px 24px;
@@ -560,13 +565,13 @@ body {
   display: block;
   width: 100%;
   text-align: center;
-  border: 2px solid var(--cor-primaria);
+  border: 2px solid var(--cor-btn-fundo);
   box-shadow: 0 4px 8px rgba(37, 99, 235, 0.2);
 }
 
 .btn-acessar:hover {
-  background: var(--cor-primaria-hover);
-  border-color: var(--cor-primaria-hover);
+  background: var(--cor-btn-fundo-hover);
+  border-color: var(--cor-btn-fundo-hover);
   box-shadow: 0 6px 12px rgba(37, 99, 235, 0.3);
   transform: scale(1.03);
 }
