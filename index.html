@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
+<head>  <!-- Google Tag Manager -->
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-KTZBMW3W"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  </script>
+  <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <!-- Ezoic: scripts de privacidade (devem vir primeiro) -->
   <script data-cfasync="false" src="https://cmp.gatekeeperconsent.com/min.js"></script>
@@ -57,7 +64,10 @@
           <span class="icone-tema">🌙</span>
         </button>
         <a href="sobre.html" class="btn btn-outline">Sobre</a>
-        <div class="relogio" id="relogio" aria-label="Horário de Brasília">--:--:--</div>
+        <div class="relogio" id="relogio" aria-label="Horário e data de Brasília">
+          <span id="relogio-hora">--:--:--</span>
+          <span id="relogio-data">--/--/----</span>
+        </div>
       </div>
     </div>
   </header>
@@ -223,17 +233,24 @@
   <script src="js/contador.js"></script>
   <script src="js/script.js?v=3"></script>
   <script>
-    // Relógio com horário de Brasília (UTC-3, sem horário de verão no Brasil)
+    // Relógio com horário e data de Brasília (UTC-3, sem horário de verão no Brasil)
     (function () {
-      var el = document.getElementById('relogio');
-      if (!el) return;
+      var elHora = document.getElementById('relogio-hora');
+      var elData = document.getElementById('relogio-data');
+      if (!elHora || !elData) return;
+      var meses = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun',
+                   'jul', 'ago', 'set', 'out', 'nov', 'dez'];
       function atualizar() {
         var agora = new Date();
         var br = new Date(agora.toLocaleString('en-US', { timeZone: 'America/Sao_Paulo' }));
         var h = String(br.getHours()).padStart(2, '0');
         var m = String(br.getMinutes()).padStart(2, '0');
         var s = String(br.getSeconds()).padStart(2, '0');
-        el.textContent = h + ':' + m + ':' + s;
+        var d = String(br.getDate()).padStart(2, '0');
+        var mes = meses[br.getMonth()];
+        var ano = br.getFullYear();
+        elHora.textContent = h + ':' + m + ':' + s;
+        elData.textContent = d + '/' + mes + '/' + ano;
       }
       atualizar();
       setInterval(atualizar, 1000);

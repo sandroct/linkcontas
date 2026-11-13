@@ -7,10 +7,8 @@
    ===================================== */
 
 // ---------------- CONFIGURAÇÃO ----------------
-// ⚠️ ATENÇÃO: Para ativar a contagem global real, crie uma conta gratuita em
-// https://analytics.google.com, crie uma propriedade GA4 para linkcontas.com.br
-// e cole aqui o Measurement ID (formato G-XXXXXXXXXX).
-const GA_MEASUREMENT_ID = ''; // ex: 'G-1234567890'
+// Measurement ID do Google Analytics 4 (GA4) — LinkContas
+const GA_MEASUREMENT_ID = 'G-252SNCK2VK';
 
 // ---------------- CONTAGEM LOCAL (apenas exibição na tela) ----------------
 const STORAGE_VISITAS = 'linkcontas-visitas';
@@ -48,32 +46,30 @@ function obterTodosCliquesLocal() {
   catch (e) { return {}; }
 }
 
-// ---------------- CONTAGEM GLOBAL (Google Analytics 4) ----------------
+// ---------------- CONTAGEM GLOBAL (Google Analytics 4 via GTM) ----------------
+// O container GTM (GTM-KTZBMW3W) já está injetado em todas as páginas,
+// então o gtag está disponível globalmente. Só precisamos enviar os eventos.
 function carregarGoogleAnalytics() {
-  if (!GA_MEASUREMENT_ID) return; // não configurado; ignora
+  if (!GA_MEASUREMENT_ID) return;
 
-  // Inseri o script gtag dinamicamente
-  const script = document.createElement('script');
-  script.async = true;
-  script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
-  document.head.appendChild(script);
-
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){ window.dataLayer.push(arguments); }
-  window.gtag = gtag;
-  gtag('js', new Date());
-  gtag('config', GA_MEASUREMENT_ID);
-
-  // Registra visita de página
-  gtag('event', 'page_view', {
-    page_title: document.title,
-    page_location: window.location.href
-  });
+  // Aguarda o gtag estar disponível (injetado pelo GTM)
+  function tentarEnviar() {
+    if (typeof gtag !== 'undefined') {
+      gtag('config', GA_MEASUREMENT_ID);
+      gtag('event', 'page_view', {
+        page_title: document.title,
+        page_location: window.location.href
+      });
+    } else {
+      setTimeout(tentarEnviar, 300);
+    }
+  }
+  tentarEnviar();
 }
 
-// Registra clique em empresa (envia para o GA global)
+// Registra clique em empresa (envia para o GA global via GTM)
 function registrarCliqueGlobal(idEmpresa, nomeEmpresa) {
-  if (!GA_MEASUREMENT_ID || typeof gtag === 'undefined') return;
+  if (typeof gtag === 'undefined') return;
   gtag('event', 'clique_empresa', {
     empresa_id: idEmpresa,
     empresa_nome: nomeEmpresa
