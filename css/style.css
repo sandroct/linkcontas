@@ -1226,6 +1226,17 @@ body { -webkit-tap-highlight-color: transparent; }
   border-color: rgba(255, 255, 255, 0.2);
 }
 
+[data-tema="escuro"] .relogio-hora,
+[data-tema="escuro"] .relogio-data {
+  color: #ffffff;
+}
+
+/* Tema claro (padrão): relógio com texto escuro para ficar visível */
+:not([data-tema="escuro"]) .relogio-hora,
+:not([data-tema="escuro"]) .relogio-data {
+  color: #16233f;
+}
+
 /* =====================================
    RESPONSIVIDADE AVANÇADA
    Garante que nada seja cortado em celular
