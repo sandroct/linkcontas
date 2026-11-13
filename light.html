@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>  <!-- Google Tag Manager -->
+<head>
+  <meta charset="UTF-8">
+  <!-- Google Tag Manager -->
   <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-KTZBMW3W"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -26,33 +28,10 @@
   <link rel="stylesheet" href="css/style.css?v=6">
   <link rel="stylesheet" href="css/pagina-empresa.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      { "@type": "Question", "name": "Como tirar a segunda via da conta de luz da Light?", "acceptedAnswer": { "@type": "Answer", "text": "Entre na Agência Virtual da Light pelo botão desta página, faca seu acesso com CPF e senha e procure por Minhas contas ou Faturas. Lá está a conta do mês com opção de pagamento por Pix ou boleto." } },
-      { "@type": "Question", "name": "Posso pagar a conta da Light com Pix?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. Dentro da area do cliente, ao escolher Pagar agora, aparece a opção Pix. Você copia o código e cola no aplicativo do seu banco. Antes de confirmar, confira se o nome do recebedor e o nome oficial da Light." } },
-      { "@type": "Question", "name": "Não sei o número do cliente. O que faco?", "acceptedAnswer": { "@type": "Answer", "text": "O número do cliente fica na parte de cima da conta antiga. Se não tiver a conta em mãos, entre no site com o CPF ou ligue para o atendimento oficial. A Light ajuda a localizar a conta pelo endereço." } },
-      { "@type": "Question", "name": "A conta atrasada corta a energia?", "acceptedAnswer": { "@type": "Answer", "text": "Sim, depois de algum tempo a conta atrasada pode levar ao corte, e a religação tem taxa. Se estiver atrasada, fale com a Light pelos canais oficiais rapidamente, pois muitas vezes da para negociar." } },
-      { "@type": "Question", "name": "Este site e a Light?", "acceptedAnswer": { "@type": "Answer", "text": "Não. O LinkContas e um site independente que organiza os links oficiais das empresas. Não somos a Light, não cobramos nada e não pedimos seus dados bancarios." } }
-    ]
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://linkcontas.com.br/" },
-      { "@type": "ListItem", "position": 2, "name": "Energia", "item": "https://linkcontas.com.br/#categorias" },
-      { "@type": "ListItem", "position": 3, "name": "Light" }
-    ]
-  }
-  </script>
-<script src="js/contador.js"></script>
+  <script src="js/contador.js"></script>
   </head>
-<body>  <header class="header">
+<body>
+  <header class="header">
     <div class="container header-inner">
       <a class="logo" href="index.html" style="text-decoration:none">
         <span class="logo-icon">
@@ -74,9 +53,13 @@
       </a>
       <div class="user-actions">
         <button id="tema-toggle" class="btn-tema" aria-label="Alternar tema claro/escuro" title="Alternar tema">
-          <span class="icone-tema">&#127769;</span>
+          <span class="icone-tema">🌙</span>
         </button>
         <a href="sobre.html" class="btn btn-outline">Sobre</a>
+        <div class="relogio" id="relogio" aria-label="Horário e data de Brasília">
+          <span id="relogio-hora">--:--:--</span>
+          <span id="relogio-data">--/--/----</span>
+        </div>
       </div>
     </div>
   </header>
@@ -91,102 +74,216 @@
     </nav>
 
     <article class="artigo">
-      <h1>Light: como tirar a 2ª via e pagar sua conta com segurança</h1>
-      <span class="atualização">&#128197; Página atualizada em 13 de novembro de 2026</span>
-      <p>Se você mora no Rio de Janeiro e recebe a conta de luz da Light, esta página e para você. Aqui você encontra o caminho certo e seguro para entrar no site oficial da Light e pagar sua conta sem susto e sem fila.</p>
-      <p>A Light cuida da energia de boa parte da cidade do Rio de Janeiro. Nos vamos te mostrar, em palavras simples, o que você precisa ter em mãos e quais telas você vai encontrar. Só o botão verde desta página leva você ao lugar certo.</p>
-      <a class="cta-principal" data-empresa="light" href="https://agenciavirtual.light.com.br/portal/" target="_blank" rel="noopener noreferrer">
-        &#9889; Ir para o site oficial da Light
-      </a>
-      <p class="cta-nota">O botão abre uma nova aba, para você não perder esta página.</p><p class="app-nota">Baixe o app oficial da empresa na loja do seu celular. Gratuito e oficial.</p>
+      <div class="empresa-cabecalho">
+        <div class="empresa-badge">
+          <span class="badge-energia">⚡ Energia Elétrica</span>
+        </div>
+        <h1>Light: como tirar a 2ª via e pagar sua conta com segurança</h1>
+        <span class="atualização">&#128197; Página atualizada em 13 de novembro de 2026</span>
+        <p class="lead">Se você mora no Rio de Janeiro e recebe a conta de luz da Light, esta página e para você. Aqui você encontra o caminho certo e seguro para entrar no site oficial da Light e pagar sua conta sem susto e sem fila.</p>
+      </div>
+
+      <div class="cta-wrapper">
+        <a class="cta-principal" data-empresa="light" href="https://agenciavirtual.light.com.br/portal/" target="_blank" rel="noopener noreferrer">
+          &#9889; Ir para o site oficial da Light
+        </a>
+        <p class="cta-nota">O botão abre uma nova aba, para você não perder esta página.</p>
       </div>
 
       <div class="obs-box">
-        <p><strong>Observacao importante:</strong> Se você mudou de endereço ha pouco tempo, a conta pode estar no nome de quem morava antes. Nesse caso, o atendimento oficial precisa atualizar o titular antes do primeiro acesso.</p>
+        <div class="obs-icone">⚠️</div>
+        <div class="obs-conteudo">
+          <strong>Observação importante:</strong>
+          <span>Se você mudou de endereço ha pouco tempo, a conta pode estar no nome de quem morava antes. Nesse caso, o atendimento oficial precisa atualizar o titular antes do primeiro acesso.</span>
+        </div>
       </div>
+
       <h2>O que você precisa ter em mãos antes de clicar</h2>
       <p>Separe estas informações. Assim você resolve tudo em poucos minutos, sem levantar para procurar papel:</p>
-      <ul>
-        <li><strong>O CPF do titular.</strong> A pessoa cujo nome está escrito na conta de luz.</li>
-        <li><strong>O número do cliente.</strong> Fica na parte de cima da conta, geralmente com 9 digitos, proximo do nome.</li>
-        <li><strong>Um e-mail ou celular.</strong> Para criar seu acesso na primeira vez e recuperar a senha se esquecer.</li>
-        <li><strong>A conta do mês passado.</strong> Para conferir se o consumo e o valor estao parecidos com os de sempre.</li>
-      </ul>
 
-      <h2>Passo a passo facil para tirar e pagar a conta</h2>
+      <div class="documentos-grid">
+        
+        <div class="doc-card">
+          <div class="doc-icone">📄</div>
+          <div class="doc-texto">
+            <strong>O CPF do titular.</strong>
+            <span>A pessoa cujo nome está escrito na conta de luz.</span>
+          </div>
+        </div>
+
+        <div class="doc-card">
+          <div class="doc-icone">📄</div>
+          <div class="doc-texto">
+            <strong>O número do cliente.</strong>
+            <span>Fica na parte de cima da conta, geralmente com 9 digitos, proximo do nome.</span>
+          </div>
+        </div>
+
+        <div class="doc-card">
+          <div class="doc-icone">📄</div>
+          <div class="doc-texto">
+            <strong>Um e-mail ou celular.</strong>
+            <span>Para criar seu acesso na primeira vez e recuperar a senha se esquecer.</span>
+          </div>
+        </div>
+
+        <div class="doc-card">
+          <div class="doc-icone">📄</div>
+          <div class="doc-texto">
+            <strong>A conta do mês passado.</strong>
+            <span>Para conferir se o consumo e o valor estao parecidos com os de sempre.</span>
+          </div>
+        </div>
+      </div>
+
+      <h2>Passo a passo fácil para tirar e pagar a conta</h2>
       <p>Siga estas etapas com calma. São poucos passos e você pode voltar nesta página quantas vezes quiser:</p>
-      <ol>
-        <li>Clique no botão verde no alto desta página. Ele abre a <strong>Agencia Virtual</strong> da Light, que é o site oficial da empresa.</li>
-        <li>Na tela de entrada, procure <strong>Entrar</strong> ou <strong>Primeiro acesso</strong>, no canto superior.</li>
-        <li>Se for a primeira vez, escolha <strong>Cadastrar</strong> e preencha seus dados. Você vai precisar do CPF e de um e-mail ou celular para criar uma senha.</li>
-        <li>Com o acesso feito, procure <strong>Minhas Contas</strong>, <strong>Faturas</strong> ou <strong>2ª via</strong>. Todas levam ao mesmo lugar.</li>
-        <li>Toque na conta do mês para ver o valor e a data de vencimento.</li>
-        <li>Para pagar, escolha <strong>Pagar agora</strong>. A Light oferece <strong>Pix</strong> (código para colar no aplicativo do banco) ou <strong>boleto</strong> (imprimir ou pagar pelo celular).</li>
-        <li>Pagou? A Light confirma em um ou dois dias. <strong>Guarde o comprovante.</strong></li>
-      </ol>
+
+      <div class="passos-grid">
+        
+        <div class="passo-card">
+          <span class="passo-numero">1</span>
+          <div class="passo-texto">Clique no botão verde no alto desta página. Ele abre a <strong>Agencia Virtual</strong> da Light, que é o site oficial da empresa.</div>
+        </div>
+
+        <div class="passo-card">
+          <span class="passo-numero">2</span>
+          <div class="passo-texto">Na tela de entrada, procure <strong>Entrar</strong> ou <strong>Primeiro acesso</strong>, no canto superior.</div>
+        </div>
+
+        <div class="passo-card">
+          <span class="passo-numero">3</span>
+          <div class="passo-texto">Se for a primeira vez, escolha <strong>Cadastrar</strong> e preencha seus dados. Você vai precisar do CPF e de um e-mail ou celular para criar uma senha.</div>
+        </div>
+
+        <div class="passo-card">
+          <span class="passo-numero">4</span>
+          <div class="passo-texto">Com o acesso feito, procure <strong>Minhas Contas</strong>, <strong>Faturas</strong> ou <strong>2ª via</strong>. Todas levam ao mesmo lugar.</div>
+        </div>
+
+        <div class="passo-card">
+          <span class="passo-numero">5</span>
+          <div class="passo-texto">Toque na conta do mês para ver o valor e a data de vencimento.</div>
+        </div>
+
+        <div class="passo-card">
+          <span class="passo-numero">6</span>
+          <div class="passo-texto">Para pagar, escolha <strong>Pagar agora</strong>. A Light oferece <strong>Pix</strong> (código para colar no aplicativo do banco) ou <strong>boleto</strong> (imprimir ou pagar pelo celular).</div>
+        </div>
+
+        <div class="passo-card">
+          <span class="passo-numero">7</span>
+          <div class="passo-texto">Pagou? A Light confirma em um ou dois dias. <strong>Guarde o comprovante.</strong></div>
+        </div>
+      </div>
 
       <h2>Outras formas oficiais de pedir a conta (WhatsApp e Telefone)</h2>
       <p>Se você prefere falar com uma pessoa, existem canais oficiais de atendimento:</p>
-      <div class="canal-oficial">
-        <p>&#9742; <strong>Telefone:</strong> 0800 021 0196 (SAC, 24 horas)</p>
-        <p>&#128172; <strong>WhatsApp:</strong> (21) 99981-6059 (assistente Lia)</p>
-        <p>&#128241; <strong>Aplicativo:</strong> procure pelo nome da empresa na loja de aplicativos do celular. E gratuito e oficial.</p>
+
+      <div class="canais-grid">
+        
+        <div class="canal-card">
+          <div class="canal-icone">📞</div>
+          <div class="canal-texto">
+            <strong>Telefone</strong>
+            <span>0800 021 0196 (SAC, 24 horas)</span>
+          </div>
+        </div>
+        <div class="canal-card">
+          <div class="canal-icone">💬</div>
+          <div class="canal-texto">
+            <strong>WhatsApp</strong>
+            <span>(21) 99981-6059 (assistente Lia)</span>
+          </div>
+        </div>
+        <div class="canal-card">
+          <div class="canal-icone">📱</div>
+          <div class="canal-texto">
+            <strong>Aplicativo</strong>
+            <span>Procure pelo nome da empresa na loja de aplicativos do celular. Gratuito e oficial.</span>
+          </div>
+        </div>
+    
       </div>
-      <p><strong>Atenção:</strong> a empresa <strong>nunca</strong> pede a senha do seu banco, nem por telefone, nem por WhatsApp. Se alguem pedir, desligue &mdash; e golpe.</p>
+
+      <div class="aviso-golpe">
+        <strong>Atenção:</strong> a empresa <strong>nunca</strong> pede a senha do seu banco, nem por telefone, nem por WhatsApp. Se alguém pedir, desligue — é golpe.
+      </div>
 
       <h2>Atenção: 3 dicas para não cair em golpe</h2>
-      <div class="alerta-golpe">
-        <p><strong>Confira o nome do recebedor.</strong> Antes de confirmar o Pix ou pagar o boleto, veja o nome que aparece. Deve ser o nome oficial da Light, e nunca o nome de uma pessoa.</p>
-        <p><strong>Nunca clique em links patrocinados.</strong> No Google, os primeiros as vezes são anuncios. Golpistas pagam para aparecer la. Use sempre o botão desta página.</p>
-        <p><strong>Desconfie de mensagens com urgência.</strong> Avisos de corte imediato com link para pagamento são, quase sempre, golpe. Confirme sempre entrando pelo site oficial.</p>
+
+      <div class="dicas-grid">
+        
+        <div class="dica-card">
+          <div class="dica-icone">✅</div>
+          <div class="dica-texto"><strong>Confira o nome do recebedor.</strong> Antes de confirmar o Pix ou pagar o boleto, veja o nome que aparece. Deve ser o nome oficial da Light, e nunca o nome de uma pessoa.</div>
+        </div>
+
+        <div class="dica-card">
+          <div class="dica-icone">🔗</div>
+          <div class="dica-texto"><strong>Nunca clique em links patrocinados.</strong> No Google, os primeiros as vezes são anuncios. Golpistas pagam para aparecer la. Use sempre o botão desta página.</div>
+        </div>
+
+        <div class="dica-card">
+          <div class="dica-icone">🚨</div>
+          <div class="dica-texto"><strong>Desconfie de mensagens com urgência.</strong> Avisos de corte imediato com link para pagamento são, quase sempre, golpe. Confirme sempre entrando pelo site oficial.</div>
+        </div>
       </div>
 
       <h2>Perguntas frequentes</h2>
       <div class="faq">
+        
         <details open>
           <summary>Como tirar a segunda via da conta de luz da Light?</summary>
           <p>Entre na Agência Virtual da Light pelo botão desta página, faca seu acesso com CPF e senha e procure por Minhas contas ou Faturas. Lá está a conta do mês com opção de pagamento por Pix ou boleto.</p>
         </details>
+
         <details>
           <summary>Posso pagar a conta da Light com Pix?</summary>
           <p>Sim. Dentro da area do cliente, ao escolher Pagar agora, aparece a opção Pix. Você copia o código e cola no aplicativo do seu banco. Antes de confirmar, confira se o nome do recebedor e o nome oficial da Light.</p>
         </details>
+
         <details>
           <summary>Não sei o número do cliente. O que faco?</summary>
           <p>O número do cliente fica na parte de cima da conta antiga. Se não tiver a conta em mãos, entre no site com o CPF ou ligue para o atendimento oficial. A Light ajuda a localizar a conta pelo endereço.</p>
         </details>
+
         <details>
           <summary>A conta atrasada corta a energia?</summary>
           <p>Sim, depois de algum tempo a conta atrasada pode levar ao corte, e a religação tem taxa. Se estiver atrasada, fale com a Light pelos canais oficiais rapidamente, pois muitas vezes da para negociar.</p>
         </details>
+
         <details>
           <summary>Este site e a Light?</summary>
           <p>Não. O LinkContas e um site independente que organiza os links oficiais das empresas. Não somos a Light, não cobramos nada e não pedimos seus dados bancarios.</p>
         </details>
       </div>
 
-            <div style="margin: 36px 0 8px;">
+      <div style="margin: 36px 0 8px;">
         <script>ezstandalone.cmd.push(function () { ezstandalone.showAds(); });</script>
       </div>
+
       <div class="ajudou" id="ajudou">
         <h3>Este artigo ajudou você?</h3>
-        <div class="ajudou-botões" id="ajudou-botões">
-          <button class="ajudou-btn" data-resposta="sim">&#128578; Sim, me ajudou</button>
-          <button class="ajudou-btn não" data-resposta="não">&#128533; Não, preciso de mais ajuda</button>
+        <div class="ajudou-botoes" id="ajudou-botoes">
+          <button class="ajudou-btn" data-resposta="sim">👍 Sim, me ajudou</button>
+          <button class="ajudou-btn não" data-resposta="não">👎 Não, preciso de mais ajuda</button>
         </div>
       </div>
 
       <div class="nav-empresas">
         <a href="index.html">&larr; Ver todas as empresas</a>
-        <a href="contato.html">Enviar sugestao ou dúvida &rarr;</a>
+        <a href="contato.html">Enviar sugestão ou dúvida &rarr;</a>
       </div>
     </article>
-  </div>  <footer class="footer">
+  </div>
+
+  <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-col">
         <h4>LinkContas</h4>
         <p>Central de links para os sites oficiais de empresas de contas de consumo.</p>
-        <p class="footer-lema">&#128153; Criando SITES E APPS para ajudar a populacao.<br>Fazer o bem e o meu lema.</p>
+        <p class="footer-lema">💙 Criando SITES E APPS para ajudar a população.<br>Fazer o bem é o meu lema.</p>
       </div>
       <div class="footer-col">
         <h4>Links</h4>
@@ -194,13 +291,13 @@
           <li><a href="index.html">Todas as empresas</a></li>
           <li><a href="sobre.html">Sobre</a></li>
           <li><a href="termos.html">Termos de Uso</a></li>
-          <li><a href="privacidade.html">Politica de Privacidade</a></li>
+          <li><a href="privacidade.html">Política de Privacidade</a></li>
           <li><a href="contato.html">Contato</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Aviso legal</h4>
-        <p>O LinkContas e um indicador de links. Não somos responsaveis pelos conteudos, valores ou serviços das empresas terceiras. Sempre confirme os dados no site oficial da concessionaria.</p>
+        <p>O LinkContas é um indicador de links. Não somos responsáveis pelos conteúdos, valores ou serviços das empresas terceiras. Sempre confirme os dados no site oficial da concessionária.</p>
       </div>
     </div>
     <div class="container">
@@ -217,40 +314,17 @@
       var tema = salvo || sistema;
       var html = document.documentElement;
       var icone = document.querySelector('.icone-tema');
-
       function aplicar(t) {
         if (t === 'escuro') { html.setAttribute('data-tema', 'escuro'); icone.textContent = '☀'; }
         else { html.removeAttribute('data-tema'); icone.textContent = '🌙'; }
       }
       aplicar(tema);
-
       document.getElementById('tema-toggle').addEventListener('click', function () {
         var escuro = html.getAttribute('data-tema') === 'escuro';
         if (escuro) { aplicar('claro'); localStorage.setItem('linkcontas-tema', 'claro'); }
         else { aplicar('escuro'); localStorage.setItem('linkcontas-tema', 'escuro'); }
-      });
+      };
     })();
-
-    (function () {
-      var box = document.getElementById('ajudou');
-      var botões = document.getElementById('ajudou-botões');
-      if (!box || !botões) return;
-      botões.querySelectorAll('.ajudou-btn').forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          var sim = btn.getAttribute('data-resposta') === 'sim';
-          botões.remove();
-          var msg = document.createElement('p');
-          msg.className = 'ajudou-obrigado';
-          msg.textContent = sim
-            ? 'Obrigado pelo seu feedback! Ficamos felizes em ajudar. 💙'
-            : 'Obrigado por avisar! Vamos melhorar. Se precisar, fale com a gente na página de Contato.';
-          box.appendChild(msg);
-        });
-      });
-    })();
-  </script>
-
-  <script>
     (function () {
       var btn = document.querySelector('.cta-principal');
       if (!btn) return;
@@ -260,7 +334,27 @@
         if (window.linkcontas && window.linkcontas.contador) {
           window.linkcontas.contador.cliqueEmpresa(idEmpresa, nomeEmpresa);
         }
-      });
+      };
+    })();
+    (function () {
+      var elHora = document.getElementById('relogio-hora');
+      var elData = document.getElementById('relogio-data');
+      if (!elHora || !elData) return;
+      var meses = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'];
+      function atualizar() {
+        var agora = new Date();
+        var br = new Date(agora.toLocaleString('en-US', { timeZone: 'America/Sao_Paulo' }));
+        var h = String(br.getHours()).padStart(2, '0');
+        var m = String(br.getMinutes()).padStart(2, '0');
+        var s = String(br.getSeconds()).padStart(2, '0');
+        var d = String(br.getDate()).padStart(2, '0');
+        var mes = meses[br.getMonth()];
+        var ano = br.getFullYear();
+        elHora.textContent = h + ':' + m + ':' + s;
+        elData.textContent = d + '/' + mes + '/' + ano;
+      }
+      atualizar();
+      setInterval(atualizar, 1000);
     })();
   </script>
 </body>

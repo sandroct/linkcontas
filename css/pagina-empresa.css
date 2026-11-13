@@ -347,6 +347,274 @@
   margin-top: 8px;
 }
 
+/* ===== Cabeçalho da empresa ===== */
+.empresa-cabecalho {
+  margin-bottom: 24px;
+}
+
+.empresa-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.badge-energia {
+  background: var(--cor-primaria-suave);
+  color: var(--cor-primaria);
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+
+[data-tema="escuro"] .badge-energia {
+  background: rgba(37, 99, 235, 0.15);
+  color: #60a5fa;
+}
+
+/* ===== CTA principal ===== */
+.cta-wrapper {
+  margin: 24px 0;
+}
+
+.cta-nota {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--cor-texto-claro);
+  margin-top: -12px;
+  margin-bottom: 28px;
+}
+
+/* ===== Caixa de observação ===== */
+.obs-box {
+  display: flex;
+  gap: 14px;
+  background: var(--cor-fundo-secao);
+  border: 1px solid var(--cor-borda);
+  border-radius: 14px;
+  padding: 20px 24px;
+  margin: 24px 0;
+}
+
+[data-tema="escuro"] .obs-box {
+  background: #16224f;
+}
+
+.obs-icone {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+
+.obs-conteudo strong {
+  color: var(--cor-texto);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.obs-conteudo span {
+  color: var(--cor-texto-suave);
+  line-height: 1.7;
+}
+
+[data-tema="escuro"] .obs-conteudo span {
+  color: #b7c5ea;
+}
+
+/* ===== Documentos necessários ===== */
+.documentos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin: 24px 0;
+}
+
+.doc-card {
+  background: var(--cor-fundo-secao);
+  border: 1px solid var(--cor-borda);
+  border-radius: 14px;
+  padding: 18px 16px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  transition: var(--transicao);
+}
+
+.doc-card:hover {
+  border-color: var(--cor-primaria);
+  transform: translateY(-2px);
+}
+
+.doc-icone {
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.doc-texto strong {
+  display: block;
+  color: var(--cor-texto);
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+}
+
+.doc-texto span {
+  color: var(--cor-texto-suave);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+[data-tema="escuro"] .doc-texto span {
+  color: #b7c5ea;
+}
+
+/* ===== Passo a passo ===== */
+.passos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.passo-card {
+  background: var(--cor-fundo-secao);
+  border: 1px solid var(--cor-borda);
+  border-radius: 14px;
+  padding: 18px 16px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  transition: var(--transicao);
+}
+
+.passo-card:hover {
+  border-color: var(--cor-primaria);
+  transform: translateY(-2px);
+}
+
+.passo-numero {
+  background: var(--cor-primaria);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 800;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.passo-texto {
+  color: var(--cor-texto-suave);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+[data-tema="escuro"] .passo-texto {
+  color: #b7c5ea;
+}
+
+.passo-texto strong {
+  color: var(--cor-texto);
+}
+
+/* ===== Canais oficiais ===== */
+.canais-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin: 24px 0;
+}
+
+.canal-card {
+  background: var(--cor-fundo-secao);
+  border: 1px solid var(--cor-borda);
+  border-radius: 14px;
+  padding: 18px 16px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.canal-icone {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+
+.canal-texto strong {
+  display: block;
+  color: var(--cor-texto);
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+}
+
+.canal-texto span {
+  color: var(--cor-texto-suave);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+[data-tema="escuro"] .canal-texto span {
+  color: #b7c5ea;
+}
+
+/* ===== Aviso golpe ===== */
+.aviso-golpe {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin: 24px 0;
+  color: #991b1b;
+}
+
+[data-tema="escuro"] .aviso-golpe {
+  background: rgba(239, 68, 68, 0.1);
+  border-color: rgba(239, 68, 68, 0.3);
+  color: #fca5a5;
+}
+
+/* ===== Dicas contra golpe ===== */
+.dicas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+  margin: 24px 0;
+}
+
+.dica-card {
+  background: var(--cor-fundo-secao);
+  border: 1px solid var(--cor-borda);
+  border-radius: 14px;
+  padding: 18px 16px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.dica-icone {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+
+.dica-texto strong {
+  display: block;
+  color: var(--cor-texto);
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+}
+
+.dica-texto span {
+  color: var(--cor-texto-suave);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+[data-tema="escuro"] .dica-texto span {
+  color: #b7c5ea;
+}
+
 /* ===== Navegação entre páginas ===== */
 .nav-empresas {
   display: flex;
