@@ -36,14 +36,24 @@
     .voltar { display: inline-block; margin-top: 30px; color: var(--cor-suave); font-size: 0.9rem; }
     .voltar:hover { color: var(--cor-primaria); }
   </style>
-  <script>
+    <script>
     (function () {
       var salvo = localStorage.getItem('linkcontas-tema');
       var sistema = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'escuro' : 'claro';
       var tema = salvo || sistema;
       var html = document.documentElement;
-      if (tema === 'escuro') { html.setAttribute('data-tema', 'escuro'); }
-      else { html.removeAttribute('data-tema'); }
+      var icone = document.querySelector('.icone-tema');
+      function aplicar(t) {
+        if (t === 'escuro') { html.setAttribute('data-tema', 'escuro'); if(icone) icone.textContent = '☀'; }
+        else { html.removeAttribute('data-tema'); if(icone) icone.textContent = '🌙'; }
+      }
+      aplicar(tema);
+      var btn = document.getElementById('tema-toggle');
+      if(btn) btn.addEventListener('click', function () {
+        var escuro = html.getAttribute('data-tema') === 'escuro';
+        if (escuro) { aplicar('claro'); localStorage.setItem('linkcontas-tema', 'claro'); }
+        else { aplicar('escuro'); localStorage.setItem('linkcontas-tema', 'escuro'); }
+      });
     })();
   </script>
   </head>
