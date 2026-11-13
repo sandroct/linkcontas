@@ -529,11 +529,13 @@ body {
 .categoria-tag.tag-telefone { background: #ede9fe; color: #6d28d9; }
 .categoria-tag.tag-agua { background: #e0f2fe; color: #0369a1; }
 .categoria-tag.tag-internet { background: #d1fae5; color: #047857; }
+.categoria-tag.tag-consultas { background: #e0e7ff; color: #4338ca; }
 
 [data-tema="escuro"] .categoria-tag.tag-energia { background: rgba(245, 158, 11, 0.2); color: #fbbf24; }
 [data-tema="escuro"] .categoria-tag.tag-telefone { background: rgba(139, 92, 246, 0.2); color: #a78bfa; }
 [data-tema="escuro"] .categoria-tag.tag-agua { background: rgba(14, 165, 233, 0.2); color: #38bdf8; }
 [data-tema="escuro"] .categoria-tag.tag-internet { background: rgba(16, 185, 129, 0.2); color: #34d399; }
+[data-tema="escuro"] .categoria-tag.tag-consultas { background: rgba(99, 102, 241, 0.2); color: #a5b4fc; }
 
 .card-footer {
   margin-top: auto;
@@ -670,11 +672,13 @@ body {
 .hero-tag-telefone { color: #6d28d9; border-color: #c4b5fd; background: #f5f3ff; }
 .hero-tag-agua { color: #0369a1; border-color: #7dd3fc; background: #f0f9ff; }
 .hero-tag-internet { color: #047857; border-color: #6ee7b7; background: #ecfdf5; }
+.hero-tag-consultas { color: #4338ca; border-color: #a5b4fc; background: #eef2ff; }
 
 [data-tema="escuro"] .hero-tag-energia { background: rgba(245, 158, 11, 0.12); color: #fbbf24; }
 [data-tema="escuro"] .hero-tag-telefone { background: rgba(139, 92, 246, 0.12); color: #a78bfa; }
 [data-tema="escuro"] .hero-tag-agua { background: rgba(14, 165, 233, 0.12); color: #38bdf8; }
 [data-tema="escuro"] .hero-tag-internet { background: rgba(16, 185, 129, 0.12); color: #34d399; }
+[data-tema="escuro"] .hero-tag-consultas { background: rgba(99, 102, 241, 0.12); color: #a5b4fc; }
 
 .hero-ilustracao {
   display: flex;

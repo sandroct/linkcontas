@@ -13,7 +13,7 @@
   <title>Contato — LinkContas</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    :root { --cor-primaria: #2563eb; --cor-fundo: #e9f0fd; --cor-texto: #16233f; --cor-suave: #4a5f85; --borda: #cddcf5; --cor-sucesso: #16a34a; }
+    :root { --cor-primaria: #2563eb; --cor-fundo: #e9f0fd; --cor-texto: #16233f; --cor-suave: #4a5f85; --borda: #cddcf5; --cor-sucesso: #16a34a; --cor-perigo: #dc2626; }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: 'Inter', sans-serif; background: var(--cor-fundo); color: var(--cor-texto); line-height: 1.6; padding: 20px; }
     .container { max-width: 760px; margin: 0 auto; background: #fff; padding: 40px 32px; border-radius: 14px; border: 1px solid var(--borda); box-shadow: 0 8px 20px rgba(30, 58, 138, 0.07); }
@@ -26,7 +26,7 @@
     .contato-box strong { color: var(--cor-texto); }
     .prazo-resposta { font-size: 0.88rem; color: var(--cor-suave); margin-top: 12px; margin-bottom: 0; padding-top: 12px; border-top: 1px dashed #e2e8f0; }
 
-    /* ===== Formulário de feedback (estilo chat) ===== */
+    /* ===== Formulario de feedback (estilo chat) ===== */
     .feedback-form { margin-top: 14px; }
     .campo { margin-bottom: 16px; }
     .campo label { display: block; font-size: 0.92rem; font-weight: 600; color: var(--cor-texto); margin-bottom: 6px; }
@@ -69,14 +69,10 @@
     .btn-enviar-feedback:active { transform: scale(0.97); }
     .feedback-aviso { font-size: 0.85rem; color: var(--cor-suave); margin-top: 10px; margin-bottom: 0; }
 
-    .chat-box {
-      margin-top: 22px;
-      border-top: 1px solid var(--borda);
-      padding-top: 20px;
-    }
+    .chat-box { margin-top: 22px; border-top: 1px solid var(--borda); padding-top: 20px; }
     .chat-titulo { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
     .chat-contador { font-size: 0.82rem; color: var(--cor-suave); background: #f1f5f9; border: 1px solid var(--borda); border-radius: 999px; padding: 4px 12px; }
-    .chat-lista { margin-top: 14px; display: flex; flex-direction: column; gap: 12px; max-height: 380px; overflow-y: auto; padding-right: 4px; }
+    .chat-lista { margin-top: 14px; display: flex; flex-direction: column; gap: 12px; max-height: 420px; overflow-y: auto; padding-right: 4px; }
     .chat-vazio { font-size: 0.9rem; color: var(--cor-suave); font-style: italic; padding: 12px 4px; }
     .chat-msg {
       max-width: 92%;
@@ -91,6 +87,19 @@
     .chat-msg-data { font-size: 0.75rem; color: var(--cor-suave); white-space: nowrap; }
     .chat-msg-assunto { font-size: 0.85rem; font-weight: 600; color: var(--cor-texto); margin-bottom: 4px; }
     .chat-msg-texto { font-size: 0.92rem; color: #334155; word-break: break-word; white-space: pre-wrap; }
+    .chat-msg-apagar {
+      margin-top: 8px;
+      background: #fff;
+      border: 1px solid #fecaca;
+      color: var(--cor-perigo);
+      border-radius: 8px;
+      padding: 6px 12px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      font-family: inherit;
+      cursor: pointer;
+    }
+    .chat-msg-apagar:hover { background: #fef2f2; }
     .feedback-sucesso {
       display: none;
       margin-top: 14px;
@@ -103,7 +112,24 @@
       font-weight: 600;
     }
     .feedback-sucesso.visivel { display: block; animation: chatIn 0.3s ease; }
-    .erro-campo { border-color: #dc2626 !important; }
+    .erro-campo { border-color: var(--cor-perigo) !important; }
+
+    /* ===== Area do administrador ===== */
+    .admin-link { display: inline-block; margin-top: 26px; font-size: 0.85rem; color: var(--cor-suave); background: none; border: none; font-family: inherit; cursor: pointer; text-decoration: underline; padding: 0; }
+    .admin-link:hover { color: var(--cor-primaria); }
+    .admin-box { display: none; margin-top: 14px; border: 1px dashed #94a3b8; border-radius: 12px; padding: 18px; background: #f8fafc; }
+    .admin-box.visivel { display: block; animation: chatIn 0.3s ease; }
+    .admin-box h3 { font-size: 1rem; color: var(--cor-texto); margin-bottom: 8px; }
+    .admin-linha { display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-end; margin-top: 10px; }
+    .admin-linha .campo { margin-bottom: 0; flex: 1; min-width: 150px; }
+    .btn-admin { background: #0f172a; color: #fff; border: none; border-radius: 8px; padding: 11px 18px; font-size: 0.9rem; font-weight: 700; font-family: inherit; cursor: pointer; }
+    .btn-admin:hover { background: #1e293b; }
+    .btn-admin.sair { background: #64748b; }
+    .btn-admin.limpar { background: var(--cor-perigo); }
+    .btn-admin.limpar:hover { background: #b91c1c; }
+    .admin-erro { color: var(--cor-perigo); font-size: 0.85rem; font-weight: 600; margin-top: 8px; display: none; }
+    .admin-erro.visivel { display: block; }
+    .admin-info { font-size: 0.8rem; color: var(--cor-suave); margin-top: 10px; margin-bottom: 0; }
 
     @keyframes chatIn {
       from { opacity: 0; transform: translateY(8px); }
@@ -152,7 +178,7 @@
       </div>
       <button type="submit" class="btn-enviar-feedback" id="btn-enviar">💬 Enviar feedback</button>
       <div class="feedback-sucesso" id="feedback-sucesso" role="status">✅ Feedback enviado! Obrigado por ajudar a melhorar o LinkContas. 💙</div>
-      <p class="feedback-aviso">As mensagens ficam salvas neste navegador e são apagadas automaticamente após 30 dias.</p>
+      <p class="feedback-aviso">Sua mensagem é entregue ao administrador do site e também fica visível abaixo. As mensagens salvas neste navegador são apagadas automaticamente após 30 dias.</p>
     </form>
 
     <div class="chat-box">
@@ -163,6 +189,25 @@
       <div class="chat-lista" id="chat-lista" aria-live="polite"></div>
     </div>
 
+    <button class="admin-link" id="admin-link" type="button">🔒 Área do administrador</button>
+
+    <div class="admin-box" id="admin-box">
+      <h3>Entrar como administrador</h3>
+      <div class="admin-linha">
+        <div class="campo">
+          <label for="admin-usuario">Usuário</label>
+          <input type="text" id="admin-usuario" maxlength="30" autocomplete="off">
+        </div>
+        <div class="campo">
+          <label for="admin-senha">Senha</label>
+          <input type="password" id="admin-senha" maxlength="40" autocomplete="off">
+        </div>
+        <button type="button" class="btn-admin" id="admin-entrar">Entrar</button>
+      </div>
+      <p class="admin-erro" id="admin-erro">Usuário ou senha incorretos.</p>
+      <p class="admin-info">O modo administrador serve para organizar as mensagens salvas <strong>neste navegador</strong> (apagar teste ou mensagem imprópria). As mensagens enviadas pelos visitantes chegam também por e-mail para o dono do site, onde podem ser apagadas normalmente.</p>
+    </div>
+
     <a href="index.html" class="voltar">← Voltar ao site</a>
   </div>
 
@@ -171,12 +216,12 @@
       var CHAVE_STORAGE = 'linkcontas-feedbacks';
       var TRINTA_DIAS_MS = 30 * 24 * 60 * 60 * 1000;
       var LIMITE_MSGS = 100;
+      var CHAVE_ADMIN = 'linkcontas-admin';
 
-      // Gancho opcional: se um dia quiser receber os feedbacks por e-mail
-      // (ex: cadastro gratuito no Formspree), coloque a URL do endpoint aqui
-      // e as mensagens passarao a ser enviadas tambem para o seu e-mail.
-      // var FORM_ENDPOINT = 'https://formspree.io/f/SEU_ID';
-      var FORM_ENDPOINT = null;
+      // Endpoint de entrega por e-mail (servico gratuito FormSubmit, sem cadastro).
+      // Na primeira mensagem, o dono do site recebe um e-mail de confirmacao
+      // e precisa clicar no link de ativacao uma vez.
+      var FORM_ENDPOINT = 'https://formsubmit.co/ajax/alessandrobr2012@gmail.com';
 
       var form = document.getElementById('feedback-form');
       var inputNome = document.getElementById('fb-nome');
@@ -186,6 +231,15 @@
       var lista = document.getElementById('chat-lista');
       var contador = document.getElementById('chat-contador');
       var textoBotao = document.getElementById('btn-enviar').textContent;
+
+      // Area do administrador
+      var adminLink = document.getElementById('admin-link');
+      var adminBox = document.getElementById('admin-box');
+      var adminUsuario = document.getElementById('admin-usuario');
+      var adminSenha = document.getElementById('admin-senha');
+      var adminErro = document.getElementById('admin-erro');
+      var btnAdminEntrar = document.getElementById('admin-entrar');
+      var modoAdmin = false;
 
       function agora() { return Date.now(); }
 
@@ -229,30 +283,107 @@
         if (msgs.length === 0) {
           lista.innerHTML = '<div class="chat-vazio">Nenhuma mensagem ainda. Seja o primeiro a deixar um feedback! 💬</div>';
         } else {
-          msgs.slice().reverse().forEach(function (m) {
+          // Mais recentes primeiro
+          msgs.slice().reverse().forEach(function (m, idxVisual) {
+            var indiceReal = msgs.length - 1 - idxVisual;
             var item = document.createElement('div');
             item.className = 'chat-msg';
-            item.innerHTML =
+            var html =
               '<div class="chat-msg-topo">' +
                 '<span class="chat-msg-nome">' + escapar(m.nome) + '</span>' +
                 '<span class="chat-msg-data">' + formatarData(m.ts) + '</span>' +
               '</div>' +
               '<div class="chat-msg-assunto">' + escapar(m.assunto) + '</div>' +
               '<div class="chat-msg-texto">' + escapar(m.texto) + '</div>';
+            if (modoAdmin) {
+              html += '<button type="button" class="chat-msg-apagar" data-indice="' + indiceReal + '">🗑️ Apagar mensagem</button>';
+            }
+            item.innerHTML = html;
             lista.appendChild(item);
           });
         }
         contador.textContent = msgs.length + (msgs.length === 1 ? ' mensagem' : ' mensagens');
+
+        if (modoAdmin) {
+          var btnLimpar = document.createElement('button');
+          btnLimpar.type = 'button';
+          btnLimpar.className = 'btn-admin limpar';
+          btnLimpar.id = 'admin-limpar-tudo';
+          btnLimpar.textContent = '🗑️ Limpar todas as mensagens salvas';
+          lista.appendChild(btnLimpar);
+        }
       }
 
-      function marcarErro(campo, temErro) {
-        campo.classList.toggle('erro-campo', temErro);
+      function apagarMensagem(indice) {
+        var msgs = limparAntigos(carregar());
+        if (indice < 0 || indice >= msgs.length) { return; }
+        msgs.splice(indice, 1);
+        salvar(msgs);
+        renderizar(msgs);
       }
 
-      [inputNome, inputAssunto, inputTexto].forEach(function (c) {
-        c.addEventListener('input', function () { marcarErro(c, false); });
+      function entrarModoAdmin() {
+        modoAdmin = true;
+        try { sessionStorage.setItem(CHAVE_ADMIN, '1'); } catch (e) {}
+        adminBox.innerHTML =
+          '<h3>🔓 Modo administrador ativo</h3>' +
+          '<p class="admin-info">Você pode apagar mensagens individuais ou limpar todas as mensagens salvas neste navegador. Lembrete: as mensagens dos visitantes chegam também por e-mail — apague por lá quando quiser.</p>' +
+          '<div class="admin-linha">' +
+            '<button type="button" class="btn-admin sair" id="admin-sair">Sair do modo administrador</button>' +
+          '</div>';
+        renderizar(limparAntigos(carregar()));
+      }
+
+      function sairModoAdmin() {
+        modoAdmin = false;
+        try { sessionStorage.removeItem(CHAVE_ADMIN); } catch (e) {}
+        location.reload();
+      }
+
+      // Cliques na lista (apagar individual / limpar tudo)
+      lista.addEventListener('click', function (e) {
+        var alvo = e.target;
+        if (alvo.classList.contains('chat-msg-apagar')) {
+          apagarMensagem(parseInt(alvo.getAttribute('data-indice'), 10));
+        } else if (alvo.id === 'admin-limpar-tudo') {
+          if (confirm('Apagar TODAS as mensagens salvas neste navegador? Esta ação não pode ser desfeita.')) {
+            salvar([]);
+            renderizar([]);
+          }
+        }
       });
 
+      adminLink.addEventListener('click', function () {
+        adminBox.classList.toggle('visivel');
+        if (adminBox.classList.contains('visivel')) { adminUsuario.focus(); }
+      });
+
+      function tentarLogin() {
+        var u = adminUsuario.value.trim();
+        var s = adminSenha.value;
+        if (u === 'admin' && s === '26041952sP') {
+          adminErro.classList.remove('visivel');
+          entrarModoAdmin();
+        } else {
+          adminErro.classList.add('visivel');
+          adminSenha.value = '';
+        }
+      }
+
+      btnAdminEntrar.addEventListener('click', tentarLogin);
+      adminSenha.addEventListener('keydown', function (e) { if (e.key === 'Enter') { tentarLogin(); } });
+      adminUsuario.addEventListener('keydown', function (e) { if (e.key === 'Enter') { adminSenha.focus(); } });
+
+      document.getElementById('admin-box').addEventListener('click', function (e) {
+        if (e.target && e.target.id === 'admin-sair') { sairModoAdmin(); }
+      });
+
+      // Sessao de admin vale enquanto a aba estiver aberta
+      try {
+        if (sessionStorage.getItem(CHAVE_ADMIN) === '1') { entrarModoAdmin(); }
+      } catch (e) {}
+
+      // ===== Envio do formulario =====
       form.addEventListener('submit', function (e) {
         e.preventDefault();
 
@@ -260,9 +391,9 @@
         var assunto = inputAssunto.value.trim();
         var texto = inputTexto.value.trim();
 
-        marcarErro(inputNome, !nome);
-        marcarErro(inputAssunto, !assunto);
-        marcarErro(inputTexto, !texto);
+        marcar(inputNome, !nome);
+        marcar(inputAssunto, !assunto);
+        marcar(inputTexto, !texto);
 
         if (!nome || !assunto || !texto) {
           if (!nome) inputNome.focus();
@@ -277,23 +408,42 @@
         salvar(msgs);
         renderizar(msgs);
 
-        // Envio opcional para e-mail (se FORM_ENDPOINT estiver configurado)
-        if (FORM_ENDPOINT) {
-          fetch(FORM_ENDPOINT, {
-            method: 'POST',
-            headers: { 'Accept': 'application/json' },
-            body: JSON.stringify({ nome: nome, assunto: assunto, mensagem: texto })
-          }).catch(function () { /* silencioso: msg ja foi salva localmente */ });
-        }
-
-        form.reset();
-        avisoSucesso.classList.add('visivel');
         var botao = document.getElementById('btn-enviar');
-        botao.textContent = '✅ Enviado!';
-        setTimeout(function () {
-          botao.textContent = textoBotao;
-          avisoSucesso.classList.remove('visivel');
-        }, 4000);
+        botao.textContent = '⏳ Enviando...';
+        botao.disabled = true;
+
+        // Entrega por e-mail (falha silenciosa: a mensagem ja ficou salva abaixo)
+        fetch(FORM_ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify({
+            nome: nome,
+            assunto: assunto,
+            mensagem: texto,
+            _subject: 'Feedback LinkContas: ' + assunto
+          })
+        }).then(function (r) {
+          if (!r.ok) { throw new Error('resposta ' + r.status); }
+          avisoSucesso.textContent = '✅ Feedback enviado ao administrador! Obrigado por ajudar a melhorar o LinkContas. 💙';
+        }).catch(function () {
+          avisoSucesso.textContent = '✅ Feedback registrado abaixo! Se quiser falar direto com o administrador, use o e-mail acima. 💙';
+        }).then(function () {
+          avisoSucesso.classList.add('visivel');
+          form.reset();
+          botao.textContent = '💬 Enviar feedback';
+          botao.disabled = false;
+          setTimeout(function () {
+            botao.textContent = textoBotao;
+            avisoSucesso.classList.remove('visivel');
+            avisoSucesso.textContent = '✅ Feedback enviado! Obrigado por ajudar a melhorar o LinkContas. 💙';
+          }, 5000);
+        });
+      });
+
+      function marcar(campo, temErro) { campo.classList.toggle('erro-campo', temErro); }
+
+      [inputNome, inputAssunto, inputTexto].forEach(function (c) {
+        c.addEventListener('input', function () { marcar(c, false); });
       });
 
       // Ao abrir a pagina: limpa antigos e mostra as mensagens dos ultimos 30 dias

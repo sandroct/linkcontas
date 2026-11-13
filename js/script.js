@@ -52,6 +52,8 @@ const empresas = [
     logo: 'assets/logos/cpfl.png',
     pagina: 'cpfl.html',
     pagina: 'cpfl.html',
+    pagina: 'cpfl.html',
+    pagina: 'cpfl.html',
     cor: '#0033A0',
     sigla: 'CP',
     icone: '⚡',
@@ -186,6 +188,8 @@ const empresas = [
     logo: 'assets/logos/sanepar.png',
     pagina: 'sanepar.html',
     pagina: 'sanepar.html',
+    pagina: 'sanepar.html',
+    pagina: 'sanepar.html',
     cor: '#003DA5',
     sigla: 'SN',
     icone: '💧',
@@ -200,6 +204,8 @@ const empresas = [
     url: 'https://sso.gigamaisfibra.com.br/auth/realms/gigamaisfibra/protocol/openid-connect/auth?client_id=central-do-assinante&redirect_uri=https%3A%2F%2Fcentral-assinante.gigamaisfibra.com.br%2F&state=39905a12-b4a7-4c8a-8f72-907e48512e0e&response_mode=fragment&response_type=code&scope=openid&nonce=56e49886-464e-4f8d-8a39-1f8f40b704ad',
     urlPagamento: 'https://sso.gigamaisfibra.com.br/auth/realms/gigamaisfibra/protocol/openid-connect/auth?client_id=central-do-assinante&redirect_uri=https%3A%2F%2Fcentral-assinante.gigamaisfibra.com.br%2F&state=39905a12-b4a7-4c8a-8f72-907e48512e0e&response_mode=fragment&response_type=code&scope=openid&nonce=56e49886-464e-4f8d-8a39-1f8f40b704ad',
     logo: 'assets/logos/gigamaisfibra.png',
+    pagina: 'gigamaisfibra.html',
+    pagina: 'gigamaisfibra.html',
     pagina: 'gigamaisfibra.html',
     pagina: 'gigamaisfibra.html',
     cor: '#00A859',
@@ -231,6 +237,20 @@ const empresas = [
     sigla: 'AL',
     icone: '📺',
     descricao: 'Internet, telefone e TV'
+  },
+
+  // Consultas / Pendências
+  {
+    id: 'serasa',
+    nome: 'Serasa',
+    categoria: 'consultas',
+    url: 'https://www.serasa.com.br/',
+    urlPagamento: 'https://www.serasa.com.br/',
+    pagina: 'serasa.html',
+    cor: '#0092DF',
+    sigla: 'SE',
+    icone: '🔍',
+    descricao: 'Consulte pendências e negocie dívidas'
   }
 ];
 
@@ -239,7 +259,8 @@ const categorias = [
   { chave: 'energia', label: 'Energia Elétrica', icone: '⚡' },
   { chave: 'telefone', label: 'Telefone / Celular', icone: '📱' },
   { chave: 'agua', label: 'Água / Esgoto', icone: '💧' },
-  { chave: 'internet', label: 'Internet / TV', icone: '📺' }
+  { chave: 'internet', label: 'Internet / TV', icone: '📺' },
+  { chave: 'consultas', label: 'Consultas / Pendências', icone: '🔍' }
 ];
 
 // Elementos DOM
@@ -352,7 +373,7 @@ function renderEmpresas() {
             </div>
           </div>
         </a>
-        <div class="categoria-tag tag-${emp.categoria}">${emp.categoria === 'energia' ? 'Energia' : emp.categoria === 'telefone' ? 'Telefone' : emp.categoria === 'agua' ? 'Água' : 'Internet'}</div>
+        <div class="categoria-tag tag-${emp.categoria}">${emp.categoria === 'energia' ? 'Energia' : emp.categoria === 'telefone' ? 'Telefone' : emp.categoria === 'agua' ? 'Água' : emp.categoria === 'consultas' ? 'Consultas' : 'Internet'}</div>
         <div class="card-footer">
           ${pagina ? '<span class="dica-pagina">📖 Como pagar</span>' : ''}
           <a href="${link}" target="_blank" rel="noopener noreferrer" class="btn-acessar">Pagar conta ↗</a>

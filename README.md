@@ -7,13 +7,16 @@ Site elegante e acessível que centraliza links oficiais para pagamento de conta
 ## ✨ Funcionalidades
 
 - **Busca em tempo real** por nome da empresa
-- **Filtro por categoria** (Energia, Telefone, Água, Internet)
+- **Filtro por categoria** (Energia, Telefone, Água, Internet, Consultas)
 - **Links diretos** para área de login/pagamento de cada empresa
+- **Telefone e WhatsApp oficiais** na página de cada empresa (pesquisados nos sites oficiais)
+- **Serasa**: consulta de pendências e negociação de dívidas (categoria "Consultas")
 - **Tema claro e escuro** com escolha do usuário (salvo automaticamente)
 - **Design responsivo** (funciona bem no celular)
 - **Acessibilidade para idosos** (botões grandes, fonte maior, links abrem em nova aba)
 - **Faixa "Doações / Cafézinho"** no rodapé da página inicial (chave Pix com botão de copiar)
-- **Chat de feedback** na página de contato (nome, assunto, descrição — mensagens salvas no navegador e apagadas automaticamente após 30 dias)
+- **Formulário de feedback** na página de contato (nome, assunto, descrição) — entregue por e-mail ao administrador + mural local com auto-limpeza de 30 dias
+- **Área do administrador** no contato (login `admin`) para apagar mensagens de teste/impróprias salvas no navegador
 - **Espaços para anúncios** (Ezoic já integrado em todas as páginas)
 
 ## 📁 Estrutura
@@ -22,7 +25,7 @@ Site elegante e acessível que centraliza links oficiais para pagamento de conta
 linkcontas/
 ├── index.html          (página principal com toggle de tema + faixa de doações)
 ├── sobre.html
-├── contato.html        (e-mail + formulário/chat de feedback)
+├── contato.html        (e-mail + formulário/chat de feedback + área admin)
 ├── termos.html
 ├── privacidade.html
 ├── css/
@@ -33,9 +36,20 @@ linkcontas/
 ├── sitemap.xml         (mapa do site para o Google)
 ├── ads.txt             (Google AdSense ativo; Ezoic entra quando o painel liberar)
 ├── paginas de empresa  (enel-sp, light, cemig, cpfl, edp, ceee, claro, vivo,
-│                        tim, oi, sabesp, copasa, cedae, sanepar, sky, algar)
+│                        tim, oi, sabesp, copasa, cedae, sanepar, sky, algar, serasa)
 └── README.md           (este arquivo)
 ```
+
+## 📨 Feedback: como funciona
+
+1. O visitante preenche nome, assunto e descrição e clica em **Enviar feedback**.
+2. A mensagem é entregue por e-mail ao administrador (serviço gratuito FormSubmit — **na 1ª mensagem é preciso clicar no link "Ativar formulário"** recebido em alessandrobr2012@gmail.com).
+3. A mensagem também aparece no mural da própria página, salva no navegador, e é **apagada automaticamente após 30 dias**.
+4. O administrador entra em **"Área do administrador"** (usuário `admin`) para apagar mensagens individuais ou limpar o mural. Como o site é estático, essa senha é só uma porta de tela — a segurança real é a senha do e-mail.
+
+## 📞 Contatos das empresas (verifique periodicamente)
+
+Cada página de empresa tem um bloco "Outras formas oficiais" com **Telefone** e **WhatsApp** pesquisados nos sites oficiais (ex.: Enel 0800 72 72 120 + WhatsApp Elena; Sabesp 0800 055 0195 + WhatsApp Sani). Como mudanças acontecem, revise os números a cada trimestre.
 
 ## 🚀 Como publicar gratuitamente (GitHub Pages)
 

@@ -1,9 +1,8 @@
-# ads.txt — LinkContas (https://linkcontas.com.br)
+# ads.txt - LinkContas (https://linkcontas.com.br)
 # Documentacao: https://iabtechlab.com/ads-txt
 
 # Google AdSense (conta: pub-26774220962143682)
 google.com, pub-26774220962143682, DIRECT, f08c47fec0942fa0
 
-# Ezoic: assim que o painel do Ezoic liberar o site (erro 403 "Monetization not
-# allowed"), copiar para este arquivo a lista completa de linhas que o Ezoic
-# fornece (vem com o publisher ID numerico da conta Ezoic).
+# Ezoic: quando o painel do Ezoic liberar o site (erro 403 "Monetization not
+# allowed"), copiar aqui a lista completa de linhas que o Ezoic fornece.
