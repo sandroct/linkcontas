@@ -29,6 +29,16 @@
   <link rel="stylesheet" href="css/pagina-empresa.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="js/contador.js"></script>
+    <script>
+    (function () {
+      var salvo = localStorage.getItem('linkcontas-tema');
+      var sistema = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'escuro' : 'claro';
+      var tema = salvo || sistema;
+      var html = document.documentElement;
+      if (tema === 'escuro') { html.setAttribute('data-tema', 'escuro'); }
+      else { html.removeAttribute('data-tema'); }
+    })();
+  </script>
   </head>
 <body>
   <header class="header">

@@ -615,6 +615,38 @@
   color: #b7c5ea;
 }
 
+[data-tema="escuro"] .cta-principal {
+  background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+  box-shadow: 0 8px 16px rgba(22, 163, 74, 0.15);
+}
+
+[data-tema="escuro"] .doc-card {
+  background: #16224f;
+  border-color: var(--cor-borda);
+}
+
+[data-tema="escuro"] .doc-texto span {
+  color: #b7c5ea;
+}
+
+[data-tema="escuro"] .passo-card {
+  background: #16224f;
+  border-color: var(--cor-borda);
+}
+
+[data-tema="escuro"] .passo-texto {
+  color: #b7c5ea;
+}
+
+[data-tema="escuro"] .canal-card {
+  background: #16224f;
+  border-color: var(--cor-borda);
+}
+
+[data-tema="escuro"] .canal-texto span {
+  color: #b7c5ea;
+}
+
 /* ===== Navegação entre páginas ===== */
 .nav-empresas {
   display: flex;

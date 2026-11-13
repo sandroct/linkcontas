@@ -152,7 +152,17 @@
       .chat-msg { max-width: 100%; }
     }
   </style>
-</head>
+  <script>
+    (function () {
+      var salvo = localStorage.getItem('linkcontas-tema');
+      var sistema = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'escuro' : 'claro';
+      var tema = salvo || sistema;
+      var html = document.documentElement;
+      if (tema === 'escuro') { html.setAttribute('data-tema', 'escuro'); }
+      else { html.removeAttribute('data-tema'); }
+    })();
+  </script>
+  </head>
 <body>
   <div class="container">
     <header>
