@@ -17,7 +17,7 @@
   <meta property="og:description" content="Passo a passo simples para tirar a 2ª via e pagar a conta de luz da EDP no Espirito Santo e São Paulo pelo site oficial. Feito para idosos.">
   <meta property="og:type" content="article">
   <link rel="stylesheet" href="css/style.css?v=6">
-  <link rel="stylesheet" href="css/página-empresa.css">
+  <link rel="stylesheet" href="css/pagina-empresa.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script type="application/ld+json">
   {
@@ -43,7 +43,8 @@
     ]
   }
   </script>
-</head>
+<script src="js/contador.js"></script>
+  </head>
 <body>  <header class="header">
     <div class="container header-inner">
       <a class="logo" href="index.html" style="text-decoration:none">
@@ -73,7 +74,7 @@
     </div>
   </header>
 
-  <div class="container página-empresa">
+  <div class="container pagina-empresa">
     <nav class="breadcrumb" aria-label="Você está aqui">
       <a href="index.html">Início</a>
       <span class="breadcrumb-separador">&gt;</span>
@@ -87,7 +88,7 @@
       <span class="atualização">&#128197; Página atualizada em 13 de novembro de 2026</span>
       <p>Se você recebe a conta de luz da EDP, no Espirito Santo ou em São Paulo, esta página e para você. Vamos te mostrar, com palavras simples, como entrar no site oficial da EDP e pagar sua conta sem complicação.</p>
       <p>Nada de senha difícil ou palavra estranha: só o que você já tem em casa, a conta de luz e o CPF.</p>
-      <a class="cta-principal" href="https://www.edponline.com.br/para-sua-casa/login" target="_blank" rel="noopener noreferrer">
+      <a class="cta-principal" data-empresa="edp" href="https://www.edponline.com.br/para-sua-casa/login" target="_blank" rel="noopener noreferrer">
         &#9889; Ir para o site oficial da EDP
       </a>
       <p class="cta-nota">O botão abre uma nova aba, para você não perder esta página.</p>
@@ -236,6 +237,20 @@
             : 'Obrigado por avisar! Vamos melhorar. Se precisar, fale com a gente na página de Contato.';
           box.appendChild(msg);
         });
+      });
+    })();
+  </script>
+
+  <script>
+    (function () {
+      var btn = document.querySelector('.cta-principal');
+      if (!btn) return;
+      var idEmpresa = btn.getAttribute('data-empresa');
+      var nomeEmpresa = btn.textContent.trim();
+      btn.addEventListener('click', function () {
+        if (window.linkcontas && window.linkcontas.contador) {
+          window.linkcontas.contador.cliqueEmpresa(idEmpresa, nomeEmpresa);
+        }
       });
     })();
   </script>

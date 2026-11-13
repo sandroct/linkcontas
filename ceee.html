@@ -17,7 +17,7 @@
   <meta property="og:description" content="Passo a passo simples para tirar a 2ª via e pagar a conta de luz da CEEE, agora Equatorial, no Rio Grande do Sul pelo site oficial. Feito para idosos.">
   <meta property="og:type" content="article">
   <link rel="stylesheet" href="css/style.css?v=6">
-  <link rel="stylesheet" href="css/página-empresa.css">
+  <link rel="stylesheet" href="css/pagina-empresa.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script type="application/ld+json">
   {
@@ -43,7 +43,8 @@
     ]
   }
   </script>
-</head>
+<script src="js/contador.js"></script>
+  </head>
 <body>  <header class="header">
     <div class="container header-inner">
       <a class="logo" href="index.html" style="text-decoration:none">
@@ -73,7 +74,7 @@
     </div>
   </header>
 
-  <div class="container página-empresa">
+  <div class="container pagina-empresa">
     <nav class="breadcrumb" aria-label="Você está aqui">
       <a href="index.html">Início</a>
       <span class="breadcrumb-separador">&gt;</span>
@@ -87,7 +88,7 @@
       <span class="atualização">&#128197; Página atualizada em 13 de novembro de 2026</span>
       <p>Se você mora no Rio Grande do Sul e recebe a conta de luz da CEEE, saiba que a empresa agora se chama <strong>CEEE Equatorial</strong>. A mudanca de nome confunde muita gente, mas o pagamento continua sendo feito pelo site oficial, e esta página mostra o caminho.</p>
       <p>Se a sua conta ainda tem o nome antigo, não se preocupe: o acesso funciona do mesmo jeito.</p>
-      <a class="cta-principal" href="https://ceee.equatorialenergia.com.br/#!" target="_blank" rel="noopener noreferrer">
+      <a class="cta-principal" data-empresa="ceee" href="https://ceee.equatorialenergia.com.br/#!" target="_blank" rel="noopener noreferrer">
         &#9889; Ir para o site oficial da CEEE Equatorial
       </a>
       <p class="cta-nota">O botão abre uma nova aba, para você não perder esta página.</p>
@@ -236,6 +237,20 @@
             : 'Obrigado por avisar! Vamos melhorar. Se precisar, fale com a gente na página de Contato.';
           box.appendChild(msg);
         });
+      });
+    })();
+  </script>
+
+  <script>
+    (function () {
+      var btn = document.querySelector('.cta-principal');
+      if (!btn) return;
+      var idEmpresa = btn.getAttribute('data-empresa');
+      var nomeEmpresa = btn.textContent.trim();
+      btn.addEventListener('click', function () {
+        if (window.linkcontas && window.linkcontas.contador) {
+          window.linkcontas.contador.cliqueEmpresa(idEmpresa, nomeEmpresa);
+        }
       });
     })();
   </script>

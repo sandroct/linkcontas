@@ -17,7 +17,7 @@
   <meta property="og:description" content="Passo a passo simples para tirar a 2ª via e pagar a fatura da Giga Mais Fibra pelo site oficial. Feito para idosos, com dicas contra golpe.">
   <meta property="og:type" content="article">
   <link rel="stylesheet" href="css/style.css?v=6">
-  <link rel="stylesheet" href="css/página-empresa.css">
+  <link rel="stylesheet" href="css/pagina-empresa.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script type="application/ld+json">
   {
@@ -43,7 +43,8 @@
     ]
   }
   </script>
-</head>
+<script src="js/contador.js"></script>
+  </head>
 <body>  <header class="header">
     <div class="container header-inner">
       <a class="logo" href="index.html" style="text-decoration:none">
@@ -73,7 +74,7 @@
     </div>
   </header>
 
-  <div class="container página-empresa">
+  <div class="container pagina-empresa">
     <nav class="breadcrumb" aria-label="Você está aqui">
       <a href="index.html">Início</a>
       <span class="breadcrumb-separador">&gt;</span>
@@ -87,7 +88,7 @@
       <span class="atualização">&#128197; Página atualizada em 13 de novembro de 2026</span>
       <p>Se você e cliente da Giga Mais Fibra, a operadora de internet por fibra otica, esta página e para você. Vamos mostrar, em palavras simples, como entrar no site oficial para tirar a segunda via da fatura e pagar com segurança.</p>
       <p>Operadoras menores as vezes tem sites menos conhecidos. Por isso esta página existe: para te levar direto ao lugar certo, sem risco.</p>
-      <a class="cta-principal" href="https://ssó.gigamaisfibra.com.br/auth/realms/gigamaisfibra/protocol/openid-connect/auth?client_id=central-do-assinante&redirect_uri=https%3A%2F%2Fcentral-assinante.gigamaisfibra.com.br%2F&state=39905a12-b4a7-4c8a-8f72-907e48512e0e&response_mode=fragment&response_type=code&scope=openid&nonce=56e49886-464e-4f8d-8a39-1f8f40b704ad" target="_blank" rel="noopener noreferrer">
+      <a class="cta-principal" data-empresa="gigamaisfibra" href="https://ssó.gigamaisfibra.com.br/auth/realms/gigamaisfibra/protocol/openid-connect/auth?client_id=central-do-assinante&redirect_uri=https%3A%2F%2Fcentral-assinante.gigamaisfibra.com.br%2F&state=39905a12-b4a7-4c8a-8f72-907e48512e0e&response_mode=fragment&response_type=code&scope=openid&nonce=56e49886-464e-4f8d-8a39-1f8f40b704ad" target="_blank" rel="noopener noreferrer">
         &#9889; Ir para o site oficial da Giga Mais Fibra
       </a>
       <p class="cta-nota">O botão abre uma nova aba, para você não perder esta página.</p>
@@ -236,6 +237,20 @@
             : 'Obrigado por avisar! Vamos melhorar. Se precisar, fale com a gente na página de Contato.';
           box.appendChild(msg);
         });
+      });
+    })();
+  </script>
+
+  <script>
+    (function () {
+      var btn = document.querySelector('.cta-principal');
+      if (!btn) return;
+      var idEmpresa = btn.getAttribute('data-empresa');
+      var nomeEmpresa = btn.textContent.trim();
+      btn.addEventListener('click', function () {
+        if (window.linkcontas && window.linkcontas.contador) {
+          window.linkcontas.contador.cliqueEmpresa(idEmpresa, nomeEmpresa);
+        }
       });
     })();
   </script>

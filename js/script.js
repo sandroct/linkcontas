@@ -392,11 +392,22 @@ function renderEmpresas() {
         <div class="categoria-tag tag-${emp.categoria}">${emp.categoria === 'energia' ? 'Energia' : emp.categoria === 'telefone' ? 'Telefone' : emp.categoria === 'agua' ? 'Água' : emp.categoria === 'consultas' ? 'Consultas' : 'Internet'}</div>
         <div class="card-footer">
           ${pagina ? '<span class="dica-pagina">📖 Como pagar</span>' : ''}
-          <a href="${link}" target="_blank" rel="noopener noreferrer" class="btn-acessar">Pagar conta ↗</a>
+          <a href="${link}" target="_blank" rel="noopener noreferrer" class="btn-acessar" data-empresa="${emp.id}">Pagar conta ↗</a>
         </div>
       </div>
     `;
   }).join('');
+
+  // Vincula cliques nos botões "Pagar conta" ao contador
+  document.querySelectorAll('.btn-acessar').forEach(btn => {
+    btn.addEventListener('click', function () {
+      const idEmpresa = this.getAttribute('data-empresa');
+      const nomeEmpresa = this.closest('.card-empresa').querySelector('h3').textContent;
+      if (window.linkcontas && window.linkcontas.contador) {
+        window.linkcontas.contador.cliqueEmpresa(idEmpresa, nomeEmpresa);
+      }
+    });
+  });
 }
 
 // ========== EVENTOS ==========

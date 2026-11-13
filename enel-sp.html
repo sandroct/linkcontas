@@ -67,7 +67,8 @@
     ]
   }
   </script>
-</head>
+<script src="js/contador.js"></script>
+  </head>
 <body>
 
   <!-- Header -->
@@ -120,7 +121,7 @@
       <p>Se você mora em São Paulo e recebe a conta de luz da Enel, você está no lugar certo. Nesta página explicamos, passo a passo e sem palavras difíceis, como entrar no site oficial da Enel para tirar a segunda via da conta e pagar com segurança.</p>
       <p>Tudo o que você precisa fazer é clicar no botão verde abaixo — ele leva <strong>direto</strong> para a página oficial da empresa, sem passar por anúncios ou links estranhos.</p>
 
-      <a class="cta-principal" href="https://www.enel.com.br/content/enel-br/pt-saopaulo/login.html" target="_blank" rel="noopener noreferrer">
+      <a class="cta-principal" data-empresa="enel" href="https://www.enel.com.br/content/enel-br/pt-saopaulo/login.html" target="_blank" rel="noopener noreferrer">
         ⚡ Ir para o site oficial da Enel
       </a>
       <p class="cta-nota">O botão abre uma nova aba, para você não perder esta página.</p>
@@ -274,6 +275,20 @@
             : 'Obrigado por avisar! Vamos melhorar. Se precisar, fale com a gente na página de Contato.';
           box.appendChild(msg);
         });
+      });
+    })();
+  </script>
+
+  <script>
+    (function () {
+      var btn = document.querySelector('.cta-principal');
+      if (!btn) return;
+      var idEmpresa = btn.getAttribute('data-empresa');
+      var nomeEmpresa = btn.textContent.trim();
+      btn.addEventListener('click', function () {
+        if (window.linkcontas && window.linkcontas.contador) {
+          window.linkcontas.contador.cliqueEmpresa(idEmpresa, nomeEmpresa);
+        }
       });
     })();
   </script>

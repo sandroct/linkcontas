@@ -142,6 +142,29 @@
     </div>
   </section>
 
+  <!-- Estatísticas -->
+  <section class="estatisticas">
+    <div class="container">
+      <h2>📊 Estatísticas do LinkContas</h2>
+      <div class="estatisticas-grid">
+        <div class="estat-card">
+          <span class="estat-valor" id="contador-visitas">-</span>
+          <span class="estat-label">visitas totais</span>
+        </div>
+        <div class="estat-card">
+          <span class="estat-valor" id="contador-empresas">-</span>
+          <span class="estat-label">empresas cadastradas</span>
+        </div>
+      </div>
+      <div class="estatisticas-top">
+        <h3>Empresas mais acessadas</h3>
+        <div class="top-lista" id="top-empresas">
+          <!-- Inserido via JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Anúncio rodapé (opcional) -->
   <div class="ad-slot ad-rodape">
     <div class="ad-placeholder"><script>ezstandalone.cmd.push(function () { ezstandalone.showAds(); });</script></div>
@@ -196,7 +219,47 @@
     </div>
   </section>
 
+  <script src="js/contador.js"></script>
   <script src="js/script.js?v=3"></script>
+  <script>
+    // Exibe estatísticas do contador assim que o DOM estiver pronto
+    document.addEventListener('DOMContentLoaded', function () {
+      const contador = window.linkcontas && window.linkcontas.contador;
+      if (!contador) return;
+
+      // Visitas totais
+      const elVisitas = document.getElementById('contador-visitas');
+      if (elVisitas) elVisitas.textContent = contador.visitasLocal();
+
+      // Total de empresas cadastradas
+      const elEmpresas = document.getElementById('contador-empresas');
+      if (elEmpresas) elEmpresas.textContent = document.querySelectorAll('.card-empresa').length;
+
+      // Top empresas mais clicadas
+      const elTop = document.getElementById('top-empresas');
+      if (elTop) {
+        const todos = contador.todosCliquesLocal();
+        const ordenados = Object.entries(todos)
+          .sort((a, b) => b[1] - a[1])
+          .slice(0, 5);
+
+        if (ordenados.length === 0) {
+          elTop.innerHTML = '<p style="color:#64748b;">Ainda não há cliques registrados.</p>';
+        } else {
+          elTop.innerHTML = ordenados.map(([id, qtd]) => {
+            const card = document.querySelector(`.btn-acessar[data-empresa="${id}"]`);
+            const nome = card ? card.closest('.card-empresa').querySelector('h3').textContent : id;
+            return `
+              <div class="top-item">
+                <span class="top-nome">${nome}</span>
+                <span class="top-qtd">${qtd} clique${qtd !== 1 ? 's' : ''}</span>
+              </div>
+            `;
+          }).join('');
+        }
+      }
+    });
+</script>
   <script>
     (function () {
       var btn = document.getElementById('btn-copiar-doacao');
