@@ -1246,6 +1246,7 @@ body { -webkit-tap-highlight-color: transparent; }
   .logo-text { font-size: 1.15rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .btn-tema { width: 40px; height: 40px; font-size: 1.1rem; padding: 0; }
   .btn-outline { padding: 8px 12px; font-size: 0.85rem; white-space: nowrap; }
+  .user-actions { flex-wrap: wrap; gap: 6px; align-items: center; justify-content: flex-end; }
 
   /* Busca */
   .search-wrap input { font-size: 1rem; padding: 12px 14px; }
@@ -1301,9 +1302,16 @@ body { -webkit-tap-highlight-color: transparent; }
   .btn-copiar-doacao { width: 100%; }
 
   /* Relógio */
-  .relogio { margin-left: 8px; padding: 5px 8px; }
-  .relogio-hora { font-size: 0.85rem; }
-  .relogio-data { font-size: 0.65rem; }
+  .relogio {
+    margin-left: 6px;
+    padding: 4px 6px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 6px;
+    white-space: nowrap;
+  }
+  .relogio-hora { font-size: 0.8rem; line-height: 1; }
+  .relogio-data { font-size: 0.6rem; line-height: 1; }
 
   /* Evitar cortes de texto longo */
   p, li, span, div { word-wrap: break-word; overflow-wrap: break-word; }
@@ -1325,9 +1333,15 @@ body { -webkit-tap-highlight-color: transparent; }
   .btn-acessar { padding: 13px 14px; font-size: 0.9rem; }
 
   /* Relógio */
-  .relogio { padding: 4px 6px; }
-  .relogio-hora { font-size: 0.8rem; }
-  .relogio-data { font-size: 0.6rem; white-space: nowrap; }
+  .relogio {
+    padding: 3px 5px;
+    margin-left: 4px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 6px;
+  }
+  .relogio-hora { font-size: 0.75rem; line-height: 1; }
+  .relogio-data { font-size: 0.55rem; line-height: 1; }
 }
 
 /* Ícone do tema no relógio - garantir que não quebre */
