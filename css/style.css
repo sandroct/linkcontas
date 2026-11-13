@@ -1225,3 +1225,110 @@ body { -webkit-tap-highlight-color: transparent; }
   background: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.2);
 }
+
+/* =====================================
+   RESPONSIVIDADE AVANÇADA
+   Garante que nada seja cortado em celular
+   ===================================== */
+
+/* Tablet: 2 colunas de cards */
+@media (min-width: 641px) and (max-width: 768px) {
+  .grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+}
+
+/* Celulares: ajustes críticos para não cortar nada */
+@media (max-width: 480px) {
+  .container { padding: 0 14px; }
+
+  /* Header */
+  .header-inner { height: auto; min-height: 60px; }
+  .logo { gap: 6px; }
+  .logo-text { font-size: 1.15rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .btn-tema { width: 40px; height: 40px; font-size: 1.1rem; padding: 0; }
+  .btn-outline { padding: 8px 12px; font-size: 0.85rem; white-space: nowrap; }
+
+  /* Busca */
+  .search-wrap input { font-size: 1rem; padding: 12px 14px; }
+
+  /* Hero */
+  .hero { padding: 32px 0; }
+  .hero-inner { gap: 16px; }
+  .hero-texto h1 { font-size: 1.5rem; line-height: 1.2; }
+  .hero-texto p { font-size: 0.95rem; line-height: 1.5; margin-bottom: 16px; }
+
+  /* Categorias */
+  .chip-categoria { font-size: 0.85rem; padding: 6px 12px; }
+  .categoria-lista { gap: 6px; }
+
+  /* Cards de empresa */
+  .card-empresa { padding: 16px; border-radius: 12px; }
+  .card-header { gap: 10px; }
+  .logo-empresa { width: 48px; height: 48px; border-radius: 10px; flex-shrink: 0; }
+  .logo-sigla { font-size: 1.1rem; }
+  .empresa-info h3 { font-size: 1rem; margin-bottom: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .empresa-info p { font-size: 0.85rem; line-height: 1.3; max-width: none; }
+  .categoria-tag { font-size: 0.68rem; padding: 4px 8px; white-space: nowrap; }
+  .card-footer { gap: 10px; }
+  .btn-acessar { width: 100%; padding: 14px 16px; font-size: 0.95rem; text-align: center; }
+
+  /* Estatísticas */
+  .estatisticas-grid { flex-direction: column; gap: 14px; }
+  .estat-card { min-width: 100%; padding: 20px 16px; }
+  .estat-valor { font-size: 1.6rem; }
+  .estat-label { font-size: 0.8rem; }
+
+  /* Top empresas */
+  .top-item { flex-direction: column; gap: 6px; text-align: center; padding: 14px 12px; }
+  .top-nome { font-size: 0.95rem; }
+  .top-qtd { font-size: 0.85rem; }
+
+  /* Rodapé */
+  .footer { padding: 40px 0 24px; }
+  .footer-inner { flex-direction: column; gap: 20px; text-align: center; }
+  .footer-col { text-align: center; }
+  .footer-col ul { justify-content: center; gap: 10px; }
+  .footer-col li { margin: 0; }
+
+  /* Acesso */
+  .aviso-acessibilidade { font-size: 0.85rem; padding: 10px 14px; }
+
+  /* Anúncios */
+  .ad-placeholder { height: auto; min-height: 60px; }
+
+  /* Doações */
+  .doacoes-inner { flex-direction: column; gap: 16px; text-align: center; }
+  .doacoes-pix { max-width: 100%; min-width: auto; }
+  .btn-copiar-doacao { width: 100%; }
+
+  /* Relógio */
+  .relogio { margin-left: 8px; padding: 5px 8px; }
+  .relogio-hora { font-size: 0.85rem; }
+  .relogio-data { font-size: 0.65rem; }
+
+  /* Evitar cortes de texto longo */
+  p, li, span, div { word-wrap: break-word; overflow-wrap: break-word; }
+  .empresa-info h3 { max-width: none; white-space: normal; text-overflow: clip; }
+
+  /* Evitar scroll horizontal */
+  html, body { overflow-x: hidden; max-width: 100vw; }
+}
+
+/* Celulares muito pequenos (até 360px) */
+@media (max-width: 360px) {
+  .logo-text { font-size: 1rem; }
+  .btn-tema { width: 36px; height: 36px; font-size: 1rem; }
+  .btn-outline { padding: 7px 10px; font-size: 0.8rem; }
+  .hero-texto h1 { font-size: 1.4rem; }
+  .card-empresa { padding: 14px; }
+  .logo-empresa { width: 44px; height: 44px; }
+  .logo-sigla { font-size: 1rem; }
+  .btn-acessar { padding: 13px 14px; font-size: 0.9rem; }
+
+  /* Relógio */
+  .relogio { padding: 4px 6px; }
+  .relogio-hora { font-size: 0.8rem; }
+  .relogio-data { font-size: 0.6rem; white-space: nowrap; }
+}
+
+/* Ícone do tema no relógio - garantir que não quebre */
+.icone-tema { font-size: 1.2rem; line-height: 1; }

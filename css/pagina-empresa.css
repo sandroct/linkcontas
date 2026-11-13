@@ -700,4 +700,90 @@
   .faq summary {
     font-size: 1.08rem;
   }
+
+  /* Documentos em coluna única */
+  .documentos-grid { grid-template-columns: 1fr; gap: 12px; }
+
+  .doc-card { padding: 16px 14px; gap: 10px; }
+  .doc-icone { font-size: 1.6rem; flex-shrink: 0; }
+  .doc-texto strong { font-size: 1rem; }
+  .doc-texto span { font-size: 0.9rem; line-height: 1.4; }
+
+  /* Passos em coluna única */
+  .passos-grid { grid-template-columns: 1fr; gap: 12px; }
+
+  .passo-card { padding: 16px 14px; gap: 12px; }
+  .passo-numero { width: 26px; height: 26px; font-size: 1rem; flex-shrink: 0; }
+  .passo-texto { font-size: 0.95rem; line-height: 1.5; }
+
+  /* Canais em coluna única */
+  .canais-grid { grid-template-columns: 1fr; gap: 12px; }
+
+  .canal-card { padding: 16px 14px; gap: 10px; }
+  .canal-icone { font-size: 1.6rem; flex-shrink: 0; }
+  .canal-texto strong { font-size: 1rem; }
+  .canal-texto span { font-size: 0.9rem; line-height: 1.4; }
+
+  /* Dicas em coluna única */
+  .dicas-grid { grid-template-columns: 1fr; gap: 12px; }
+
+  .dica-card { padding: 16px 14px; gap: 10px; }
+  .dica-icone { font-size: 1.6rem; flex-shrink: 0; }
+  .dica-texto strong { font-size: 1rem; }
+  .dica-texto span { font-size: 0.9rem; line-height: 1.4; }
+
+  /* FAQ */
+  .faq details { padding: 16px 14px; }
+  .faq summary { font-size: 1rem; padding: 12px 14px; }
+
+  /* Aviso golpe */
+  .aviso-golpe { padding: 14px 16px; font-size: 0.95rem; line-height: 1.5; }
+
+  /* Navegação */
+  .nav-empresas { flex-direction: column; align-items: stretch; }
+  .nav-empresas a { text-align: center; padding: 14px 16px; font-size: 0.95rem; }
+
+  /* CTA principal */
+  .cta-principal { width: 100%; padding: 18px 20px; font-size: 1rem; text-align: center; }
+
+  /* Botão ajudou */
+  .ajudou-botoes { flex-direction: column; gap: 8px; }
+  .ajudou-btn { width: 100%; padding: 14px 16px; font-size: 1rem; }
+
+  /* Evitar cortes de texto */
+  p, li, span, div { word-wrap: break-word; overflow-wrap: break-word; }
+  .empresa-info h3 { white-space: normal; overflow-wrap: break-word; }
+
+  /* Scroll horizontal */
+  html, body { overflow-x: hidden; max-width: 100vw; }
+}
+
+/* Celulares muito pequenos */
+@media (max-width: 360px) {
+  .artigo { padding: 24px 16px 20px; }
+  .artigo h1 { font-size: 1.5rem; }
+  .artigo h2 { font-size: 1.2rem; margin-top: 28px; }
+  .artigo p, .artigo li { font-size: 1rem; line-height: 1.6; }
+  .cta-principal { padding: 16px 16px; font-size: 0.95rem; }
+
+  /* Documentos */
+  .doc-card { padding: 14px 12px; gap: 8px; }
+  .doc-icone { font-size: 1.4rem; }
+  .doc-texto strong { font-size: 0.95rem; }
+  .doc-texto span { font-size: 0.85rem; }
+
+  /* Passos */
+  .passo-card { padding: 14px 12px; gap: 10px; }
+  .passo-numero { width: 24px; height: 24px; font-size: 0.9rem; }
+  .passo-texto { font-size: 0.9rem; line-height: 1.5; }
+
+  /* Canais e dicas */
+  .canal-card, .dica-card { padding: 14px 12px; gap: 8px; }
+  .canal-icone, .dica-icone { font-size: 1.4rem; }
+  .canal-texto strong, .dica-texto strong { font-size: 0.95rem; }
+  .canal-texto span, .dica-texto span { font-size: 0.85rem; }
+
+  /* FAQ */
+  .faq details { padding: 14px 12px; }
+  .faq summary { font-size: 0.95rem; padding: 10px 12px; }
 }
