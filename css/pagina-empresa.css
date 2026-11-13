@@ -787,3 +787,48 @@
   .faq details { padding: 14px 12px; }
   .faq summary { font-size: 0.95rem; padding: 10px 12px; }
 }
+
+
+/* =====================================
+   OUTRAS EMPRESAS (SEO interno)
+   ===================================== */
+.outras-empresas {
+  margin-top: 36px;
+  padding-top: 24px;
+  border-top: 1px dashed var(--cor-borda, #cddcf5);
+}
+.outras-empresas h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: 'Sora', 'Inter', sans-serif;
+  letter-spacing: -0.02em;
+  color: var(--cor-texto, #16233f);
+  margin-bottom: 14px;
+}
+.outras-lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.outras-lista a {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  background: var(--cor-card, #fff);
+  border: 1px solid var(--cor-borda, #cddcf5);
+  border-radius: 999px;
+  color: var(--cor-texto-suave, #4a5f85);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+.outras-lista a:hover {
+  background: var(--cor-primaria, #2563eb);
+  border-color: var(--cor-primaria, #2563eb);
+  color: #fff;
+  transform: translateY(-2px);
+}
