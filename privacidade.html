@@ -65,8 +65,8 @@
 
     <a href="index.html" class="voltar">← Voltar ao site</a>
   </div>
-  <script>
-    (function () {
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
       var salvo = localStorage.getItem('linkcontas-tema');
       var sistema = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'escuro' : 'claro';
       var tema = salvo || sistema;
@@ -83,7 +83,7 @@
         if (escuro) { aplicar('claro'); localStorage.setItem('linkcontas-tema', 'claro'); }
         else { aplicar('escuro'); localStorage.setItem('linkcontas-tema', 'escuro'); }
       });
-    })();
+    });
   </script>
   </body>
 </html>

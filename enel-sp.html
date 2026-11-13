@@ -248,45 +248,25 @@
     </div>
   </footer>
 
-  <script>
-    // Tema claro/escuro
-    (function () {
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
       var salvo = localStorage.getItem('linkcontas-tema');
       var sistema = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'escuro' : 'claro';
       var tema = salvo || sistema;
       var html = document.documentElement;
       var icone = document.querySelector('.icone-tema');
-
       function aplicar(t) {
-        if (t === 'escuro') { html.setAttribute('data-tema', 'escuro'); icone.textContent = '☀️'; }
-        else { html.removeAttribute('data-tema'); icone.textContent = '🌙'; }
+        if (t === 'escuro') { html.setAttribute('data-tema', 'escuro'); if(icone) icone.textContent = '☀'; }
+        else { html.removeAttribute('data-tema'); if(icone) icone.textContent = '🌙'; }
       }
       aplicar(tema);
-
-      document.getElementById('tema-toggle').addEventListener('click', function () {
+      var btn = document.getElementById('tema-toggle');
+      if(btn) btn.addEventListener('click', function () {
         var escuro = html.getAttribute('data-tema') === 'escuro';
         if (escuro) { aplicar('claro'); localStorage.setItem('linkcontas-tema', 'claro'); }
         else { aplicar('escuro'); localStorage.setItem('linkcontas-tema', 'escuro'); }
       });
-    })();
-
-    // Feedback "Este artigo ajudou?"
-    (function () {
-      var box = document.getElementById('ajudou');
-      var botoes = document.getElementById('ajudou-botoes');
-      botoes.querySelectorAll('.ajudou-btn').forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          var sim = btn.getAttribute('data-resposta') === 'sim';
-          botoes.remove();
-          var msg = document.createElement('p');
-          msg.className = 'ajudou-obrigado';
-          msg.textContent = sim
-            ? 'Obrigado pelo seu feedback! Ficamos felizes em ajudar. 💙'
-            : 'Obrigado por avisar! Vamos melhorar. Se precisar, fale com a gente na página de Contato.';
-          box.appendChild(msg);
-        });
-      });
-    })();
+    });
   </script>
 
   <script>

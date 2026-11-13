@@ -308,55 +308,25 @@
     </div>
   </footer>
 
-  <script>
-    (function () {
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
       var salvo = localStorage.getItem('linkcontas-tema');
       var sistema = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'escuro' : 'claro';
       var tema = salvo || sistema;
       var html = document.documentElement;
       var icone = document.querySelector('.icone-tema');
       function aplicar(t) {
-        if (t === 'escuro') { html.setAttribute('data-tema', 'escuro'); icone.textContent = '☀'; }
-        else { html.removeAttribute('data-tema'); icone.textContent = '🌙'; }
+        if (t === 'escuro') { html.setAttribute('data-tema', 'escuro'); if(icone) icone.textContent = '☀'; }
+        else { html.removeAttribute('data-tema'); if(icone) icone.textContent = '🌙'; }
       }
       aplicar(tema);
-      document.getElementById('tema-toggle').addEventListener('click', function () {
+      var btn = document.getElementById('tema-toggle');
+      if(btn) btn.addEventListener('click', function () {
         var escuro = html.getAttribute('data-tema') === 'escuro';
         if (escuro) { aplicar('claro'); localStorage.setItem('linkcontas-tema', 'claro'); }
         else { aplicar('escuro'); localStorage.setItem('linkcontas-tema', 'escuro'); }
-      };
-    })();
-    (function () {
-      var btn = document.querySelector('.cta-principal');
-      if (!btn) return;
-      var idEmpresa = btn.getAttribute('data-empresa');
-      var nomeEmpresa = btn.textContent.trim();
-      btn.addEventListener('click', function () {
-        if (window.linkcontas && window.linkcontas.contador) {
-          window.linkcontas.contador.cliqueEmpresa(idEmpresa, nomeEmpresa);
-        }
-      };
-    })();
-    (function () {
-      var elHora = document.getElementById('relogio-hora');
-      var elData = document.getElementById('relogio-data');
-      if (!elHora || !elData) return;
-      var meses = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'];
-      function atualizar() {
-        var agora = new Date();
-        // Horário local do visitante (do seu dispositivo)
-        var h = String(agora.getHours()).padStart(2, '0');
-        var m = String(agora.getMinutes()).padStart(2, '0');
-        var s = String(agora.getSeconds()).padStart(2, '0');
-        var d = String(agora.getDate()).padStart(2, '0');
-        var mes = meses[agora.getMonth()];
-        var ano = agora.getFullYear();
-        elHora.textContent = h + ':' + m + ':' + s;
-        elData.textContent = d + '/' + mes + '/' + ano;
-      }
-      atualizar();
-      setInterval(atualizar, 1000);
-    })();
+      });
+    });
   </script>
 </body>
 </html>
