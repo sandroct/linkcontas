@@ -43,26 +43,7 @@
     .voltar:hover { color: var(--cor-primaria); }
     .lema { margin: 24px 0; padding: 20px 24px; background: linear-gradient(135deg, #eff6ff, #dbeafe); border-left: 5px solid var(--cor-primaria); border-radius: 10px; font-size: 1.15rem; font-weight: 700; color: var(--cor-primaria); text-align: center; line-height: 1.5; }
   </style>
-    <script>
-    (function () {
-      var salvo = localStorage.getItem('linkcontas-tema');
-      var sistema = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'escuro' : 'claro';
-      var tema = salvo || sistema;
-      var html = document.documentElement;
-      var icone = document.querySelector('.icone-tema');
-      function aplicar(t) {
-        if (t === 'escuro') { html.setAttribute('data-tema', 'escuro'); if(icone) icone.textContent = '☀'; }
-        else { html.removeAttribute('data-tema'); if(icone) icone.textContent = '🌙'; }
-      }
-      aplicar(tema);
-      var btn = document.getElementById('tema-toggle');
-      if(btn) btn.addEventListener('click', function () {
-        var escuro = html.getAttribute('data-tema') === 'escuro';
-        if (escuro) { aplicar('claro'); localStorage.setItem('linkcontas-tema', 'claro'); }
-        else { aplicar('escuro'); localStorage.setItem('linkcontas-tema', 'escuro'); }
-      });
-    })();
-  </script>
+    
   </head>
 <body>
   <div class="container">
@@ -108,5 +89,25 @@
 
     <a href="index.html" class="voltar">← Voltar ao site</a>
   </div>
-</body>
+  <script>
+    (function () {
+      var salvo = localStorage.getItem('linkcontas-tema');
+      var sistema = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'escuro' : 'claro';
+      var tema = salvo || sistema;
+      var html = document.documentElement;
+      var icone = document.querySelector('.icone-tema');
+      function aplicar(t) {
+        if (t === 'escuro') { html.setAttribute('data-tema', 'escuro'); if(icone) icone.textContent = '☀'; }
+        else { html.removeAttribute('data-tema'); if(icone) icone.textContent = '🌙'; }
+      }
+      aplicar(tema);
+      var btn = document.getElementById('tema-toggle');
+      if(btn) btn.addEventListener('click', function () {
+        var escuro = html.getAttribute('data-tema') === 'escuro';
+        if (escuro) { aplicar('claro'); localStorage.setItem('linkcontas-tema', 'claro'); }
+        else { aplicar('escuro'); localStorage.setItem('linkcontas-tema', 'escuro'); }
+      });
+    })();
+  </script>
+  </body>
 </html>

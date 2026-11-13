@@ -21,26 +21,7 @@
   <meta name="description" content="Encontre rapidamente os sites oficiais para pagar suas contas de luz, água, telefone, internet e mais.">
   <link rel="stylesheet" href="css/style.css?v=6">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <script>
-    (function () {
-      var salvo = localStorage.getItem('linkcontas-tema');
-      var sistema = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'escuro' : 'claro';
-      var tema = salvo || sistema;
-      var html = document.documentElement;
-      var icone = document.querySelector('.icone-tema');
-      function aplicar(t) {
-        if (t === 'escuro') { html.setAttribute('data-tema', 'escuro'); if(icone) icone.textContent = '☀'; }
-        else { html.removeAttribute('data-tema'); if(icone) icone.textContent = '🌙'; }
-      }
-      aplicar(tema);
-      var btn = document.getElementById('tema-toggle');
-      if(btn) btn.addEventListener('click', function () {
-        var escuro = html.getAttribute('data-tema') === 'escuro';
-        if (escuro) { aplicar('claro'); localStorage.setItem('linkcontas-tema', 'claro'); }
-        else { aplicar('escuro'); localStorage.setItem('linkcontas-tema', 'escuro'); }
-      });
-    })();
-  </script>
+    
   </head>
 <body>
 
@@ -380,5 +361,25 @@
       });
     })();
   </script>
-</body>
+  <script>
+    (function () {
+      var salvo = localStorage.getItem('linkcontas-tema');
+      var sistema = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'escuro' : 'claro';
+      var tema = salvo || sistema;
+      var html = document.documentElement;
+      var icone = document.querySelector('.icone-tema');
+      function aplicar(t) {
+        if (t === 'escuro') { html.setAttribute('data-tema', 'escuro'); if(icone) icone.textContent = '☀'; }
+        else { html.removeAttribute('data-tema'); if(icone) icone.textContent = '🌙'; }
+      }
+      aplicar(tema);
+      var btn = document.getElementById('tema-toggle');
+      if(btn) btn.addEventListener('click', function () {
+        var escuro = html.getAttribute('data-tema') === 'escuro';
+        if (escuro) { aplicar('claro'); localStorage.setItem('linkcontas-tema', 'claro'); }
+        else { aplicar('escuro'); localStorage.setItem('linkcontas-tema', 'escuro'); }
+      });
+    })();
+  </script>
+  </body>
 </html>
