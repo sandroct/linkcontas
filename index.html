@@ -33,10 +33,10 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f172a">
-  <title>LinkContas — Suas contas em um só lugar</title>
+  <title>LinkContas — Pague suas contas aqui</title>
   <meta name="description" content="Encontre os sites oficiais para pagar contas de luz, água, telefone e internet. Links oficiais, gratuitos e seguros.">
   <link rel="canonical" href="https://linkcontas.com.br/">
-  <meta property="og:title" content="LinkContas — Suas contas em um só lugar">
+  <meta property="og:title" content="LinkContas — Pague suas contas aqui">
   <meta property="og:description" content="Encontre os sites oficiais para pagar contas de luz, água, telefone e internet. Links oficiais, gratuitos e seguros.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://linkcontas.com.br/">
@@ -52,7 +52,7 @@
   <link rel="stylesheet" href="css/style.css?v=14">
 </head>
 <body>
-  <!-- Skip link -->
+  <!-- Skip link para acessibilidade -->
   <a href="#grid-empresas" class="skip-link">Pular para a lista de empresas</a>
 
   <!-- Header -->
@@ -76,13 +76,42 @@
         </span>
         <span class="logo-text">LinkContas</span>
       </a>
+
+      <!-- Navegação desktop -->
+      <nav class="nav-principal" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html" class="nav-link ativo">Início</a></li>
+          <li><a href="#grid-empresas" class="nav-link">Empresas</a></li>
+          <li><a href="#categorias" class="nav-link">Categorias</a></li>
+          <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contato.html" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
       <div class="user-actions">
         <button id="tema-toggle" class="btn-tema" aria-label="Alternar tema claro/escuro" title="Alternar tema">
           <span class="icone-tema"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span>
         </button>
-        <a href="contato.html" class="btn btn-outline">Contato</a>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-mobile">
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+        </button>
       </div>
     </div>
+
+    <!-- Menu mobile -->
+    <nav class="menu-mobile" id="menu-mobile" aria-label="Navegação mobile">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="#grid-empresas">Empresas</a></li>
+        <li><a href="#categorias">Categorias</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main id="conteudo">
@@ -91,7 +120,7 @@
       <div class="container hero-inner">
         <div class="hero-content">
           <div class="hero-badge">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             Links oficiais verificados
           </div>
           <h1>Pague suas contas <span class="gradiente">em um só lugar</span></h1>
@@ -122,7 +151,7 @@
     </section>
 
     <!-- Categorias -->
-    <section class="categorias">
+    <section class="categorias" id="categorias">
       <div class="container">
         <div class="categorias-header">
           <h2>Categorias</h2>
@@ -247,7 +276,7 @@
         <ul>
           <li><a href="contato.html">Sugerir empresa</a></li>
           <li><a href="contato.html">Reportar link quebrado</a></li>
-          <li><a href="#">Perguntas frequentes</a></li>
+          <li><a href="faq.html">Perguntas frequentes</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -338,6 +367,25 @@
       var escuro = document.documentElement.getAttribute('data-tema') === 'escuro';
       aplicar(escuro ? 'claro' : 'escuro');
       localStorage.setItem('linkcontas-tema', escuro ? 'claro' : 'escuro');
+    });
+  })();
+  // Menu mobile toggle
+  (function () {
+    var btn = document.getElementById('menu-toggle');
+    var menu = document.getElementById('menu-mobile');
+    if (!btn || !menu) return;
+    btn.addEventListener('click', function () {
+      var aberto = menu.classList.toggle('aberto');
+      btn.setAttribute('aria-expanded', aberto ? 'true' : 'false');
+      btn.setAttribute('aria-label', aberto ? 'Fechar menu' : 'Abrir menu');
+    });
+    // Fecha ao clicar em um link
+    menu.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        menu.classList.remove('aberto');
+        btn.setAttribute('aria-expanded', 'false');
+        btn.setAttribute('aria-label', 'Abrir menu');
+      });
     });
   })();
   </script>
