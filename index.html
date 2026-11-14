@@ -31,13 +31,13 @@
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#2563eb">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f172a">
-  <title>LinkContas — Pague suas contas aqui</title>
-  <meta name="description" content="Encontre os sites oficiais para pagar contas de luz, água, telefone e internet. Links verificados, sem cadastro, sem cobrança indevida.">
+  <title>LinkContas — Suas contas em um só lugar</title>
+  <meta name="description" content="Encontre os sites oficiais para pagar contas de luz, água, telefone e internet. Links oficiais, gratuitos e seguros.">
   <link rel="canonical" href="https://linkcontas.com.br/">
-  <meta property="og:title" content="LinkContas — Pague suas contas aqui">
-  <meta property="og:description" content="Encontre os sites oficiais para pagar contas de luz, água, telefone e internet. Links verificados, sem cadastro, sem cobrança indevida.">
+  <meta property="og:title" content="LinkContas — Suas contas em um só lugar">
+  <meta property="og:description" content="Encontre os sites oficiais para pagar contas de luz, água, telefone e internet. Links oficiais, gratuitos e seguros.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://linkcontas.com.br/">
   <meta property="og:image" content="https://linkcontas.com.br/og.png">
@@ -48,19 +48,19 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=13">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=14">
 </head>
 <body>
-  <!-- Skip link para acessibilidade -->
+  <!-- Skip link -->
   <a href="#grid-empresas" class="skip-link">Pular para a lista de empresas</a>
 
   <!-- Header -->
   <header class="header">
     <div class="container header-inner">
-      <a class="logo" href="index.html" style="text-decoration:none" aria-label="LinkContas — Página inicial">
+      <a class="logo" href="index.html" aria-label="LinkContas — Página inicial">
         <span class="logo-icon">
-          <svg class="logo-boleto" viewBox="0 0 32 36" xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 32 36" xmlns="http://www.w3.org/2000/svg">
             <rect x="3" y="2" width="26" height="32" rx="4" fill="#ffffff" stroke="#1d4ed8" stroke-width="2.5"/>
             <rect x="8" y="8" width="16" height="2.6" rx="1.3" fill="#2563eb"/>
             <rect x="8" y="13.5" width="11" height="2.2" rx="1.1" fill="#cbd5e1"/>
@@ -89,12 +89,14 @@
     <!-- Hero com busca em destaque -->
     <section class="hero">
       <div class="container hero-inner">
-        <div class="hero-texto">
-          <span class="hero-badge">Encontre o site oficial da sua empresa</span>
-          <h1>Pague suas contas em um só lugar</h1>
-          <p class="hero-lead">Busque a empresa, clique em "Pagar conta" e você será levado direto para o site oficial. Sem cadastro, sem cobrança indevida.</p>
+        <div class="hero-content">
+          <div class="hero-badge">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            Links oficiais verificados
+          </div>
+          <h1>Pague suas contas <span class="gradiente">em um só lugar</span></h1>
+          <p class="hero-lead">Encontre o site oficial da sua empresa e pague direto. Sem cadastro, sem cobrança indevida, sem golpes.</p>
 
-          <!-- Busca grande e em destaque -->
           <div class="busca-hero">
             <div class="busca-wrapper">
               <span class="busca-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></span>
@@ -112,18 +114,18 @@
         <div class="selo-conteudo">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           <div class="selo-texto">
-            <strong>Links 100% oficiais</span></strong>
-            <span class="selo-sub">Não pedimos seus dados, não processamos pagamentos. Você paga direto no site da empresa.</span>
+            <strong>Links 100% oficiais</strong>
+            <span>Não pedimos seus dados, não processamos pagamentos. Você paga direto no site da empresa.</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Categorias como atalhos -->
+    <!-- Categorias -->
     <section class="categorias">
       <div class="container">
         <div class="categorias-header">
-          <h2>Busque por categoria</h2>
+          <h2>Categorias</h2>
           <p>Escolha o tipo de conta que você quer pagar</p>
         </div>
         <div class="categoria-lista" id="categorias"></div>
@@ -135,7 +137,7 @@
       <div class="container">
         <div class="empresas-header">
           <div class="empresas-titulo">
-            <h2 id="titulo-lista">Empresas</h2>
+            <h2>Empresas</h2>
             <span id="contagem" class="badge">…</span>
           </div>
         </div>
@@ -143,7 +145,7 @@
       </div>
     </section>
 
-    <!-- Como funciona (compacto, abaixo da lista) -->
+    <!-- Como funciona -->
     <section class="como-funciona">
       <div class="container">
         <div class="como-funciona-conteudo">
@@ -180,17 +182,10 @@
       <div class="container">
         <div class="confianca-grid">
           <div class="conf-item">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M12 17l-5 5 10-5"/></svg>
-            <div class="conf-texto">
-              <h4>Não somos a empresa</h4>
-              <p>Somos apenas um indicador de links oficiais. Você paga direto no site da concessionária.</p>
-            </div>
-          </div>
-          <div class="conf-item">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             <div class="conf-texto">
               <h4>Sem cadastro necessário</h4>
-              <p>Não pedimos seu nome, CPF, senha ou dados bancários.</p>
+              <p>Não pedimos seu nome, CPF ou senha.</p>
             </div>
           </div>
           <div class="conf-item">
@@ -198,6 +193,13 @@
             <div class="conf-texto">
               <h4>Gratuito e sem anúncios intrusivos</h4>
               <p>O LinkContas é gratuito e não cobra nada para usar.</p>
+            </div>
+          </div>
+          <div class="conf-item">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <div class="conf-texto">
+              <h4>Links oficiais verificados</h4>
+              <p>Cada empresa leva diretamente ao site oficial da concessionária.</p>
             </div>
           </div>
         </div>
@@ -264,6 +266,24 @@
       </div>
     </div>
   </footer>
+
+  <!-- Doações / Cafézinho -->
+  <section class="doacoes reveal" id="doacoes">
+    <div class="container doacoes-inner">
+      <div class="doacoes-texto">
+        <h3>☕ Doações / Cafézinho</h3>
+        <p>O LinkContas é gratuito e sem anúncios intrusivos. Se ele te ajudou a pagar uma conta, qualquer valor é bem-vindo para manter o site no ar. Obrigado! 💙</p>
+      </div>
+      <div class="doacoes-pix">
+        <strong class="doacoes-pix-label">Chave Pix aleatória (doações/apoio)</strong>
+        <div class="doacoes-chave-wrap">
+          <code id="pix-chave-doacoes" class="doacoes-chave">a5dccde0-8045-4dbd-89b4-905b4e44701c</code>
+          <button id="btn-copiar-doacao" class="btn-copiar-doacao" type="button">Copiar chave</button>
+        </div>
+        <small class="doacoes-dica">Chave aleatória — aceita transferência de qualquer banco. Toque em "Copiar chave", abra o app do seu banco, escolha Pix → Colar e pronto!</small>
+      </div>
+    </div>
+  </section>
 
   <script src="js/contador.js?v=2"></script>
   <script src="js/script.js?v=7"></script>
