@@ -30,6 +30,8 @@
   <script src="//ezoicanalytics.com/analytics.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#2563eb">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f172a">
   <title>CEMIG: 2ª via e pagamento da conta de luz | LinkContas</title>
@@ -43,8 +45,10 @@
   <meta property="og:image:height" content="630">
   <meta property="og:site_name" content="LinkContas">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="stylesheet" href="css/style.css?v=8">
-  <link rel="stylesheet" href="css/pagina-empresa.css">
+  <link rel="stylesheet" href="css/style.css?v=10">
+  <link rel="stylesheet" href="css/pagina-empresa.css?v=4">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="js/contador.js"></script>
       
@@ -72,7 +76,7 @@
       </a>
       <div class="user-actions">
         <button id="tema-toggle" class="btn-tema" aria-label="Alternar tema claro/escuro" title="Alternar tema">
-          <span class="icone-tema">🌙</span>
+          <span class="icone-tema"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span>
         </button>
         <a href="sobre.html" class="btn btn-outline">Sobre</a>
         <div class="relogio" id="relogio" aria-label="Horário e data de Brasília">
@@ -95,22 +99,22 @@
     <article class="artigo">
       <div class="empresa-cabecalho">
         <div class="empresa-badge">
-          <span class="badge-energia">⚡ Energia Elétrica</span>
+          <span class="badge-energia"> <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg> Energia Elétrica</span>
         </div>
         <h1>CEMIG: como tirar a 2ª via e pagar sua conta com segurança</h1>
-        <span class="atualização">&#128197; Página atualizada em 13 de novembro de 2026</span>
+        <span class="atualização"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg> Página atualizada em 13 de novembro de 2026</span>
         <p class="lead">Se você mora em Minas Gerais e recebe a conta de luz da CEMIG, veio ao lugar certo. Esta página explica, sem palavras dificeis, como entrar no site oficial da CEMIG para tirar a segunda via e pagar sua conta.</p>
       </div>
 
       <div class="cta-wrapper">
         <a class="cta-principal" data-empresa="cemig" href="https://atende.cemig.com.br/Login" target="_blank" rel="noopener noreferrer">
-          &#9889; Ir para o site oficial da CEMIG
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg> Ir para o site oficial da CEMIG
         </a>
         <p class="cta-nota">O botão abre uma nova aba, para você não perder esta página.</p>
       </div>
 
       <div class="obs-box">
-        <div class="obs-icone">⚠️</div>
+        <div class="obs-icone"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></div>
         <div class="obs-conteudo">
           <strong>Observação importante:</strong>
           <span>A CEMIG tem um aplicativo oficial gratuito, o CEMIG Atende. Se preferir, da para resolver tudo pelo celular, mas o site pelo botão desta página funciona igual.</span>
@@ -123,7 +127,7 @@
       <div class="documentos-grid">
         
         <div class="doc-card">
-          <div class="doc-icone">📄</div>
+          <div class="doc-icone"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg></div>
           <div class="doc-texto">
             <strong>O CPF do titular.</strong>
             <span>A pessoa cujo nome está na conta de energia.</span>
@@ -131,7 +135,7 @@
         </div>
 
         <div class="doc-card">
-          <div class="doc-icone">📄</div>
+          <div class="doc-icone"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg></div>
           <div class="doc-texto">
             <strong>O número do cliente ou da instalação.</strong>
             <span>Fica no canto superior da conta, perto do endereço.</span>
@@ -139,7 +143,7 @@
         </div>
 
         <div class="doc-card">
-          <div class="doc-icone">📄</div>
+          <div class="doc-icone"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg></div>
           <div class="doc-texto">
             <strong>Um celular ou e-mail.</strong>
             <span>Para receber o código de confirmação na primeira entrada.</span>
@@ -147,7 +151,7 @@
         </div>
 
         <div class="doc-card">
-          <div class="doc-icone">📄</div>
+          <div class="doc-icone"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg></div>
           <div class="doc-texto">
             <strong>A conta do mês anterior.</strong>
             <span>Serve para comparar o consumo e o valor.</span>
@@ -202,21 +206,21 @@
       <div class="canais-grid">
         
         <div class="canal-card">
-          <div class="canal-icone">📞</div>
+          <div class="canal-icone"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
           <div class="canal-texto">
             <strong>Telefone</strong>
             <span>116 (em Minas Gerais) ou 0800 721 0116 (de outros estados)</span>
           </div>
         </div>
         <div class="canal-card">
-          <div class="canal-icone">💬</div>
+          <div class="canal-icone"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22z"/></svg></div>
           <div class="canal-texto">
             <strong>WhatsApp</strong>
             <span>(31) 3506-1160</span>
           </div>
         </div>
         <div class="canal-card">
-          <div class="canal-icone">📱</div>
+          <div class="canal-icone"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></div>
           <div class="canal-texto">
             <strong>Aplicativo</strong>
             <span>Procure pelo nome da empresa na loja de aplicativos do celular. Gratuito e oficial.</span>
@@ -234,17 +238,17 @@
       <div class="dicas-grid">
         
         <div class="dica-card">
-          <div class="dica-icone">✅</div>
+          <div class="dica-icone"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg></div>
           <div class="dica-texto"><strong>Confira o nome do recebedor.</strong> No Pix ou no boleto, o nome precisa ser o da CEMIG. Se aparecer nome de pessoa fisica, não pague.</div>
         </div>
 
         <div class="dica-card">
-          <div class="dica-icone">🔗</div>
+          <div class="dica-icone"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></div>
           <div class="dica-texto"><strong>Nunca clique em links patrocinados.</strong> Os primeiros resultados do Google podem ser anuncios pagos por golpistas. Use o botão desta página.</div>
         </div>
 
         <div class="dica-card">
-          <div class="dica-icone">🚨</div>
+          <div class="dica-icone"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg></div>
           <div class="dica-texto"><strong>Cuidado com e-mails falsos.</strong> A CEMIG não envia boleto por e-mail pedindo pagamento com urgência. Confirme sempre no site oficial.</div>
         </div>
       </div>
@@ -285,8 +289,8 @@
       <div class="ajudou" id="ajudou">
         <h3>Este artigo ajudou você?</h3>
         <div class="ajudou-botoes" id="ajudou-botoes">
-          <button class="ajudou-btn" data-resposta="sim">👍 Sim, me ajudou</button>
-          <button class="ajudou-btn não" data-resposta="não">👎 Não, preciso de mais ajuda</button>
+          <button class="ajudou-btn" data-resposta="sim"> <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10v12"/><path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88z"/></svg> Sim, me ajudou</button>
+          <button class="ajudou-btn não" data-resposta="não"> <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 14V2"/><path d="M9 18.12 10 14H4.17a2 2 0 0 1-1.92-2.56l2.33-8A2 2 0 0 1 6.5 2H20a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.76a2 2 0 0 0-1.79 1.11L12 22a3.13 3.13 0 0 1-3-3.88z"/></svg> Não, preciso de mais ajuda</button>
         </div>
       </div>
 
@@ -346,8 +350,8 @@
       var html = document.documentElement;
       var icone = document.querySelector('.icone-tema');
       function aplicar(t) {
-        if (t === 'escuro') { html.setAttribute('data-tema', 'escuro'); if(icone) icone.textContent = '☀'; }
-        else { html.removeAttribute('data-tema'); if(icone) icone.textContent = '🌙'; }
+        if (t === 'escuro') { html.setAttribute('data-tema', 'escuro'); if(icone) icone.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.9 4.9 1.4 1.4"/><path d="m17.7 17.7 1.4 1.4"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.3 17.7-1.4 1.4"/><path d="m19.1 4.9-1.4 1.4"/></svg>'; }
+        else { html.removeAttribute('data-tema'); if(icone) icone.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>'; }
       }
       aplicar(tema);
       var btn = document.getElementById('tema-toggle');

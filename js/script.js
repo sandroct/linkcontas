@@ -289,6 +289,44 @@ const ICONES_CATEGORIA = {
   consultas: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>'
 };
 
+// Dicas rotativas
+const DICAS = [
+  'Todos os botões abrem o site da empresa em uma <strong>nova aba</strong>, para você não perder esta página.',
+  'Use a busca acima para encontrar sua empresa rapidamente — funciona até sem acentos.',
+  'Clique nas categorias (Energia, Água, Telefone, Internet, Consultas) para filtrar as empresas.',
+  'O relógio mostra o horário oficial de Brasília — útil para saber se o atendimento está aberto.',
+  'No modo escuro, o site economiza bateria em telas OLED e cansa menos a vista à noite.',
+  'Suas empresas mais acessadas aparecem na seção "Estatísticas" — personalize sua experiência.',
+  'A chave Pix de doações é aleatória e aceita transferência de qualquer banco.',
+  'Todas as empresas listadas têm links oficiais — nunca pedimos senha nem dados bancários.',
+  'Se não achar sua empresa, clique em "Contato" no topo e nos avise — adicionamos rapidinho.',
+  'O site funciona offline parcialmente: favoritos e dicas ficam salvos no seu navegador.'
+];
+
+let dicaAtual = 0;
+let dicaTimer = null;
+
+function mostrarDica(indice) {
+  const el = document.getElementById('dica-texto');
+  if (!el || !DICAS[indice]) return;
+  el.style.opacity = '0';
+  setTimeout(() => {
+    el.innerHTML = DICAS[indice];
+    el.style.opacity = '1';
+  }, 150);
+}
+
+function proximaDica() {
+  dicaAtual = (dicaAtual + 1) % DICAS.length;
+  mostrarDica(dicaAtual);
+  reiniciarTimer();
+}
+
+function reiniciarTimer() {
+  if (dicaTimer) clearTimeout(dicaTimer);
+  dicaTimer = setTimeout(proximaDica, 8000);
+}
+
 // Elementos DOM
 const grid = document.getElementById('grid-empresas');
 const busca = document.getElementById('busca');
@@ -451,6 +489,13 @@ temaToggle.addEventListener('click', alternarTema);
 carregarTema();
 renderCategorias();
 renderEmpresas();
+
+// Inicializa dica rotativa (só na home)
+if (document.getElementById('dica-texto')) {
+  mostrarDica(0);
+  reiniciarTimer();
+  document.getElementById('dica-proxima')?.addEventListener('click', proximaDica);
+}
 
 // ========== PACOTE ESSENCIAL — Polimento visual ==========
 

@@ -240,8 +240,8 @@ body {
   transition: var(--transicao);
 }
 
-/* ===== Aviso acessibilidade ===== */
-.aviso-acessibilidade {
+/* ===== Dica rotativa ===== */
+.dica-rotativa {
   background: var(--cor-primaria-suave);
   border: 1px solid rgba(37, 99, 235, 0.15);
   border-radius: 12px;
@@ -249,22 +249,79 @@ body {
   margin: 0 0 32px 0;
   font-size: 0.95rem;
   color: var(--cor-primaria);
-  text-align: center;
   transition: var(--transicao);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
-[data-tema="escuro"] .aviso-acessibilidade {
+[data-tema="escuro"] .dica-rotativa {
   background: rgba(30, 58, 138, 0.25);
   border-color: rgba(59, 130, 246, 0.2);
   color: #60a5fa;
 }
 
-.aviso-acessibilidade p {
-  margin: 0;
+.dica-ico {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1.5em;
+  height: 1.5em;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
-.aviso-acessibilidade strong {
-  font-weight: 700;
+.dica-texto {
+  font-weight: 500;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+.dica-proxima {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--cor-primaria);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: var(--transicao);
+  flex-shrink: 0;
+}
+
+.dica-proxima:hover {
+  background: var(--cor-primaria-hover);
+  transform: rotate(90deg);
+}
+
+.dica-proxima svg {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+@media (max-width: 480px) {
+  .dica-rotativa {
+    gap: 8px;
+    padding: 12px 16px;
+  }
+  .dica-proxima {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 /* ===== Categorias ===== */
@@ -446,10 +503,12 @@ body {
 }
 
 .card-empresa:hover {
-  border-color: var(--cor-borda-foco);
+  border-color: transparent;
   box-shadow: var(--sombra-hover);
   transform: translateY(-4px);
-  background: var(--cor-card-hover);
+  background:
+    linear-gradient(var(--cor-card-hover), var(--cor-card-hover)) padding-box,
+    linear-gradient(135deg, #2563eb 0%, #7c3aed 55%, #06b6d4 100%) border-box;
 }
 
 .card-empresa:hover::before {

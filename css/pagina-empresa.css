@@ -832,3 +832,57 @@
   color: #fff;
   transform: translateY(-2px);
 }
+
+
+/* =====================================
+   ICONES SVG (substituindo emojis)
+   ===================================== */
+.obs-icone, .doc-icone, .canal-icone, .dica-icone {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.obs-icone svg, .doc-icone svg, .canal-icone svg, .dica-icone svg {
+  width: 1.15em;
+  height: 1.15em;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.badge-energia, .atualizacao, .ajudou-btn, .canal-oficial p, .cta-principal, .btn-enviar-feedback, #btn-enviar, #btn-limpar, #admin-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+.badge-energia svg, .atualizacao svg, .ajudou-btn svg, .canal-oficial p svg, .cta-principal svg, .btn-enviar-feedback svg, #btn-enviar svg, #btn-limpar svg, #admin-link svg {
+  width: 1.05em;
+  height: 1.05em;
+  flex-shrink: 0;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.ajudou-btn svg { width: 1.2em; height: 1.2em; }
+.celebracao-ico svg { width: 1.1em; height: 1.1em; }
+
+
+/* SVGs dentro de titulos e textos de status */
+h2 svg, h3 svg, .feedback-aviso svg, [role="status"] svg, .feedback-sucesso svg {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.12em;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+
+/* Variante acentuada usada na maioria das paginas */
+.atualização { display: inline-flex; align-items: center; gap: 6px; font-size: 0.9rem; color: var(--cor-texto-claro); background: var(--cor-fundo-secao); border: 1px solid var(--cor-borda); padding: 6px 14px; border-radius: 999px; font-weight: 600; }
+.atualização svg { width: 1em; height: 1em; flex-shrink: 0; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
