@@ -498,5 +498,37 @@
     renderizar(limparAntigos(carregar()));
   })();
   </script>
+  <script>
+  // Copiar chave Pix para a área de transferência
+  (function () {
+    var btn = document.getElementById('btn-copiar-doacao');
+    var chave = document.getElementById('pix-chave-doacoes');
+    if (!btn || !chave) return;
+    btn.addEventListener('click', function () {
+      var texto = chave.textContent.trim();
+      navigator.clipboard.writeText(texto).then(function () {
+        var original = btn.innerHTML;
+        btn.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Copiado!';
+        btn.classList.add('copiado');
+        setTimeout(function () {
+          btn.innerHTML = original;
+          btn.classList.remove('copiado');
+        }, 2000);
+      }).catch(function () {
+        var area = document.createElement('textarea');
+        area.value = texto;
+        document.body.appendChild(area);
+        area.select();
+        document.execCommand('copy');
+        document.body.removeChild(area);
+        var original = btn.innerHTML;
+        btn.innerHTML = 'Copiado!';
+        setTimeout(function () {
+          btn.innerHTML = original;
+        }, 2000);
+      });
+    });
+  })();
+  </script>
 </body>
 </html>
