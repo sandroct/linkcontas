@@ -50,18 +50,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css?v=12">
-  <style>
-  .passos-grid {
-    display: grid !important;
-    grid-template-columns: repeat(3, 1fr) !important;
-    gap: 24px !important;
-    max-width: 960px !important;
-    margin: 0 auto !important;
-  }
-  .passo-card {
-    width: 100% !important;
-  }
-  </style>
 </head>
 <body>
   <!-- Header -->
@@ -99,11 +87,11 @@
   </header>
 
   <main>
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="sobre-hero">
       <div class="container">
         <div class="sobre-hero-content">
-          <span class="sobre-badge">Quem somos</span>
+          <span class="sobre-badge">Sobre nós</span>
           <h1>Simplificando o pagamento de suas contas</h1>
           <p class="sobre-lead">O LinkContas é uma central de links oficiais para pagar contas de luz, água, telefone, internet e consultas. Acesse os sites oficiais das empresas de forma rápida, segura e sem cadastro.</p>
           <div class="sobre-stats">
@@ -128,85 +116,105 @@
       </div>
     </section>
 
-    <!-- Missão e Valores -->
-    <section class="sobre-valores">
+    <!-- O que é o LinkContas -->
+    <section class="sobre-conteudo">
       <div class="container">
-        <header class="section-header">
-          <h2>Nossa missão e valores</h2>
-          <p>Acreditamos que pagar contas deve ser simples, seguro e direto.</p>
-        </header>
-        <div class="valores-grid">
-          <article class="valor-card">
-            <div class="valor-ico">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <div class="sobre-texto-duplo">
+          <div class="sobre-coluna texto">
+            <h2>O que é o LinkContas</h2>
+            <p>O <strong>LinkContas</strong> é uma central de links que organiza os endereços oficiais das empresas de contas de consumo em um único lugar. Em vez de buscar no Google entre anúncios e sites falsos, você encontra aqui o link direto para o site oficial da concessionária.</p>
+            <p>Nosso objetivo é simples: <strong>economizar seu tempo e evitar golpes</strong>. Você entra no LinkContas, escolhe a empresa e é redirecionado direto ao site oficial para pagar sua conta com Pix, boleto, cartão ou débito automático.</p>
+          </div>
+          <div class="sobre-coluna imagem">
+            <div class="logo-grande">
+              <svg viewBox="0 0 64 72" xmlns="http://www.w3.org/2000/svg">
+                <rect x="6" y="4" width="52" height="64" rx="8" fill="#ffffff" stroke="#1d4ed8" stroke-width="3"/>
+                <rect x="16" y="16" width="32" height="5" rx="2.5" fill="#2563eb"/>
+                <rect x="16" y="27" width="22" height="4" rx="2" fill="#cbd5e1"/>
+                <rect x="16" y="36" width="28" height="4" rx="2" fill="#e2e8f0"/>
+                <rect x="16" y="46" width="8" height="16" fill="#0f172a"/>
+                <rect x="24" y="46" width="3" height="16" fill="#0f172a"/>
+                <rect x="29" y="46" width="6" height="16" fill="#0f172a"/>
+                <rect x="38" y="46" width="3" height="16" fill="#0f172a"/>
+                <rect x="44" y="46" width="5" height="16" fill="#0f172a"/>
+              </svg>
             </div>
-            <h3>Segurança em primeiro lugar</h3>
-            <p>Redirecionamos você exclusivamente para os sites oficiais das empresas. Nunca pedimos senhas, dados bancários ou informações sensíveis.</          </article>
-          <article class="valor-card">
-            <div class="valor-ico">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/></svg>
-            </div>
-            <h3>Gratuito e sem cadastro</h3>
-            <p>Use quantas vezes quiser sem criar conta, sem pagar nada e sem compartilhar seus dados pessoais conosco.
-            </p>
-          </article>
-          <article class="valor-card">
-            <div class="valor-ico">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            </div>
-            <h3>Sempre atualizado</h3>
-            <p>Nossa equipe monitora constantemente alterações nos sites das empresas para garantir que os links estejam sempre corretos.
-            </p>
-          </article>
-          <article class="valor-card">
-            <div class="valor-ico">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><path d="M9 7 4 12 9 17"/></svg>
-            </div>
-            <h3>Foco no usuário</h3>
-            <p>Desenhamos cada detalhe pensando em quem precisa pagar contas rápido, sem complicação — especialmente idosos e menos familiarizados com tecnologia.
-            </p>
-          </article>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Como Funciona -->
-    <section class="sobre-como">
+    <!-- Como ajuda -->
+    <section class="sobre-como-ajuda">
       <div class="container">
         <header class="section-header">
-          <h2>Como funciona em 3 passos</h2>
-          <p>Simples, direto e sem intermediários.</p>
+          <h2>Como o LinkContas ajuda você</h2>
+          <p>Ferramentas pensadas para simplificar o dia a dia.</p>
         </header>
-        <div class="passos-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 960px; margin: 0 auto;">
-          <article class="passo-card">
-            <span class="passo-numero">1</span>
-            <div class="passo-ico">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <div class="ajuda-grid">
+          <article class="ajuda-card">
+            <div class="ajuda-ico">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
             </div>
-            <h3>Busque</h3>
-            <p>Digite o nome da empresa (ex: "Enel", "Sabesp", "Claro") ou filtre por categoria: Energia, Água, Telefone, Internet ou Consultas.</p>
+            <h3>Links oficiais verificados</h3>
+            <p>Cada empresa listada leva diretamente ao site oficial da concessionária. Sem anúncios, sem intermediários, sem golpes.</p>
           </article>
-          <article class="passo-card">
-            <span class="passo-numero">2</span>
-            <div class="passo-ico">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+          <article class="ajuda-card">
+            <div class="ajuda-ico">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="2" width="8" height="20" rx="2"/><path d="M12 18h2"/></svg>
             </div>
-            <h3>Clique</h3>
-            <p>O botão abre o site oficial da empresa em uma nova aba — você não perde esta página e pode voltar sempre que precisar.</            </article>
-          <article class="passo-card">
-            <span class="passo-numero">3</span>
-            <div class="passo-ico">
+            <div class="ajuda-ico">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h12z"/></svg>
+            </div>
+            <h3>Busca simples</h3>
+            <p>Digite o nome da empresa (ex: Enel, Sabesp, Claro) ou filtre por categoria: Energia, Água, Telefone, Internet ou Consultas.</p>
+          </article>
+          <article class="ajuda-card">
+            <div class="ajuda-ico">
               <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
             </div>
             <h3>Pague no site oficial</h3>
-            <p>Faça o pagamento direto no site da concessionária com total segurança — Pix, boleto, cartão ou débito automático.
-            </p>
+            <p>Abra o link oficial em uma nova aba e pague sua conta com total segurança — Pix, boleto, cartão ou débito automático.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Empresas Atendidas -->
+    <!-- Para idosos -->
+    <section class="sobre-idosos">
+      <div class="container">
+        <div class="idosos-card">
+          <div class="idosos-texto">
+            <h2>Pensado também para quem tem menos familiaridade com tecnologia</h2>
+            <p>O LinkContas foi desenvolvido para ser simples e acessível. Fontes grandes, alto contraste, botões fáceis de clicar e navegação intuitiva — ideal para idosos e para quem não quer complicação ao pagar contas.</p>
+            <ul class="lista-idosos">
+              <li><strong>Sem cadastro:</strong> não precisa criar conta, informar CPF ou senha.</li>
+              <li><strong>Sem anúncios intrusivos:</strong> o site é limpo e direto ao ponto.</li>
+              <li><strong>Links verificados:</strong> evita cair em sites falsos de concessionárias.</li>
+              <li><strong>Relógio de Brasília:</strong> mostra o horário oficial para você saber se o atendimento está aberto.</li>
+              <li><strong>Modo escuro:</strong> mais conforto para a vista à noite.</li>
+            </ul>
+          </div>
+          <div class="idosos-imagem">
+            <div class="logo-grande">
+              <svg viewBox="0 0 64 72" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="32" cy="32" r="28" fill="#ffffff" stroke="#1d4ed8" stroke-width="3"/>
+                <rect x="16" y="20" width="32" height="4" rx="2" fill="#2563eb"/>
+                <rect x="16" y="26" width="22" height="4" rx="2" fill="#cbd5e1"/>
+                <rect x="16" y="32" width="28" height="4" rx="2" fill="#e2e8f0"/>
+                <rect x="16" y="40" width="8" height="16" fill="#0f172a"/>
+                <rect x="24" y="40" width="3" height="16" fill="#0f172a"/>
+                <rect x="29" y="40" width="6" height="16" fill="#0f172a"/>
+                <rect x="38" y="40" width="3" height="16" fill="#0f172a"/>
+                <rect x="44" y="40" width="5" height="16" fill="#0f172a"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Empresas atendidas -->
     <section class="sobre-categorias">
       <div class="container">
         <header class="section-header">
@@ -270,7 +278,7 @@
           <div class="compromisso-ico">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
           </div>
-          <h2>Compromisso com a transparência</h2>
+          <h2>Nosso compromisso com você</h2>
           <p>O LinkContas é um projeto independente, sem vínculo com nenhuma concessionária. Não recebemos comissões por pagamentos, não vendemos dados e não exibimos anúncios intrusivos. Nosso único objetivo é ajudar você a pagar suas contas com tranquilidade.</p>
           <div class="compromisso-itens">
             <div class="compromisso-item">
@@ -290,27 +298,6 @@
               <span>Suporte humanizado por e-mail</span>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sobre o site -->
-    <section class="sobre-historia">
-      <div class="container">
-        <header class="section-header">
-          <h2>Sobre o LinkContas</h2>
-          <p>Conheça nosso propósito e como podemos ajudar você.</p>
-        </header>
-        <div class="sobre-conteudo-texto">
-          <p><strong>O LinkContas é uma central de links oficiais para pagamento de contas de consumo.</strong> Nosso objetivo é facilitar o acesso dos cidadãos aos sites oficiais das empresas de luz, água, telefone, internet e consultas, evitando que você tenha que buscar entre anúncios, sites falsos ou intermediários que cobram taxa indevida.</p>
-          <p>O site foi desenvolvido pensando principalmente nas pessoas que têm dificuldade de navegar na internet, como os idosos. Por isso, oferecemos:</p>
-          <ul class="lista-propósito">
-            <li><strong>Links oficiais verificados:</strong> cada empresa listada leva diretamente ao site oficial da concessionária, sem anúncios ou redirecionamentos suspeitos.</li>
-            <li><strong>Interface simples e acessível:</strong> fontes grandes, alto contraste, navegação por teclado e layout limpo, facilitando o uso por quem tem pouca familiaridade com tecnologia.</li>
-            <li><strong>Busca rápida por empresa ou categoria:</strong> encontre facilmente a empresa de energia, água, telefone, internet ou consultas que você precisa.</li>
-            <li><strong>Gratuito e sem cadastro:</strong> você não precisa criar conta, informar dados pessoais ou pagar nada para usar o LinkContas.</li>
-          </ul>
-          <p>Com o LinkContas, você economiza tempo e evita golpes, acessando direto o site onde pode pagar sua conta com segurança, Pix, boleto ou débito automático.</p>
         </div>
       </div>
     </section>
@@ -361,7 +348,7 @@
   </footer>
 
   <!-- Doações / Cafézinho -->
-  <section class="doacoes" id="doacoes">
+  <section class="doacoes reveal" id="doacoes">
     <div class="container doacoes-inner">
       <div class="doacoes-texto">
         <h3>☕ Doações / Cafézinho</h3>
@@ -379,6 +366,7 @@
   </section>
 
   <script src="js/contador.js?v=2"></script>
+  <script src="js/script.js?v=6"></script>
   <script src="js/relogio.js?v=1"></script>
   <script>
   // Theme toggle handler
@@ -402,8 +390,6 @@
       localStorage.setItem('linkcontas-tema', escuro ? 'claro' : 'escuro');
     });
   })();
-  </script>
-  <script>
   // Copiar chave Pix para a área de transferência
   (function () {
     var btn = document.getElementById('btn-copiar-doacao');

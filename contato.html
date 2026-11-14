@@ -49,7 +49,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=10">
+  <link rel="stylesheet" href="css/style.css?v=12">
 </head>
 <body>
   <!-- Header -->
@@ -89,122 +89,73 @@
   <main>
     <section class="contato-hero">
       <div class="container">
-        <h1>Contato</h1>
-        <p class="contato-lead">Tem sugestão de empresa para adicionar? Encontrou um link quebrado? Quer anunciar? Sua opinião ajuda o LinkContas a melhorar para todos.</p>
+        <div class="contato-hero-content">
+          <span class="contato-badge">Fale conosco</span>
+          <h1>Contato</h1>
+          <p class="contato-lead">Tem sugestão de empresa para adicionar? Encontrou um link quebrado? Quer anunciar? Sua opinião ajuda o LinkContas a melhorar para todos.</p>
+        </div>
       </div>
     </section>
 
-    <section class="contato-cards">
+    <section class="contato-content">
       <div class="container">
         <div class="contato-grid">
           <article class="contato-card">
             <div class="contato-ico">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
             </div>
-            <h3>E-mail direto</h3>
-            <p>Para parcerias, anúncios ou assuntos formais.</p>
+            <h3>E-mail</h3>
+            <p>Entre em contato diretamente pelo e-mail:</p>
             <a href="mailto:alessandrobr2012@gmail.com" class="btn btn-primary contato-btn">alessandrobr2012@gmail.com</a>
             <p class="contato-prazo">Respondemos em até <strong>3 dias úteis</strong>.</p>
           </article>
 
           <article class="contato-card">
             <div class="contato-ico">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22z"/></svg>
-            </div>
-            <h3>Feedback & Sugestões</h3>
-            <p>Relate problemas, sugira empresas ou elogie. Leva menos de 1 minuto.</p>
-            <button type="button" class="btn btn-primary contato-btn" id="abrir-feedback">Enviar feedback</button>
-            <p class="contato-prazo">Mensagens ficam salvas neste navegador por 30 dias.</p>
-          </article>
-
-          <article class="contato-card">
-            <div class="contato-ico">
               <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
             </div>
-            <h3>Links quebrados</h3>
-            <p>Achou um botão que não abre o site oficial? Avise-nos com o nome da empresa.</p>
-            <button type="button" class="btn btn-primary contato-btn" id="abrir-feedback-2">Reportar link</button>
-            <p class="contato-prazo">Corrigimos em até <strong>24h</strong> após confirmação.</p>
+            <h3>Como podemos ajudar</h3>
+            <p>Sugira novas empresas, reporte links quebrados ou envie qualquer outra mensagem pela chave Pix de contato:</p>
+            <a href="mailto:alessandrobr2012@gmail.com?subject=Contato%20-%20LinkContas" class="btn btn-primary contato-btn">Enviar e-mail</a>
+            <p class="contato-prazo">Não coleta dados pessoais. Resposta rápida.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Modal de Feedback -->
-    <dialog class="feedback-modal" id="feedback-modal" aria-labelledby="modal-titulo" aria-modal="true">
-      <form class="feedback-form" id="feedback-form" method="dialog" novalidate>
-        <header class="modal-header">
-          <h2 id="modal-titulo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22z"/></svg> Deixe seu feedback</h2>
-          <button type="button" class="modal-close" id="modal-close" aria-label="Fechar">&times;</button>
-        </header>
-        <p class="modal-lead">Conte o que achou do site, sugira melhorias ou avise se algo não funcionou.</p>
-        <div class="campo">
-          <label for="fb-nome">Seu nome</label>
-          <input type="text" id="fb-nome" maxlength="60" placeholder="Como devemos te chamar?" autocomplete="name" required>
-        </div>
-        <div class="campo">
-          <label for="fb-assunto">Assunto</label>
-          <input type="text" id="fb-assunto" maxlength="100" placeholder="Ex: sugestão, elogio, problema em um link..." autocomplete="off" required>
-        </div>
-        <div class="campo">
-          <label for="fb-texto">Descrição</label>
-          <textarea id="fb-texto" maxlength="2000" placeholder="Escreva sua mensagem aqui..." required></textarea>
-        </div>
-        <div class="modal-actions">
-          <button type="button" class="btn btn-secondary" id="modal-cancelar">Cancelar</button>
-          <button type="submit" class="btn btn-primary" id="btn-enviar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22z"/></svg> Enviar feedback</button>
-        </div>
-        <div class="feedback-sucesso" id="feedback-sucesso" role="status" hidden>
-          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Feedback enviado! Obrigado por ajudar a melhorar o LinkContas. 💙
-        </div>
-        <p class="feedback-aviso">Sua mensagem é entregue ao administrador e também fica visível abaixo. Mensagens salvas neste navegador expiram em 30 dias.</p>
-      </form>
-    </dialog>
-
-    <!-- Área de mensagens recentes -->
-    <section class="chat-section">
+    <section class="contato-info">
       <div class="container">
-        <div class="chat-header">
-          <h2><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22z"/></svg> Mensagens recentes</h2>
-          <span class="chat-contador" id="chat-contador">0 mensagens</span>
+        <div class="info-grid">
+          <div class="info-card">
+            <div class="info-ico">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <div class="info-text">
+              <h4>Horário de atendimento</h4>
+              <p>Segunda a sexta, das 9h às 18h</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-ico">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14z"/></svg>
+            </div>
+            <div class="info-text">
+              <h4>O que não fazemos</h4>
+              <p>Não armazenamos senhas nem dados financeiros. Não processamos pagamentos.</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-ico">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <div class="info-text">
+              <h4>Gratuito e sem cadastro</h4>
+              <p>O LinkContas é totalmente gratuito e não requer registro de usuário.</p>
+            </div>
+          </div>
         </div>
-        <div class="chat-lista" id="chat-lista" aria-live="polite" aria-label="Lista de feedbacks recebidos"></div>
       </div>
     </section>
-
-    <!-- Área do administrador (colapsável) -->
-    <details class="admin-section">
-      <summary class="admin-summary">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-        Área do administrador
-      </summary>
-      <div class="admin-box" id="admin-box">
-        <div class="admin-login" id="admin-login">
-          <h3><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Entrar como administrador</h3>
-          <p class="admin-info">Organize as mensagens salvas <strong>neste navegador</strong> (apagar teste ou imprópria). As mensagens dos visitantes chegam também por e-mail.</p>
-          <div class="admin-linha">
-            <div class="campo">
-              <label for="admin-usuario">Usuário</label>
-              <input type="text" id="admin-usuario" maxlength="30" autocomplete="off" placeholder="admin">
-            </div>
-            <div class="campo">
-              <label for="admin-senha">Senha</label>
-              <input type="password" id="admin-senha" maxlength="40" autocomplete="off" placeholder="••••••••">
-            </div>
-            <button type="button" class="btn btn-primary" id="admin-entrar"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></svg> Entrar</button>
-          </div>
-          <p class="admin-erro" id="admin-erro" hidden>Usuário ou senha incorretos.</p>
-        </div>
-        <div class="admin-panel" id="admin-panel" hidden>
-          <h3><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></svg> Modo administrador ativo</h3>
-          <p class="admin-info">Apague mensagens individuais ou limpe todas. Lembrete: mensagens dos visitantes chegam por e-mail — apague por lá quando quiser.</p>
-          <div class="admin-actions">
-            <button type="button" class="btn btn-danger" id="admin-limpar-tudo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M10 11v6"/><path d="M14 11v6"/></svg> Limpar todas as mensagens salvas</button>
-            <button type="button" class="btn btn-secondary" id="admin-sair"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><path d="M9 7 4 12 9 17"/></svg> Sair do modo administrador</button>
-          </div>
-        </div>
-      </div>
-    </details>
 
     <div class="voltar-wrapper">
       <a href="index.html" class="voltar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg> Voltar ao site</a>
@@ -242,7 +193,7 @@
   </footer>
 
   <!-- Doações / Cafézinho -->
-  <section class="doacoes" id="doacoes">
+  <section class="doacoes reveal" id="doacoes">
     <div class="container doacoes-inner">
       <div class="doacoes-texto">
         <h3>☕ Doações / Cafézinho</h3>
@@ -260,244 +211,8 @@
   </section>
 
   <script src="js/contador.js?v=2"></script>
+  <script src="js/script.js?v=6"></script>
   <script src="js/relogio.js?v=1"></script>
-  <script>
-  (function () {
-    var CHAVE_STORAGE = 'linkcontas-feedbacks';
-    var TRINTA_DIAS_MS = 30 * 24 * 60 * 60 * 1000;
-    var LIMITE_MSGS = 100;
-    var CHAVE_ADMIN = 'linkcontas-admin';
-    var FORM_ENDPOINT = 'https://formsubmit.co/ajax/alessandrobr2012@gmail.com';
-
-    var form = document.getElementById('feedback-form');
-    var inputNome = document.getElementById('fb-nome');
-    var inputAssunto = document.getElementById('fb-assunto');
-    var inputTexto = document.getElementById('fb-texto');
-    var avisoSucesso = document.getElementById('feedback-sucesso');
-    var lista = document.getElementById('chat-lista');
-    var contador = document.getElementById('chat-contador');
-    var modal = document.getElementById('feedback-modal');
-    var btnAbrir = document.getElementById('abrir-feedback');
-    var btnAbrir2 = document.getElementById('abrir-feedback-2');
-    var btnFechar = document.getElementById('modal-close');
-    var btnCancelar = document.getElementById('modal-cancelar');
-    var btnEnviar = document.getElementById('btn-enviar');
-
-    // Admin
-    var adminLogin = document.getElementById('admin-login');
-    var adminPanel = document.getElementById('admin-panel');
-    var adminUsuario = document.getElementById('admin-usuario');
-    var adminSenha = document.getElementById('admin-senha');
-    var adminErro = document.getElementById('admin-erro');
-    var btnAdminEntrar = document.getElementById('admin-entrar');
-    var btnAdminSair = document.getElementById('admin-sair');
-    var btnAdminLimpar = document.getElementById('admin-limpar-tudo');
-    var modoAdmin = false;
-
-    function agora() { return Date.now(); }
-
-    function carregar() {
-      try {
-        var dados = JSON.parse(localStorage.getItem(CHAVE_STORAGE) || '[]');
-        if (!Array.isArray(dados)) return [];
-        return dados.filter(function (m) { return m && m.ts && typeof m.ts === 'number'; });
-      } catch (e) { return []; }
-    }
-
-    function salvar(msgs) {
-      try { localStorage.setItem(CHAVE_STORAGE, JSON.stringify(msgs)); } catch (e) {}
-    }
-
-    function limparAntigos(msgs) {
-      var limite = agora() - TRINTA_DIAS_MS;
-      var recentes = msgs.filter(function (m) { return m.ts >= limite; });
-      if (recentes.length !== msgs.length) { salvar(recentes); }
-      return recentes;
-    }
-
-    function formatarData(ts) {
-      var d = new Date(ts);
-      var dia = String(d.getDate()).padStart(2, '0');
-      var mes = String(d.getMonth() + 1).padStart(2, '0');
-      var hora = String(d.getHours()).padStart(2, '0');
-      var min = String(d.getMinutes()).padStart(2, '0');
-      return dia + '/' + mes + ' ' + hora + ':' + min;
-    }
-
-    function escapar(txt) {
-      var div = document.createElement('div');
-      div.textContent = txt;
-      return div.innerHTML;
-    }
-
-    function renderizar(msgs) {
-      lista.innerHTML = '';
-      if (msgs.length === 0) {
-        lista.innerHTML = '<div class="chat-vazio">Nenhuma mensagem ainda. Seja o primeiro a deixar um feedback! <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22z"/></svg></div>';
-      } else {
-        msgs.slice().reverse().forEach(function (m, idxVisual) {
-          var indiceReal = msgs.length - 1 - idxVisual;
-          var item = document.createElement('div');
-          item.className = 'chat-msg';
-          var html =
-            '<div class="chat-msg-topo">' +
-              '<span class="chat-msg-nome">' + escapar(m.nome) + '</span>' +
-              '<span class="chat-msg-data">' + formatarData(m.ts) + '</span>' +
-            '</div>' +
-            '<div class="chat-msg-assunto">' + escapar(m.assunto) + '</div>' +
-            '<div class="chat-msg-texto">' + escapar(m.texto) + '</div>';
-          if (modoAdmin) {
-            html += '<button type="button" class="chat-msg-apagar" data-indice="' + indiceReal + '"> <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M10 11v6"/><path d="M14 11v6"/></svg> Apagar</button>';
-          }
-          item.innerHTML = html;
-          lista.appendChild(item);
-        });
-      }
-      contador.textContent = msgs.length + (msgs.length === 1 ? ' mensagem' : ' mensagens');
-    }
-
-    function apagarMensagem(indice) {
-      var msgs = limparAntigos(carregar());
-      if (indice < 0 || indice >= msgs.length) return;
-      msgs.splice(indice, 1);
-      salvar(msgs);
-      renderizar(msgs);
-    }
-
-    function entrarModoAdmin() {
-      modoAdmin = true;
-      try { sessionStorage.setItem(CHAVE_ADMIN, '1'); } catch (e) {}
-      adminLogin.hidden = true;
-      adminPanel.hidden = false;
-      renderizar(limparAntigos(carregar()));
-    }
-
-    function sairModoAdmin() {
-      modoAdmin = false;
-      try { sessionStorage.removeItem(CHAVE_ADMIN); } catch (e) {}
-      adminLogin.hidden = false;
-      adminPanel.hidden = true;
-      renderizar(limparAntigos(carregar()));
-    }
-
-    lista.addEventListener('click', function (e) {
-      var alvo = e.target.closest('.chat-msg-apagar');
-      if (alvo) { apagarMensagem(parseInt(alvo.getAttribute('data-indice'), 10)); }
-      else if (e.target.id === 'admin-limpar-tudo' || e.target.closest('#admin-limpar-tudo')) {
-        if (confirm('Apagar TODAS as mensagens salvas neste navegador? Esta ação não pode ser desfeita.')) {
-          salvar([]);
-          renderizar([]);
-        }
-      }
-    });
-
-    function tentarLogin() {
-      var u = adminUsuario.value.trim();
-      var s = adminSenha.value;
-      if (u === 'admin' && s === '26041952sP') {
-        adminErro.hidden = true;
-        entrarModoAdmin();
-      } else {
-        adminErro.hidden = false;
-        adminSenha.value = '';
-      }
-    }
-
-    btnAdminEntrar.addEventListener('click', tentarLogin);
-    adminSenha.addEventListener('keydown', function (e) { if (e.key === 'Enter') tentarLogin(); });
-    adminUsuario.addEventListener('keydown', function (e) { if (e.key === 'Enter') adminSenha.focus(); });
-    btnAdminSair.addEventListener('click', sairModoAdmin);
-
-    try { if (sessionStorage.getItem(CHAVE_ADMIN) === '1') entrarModoAdmin(); } catch (e) {}
-
-    // Modal
-    function abrirModal() { modal.showModal(); inputNome.focus(); }
-    function fecharModal() { modal.close(); form.reset(); avisoSucesso.hidden = true; }
-    btnAbrir.addEventListener('click', abrirModal);
-    btnAbrir2.addEventListener('click', abrirModal);
-    btnFechar.addEventListener('click', fecharModal);
-    btnCancelar.addEventListener('click', fecharModal);
-    modal.addEventListener('click', function (e) { if (e.target === modal) fecharModal(); });
-    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && modal.open) fecharModal(); });
-
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-
-      var nome = inputNome.value.trim();
-      var assunto = inputAssunto.value.trim();
-      var texto = inputTexto.value.trim();
-
-      marcar(inputNome, !nome);
-      marcar(inputAssunto, !assunto);
-      marcar(inputTexto, !texto);
-
-      if (!nome || !assunto || !texto) {
-        if (!nome) inputNome.focus();
-        else if (!assunto) inputAssunto.focus();
-        else inputTexto.focus();
-        return;
-      }
-
-      var msgs = limparAntigos(carregar());
-      msgs.push({ nome: nome, assunto: assunto, texto: texto, ts: agora() });
-      if (msgs.length > LIMITE_MSGS) msgs = msgs.slice(-LIMITE_MSGS);
-      salvar(msgs);
-      renderizar(msgs);
-
-      btnEnviar.disabled = true;
-      btnEnviar.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Enviando...';
-
-      fetch(FORM_ENDPOINT, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify({ nome: nome, assunto: assunto, mensagem: texto, _subject: 'Feedback LinkContas: ' + assunto })
-      }).then(function (r) {
-        if (!r.ok) throw new Error('resposta ' + r.status);
-        avisoSucesso.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Feedback enviado ao administrador! Obrigado por ajudar a melhorar o LinkContas. 💙';
-      }).catch(function () {
-        avisoSucesso.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Feedback registrado abaixo! Se quiser falar direto com o administrador, use o e-mail acima. 💙';
-      }).then(function () {
-        avisoSucesso.hidden = false;
-        form.reset();
-        btnEnviar.disabled = false;
-        btnEnviar.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22z"/></svg> Enviar feedback';
-        setTimeout(function () {
-          avisoSucesso.hidden = true;
-          fecharModal();
-        }, 4000);
-      });
-    });
-
-    function marcar(campo, temErro) { campo.classList.toggle('erro-campo', temErro); }
-    [inputNome, inputAssunto, inputTexto].forEach(function (c) {
-      c.addEventListener('input', function () { marcar(c, false); });
-    });
-
-    // Theme toggle handler
-    (function () {
-      var btn = document.getElementById('tema-toggle');
-      var icone = document.querySelector('.icone-tema');
-      if (!btn || !icone) return;
-      function aplicar(t) {
-        var html = document.documentElement;
-        if (t === 'escuro') {
-          html.setAttribute('data-tema', 'escuro');
-          icone.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.9 4.9 1.4 1.4"/><path d="m17.7 17.7 1.4 1.4"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.3 17.7-1.4 1.4"/><path d="m19.1 4.9-1.4 1.4"/></svg>';
-        } else {
-          html.removeAttribute('data-tema');
-          icone.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
-        }
-      }
-      btn.addEventListener('click', function () {
-        var escuro = document.documentElement.getAttribute('data-tema') === 'escuro';
-        aplicar(escuro ? 'claro' : 'escuro');
-        localStorage.setItem('linkcontas-tema', escuro ? 'claro' : 'escuro');
-      });
-    })();
-
-    renderizar(limparAntigos(carregar()));
-  })();
-  </script>
   <script>
   // Copiar chave Pix para a área de transferência
   (function () {
@@ -527,6 +242,27 @@
           btn.innerHTML = original;
         }, 2000);
       });
+    });
+  })();
+  // Theme toggle handler
+  (function () {
+    var btn = document.getElementById('tema-toggle');
+    var icone = document.querySelector('.icone-tema');
+    if (!btn || !icone) return;
+    function aplicar(t) {
+      var html = document.documentElement;
+      if (t === 'escuro') {
+        html.setAttribute('data-tema', 'escuro');
+        icone.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.9 4.9 1.4 1.4"/><path d="m17.7 17.7 1.4 1.4"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.3 17.7-1.4 1.4"/><path d="m19.1 4.9-1.4 1.4"/></svg>';
+      } else {
+        html.removeAttribute('data-tema');
+        icone.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+      }
+    }
+    btn.addEventListener('click', function () {
+      var escuro = document.documentElement.getAttribute('data-tema') === 'escuro';
+      aplicar(escuro ? 'claro' : 'escuro');
+      localStorage.setItem('linkcontas-tema', escuro ? 'claro' : 'escuro');
     });
   })();
   </script>
