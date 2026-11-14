@@ -482,7 +482,9 @@ busca.addEventListener('input', (e) => {
   renderEmpresas();
 });
 
-temaToggle.addEventListener('click', alternarTema);
+if (temaToggle) {
+  temaToggle.addEventListener('click', alternarTema);
+}
 
 // ========== INICIALIZAÇÃO ==========
 
