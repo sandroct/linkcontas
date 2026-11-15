@@ -31,6 +31,7 @@ Deixar o site LinkContas elegante, profissional, funcional e responsivo (mobile 
 - `index.html`, `sobre.html`, `contato.html`, `faq.html`, `termos.html`, `privacidade.html`: charset único, 0 estilos inline (exceto honeypot do contato), âncoras `index.html#...`, `<main id="conteudo">`.
 - **Nova página `doacao.html`**: hero "Doação", bloco Pix (chave + botão copiar com fallback `execCommand`), "Como doar em 3 passos", "Para que serve sua doação" (3 cards), FAQ com 5 itens (`<details>`), link "Doação" no rodapé próprio, canonical/OG próprios, assets `style.css?v=24` + `site.js?v=4`.
 - **Link "Doação" adicionado à coluna Links do rodapé das 25 páginas restantes** (script `add-link-doacao.py`).
+- **Link "Doação" também no menu do topo** das 26 páginas: nav desktop (`nav-principal`, com `nav-link`) e menu mobile (`menu-mobile`) — script `add-menu-doacao.py`; em `doacao.html` o item entra marcado como `ativo`. Testado em 1280px (7 itens, folga de 152px), 900px (limite onde a nav aparece; folga de 25px, sem transbordo) e <900px (nav esconde, hambúrguer mostra).
 - `sitemap.xml`: `<loc>https://linkcontas.com.br/doacao.html</loc>` inserido (agora 25 locs).
 
 ### Rolagem e filtros (QA feito no navegador)
