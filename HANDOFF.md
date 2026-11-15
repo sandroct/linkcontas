@@ -26,6 +26,8 @@ Deixar o site LinkContas elegante, profissional, funcional e responsivo (mobile 
 - Cards com `.card-header`, `.btn-favorito` (`.ativo`, `aria-pressed`, salvo em `lc-favoritos`), sigla do logo como fallback, guarda do contador, `renderSobreCategorias()`.
 - **`rolarParaLista()`**: ao clicar em chip de categoria ou card de estado, a página rola suave até `#grid-empresas` parando em `top: 84px` (abaixo do header fixo); **não rola** se a lista já está visível; respeita `prefers-reduced-motion`.
 - **Filtro de favoritos (novo)**: chip "Favoritos" (com badge de contagem) em `#categorias-lista`; liga/desliga `soFavoritos` de forma **independente** — combina com categoria/estado/busca; `filtrarEmpresas()` inclui `matchFav`; estado vazio próprio ("Nenhuma empresa favoritada — Toque no coração…"); `toggleFavorito()` re-renderiza lista + chip; `haFiltroAtivo()` centraliza a visibilidade do "Limpar filtros".
+- **Enter na busca → rolar até o card (novo)**: `irParaPrimeiroCard()` em `site.js` — ao dar Enter no campo de busca, se houver resultado a página alinha o primeiro card 24px abaixo do header (`scrollTo` suave, respeita `prefers-reduced-motion`, não rola se o card já está confortavelmente visível) e aplica `.card-destaque` por 2,4s (anel azul + `card-pisca`). Sem resultado: não rola. Testado: Enel/Vivo/Sabesp/CEMIG rolam e destacam; "zzz" não rola; card já visível não pula.
+- **Filtro por multi-categoria (novo)**: campo opcional `categorias` (array) em `dados.js` — a empresa aparece na categoria principal **e** nas secundárias. Aplicado: Claro, Vivo, TIM, Oi (`telefone` + `internet`) e Algar Telecom (`internet` + `telefone`). Resultado: "Telefone e celular" = 5 empresas, "Internet e TV" = 7 (antes 4 e 3). `filtrarEmpresas()` usa `empresaNaCategoria()` e `renderSobreCategorias()` (página Sobre) usa a mesma lógica — números batem entre catálogo e Sobre.
 
 ### Páginas institucionais
 - `index.html`, `sobre.html`, `contato.html`, `faq.html`, `termos.html`, `privacidade.html`: charset único, 0 estilos inline (exceto honeypot do contato), âncoras `index.html#...`, `<main id="conteudo">`.
@@ -43,7 +45,7 @@ Deixar o site LinkContas elegante, profissional, funcional e responsivo (mobile 
 - Varredura final (`varredura-final.py`, agora checa `?v=24`/`?v=4`, link de doação no rodapé e `doacao.html` no sitemap): **NENHUM problema** (aviso "sitemap sem index" é falso positivo — home está como `/`).
 
 ### Versionamento de cache
-- `css/style.css?v=24`, `js/site.js?v=4`, `dados.js?v=1`, `contador.js?v=2`, `pagina-empresa.css?v=1` em todas as 26 páginas (scripts `bump-v.py` / `bump-v24.py`). `v=24` foi necessário porque o CSS do chip de favoritos mudou após o bump `v=23`; inclui override de contraste do chip no tema escuro.
+- `css/style.css?v=24`, `js/site.js?v=5`, `dados.js?v=2`, `contador.js?v=2`, `pagina-empresa.css?v=1` em todas as 26 páginas (scripts `bump-v.py` / `bump-v24.py` / `bump2.py`). `v=24` inclui override de contraste do chip no tema escuro; `site.js?v=5` + `dados.js?v=2` trazem o Enter na busca e o multi-filtro. Só 5 páginas carregam `dados.js` (index, sobre, contato, faq, doacao) — as de empresa são estáticas.
 
 ## 🚀 Publicação (15/11/2026)
 - **Repositório:** `https://github.com/sandroct/linkcontas` (branch `main`) — **é um repo Git**, o commit anterior estava desatualizado.

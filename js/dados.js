@@ -13,6 +13,8 @@
      id           identificador estável
      nome         nome oficial de exibição
      categoria    energia | agua | telefone | internet | consultas
+      categorias   lista com categorias adicionais (opcional) — a empresa passa a
+                   aparecer também nesses filtros (ex.: telefonia vende internet)
      sigla        duas letras (fallback quando não há logo)
      cor          cor da marca (usada no avatar do cartão)
      logo         caminho do logo em assets/logos (opcional)
@@ -207,7 +209,7 @@
       ]
     },
     {
-      id: 'claro', nome: 'Claro', categoria: 'telefone',
+      id: 'claro', nome: 'Claro', categoria: 'telefone', categorias: ['internet'],
       sigla: 'CL', cor: '#DA291C', logo: 'assets/logos/claro.png',
       pagina: 'claro.html',
       url: 'https://minhaclaro.claro.com.br/acesso-rapido/',
@@ -223,7 +225,7 @@
       ]
     },
     {
-      id: 'vivo', nome: 'Vivo', categoria: 'telefone',
+      id: 'vivo', nome: 'Vivo', categoria: 'telefone', categorias: ['internet'],
       sigla: 'VI', cor: '#6A1B9A', logo: 'assets/logos/vivo.png',
       pagina: 'vivo.html',
       url: 'https://app.vivo.com.br/web',
@@ -239,7 +241,7 @@
       ]
     },
     {
-      id: 'tim', nome: 'TIM', categoria: 'telefone',
+      id: 'tim', nome: 'TIM', categoria: 'telefone', categorias: ['internet'],
       sigla: 'TI', cor: '#0F4C81', logo: 'assets/logos/tim.png',
       pagina: 'tim.html',
       url: 'https://meutim.onelink.me/0IuD/u3fep93q',
@@ -255,7 +257,7 @@
       ]
     },
     {
-      id: 'oi', nome: 'Oi', categoria: 'telefone',
+      id: 'oi', nome: 'Oi', categoria: 'telefone', categorias: ['internet'],
       sigla: 'OI', cor: '#F75B00', logo: 'assets/logos/oi.png',
       pagina: 'oi.html',
       url: 'https://www.oi.com.br/minha-oi/',
@@ -300,7 +302,7 @@
       ]
     },
     {
-      id: 'algar', nome: 'Algar Telecom', categoria: 'internet',
+      id: 'algar', nome: 'Algar Telecom', categoria: 'internet', categorias: ['telefone'],
       sigla: 'AL', cor: '#F26522',
       pagina: 'algar.html',
       url: 'https://algar.com.br/AreaCliente/portal-usuario/minhas-faturas.html/',

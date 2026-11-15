@@ -117,9 +117,16 @@
   }
 
   // ---------- Filtragem ----------
+  // Uma empresa aparece no filtro da categoria principal e também
+  // das categorias secundárias (campo 'categorias' no dados.js).
+  function empresaNaCategoria(emp, chave) {
+    if (emp.categoria === chave) return true;
+    return !!(emp.categorias && emp.categorias.indexOf(chave) >= 0);
+  }
+
   function filtrarEmpresas() {
     return LC.empresas.filter(function (emp) {
-      var matchCat = categoriaAtiva === 'todos' || emp.categoria === categoriaAtiva;
+      var matchCat = categoriaAtiva === 'todos' || empresaNaCategoria(emp, categoriaAtiva);
       var matchEst = estadoAtivo === null || (emp.estados && emp.estados.indexOf(estadoAtivo) >= 0);
       var matchFav = !soFavoritos || ehFavorito(emp.id);
       var alvo = normalizar(emp.nome + ' ' + (emp.descricao || '') + ' ' + (emp.sigla || '') + ' ' + (emp.aliases || []).join(' ') + ' ' + (emp.estados || []).join(' '));
@@ -147,6 +154,35 @@
       behavior: semAnimacao ? 'auto' : 'smooth',
       block: 'start'
     });
+  }
+
+  // ---------- Enter na busca: rola até o card encontrado ----------
+  // Se a pesquisa encontrar empresas, alinha o primeiro card abaixo do
+  // header e pisca um contorno para o usuário ver exatamente onde parou.
+  // Só rola quando o card ainda não está confortavelmente visível.
+  function irParaPrimeiroCard() {
+    if (!gridLista) return;
+    var primeiro = gridLista.querySelector('.card-empresa');
+    if (!primeiro) return; // sem resultados: não rola
+
+    var semAnimacao = window.matchMedia &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var headerH = 84; // mesmo offset do header fixo
+    var rect = primeiro.getBoundingClientRect();
+    var confortavel = rect.top >= headerH && rect.top < window.innerHeight * 0.6;
+
+    if (!confortavel) {
+      var alvo = window.scrollY + rect.top - headerH - 24;
+      window.scrollTo({ top: alvo, behavior: semAnimacao ? 'auto' : 'smooth' });
+    }
+
+    // Reinicia o destaque mesmo que o card já estivesse destacado
+    primeiro.classList.remove('card-destaque');
+    void primeiro.offsetWidth; // força reflow para a animação voltar a correr
+    primeiro.classList.add('card-destaque');
+    window.setTimeout(function () {
+      primeiro.classList.remove('card-destaque');
+    }, 2400);
   }
 
   // ---------- Render ----------
@@ -325,7 +361,9 @@
     };
 
     var html = LC.categorias.map(function (cat) {
-      var empresas = LC.empresas.filter(function (e) { return e.categoria === cat.chave; });
+      var empresas = LC.empresas.filter(function (e) {
+        return e.categoria === cat.chave || (e.categorias && e.categorias.indexOf(cat.chave) >= 0);
+      });
       if (empresas.length === 0) return '';
 
       var links = empresas.map(function (emp) {
@@ -378,6 +416,14 @@
       termoBusca = normalizar(e.target.value);
       mostrarOuEsconderLimpar();
       renderEmpresas();
+    });
+    // Enter: garante o filtro aplicado e rola até o card encontrado
+    busca.addEventListener('keydown', function (e) {
+      if (e.key !== 'Enter') return;
+      termoBusca = normalizar(busca.value);
+      mostrarOuEsconderLimpar();
+      renderEmpresas();
+      irParaPrimeiroCard();
     });
   }
 

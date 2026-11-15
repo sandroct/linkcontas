@@ -818,6 +818,27 @@ section { scroll-margin-top: 84px; }
   border-color: color-mix(in srgb, var(--cor-destaque) 45%, var(--cor-borda));
 }
 
+/* Card destacado ao rolar até ele (ex.: Enter na busca) */
+.card-destaque {
+  border-color: var(--cor-destaque);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--cor-destaque) 22%, transparent);
+  animation: card-pisca 1.15s ease-in-out 2;
+}
+
+@keyframes card-pisca {
+  0%, 100% {
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--cor-destaque) 22%, transparent);
+  }
+  50% {
+    box-shadow: 0 0 0 10px color-mix(in srgb, var(--cor-destaque) 6%, transparent);
+  }
+}
+
+/* Tema escuro: anel um pouco mais visível */
+[data-tema="escuro"] .card-destaque {
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--cor-destaque) 45%, transparent);
+}
+
 .card-header {
   display: flex;
   gap: 14px;
