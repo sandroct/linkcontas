@@ -54,6 +54,7 @@ Deixar o site LinkContas elegante, profissional, funcional e responsivo (mobile 
 - **Build do Pages:** `building` → `built` em ~20s após o push.
 - **Verificação em produção (tudo 200):** `/`, `/doacao.html`, `/faq.html`, `/js/site.js?v=4`, `/js/dados.js?v=1`, `/css/style.css?v=24`, `/sitemap.xml` (25 locs, com `doacao.html`), `robots.txt` apontando o sitemap.
 - **Home ao vivo no navegador:** 18 cards, 7 chips (com "Favoritos"), 6 estados, 1 seção de doações, 0 `footer-pix`, 0 `relogio.js`, refs `?v=24`/`?v=4` corretas.
+- **Search Console:** commit `70bdc34` adicionou `<meta name="google-site-verification" content="j3rjgHZNuehynatbYQonLwtoq1iP-rOb8rMxxd1Ca2Y">` no `<head>` de `index.html` (método HTML tag, enviado pelo Google). Confirmado ao vivo em `https://linkcontas.com.br/`. Falta o usuário clicar em **Verificar** no painel do Search Console e depois enviar o sitemap.
 - Para publicar mudanças futuras: `git add -A && git commit -m "..." && git push` (Pages redesenha sozinho).
 
 ## 📋 Próximos passos / pendências
