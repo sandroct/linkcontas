@@ -61,6 +61,13 @@ Deixar o site LinkContas elegante, profissional, funcional e responsivo (mobile 
 - Commit `cd136d9` — "Menu do topo: adiciona link Doacao (desktop + mobile) em todas as paginas". Verificado ao vivo: nav com 7 itens em `/`, `/faq.html` e `/doacao.html`; em `doacao.html` o item entra com `nav-link ativo`.
 - Para publicar mudanças futuras: `git add -A && git commit -m "..." && git push` (Pages redesenha sozinho).
 
+## 💰 Google AdSense (15/11/2026)
+- Snippet instalado no `<head>` das **26 páginas** (após o GTM), conta `ca-pub-26774220962143682` — script `add-adsense.py`. Verificado: o loader do AdSense (`show_ads_impl_fy2021.js`) é puxado, cards continuam funcionando.
+- `ads.txt` **já estava publicado** (`google.com, pub-26774220962143682, DIRECT, f08c47fec0942fa0`) — o painel marcava "Não encontrado" só porque o robô ainda não tinha relido (leva até 48h após o deploy do arquivo).
+- Painelado estava em **"Precisa de revisão"** → fluxo: snippet no ar (feito) → Google re-crawleia → status "Preparando" → **"Pronto"** (anúncios automáticos passam a exibir) ou "Precisa de atenção" (corrigir o que apontar).
+- README corrigido: o texto antigo citava `div.ad-placeholder` que **nunca existiram** no HTML; agora documenta o snippet real.
+- Varredura final passa a exigir `ca-pub-26774220962143682` em toda página.
+
 ## 📋 Próximos passos / pendências
 1. ~~README.md — estrutura atualizada~~ ✅ **Feito**.
 2. ~~Página de doação própria + link no rodapé~~ ✅ **Feito**: `doacao.html` criada, link nas 26 páginas, no sitemap e testada.
