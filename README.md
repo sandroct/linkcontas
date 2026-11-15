@@ -15,37 +15,49 @@ Site elegante e acessível que centraliza links oficiais para pagamento de conta
 - **Design responsivo** (funciona bem no celular)
 - **Acessibilidade para idosos** (botões grandes, fonte maior, links abrem em nova aba)
 - **Faixa "Doações / Cafézinho"** no rodapé da página inicial (chave Pix com botão de copiar)
-- **Formulário de feedback** na página de contato (nome, assunto, descrição) — entregue por e-mail ao administrador + mural local com auto-limpeza de 30 dias
-- **Área do administrador** no contato (login `admin`) para apagar mensagens de teste/impróprias salvas no navegador
+- **Formulário de feedback** na página de contato (nome, assunto, descrição) — entregue por e-mail ao administrador via FormSubmit
 - **Espaços para anúncios** (Ezoic já integrado em todas as páginas)
 
 ## 📁 Estrutura
 
 ```
-linkcontas/
-├── index.html          (página principal com toggle de tema + faixa de doações)
-├── sobre.html
-├── contato.html        (e-mail + formulário/chat de feedback + área admin)
-├── termos.html
-├── privacidade.html
+pague-facil/
+├── index.html                 (página principal com toggle de tema + faixa de doações)
+├── sobre.html / contato.html / faq.html / termos.html / privacidade.html
+├── doacao.html                (página de doação via Pix — link no rodapé de todas as páginas)
+├── template-pagina-empresa.html   (template — não é servido publicado)
+├── gerar-paginas-v3.py        (regenera páginas de empresa a partir dos JSON)
+├── dados-empresas-1/2/3.json  (fonte dos dados das empresas)
 ├── css/
-│   └── style.css       (estilos elegantes com tema claro/escuro + doações)
+│   ├── style.css              (Design System v3 — temas, layout, componentes)
+│   └── pagina-empresa.css     (estilos do artigo de cada empresa)
 ├── js/
-│   └── script.js       (empresas, busca, filtro, toggle de tema)
-├── robots.txt          (permite indexação + aponta para o sitemap)
-├── sitemap.xml         (mapa do site para o Google)
-├── ads.txt             (Google AdSense ativo; Ezoic entra quando o painel liberar)
-├── paginas de empresa  (enel-sp, light, cemig, cpfl, edp, ceee, claro, vivo,
-│                        tim, oi, sabesp, copasa, cedae, sanepar, sky, algar, serasa)
-└── README.md           (este arquivo)
+│   ├── dados.js               (dados das empresas — busca e filtro)
+│   └── site.js                (cards, favoritos, busca, filtro, tema, feedback)
+├── assets/logos/*.svg         (logos das empresas)
+├── robots.txt / sitemap.xml / ads.txt / manifest.webmanifest / favicon.svg
+├── paginas de empresa         (enel-sp, light, cemig, cpfl, edp, ceee, claro, vivo,
+│                              tim, oi, gigamaisfibra, sabesp, copasa, cedae, sanepar,
+│                              sky, algar, serasa)
+├── HANDOFF.md                 (checklist de progresso e próximos passos)
+└── README.md                  (este arquivo)
 ```
+
+### 🔄 Regenerar páginas de empresa
+
+```bash
+python gerar-paginas-v3.py
+```
+
+- Fonte: `dados-empresas-*.json` → gera 16 páginas a partir de `template-pagina-empresa.html` (UTF-8).
+- `enel-sp.html` e `copasa.html` são escritos à mão e **não** são regenerados.
+- Scripts antigos (`gerar-paginas-v2.ps1`, `validar*.ps1`, `patch-html*.ps1`) foram substituídos pelo v3 — não usar (PowerShell 5.1 lê .ps1 como ANSI e corrompe acentos).
 
 ## 📨 Feedback: como funciona
 
 1. O visitante preenche nome, assunto e descrição e clica em **Enviar feedback**.
 2. A mensagem é entregue por e-mail ao administrador (serviço gratuito FormSubmit — **na 1ª mensagem é preciso clicar no link "Ativar formulário"** recebido em alessandrobr2012@gmail.com).
-3. A mensagem também aparece no mural da própria página, salva no navegador, e é **apagada automaticamente após 30 dias**.
-4. O administrador entra em **"Área do administrador"** (usuário `admin`) para apagar mensagens individuais ou limpar o mural. Como o site é estático, essa senha é só uma porta de tela — a segurança real é a senha do e-mail.
+3. O site é estático: nenhuma mensagem é armazenada — tudo vai por e-mail.
 
 ## 📞 Contatos das empresas (verifique periodicamente)
 
@@ -72,7 +84,7 @@ O site tem espaços reservados para anúncios:
 
 - **Google AdSense:** cole o código nos `div.ad-placeholder` (topo e rodapé)
 - **Banner direto:** substitua o conteúdo do placeholder por uma imagem/link
-- **Pix / "cafezinho":** já configurado em `contato.html` (chave: a5dccde0-8045-4dbd-89b4-905b4e44701c, e-mail: alessandrobr2012@gmail.com)
+- **Pix / "cafezinho":** chave `a5dccde0-8045-4dbd-89b4-905b4e44701c` — página própria em `doacao.html` (link "Doação" no rodapé de todas as páginas), seção de doações em `index.html`/`contato.html` e e-mail alessandrobr2012@gmail.com
 
 ## 🏢 Links atuais das empresas (verifique periodicamente)
 
@@ -96,25 +108,33 @@ O site tem espaços reservados para anúncios:
 | Algar | Internet/TV | `https://www.algartelecom.com.br` | |
 
 ### ⚠️ Importante sobre os links
-As URLs das áreas de login/pagamento das empresas **podem mudar com o tempo**. Verifique periodicamente se os links ainda funcionam corretamente acessando cada um pelo seu navegador. Se algum link quebrar, edite o arquivo `js/script.js` e atualize a `urlPagamento` ou a `url`.
+As URLs das áreas de login/pagamento das empresas **podem mudar com o tempo**. Verifique periodicamente se os links ainda funcionam corretamente acessando cada um pelo seu navegador. Se algum link quebrar, edite o arquivo `js/dados.js` e atualize a `urlPagamento` ou a `url`.
 
 ### Como adicionar mais empresas
 
-Edite o arquivo `js/script.js` e inclua novos objetos no array `empresas`:
+1. Edite o arquivo `js/dados.js` e inclua um novo objeto no array `EMPRESAS`:
 
 ```javascript
 {
   id: 'nova-empresa',
   nome: 'Nome da Empresa',
-  categoria: 'energia', // energia | telefone | agua | internet
+  categoria: 'energia', // energia | telefone | agua | internet | consultas
+  sigla: 'NE', cor: '#2563eb', logo: 'assets/logos/nova-empresa.png',
+  pagina: 'nova-empresa.html',   // página própria (opcional)
   url: 'https://siteoficial.com.br',
   urlPagamento: 'https://siteoficial.com.br/login',
-  icone: '⚡',
-  descricao: 'Breve descrição'
+  tipoCanal: 'Portal do cliente — 2ª via e pagamento',
+  descricao: 'Breve descrição',
+  alcance: 'estadual', estados: ['SP'], regiao: 'sudeste',
+  aliases: ['nova empresa'],
+  verificado: '2026-11-15',
+  canais: []
 }
 ```
 
-Categorias válidas: `energia`, `telefone`, `agua`, `internet`.
+2. Se a empresa tiver página própria, crie o HTML no `dados-empresas-*.json` e rode `python gerar-paginas-v3.py`.
+
+Categorias válidas: `energia`, `telefone`, `agua`, `internet`, `consultas`.
 
 ## 👴 Acessibilidade para idosos
 

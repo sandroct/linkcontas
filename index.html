@@ -20,7 +20,6 @@
     gtag('js', new Date());
   </script>
   <!-- End Google Tag Manager -->
-  <meta charset="UTF-8">
   <!-- Ezoic: scripts de privacidade -->
   <script data-cfasync="false" src="https://cmp.gatekeeperconsent.com/min.js"></script>
   <script data-cfasync="false" src="https://the.gatekeeperconsent.com/cmp.min.js"></script>
@@ -32,12 +31,12 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
-  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f172a">
-  <title>LinkContas — Pague suas contas aqui</title>
-  <meta name="description" content="Encontre os sites oficiais para pagar contas de luz, água, telefone e internet. Links oficiais, gratuitos e seguros.">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#020617">
+  <title>LinkContas — Canais oficiais das empresas de conta</title>
+  <meta name="description" content="Encontre os sites oficiais para pagar contas de luz, água, telefone, internet e consultas. Gratuito, sem cadastro e sem anúncios intrusivos.">
   <link rel="canonical" href="https://linkcontas.com.br/">
-  <meta property="og:title" content="LinkContas — Pague suas contas aqui">
-  <meta property="og:description" content="Encontre os sites oficiais para pagar contas de luz, água, telefone e internet. Links oficiais, gratuitos e seguros.">
+  <meta property="og:title" content="LinkContas — Canais oficiais das empresas de conta">
+  <meta property="og:description" content="Encontre os sites oficiais para pagar contas de luz, água, telefone, internet e consultas. Gratuito, sem cadastro e sem anúncios intrusivos.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://linkcontas.com.br/">
   <meta property="og:image" content="https://linkcontas.com.br/og.png">
@@ -48,8 +47,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=14">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=24">
 </head>
 <body>
   <!-- Skip link para acessibilidade -->
@@ -116,22 +115,23 @@
 
   <main id="conteudo">
     <!-- Hero com busca em destaque -->
-    <section class="hero">
+    <section class="hero" id="inicio">
       <div class="container hero-inner">
         <div class="hero-content">
           <div class="hero-badge">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             Links oficiais verificados
           </div>
-          <h1>Pague suas contas <span class="gradiente">em um só lugar</span></h1>
-          <p class="hero-lead">Encontre o site oficial da sua empresa e pague direto. Sem cadastro, sem cobrança indevida, sem golpes.</p>
+          <h1 class="hero-title">Encontre e acesse suas contas <span class="gradiente">em um só lugar</span></h1>
+          <p class="hero-lead">Localize os canais oficiais das empresas de energia, água, telefone, internet e outros serviços. Simples, rápido e gratuito.</p>
 
           <div class="busca-hero">
             <div class="busca-wrapper">
               <span class="busca-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></span>
-              <input type="search" id="busca" placeholder="Digite a empresa (ex: Enel, Sabesp, Claro)..." autocomplete="off" autocapitalize="words" spellcheck="false">
+              <input type="search" id="busca" placeholder="Digite a empresa, serviço ou estado (ex: Enel, Sabesp, Claro, SP)..." autocomplete="off" autocapitalize="words" spellcheck="false" aria-label="Buscar empresa">
               <span class="busca-clear" id="busca-clear" aria-label="Limpar busca"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 6.41L17.59 4.83L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"/></svg></span>
             </div>
+            <button id="btn-limpar-filtros" class="btn btn-outline oculto">Limpar filtros</button>
           </div>
         </div>
       </div>
@@ -150,6 +150,16 @@
       </div>
     </section>
 
+    <!-- Filtros rápidos / Estados -->
+    <section class="estado-secao" id="estados">
+      <h2 class="texto-centro mb-24">Empresas do seu estado</h2>
+      <div class="container">
+        <div class="estado-grid" id="grid-estados">
+          <!-- preenchido por JS -->
+        </div>
+      </div>
+    </section>
+
     <!-- Categorias -->
     <section class="categorias" id="categorias">
       <div class="container">
@@ -157,7 +167,9 @@
           <h2>Categorias</h2>
           <p>Escolha o tipo de conta que você quer pagar</p>
         </div>
-        <div class="categoria-lista" id="categorias"></div>
+        <div class="categoria-lista" id="categorias-lista">
+          <!-- preenchido por JS -->
+        </div>
       </div>
     </section>
 
@@ -170,7 +182,16 @@
             <span id="contagem" class="badge">…</span>
           </div>
         </div>
-        <div class="grid" id="grid-empresas"></div>
+        <div class="grid" id="grid-empresas-lista">
+          <!-- preenchido por JS -->
+        </div>
+        <div id="estado-vazio" class="oculto">
+          <div class="estado-vazio">
+            <h3>Nenhuma empresa encontrada</h3>
+            <p>Tente outro nome, categoria ou estado.</p>
+            <p class="top-vazio">Não encontrou? <a href="contato.html">Entre em contato e sugira.</a></p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -180,7 +201,7 @@
         <div class="como-funciona-conteudo">
           <div class="como-texto">
             <h2>Como funciona</h2>
-            <p>Encontre a empresa, clique em "Pagar conta" e pague direto no site oficial.</p>
+            <p>Encontre a empresa, clique em "Acessar site oficial" e pague direto no canal da concessionária.</p>
           </div>
           <div class="passos">
             <div class="passo">
@@ -234,13 +255,29 @@
         </div>
       </div>
     </section>
+
+    <!-- Doações / Cafézinho -->
+    <section class="doacoes" id="doacoes">
+      <div class="container doacoes-inner">
+        <h3>☕ Apoie o LinkContas</h3>
+        <p>O LinkContas é gratuito e independente. Qualquer valor ajuda a manter o site no ar e atualizar os links oficiais.</p>
+        <div class="doacoes-pix">
+          <strong class="doacoes-pix-label">Chave Pix aleatória (doações/apoio)</strong>
+          <div class="doacoes-chave-wrap">
+            <code id="pix-chave-doacoes" class="doacoes-chave">a5dccde0-8045-4dbd-89b4-905b4e44701c</code>
+            <button id="btn-copiar-doacao" class="btn-copiar-doacao" type="button">Copiar chave</button>
+          </div>
+        </div>
+        <small class="doacoes-dica">Chave aleatória — aceita transferência de qualquer banco. Toque em "Copiar chave", abra o app do seu banco, escolha Pix → Colar e pronto!</small>
+      </div>
+    </section>
   </main>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-col">
-        <div class="footer-logo">
+        <a class="logo" href="index.html" aria-label="LinkContas — Página inicial">
           <span class="logo-icon">
             <svg viewBox="0 0 32 36" xmlns="http://www.w3.org/2000/svg">
               <rect x="3" y="2" width="26" height="32" rx="4" fill="#ffffff" stroke="#1d4ed8" stroke-width="2.5"/>
@@ -257,7 +294,7 @@
             </svg>
           </span>
           <span class="logo-text">LinkContas</span>
-        </div>
+        </a>
         <p class="footer-desc">Central de links para os sites oficiais de empresas de contas de consumo.</p>
         <p class="footer-lema">💙 Criando SITES E APPS para ajudar a população. Fazer o bem é o meu lema.</p>
       </div>
@@ -269,6 +306,7 @@
           <li><a href="termos.html">Termos de Uso</a></li>
           <li><a href="privacidade.html">Política de Privacidade</a></li>
           <li><a href="contato.html">Contato</a></li>
+          <li><a href="doacao.html">Doação</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -279,15 +317,6 @@
           <li><a href="faq.html">Perguntas frequentes</a></li>
         </ul>
       </div>
-      <div class="footer-col">
-        <h4>Doações ☕</h4>
-        <p class="footer-desc">O LinkContas é gratuito. Qualquer valor ajuda a manter o site no ar.</p>
-        <div class="footer-pix">
-          <code>a5dccde0-8045-4dbd-89b4-905b4e44701c</code>
-          <button id="btn-copiar-doacao" class="btn-copiar-doacao" type="button">Copiar chave</button>
-        </div>
-        <small class="footer-dica">Chave aleatória — aceita transferência de qualquer banco.</small>
-      </div>
     </div>
     <div class="container">
       <div class="copyright">
@@ -296,97 +325,47 @@
     </div>
   </footer>
 
-  <!-- Doações / Cafézinho -->
-  <section class="doacoes reveal" id="doacoes">
-    <div class="container doacoes-inner">
-      <div class="doacoes-texto">
-        <h3>☕ Doações / Cafézinho</h3>
-        <p>O LinkContas é gratuito e sem anúncios intrusivos. Se ele te ajudou a pagar uma conta, qualquer valor é bem-vindo para manter o site no ar. Obrigado! 💙</p>
-      </div>
-      <div class="doacoes-pix">
-        <strong class="doacoes-pix-label">Chave Pix aleatória (doações/apoio)</strong>
-        <div class="doacoes-chave-wrap">
-          <code id="pix-chave-doacoes" class="doacoes-chave">a5dccde0-8045-4dbd-89b4-905b4e44701c</code>
-          <button id="btn-copiar-doacao" class="btn-copiar-doacao" type="button">Copiar chave</button>
-        </div>
-        <small class="doacoes-dica">Chave aleatória — aceita transferência de qualquer banco. Toque em "Copiar chave", abra o app do seu banco, escolha Pix → Colar e pronto!</small>
-      </div>
-    </div>
-  </section>
+  <!-- Botão voltar ao topo -->
+  <button id="btn-voltar-topo" class="btn-voltar-topo" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
 
+  <script src="js/dados.js?v=1"></script>
+  <script src="js/site.js?v=4"></script>
   <script src="js/contador.js?v=2"></script>
-  <script src="js/script.js?v=7"></script>
-  <script src="js/relogio.js?v=1"></script>
   <script>
-  // Copiar chave Pix para a área de transferência
+  // Copiar chave Pix (unificado)
   (function () {
-    var btn = document.getElementById('btn-copiar-doacao');
-    var chave = document.getElementById('pix-chave-doacoes');
-    if (!btn || !chave) return;
-    btn.addEventListener('click', function () {
-      var texto = chave.textContent.trim();
-      navigator.clipboard.writeText(texto).then(function () {
-        var original = btn.innerHTML;
-        btn.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Copiado!';
-        btn.classList.add('copiado');
-        setTimeout(function () {
-          btn.innerHTML = original;
-          btn.classList.remove('copiado');
-        }, 2000);
-      }).catch(function () {
-        var area = document.createElement('textarea');
-        area.value = texto;
-        document.body.appendChild(area);
-        area.select();
-        document.execCommand('copy');
-        document.body.removeChild(area);
-        var original = btn.innerHTML;
-        btn.innerHTML = 'Copiado!';
-        setTimeout(function () {
-          btn.innerHTML = original;
-        }, 2000);
+    function copiar(idChave, idBtn) {
+      var btn = document.getElementById(idBtn);
+      var chave = document.getElementById(idChave);
+      if (!btn || !chave) return;
+      btn.addEventListener('click', function () {
+        var texto = chave.textContent.trim();
+        navigator.clipboard.writeText(texto).then(function () {
+          var original = btn.innerHTML;
+          btn.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Copiado!';
+          btn.classList.add('copiado');
+          setTimeout(function () {
+            btn.innerHTML = original;
+            btn.classList.remove('copiado');
+          }, 2000);
+        }).catch(function () {
+          var area = document.createElement('textarea');
+          area.value = texto;
+          document.body.appendChild(area);
+          area.select();
+          document.execCommand('copy');
+          document.body.removeChild(area);
+          var original = btn.innerHTML;
+          btn.innerHTML = 'Copiado!';
+          setTimeout(function () {
+            btn.innerHTML = original;
+          }, 2000);
+        });
       });
-    });
-  })();
-  // Theme toggle handler
-  (function () {
-    var btn = document.getElementById('tema-toggle');
-    var icone = document.querySelector('.icone-tema');
-    if (!btn || !icone) return;
-    function aplicar(t) {
-      var html = document.documentElement;
-      if (t === 'escuro') {
-        html.setAttribute('data-tema', 'escuro');
-        icone.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.9 4.9 1.4 1.4"/><path d="m17.7 17.7 1.4 1.4"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.3 17.7-1.4 1.4"/><path d="m19.1 4.9-1.4 1.4"/></svg>';
-      } else {
-        html.removeAttribute('data-tema');
-        icone.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
-      }
     }
-    btn.addEventListener('click', function () {
-      var escuro = document.documentElement.getAttribute('data-tema') === 'escuro';
-      aplicar(escuro ? 'claro' : 'escuro');
-      localStorage.setItem('linkcontas-tema', escuro ? 'claro' : 'escuro');
-    });
-  })();
-  // Menu mobile toggle
-  (function () {
-    var btn = document.getElementById('menu-toggle');
-    var menu = document.getElementById('menu-mobile');
-    if (!btn || !menu) return;
-    btn.addEventListener('click', function () {
-      var aberto = menu.classList.toggle('aberto');
-      btn.setAttribute('aria-expanded', aberto ? 'true' : 'false');
-      btn.setAttribute('aria-label', aberto ? 'Fechar menu' : 'Abrir menu');
-    });
-    // Fecha ao clicar em um link
-    menu.querySelectorAll('a').forEach(function (link) {
-      link.addEventListener('click', function () {
-        menu.classList.remove('aberto');
-        btn.setAttribute('aria-expanded', 'false');
-        btn.setAttribute('aria-label', 'Abrir menu');
-      });
-    });
+    copiar('pix-chave-doacoes', 'btn-copiar-doacao');
   })();
   </script>
 </body>

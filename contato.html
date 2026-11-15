@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <!-- Aplica o tema ANTES da renderização (evita flash claro no tema escuro) -->
   <script>
     (function () {
       try {
@@ -11,19 +10,11 @@
       } catch (e) {}
     })();
   </script>
-  <!-- Google Tag Manager -->
   <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-KTZBMW3W"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  </script>
-  <!-- End Google Tag Manager -->
+  <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date());</script>
   <meta charset="UTF-8">
-  <!-- Ezoic: scripts de privacidade (devem vir primeiro) -->
   <script data-cfasync="false" src="https://cmp.gatekeeperconsent.com/min.js"></script>
   <script data-cfasync="false" src="https://the.gatekeeperconsent.com/cmp.min.js"></script>
-  <!-- Ezoic: script principal -->
   <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
   <script>window.ezstandalone = window.ezstandalone || {};ezstandalone.cmd = ezstandalone.cmd || [];</script>
   <script src="//ezoicanalytics.com/analytics.js"></script>
@@ -31,13 +22,13 @@
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#2563eb">
-  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f172a">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#020617">
   <title>Contato — LinkContas</title>
-  <meta name="description" content="Entre em contato com o LinkContas: sugira empresas, reporte links quebrados ou envie feedback.">
+  <meta name="description" content="Entre em contato com o LinkContas: sugira empresas, reporte links quebrados ou envie feedback por e-mail.">
   <link rel="canonical" href="https://linkcontas.com.br/contato.html">
-  <meta property="og:title" content="Contato | LinkContas">
-  <meta property="og:description" content="Central de links para os sites oficiais de empresas de contas de consumo.">
+  <meta property="og:title" content="Contato — LinkContas">
+  <meta property="og:description" content="Entre em contato com o LinkContas: sugira empresas, reporte links quebrados ou envie feedback por e-mail.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://linkcontas.com.br/contato.html">
   <meta property="og:image" content="https://linkcontas.com.br/og.png">
@@ -48,20 +39,21 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=12">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=24">
 </head>
 <body>
-  <!-- Header -->
+  <a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
+
   <header class="header">
     <div class="container header-inner">
-      <a class="logo" href="index.html" style="text-decoration:none">
+      <a class="logo" href="index.html" aria-label="LinkContas — Página inicial">
         <span class="logo-icon">
-          <svg class="logo-boleto" viewBox="0 0 32 36" xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 32 36" xmlns="http://www.w3.org/2000/svg">
             <rect x="3" y="2" width="26" height="32" rx="4" fill="#ffffff" stroke="#1d4ed8" stroke-width="2.5"/>
             <rect x="8" y="8" width="16" height="2.6" rx="1.3" fill="#2563eb"/>
             <rect x="8" y="13.5" width="11" height="2.2" rx="1.1" fill="#cbd5e1"/>
-            <rect x="8" y="17.8" width="14" height="2.2" rx="1.1" fill="#e2e8f0"/>
+            <rect x="8" y="17.8" width="14" height="4" rx="2" fill="#e2e8f0"/>
             <g class="barcode">
               <rect x="8" y="23" width="2.4" height="8" fill="#0f172a"/>
               <rect x="11.8" y="23" width="1.4" height="8" fill="#0f172a"/>
@@ -73,33 +65,57 @@
         </span>
         <span class="logo-text">LinkContas</span>
       </a>
+      <nav class="nav-principal" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html" class="nav-link">Início</a></li>
+          <li><a href="index.html#grid-empresas" class="nav-link">Empresas</a></li>
+          <li><a href="index.html#categorias" class="nav-link">Categorias</a></li>
+          <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contato.html" class="nav-link ativo">Contato</a></li>
+        </ul>
+      </nav>
       <div class="user-actions">
         <button id="tema-toggle" class="btn-tema" aria-label="Alternar tema claro/escuro" title="Alternar tema">
           <span class="icone-tema"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span>
         </button>
-        <a href="sobre.html" class="btn btn-outline">Sobre</a>
-        <div class="relogio" id="relogio" aria-label="Horário e data de Brasília">
-          <span id="relogio-hora">--:--:--</span>
-          <span id="relogio-data">--/--/----</span>
-        </div>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-mobile">
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+        </button>
       </div>
     </div>
+    <nav class="menu-mobile" id="menu-mobile" aria-label="Navegação mobile">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="index.html#grid-empresas">Empresas</a></li>
+        <li><a href="index.html#categorias">Categorias</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <section class="contato-hero">
-      <div class="container">
-        <div class="contato-hero-content">
-          <span class="contato-badge">Fale conosco</span>
-          <h1>Contato</h1>
-          <p class="contato-lead">Tem sugestão de empresa para adicionar? Encontrou um link quebrado? Quer anunciar? Sua opinião ajuda o LinkContas a melhorar para todos.</p>
+  <main id="conteudo">
+    <section class="hero hero-interno">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+            Fale conosco
+          </div>
+          <h1 class="hero-title">Contato</h1>
+          <p class="hero-lead">Tem sugestão de empresa para adicionar? Encontrou um link quebrado? Quer anunciar? Sua opinião ajuda o LinkContas a melhorar para todos.</p>
         </div>
       </div>
     </section>
 
-    <section class="contato-content">
+    <section class="secao-padrao">
       <div class="container">
         <div class="contato-grid">
+          <!-- E-mail direto -->
           <article class="contato-card">
             <div class="contato-ico">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
@@ -110,159 +126,241 @@
             <p class="contato-prazo">Respondemos em até <strong>3 dias úteis</strong>.</p>
           </article>
 
+          <!-- Formulário -->
           <article class="contato-card">
             <div class="contato-ico">
               <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
             </div>
             <h3>Como podemos ajudar</h3>
-            <p>Sugira novas empresas, reporte links quebrados ou envie qualquer outra mensagem pela chave Pix de contato:</p>
-            <a href="mailto:alessandrobr2012@gmail.com?subject=Contato%20-%20LinkContas" class="btn btn-primary contato-btn">Enviar e-mail</a>
-            <p class="contato-prazo">Não coleta dados pessoais. Resposta rápida.</p>
+            <p>Sugira novas empresas, reporte links quebrados ou envie qualquer outra mensagem. Não coloque dados pessoais, senhas ou informações financeiras.</p>
+
+            <form id="form-contato" action="https://formsubmit.co/alessandrobr2012@gmail.com" method="POST" novalidate>
+              <!-- Honeypot anti-spam -->
+              <input type="text" name="_honey" style="position:absolute; left:-9999px; opacity:0;" aria-hidden="true" tabindex="-1" autocomplete="off">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="box">
+              <input type="hidden" name="_subject" value="Contato - LinkContas">
+
+              <label>
+                Nome
+                <input type="text" name="nome" placeholder="Seu nome" required>
+              </label>
+
+              <label>
+                Assunto
+                <select name="assunto">
+                  <option value="Sugestão de empresa">Sugestão de empresa</option>
+                  <option value="Link quebrado">Link quebrado</option>
+                  <option value="Dúvida geral">Dúvida geral</option>
+                  <option value="Anúncio / parceria">Anúncio ou parceria</option>
+                  <option value="Outro">Outro</option>
+                </select>
+              </label>
+
+              <label>
+                E-mail (opcional, para retorno)
+                <input type="email" name="email" placeholder="seu@email.com">
+              </label>
+
+              <label>
+                Mensagem
+                <textarea name="mensagem" rows="5" placeholder="Conte o que precisa..." required></textarea>
+              </label>
+
+              <p class="form-nota">Os dados desta mensagem são enviados por e-mail ao administrador do LinkContas. Não armazenamos senhas nem dados financeiros.</p>
+
+              <button type="submit" id="btn-enviar-contato" class="btn btn-primary">Enviar mensagem</button>
+            </form>
+
+            <div id="msg-contato"></div>
           </article>
         </div>
-      </div>
-    </section>
 
-    <section class="contato-info">
-      <div class="container">
-        <div class="info-grid">
-          <div class="info-card">
-            <div class="info-ico">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <!-- Info cards -->
+        <section class="contato-info">
+          <div class="info-grid">
+            <div class="info-card">
+              <div class="info-ico">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              </div>
+              <div class="info-text">
+                <h4>Horário de atendimento</h4>
+                <p>Segunda a sexta, das 9h às 18h</p>
+              </div>
             </div>
-            <div class="info-text">
-              <h4>Horário de atendimento</h4>
-              <p>Segunda a sexta, das 9h às 18h</p>
+            <div class="info-card">
+              <div class="info-ico">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14z"/></svg>
+              </div>
+              <div class="info-text">
+                <h4>O que não fazemos</h4>
+                <p>Não armazenamos senhas nem dados financeiros. Não processamos pagamentos.</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-ico">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              </div>
+              <div class="info-text">
+                <h4>Gratuito e sem cadastro</h4>
+                <p>O LinkContas é totalmente gratuito e não requer registro de usuário.</p>
+              </div>
             </div>
           </div>
-          <div class="info-card">
-            <div class="info-ico">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14z"/></svg>
-            </div>
-            <div class="info-text">
-              <h4>O que não fazemos</h4>
-              <p>Não armazenamos senhas nem dados financeiros. Não processamos pagamentos.</p>
-            </div>
-          </div>
-          <div class="info-card">
-            <div class="info-ico">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            </div>
-            <div class="info-text">
-              <h4>Gratuito e sem cadastro</h4>
-              <p>O LinkContas é totalmente gratuito e não requer registro de usuário.</p>
-            </div>
-          </div>
+        </section>
+
+        <div class="voltar-wrapper">
+          <a href="index.html" class="voltar">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+            Voltar ao site
+          </a>
         </div>
       </div>
     </section>
 
-    <div class="voltar-wrapper">
-      <a href="index.html" class="voltar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg> Voltar ao site</a>
-    </div>
+    <!-- Doações / Cafézinho -->
+    <section class="doacoes" id="doacoes">
+      <div class="container doacoes-inner">
+        <h3>☕ Apoie o LinkContas</h3>
+        <p>O LinkContas é gratuito e independente. Qualquer valor ajuda a manter o site no ar e atualizar os links oficiais.</p>
+        <div class="doacoes-pix">
+          <strong class="doacoes-pix-label">Chave Pix aleatória (doações/apoio)</strong>
+          <div class="doacoes-chave-wrap">
+            <code id="pix-chave-doacoes" class="doacoes-chave">a5dccde0-8045-4dbd-89b4-905b4e44701c</code>
+            <button id="btn-copiar-doacao" class="btn-copiar-doacao" type="button">Copiar chave</button>
+          </div>
+        </div>
+        <small class="doacoes-dica">Chave aleatória — aceita transferência de qualquer banco. Toque em "Copiar chave", abra o app do seu banco, escolha Pix → Colar e pronto!</small>
+      </div>
+    </section>
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-col">
-        <h4>LinkContas</h4>
-        <p>Central de links para os sites oficiais de empresas de contas de consumo.</p>
+        <a class="logo" href="index.html" aria-label="LinkContas — Página inicial">
+          <span class="logo-icon">
+            <svg viewBox="0 0 32 36" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="2" width="26" height="32" rx="4" fill="#ffffff" stroke="#1d4ed8" stroke-width="2.5"/>
+              <rect x="8" y="8" width="16" height="2.6" rx="1.3" fill="#2563eb"/>
+              <rect x="8" y="13.5" width="11" height="2.2" rx="1.1" fill="#cbd5e1"/>
+              <rect x="8" y="17.8" width="14" height="4" rx="2" fill="#e2e8f0"/>
+              <g class="barcode">
+                <rect x="8" y="23" width="2.4" height="8" fill="#0f172a"/>
+                <rect x="11.8" y="23" width="1.4" height="8" fill="#0f172a"/>
+                <rect x="14.6" y="23" width="3" height="8" fill="#0f172a"/>
+                <rect x="19" y="23" width="1.4" height="8" fill="#0f172a"/>
+                <rect x="21.8" y="23" width="2.4" height="8" fill="#0f172a"/>
+              </g>
+            </svg>
+          </span>
+          <span class="logo-text">LinkContas</span>
+        </a>
+        <p class="footer-desc">Central de links para os sites oficiais de empresas de contas de consumo.</p>
         <p class="footer-lema">💙 Criando SITES E APPS para ajudar a população. Fazer o bem é o meu lema.</p>
       </div>
       <div class="footer-col">
         <h4>Links</h4>
         <ul>
+          <li><a href="index.html">Início</a></li>
           <li><a href="sobre.html">Sobre</a></li>
           <li><a href="termos.html">Termos de Uso</a></li>
           <li><a href="privacidade.html">Política de Privacidade</a></li>
           <li><a href="contato.html">Contato</a></li>
-          <li><a href="#doacoes">Doações ☕</a></li>
+          <li><a href="doacao.html">Doação</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Aviso legal</h4>
-        <p>O LinkContas é um indicador de links. Não somos responsáveis pelos conteúdos, valores ou serviços das empresas terceiras. Sempre confirme os dados no site oficial da concessionária.</p>
+        <h4>Ajuda</h4>
+        <ul>
+          <li><a href="contato.html">Sugerir empresa</a></li>
+          <li><a href="contato.html">Reportar link quebrado</a></li>
+          <li><a href="faq.html">Perguntas frequentes</a></li>
+        </ul>
       </div>
     </div>
     <div class="container">
-      <div class="copyright">
-        &copy; 2026 LinkContas. Todos os direitos reservados.
-      </div>
+      <div class="copyright">&copy; 2026 LinkContas. Todos os direitos reservados.</div>
     </div>
   </footer>
 
-  <!-- Doações / Cafézinho -->
-  <section class="doacoes reveal" id="doacoes">
-    <div class="container doacoes-inner">
-      <div class="doacoes-texto">
-        <h3>☕ Doações / Cafézinho</h3>
-        <p>O LinkContas é gratuito e sem anúncios intrusivos. Se ele te ajudou a pagar uma conta, qualquer valor é bem-vindo para manter o site no ar. Obrigado! 💙</p>
-      </div>
-      <div class="doacoes-pix">
-        <strong class="doacoes-pix-label">Chave Pix aleatória (doações/apoio)</strong>
-        <div class="doacoes-chave-wrap">
-          <code id="pix-chave-doacoes" class="doacoes-chave">a5dccde0-8045-4dbd-89b4-905b4e44701c</code>
-          <button id="btn-copiar-doacao" class="btn-copiar-doacao" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Copiar chave</button>
-        </div>
-        <small class="doacoes-dica">Chave aleatória — aceita transferência de qualquer banco. Toque em "Copiar chave", abra o app do seu banco, escolha Pix → Colar e pronto!</small>
-      </div>
-    </div>
-  </section>
+  <button id="btn-voltar-topo" class="btn-voltar-topo" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
 
+  <script src="js/dados.js?v=1"></script>
+  <script src="js/site.js?v=4"></script>
   <script src="js/contador.js?v=2"></script>
-  <script src="js/script.js?v=6"></script>
-  <script src="js/relogio.js?v=1"></script>
   <script>
-  // Copiar chave Pix para a área de transferência
+  // Copiar chave Pix (unificado)
   (function () {
-    var btn = document.getElementById('btn-copiar-doacao');
-    var chave = document.getElementById('pix-chave-doacoes');
-    if (!btn || !chave) return;
-    btn.addEventListener('click', function () {
-      var texto = chave.textContent.trim();
-      navigator.clipboard.writeText(texto).then(function () {
-        var original = btn.innerHTML;
-        btn.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Copiado!';
-        btn.classList.add('copiado');
-        setTimeout(function () {
-          btn.innerHTML = original;
-          btn.classList.remove('copiado');
-        }, 2000);
-      }).catch(function () {
-        var area = document.createElement('textarea');
-        area.value = texto;
-        document.body.appendChild(area);
-        area.select();
-        document.execCommand('copy');
-        document.body.removeChild(area);
-        var original = btn.innerHTML;
-        btn.innerHTML = 'Copiado!';
-        setTimeout(function () {
-          btn.innerHTML = original;
-        }, 2000);
+    function copiar(idChave, idBtn) {
+      var btn = document.getElementById(idBtn);
+      var chave = document.getElementById(idChave);
+      if (!btn || !chave) return;
+      btn.addEventListener('click', function () {
+        var texto = chave.textContent.trim();
+        navigator.clipboard.writeText(texto).then(function () {
+          var original = btn.innerHTML;
+          btn.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Copiado!';
+          btn.classList.add('copiado');
+          setTimeout(function () {
+            btn.innerHTML = original;
+            btn.classList.remove('copiado');
+          }, 2000);
+        }).catch(function () {
+          var area = document.createElement('textarea');
+          area.value = texto;
+          document.body.appendChild(area);
+          area.select();
+          document.execCommand('copy');
+          document.body.removeChild(area);
+          var original = btn.innerHTML;
+          btn.innerHTML = 'Copiado!';
+          setTimeout(function () { btn.innerHTML = original; }, 2000);
+        });
       });
-    });
-  })();
-  // Theme toggle handler
-  (function () {
-    var btn = document.getElementById('tema-toggle');
-    var icone = document.querySelector('.icone-tema');
-    if (!btn || !icone) return;
-    function aplicar(t) {
-      var html = document.documentElement;
-      if (t === 'escuro') {
-        html.setAttribute('data-tema', 'escuro');
-        icone.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.9 4.9 1.4 1.4"/><path d="m17.7 17.7 1.4 1.4"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.3 17.7-1.4 1.4"/><path d="m19.1 4.9-1.4 1.4"/></svg>';
-      } else {
-        html.removeAttribute('data-tema');
-        icone.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
-      }
     }
-    btn.addEventListener('click', function () {
-      var escuro = document.documentElement.getAttribute('data-tema') === 'escuro';
-      aplicar(escuro ? 'claro' : 'escuro');
-      localStorage.setItem('linkcontas-tema', escuro ? 'claro' : 'escuro');
+    copiar('pix-chave-doacoes', 'btn-copiar-doacao');
+  })();
+
+  // Formulário de contato (FormSubmit)
+  (function () {
+    var form = document.getElementById('form-contato');
+    var msg = document.getElementById('msg-contato');
+    var btn = document.getElementById('btn-enviar-contato');
+    if (!form || !msg || !btn) return;
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      btn.disabled = true;
+      btn.textContent = 'Enviando…';
+        msg.className = '';
+
+      var dados = new FormData(form);
+
+      fetch(form.action, {
+        method: 'POST',
+        body: dados,
+        headers: { 'Accept': 'application/json' }
+      }).then(function (res) {
+        btn.disabled = false;
+        btn.textContent = 'Enviar mensagem';
+        if (res.ok) {
+          msg.className = 'sucesso';
+          msg.textContent = 'Mensagem enviada com sucesso. Entraremos em contato pelo e-mail informado, se houver.';
+          form.reset();
+          // Atenção: na primeira utilização do FormSubmit é necessário clicar no link de ativação enviado ao e-mail do destinatário.
+        } else {
+          msg.className = 'erro';
+          msg.textContent = 'Não foi possível enviar. Tente novamente pelo e-mail alessandrobr2012@gmail.com.';
+        }
+      }).catch(function () {
+        btn.disabled = false;
+        btn.textContent = 'Enviar mensagem';
+        msg.className = 'erro';
+        msg.textContent = 'Erro de conexão. Tente novamente pelo e-mail alessandrobr2012@gmail.com.';
+      });
     });
   })();
   </script>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('linkcontas-tema') ||
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'escuro' : 'claro');
+        if (t === 'escuro') document.documentElement.setAttribute('data-tema', 'escuro');
+      } catch (e) {}
+    })();
+  </script>
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-KTZBMW3W"></script>
+  <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date());</script>
+  <meta charset="UTF-8">
+  <script data-cfasync="false" src="https://cmp.gatekeeperconsent.com/min.js"></script>
+  <script data-cfasync="false" src="https://the.gatekeeperconsent.com/cmp.min.js"></script>
+  <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+  <script>window.ezstandalone = window.ezstandalone || {};ezstandalone.cmd = ezstandalone.cmd || [];</script>
+  <script src="//ezoicanalytics.com/analytics.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#020617">
+  <title>Doação — Apoie o LinkContas</title>
+  <meta name="description" content="Apoie o LinkContas com uma doação via Pix. Contribua para manter o site no ar e os links oficiais sempre atualizados.">
+  <link rel="canonical" href="https://linkcontas.com.br/doacao.html">
+  <meta property="og:title" content="Doação — Apoie o LinkContas">
+  <meta property="og:description" content="Apoie o LinkContas com uma doação via Pix. Contribua para manter o site no ar e os links oficiais sempre atualizados.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://linkcontas.com.br/doacao.html">
+  <meta property="og:image" content="https://linkcontas.com.br/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="LinkContas">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=24">
+</head>
+<body>
+  <a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="LinkContas — Página inicial">
+        <span class="logo-icon">
+          <svg viewBox="0 0 32 36" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="2" width="26" height="32" rx="4" fill="#ffffff" stroke="#1d4ed8" stroke-width="2.5"/>
+            <rect x="8" y="8" width="16" height="2.6" rx="1.3" fill="#2563eb"/>
+            <rect x="8" y="13.5" width="11" height="2.2" rx="1.1" fill="#cbd5e1"/>
+            <rect x="8" y="17.8" width="14" height="4" rx="2" fill="#e2e8f0"/>
+            <g class="barcode">
+              <rect x="8" y="23" width="2.4" height="8" fill="#0f172a"/>
+              <rect x="11.8" y="23" width="1.4" height="8" fill="#0f172a"/>
+              <rect x="14.6" y="23" width="3" height="8" fill="#0f172a"/>
+              <rect x="19" y="23" width="1.4" height="8" fill="#0f172a"/>
+              <rect x="21.8" y="23" width="2.4" height="8" fill="#0f172a"/>
+            </g>
+          </svg>
+        </span>
+        <span class="logo-text">LinkContas</span>
+      </a>
+      <nav class="nav-principal" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html" class="nav-link">Início</a></li>
+          <li><a href="index.html#grid-empresas" class="nav-link">Empresas</a></li>
+          <li><a href="index.html#categorias" class="nav-link">Categorias</a></li>
+          <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contato.html" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="user-actions">
+        <button id="tema-toggle" class="btn-tema" aria-label="Alternar tema claro/escuro" title="Alternar tema">
+          <span class="icone-tema"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span>
+        </button>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-mobile">
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+        </button>
+      </div>
+    </div>
+    <nav class="menu-mobile" id="menu-mobile" aria-label="Navegação mobile">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="index.html#grid-empresas">Empresas</a></li>
+        <li><a href="index.html#categorias">Categorias</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero hero-interno">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            Apoie o LinkContas
+          </div>
+          <h1 class="hero-title">Doação</h1>
+          <p class="hero-lead">O LinkContas é gratuito e independente. Qualquer valor ajuda a manter o site no ar e os links oficiais sempre atualizados.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chave Pix -->
+    <section class="doacoes" id="doacoes">
+      <div class="container doacoes-inner">
+        <h3>☕ Doe via Pix</h3>
+        <p>Chave aleatória do LinkContas — aceita transferência de qualquer banco, sem taxas.</p>
+        <div class="doacoes-pix">
+          <strong class="doacoes-pix-label">Chave Pix aleatória (doações/apoio)</strong>
+          <div class="doacoes-chave-wrap">
+            <code id="pix-chave-doacoes" class="doacoes-chave">a5dccde0-8045-4dbd-89b4-905b4e44701c</code>
+            <button id="btn-copiar-doacao" class="btn-copiar-doacao" type="button">Copiar chave</button>
+          </div>
+        </div>
+        <small class="doacoes-dica">Toque em "Copiar chave", abra o app do seu banco, escolha Pix → Colar e pronto! A transferência cai na conta na hora e você recebe a confirmação no seu e-mail.</small>
+      </div>
+    </section>
+
+    <!-- Como doar -->
+    <section class="secao-padrao">
+      <div class="container">
+        <div class="categorias-header">
+          <h2>Como doar em 3 passos</h2>
+          <p>Leva menos de um minuto</p>
+        </div>
+        <div class="passos">
+          <div class="passo">
+            <span class="passo-numero">1</span>
+            <div class="passo-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></div>
+            <h3>Copie</h3>
+            <p>Toque em "Copiar chave" acima</p>
+          </div>
+          <div class="passo">
+            <span class="passo-numero">2</span>
+            <div class="passo-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></div>
+            <h3>Abra seu banco</h3>
+            <p>Entre no app e escolha Pix</p>
+          </div>
+          <div class="passo">
+            <span class="passo-numero">3</span>
+            <div class="passo-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></div>
+            <h3>Confirme</h3>
+            <p>Cole a chave, informe o valor e pronto</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Para que serve -->
+    <section class="secao-padrao">
+      <div class="container">
+        <div class="categorias-header">
+          <h2>Para que serve sua doação</h2>
+          <p>100% do valor é usado no projeto</p>
+        </div>
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));">
+          <div class="conf-item">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <div class="conf-texto">
+              <h4>Hospedagem do site</h4>
+              <p>Manter o LinkContas no ar e rápido para todos.</p>
+            </div>
+          </div>
+          <div class="conf-item">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+            <div class="conf-texto">
+              <h4>Verificação dos links</h4>
+              <p>Conferir periodicamente se os canais oficiais continuam válidos.</p>
+            </div>
+          </div>
+          <div class="conf-item">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            <div class="conf-texto">
+              <h4>Novas empresas</h4>
+              <p>Adicionar novos canais e melhorar as páginas existentes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dúvidas sobre doação -->
+    <section class="secao-padrao">
+      <div class="container">
+        <div class="categorias-header">
+          <h2>Dúvidas sobre doação</h2>
+          <p>Perguntas comuns de quem quer apoiar</p>
+        </div>
+        <div class="faq-lista">
+          <details class="faq-item">
+            <summary>
+              A doação é obrigatória?
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-6 6-6-6"/></svg>
+            </summary>
+            <div class="faq-resposta">
+              Nunca. O LinkContas é e continuará gratuito para todos. A doação é um apoio voluntário de quem quer ajudar o projeto a se manter no ar.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              Preciso fazer cadastro para doar?
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-6 6-6-6"/></svg>
+            </summary>
+            <div class="faq-resposta">
+              Não. Basta copiar a chave Pix e fazer a transferência pelo app do seu banco, como qualquer outro Pix. Não pedimos nome, CPF nem cadastro.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              O LinkContas cobra alguma taxa?
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-6 6-6-6"/></svg>
+            </summary>
+            <div class="faq-resposta">
+              Não cobramos nada. O Pix é gratuito para quem envia e para quem recebe, e o valor integral da sua doação chega ao projeto.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              Minha doação dá algum direito ou benefício?
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-6 6-6-6"/></svg>
+            </summary>
+            <div class="faq-resposta">
+              Não. Doar não muda nada no uso do site: você continua navegando sem cadastro, sem login e sem cobranças. É apenas uma forma de agradecer pelo serviço.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              Como sei se minha doação foi recebida?
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9l-6 6-6-6"/></svg>
+            </summary>
+            <div class="faq-resposta">
+              O próprio app do banco mostra a confirmação do Pix na hora, com comprovante. Se tiver dúvidas, fale conosco pela página de Contato.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <a class="logo" href="index.html" aria-label="LinkContas — Página inicial">
+          <span class="logo-icon">
+            <svg viewBox="0 0 32 36" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="2" width="26" height="32" rx="4" fill="#ffffff" stroke="#1d4ed8" stroke-width="2.5"/>
+              <rect x="8" y="8" width="16" height="2.6" rx="1.3" fill="#2563eb"/>
+              <rect x="8" y="13.5" width="11" height="2.2" rx="1.1" fill="#cbd5e1"/>
+              <rect x="8" y="17.8" width="14" height="4" rx="2" fill="#e2e8f0"/>
+              <g class="barcode">
+                <rect x="8" y="23" width="2.4" height="8" fill="#0f172a"/>
+                <rect x="11.8" y="23" width="1.4" height="8" fill="#0f172a"/>
+                <rect x="14.6" y="23" width="3" height="8" fill="#0f172a"/>
+                <rect x="19" y="23" width="1.4" height="8" fill="#0f172a"/>
+                <rect x="21.8" y="23" width="2.4" height="8" fill="#0f172a"/>
+              </g>
+            </svg>
+          </span>
+          <span class="logo-text">LinkContas</span>
+        </a>
+        <p class="footer-desc">Central de links para os sites oficiais de empresas de contas de consumo.</p>
+        <p class="footer-lema">💙 Criando SITES E APPS para ajudar a população. Fazer o bem é o meu lema.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="termos.html">Termos de Uso</a></li>
+          <li><a href="privacidade.html">Política de Privacidade</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="doacao.html">Doação</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Ajuda</h4>
+        <ul>
+          <li><a href="contato.html">Sugerir empresa</a></li>
+          <li><a href="contato.html">Reportar link quebrado</a></li>
+          <li><a href="faq.html">Perguntas frequentes</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Aviso legal</h4>
+        <p>O LinkContas é um indicador de links. Não somos responsáveis pelos conteúdos, valores ou serviços das empresas terceiras. Sempre confirme os dados no site oficial da concessionária.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright">&copy; 2026 LinkContas. Todos os direitos reservados.</div>
+    </div>
+  </footer>
+
+  <button id="btn-voltar-topo" class="btn-voltar-topo" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="js/dados.js?v=1"></script>
+  <script src="js/site.js?v=4"></script>
+  <script src="js/contador.js?v=2"></script>
+  <script>
+  // Copiar chave Pix
+  (function () {
+    var btn = document.getElementById('btn-copiar-doacao');
+    var chave = document.getElementById('pix-chave-doacoes');
+    if (!btn || !chave) return;
+    btn.addEventListener('click', function () {
+      var texto = chave.textContent.trim();
+      navigator.clipboard.writeText(texto).then(function () {
+        var original = btn.innerHTML;
+        btn.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Copiado!';
+        btn.classList.add('copiado');
+        setTimeout(function () {
+          btn.innerHTML = original;
+          btn.classList.remove('copiado');
+        }, 2000);
+      }).catch(function () {
+        var area = document.createElement('textarea');
+        area.value = texto;
+        document.body.appendChild(area);
+        area.select();
+        document.execCommand('copy');
+        document.body.removeChild(area);
+        var original = btn.innerHTML;
+        btn.innerHTML = 'Copiado!';
+        setTimeout(function () { btn.innerHTML = original; }, 2000);
+      });
+    });
+  })();
+  </script>
+</body>
+</html>

@@ -1,6 +1,7 @@
 # Scripts e arquivos de desenvolvimento (nao vao para o GitHub)
 monitor-dominio.ps1
 gerar-paginas.ps1
+gerar-paginas-v2.ps1
 patch-*.ps1
 validar*.ps1
 dados-empresas-*.json
