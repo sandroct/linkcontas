@@ -44,11 +44,23 @@ Deixar o site LinkContas elegante, profissional, funcional e responsivo (mobile 
 ### Versionamento de cache
 - `css/style.css?v=24`, `js/site.js?v=4`, `dados.js?v=1`, `contador.js?v=2`, `pagina-empresa.css?v=1` em todas as 26 páginas (scripts `bump-v.py` / `bump-v24.py`). `v=24` foi necessário porque o CSS do chip de favoritos mudou após o bump `v=23`; inclui override de contraste do chip no tema escuro.
 
+## 🚀 Publicação (15/11/2026)
+- **Repositório:** `https://github.com/sandroct/linkcontas` (branch `main`) — **é um repo Git**, o commit anterior estava desatualizado.
+- **Deploy:** GitHub Pages (build_type `legacy`, origem `main` `/`) → `https://linkcontas.com.br/` (CNAME próprio, HTTPS com certificado aprovado até 10/02/2027, `https_enforced`).
+- **Commit `0da4916`** — "Redesign profissional + pagina Doacao + filtro de favoritos + FAQ" (36 arquivos). Destaques:
+  - **Corrigia o repositório faltando**: `js/site.js`, `js/dados.js` e `faq.html` só existiam no disco — o site publicado estava sem o JS novo e sem a FAQ.
+  - Adicionados: `doacao.html`, `HANDOFF.md`, `gerar-paginas-v3.py`, `template-pagina-empresa.html`.
+  - `.gitignore` agora também ignora `gerar-paginas-v2.ps1` (legado, junto dos outros `.ps1`).
+- **Build do Pages:** `building` → `built` em ~20s após o push.
+- **Verificação em produção (tudo 200):** `/`, `/doacao.html`, `/faq.html`, `/js/site.js?v=4`, `/js/dados.js?v=1`, `/css/style.css?v=24`, `/sitemap.xml` (25 locs, com `doacao.html`), `robots.txt` apontando o sitemap.
+- **Home ao vivo no navegador:** 18 cards, 7 chips (com "Favoritos"), 6 estados, 1 seção de doações, 0 `footer-pix`, 0 `relogio.js`, refs `?v=24`/`?v=4` corretas.
+- Para publicar mudanças futuras: `git add -A && git commit -m "..." && git push` (Pages redesenha sozinho).
+
 ## 📋 Próximos passos / pendências
 1. ~~README.md — estrutura atualizada~~ ✅ **Feito**.
 2. ~~Página de doação própria + link no rodapé~~ ✅ **Feito**: `doacao.html` criada, link nas 26 páginas, no sitemap e testada.
 3. ~~Filtro de favoritos~~ ✅ **Feito**: chip "Favoritos" com contador, combinável, testado desktop + 390px.
-4. Teste de subida real em produção (domínio `linkcontas.com.br`) — verificar 404s de ativos, GTM/GA4/Ezoic, posicionar `doacao.html` no Search Console.
+4. ~~Teste de subida real em produção~~ ✅ **Feito** (15/11): commit `0da4916` pushado, Pages `built`, todas as URLs 200, home testada no navegador. Restam apenas: registrar/posicionar `doacao.html` no **Search Console** e conferir GTM/GA4/Ezoic recebendo dados do domínio real.
 5. ~~Arquivo solto `C:\Users\Alessandro\Documents\PROJETOS\enel-sp.html`~~ ✅ **Feito**: era um arquivo **vazio (0 bytes)** de 13/11/2026, excluído; a página real do projeto (`pague-facil/enel-sp.html`, 17 KB) foi preservada.
 6. Decidir sobre scripts legados (`gerar-paginas-v2.ps1`, `validar*.ps1`, `patch-html*.ps1`) — mantidos por segurança, podem ser apagados com autorização.
 7. Conteúdo com acentos faltando nos JSONs originais (ex.: FAQ "Este site e a Light?") — é texto do usuário, não alterado.
@@ -58,7 +70,7 @@ Deixar o site LinkContas elegante, profissional, funcional e responsivo (mobile 
 ## ⚠️ Notas importantes
 - Python 3.11: `C:\Users\Alessandro\AppData\Local\Programs\Python\Python311\python.exe`; só PowerShell 5.1 (sem pwsh/node). Trabalhar UTF-8 sempre via Python.
 - Integrações mantidas: GTM `GTM-KTZBMW3W`, GA4 `G-252SNCK2VK`, Ezoic (erros 400 locais são esperados), FormSubmit → alessandrobr2012@gmail.com, Pix `a5dccde0-8045-4dbd-89b4-905b4e44701c`.
-- Domínio canônico `https://linkcontas.com.br/`; **não é repositório git** — mudanças não commitadas.
+- Domínio canônico `https://linkcontas.com.br/`; **é o repositório git** `github.com/sandroct/linkcontas` (branch `main` = publicação via GitHub Pages). Mantendo o working tree limpo após cada rodada: `git add -A && git commit && git push`.
 - Servidor local de teste: porta 8749 (background) na pasta do projeto.
 - Tema do navegador de teste está "claro" no localStorage.
 
