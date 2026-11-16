@@ -80,8 +80,8 @@ O site detecta automaticamente o tema do sistema do usuário, mas permite altern
 
 ## 💰 Monetização
 
-- **Google AdSense:** snippet instalado no `<head>` de todas as páginas (conta `ca-pub-26774220962143682`). O painel fica em adsense.google.com → **Sites** (status do site: aprovação e revisão) e **Anúncios** (blocos/manuais). Como o snippet é do tipo automático, os anúncios aparecem sozinhos após a aprovação — não é preciso criar blocos.
-- **ads.txt:** `https://linkcontas.com.br/ads.txt` já publicado com a linha do AdSense (`google.com, pub-26774220962143682, DIRECT, f08c47fec0942fa0`); o painel do AdSense pode demorar até 48h para reconhecê-lo.
+- **Google AdSense:** snippet instalado no `<head>` de todas as páginas (conta `ca-pub-2674220962143682` — ID confirmado pela URL do painel AdSense). O painel fica em adsense.google.com → **Sites** (status do site: aprovação e revisão) e **Anúncios** (blocos/manuais). Como o snippet é do tipo automático, os anúncios aparecem sozinhos após a aprovação — não é preciso criar blocos.
+- **ads.txt:** `https://linkcontas.com.br/ads.txt` publicado com a linha do AdSense (`google.com, pub-2674220962143682, DIRECT, f08c47fec0942fa0`); o painel do AdSense pode demorar até 48h para reconhecê-lo.
 - **Pix / "cafezinho":** chave `a5dccde0-8045-4dbd-89b4-905b4e44701c` — página própria em `doacao.html` (link "Doação" no rodapé de todas as páginas), seção de doações em `index.html`/`contato.html` e e-mail alessandrobr2012@gmail.com
 
 ## 🏢 Links atuais das empresas (verifique periodicamente)

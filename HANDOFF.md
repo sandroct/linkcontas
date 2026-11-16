@@ -62,8 +62,9 @@ Deixar o site LinkContas elegante, profissional, funcional e responsivo (mobile 
 - Para publicar mudanças futuras: `git add -A && git commit -m "..." && git push` (Pages redesenha sozinho).
 
 ## 💰 Google AdSense (15/11/2026)
-- Snippet instalado no `<head>` das **26 páginas** (após o GTM), conta `ca-pub-26774220962143682` — script `add-adsense.py`. Verificado: o loader do AdSense (`show_ads_impl_fy2021.js`) é puxado, cards continuam funcionando.
-- `ads.txt` **já estava publicado** (`google.com, pub-26774220962143682, DIRECT, f08c47fec0942fa0`) — o painel marcava "Não encontrado" só porque o robô ainda não tinha relido (leva até 48h após o deploy do arquivo).
+- Snippet instalado no `<head>` das **26 páginas** (após o GTM), conta `ca-pub-2674220962143682` — scripts `add-adsense.py` e `fix-adsense-id.py`. Verificado: o loader do AdSense (`show_ads_impl_fy2021.js`) é puxado, cards continuam funcionando.
+- ⚠️ **ID corrigido:** a conta correta é `pub-2674220962143682` (16 dígitos) — confirmado pela URL do painel (`.../u/0/pub-2674220962143682/sites/detail/url=linkcontas.com.br`), pela linha de ads.txt do painel e pelo snippet. O `ads.txt` original (commit `732df0a`, 13/11) tinha um dígito a mais (`pub-26774220962143682`) e esse erro foi propagado ao snippet. Corrigido nos 26 HTMLs + ads.txt (script `fix-adsense-id.py`).
+- `ads.txt` **já estava publicado** (`google.com, pub-2674220962143682, DIRECT, f08c47fec0942fa0`) — o painel marcava "Não encontrado" só porque o robô ainda não tinha relido (leva até 48h após o deploy do arquivo).
 - Painelado estava em **"Precisa de revisão"** → fluxo: snippet no ar (feito) → Google re-crawleia → status "Preparando" → **"Pronto"** (anúncios automáticos passam a exibir) ou "Precisa de atenção" (corrigir o que apontar).
 - README corrigido: o texto antigo citava `div.ad-placeholder` que **nunca existiram** no HTML; agora documenta o snippet real.
 - Varredura final passa a exigir `ca-pub-26774220962143682` em toda página.
