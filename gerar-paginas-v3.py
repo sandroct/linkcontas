@@ -172,6 +172,35 @@ def main():
                 print("ERRO em %s: marcas não substituídas: %s" % (arquivo, sobras))
                 return 1
 
+            # Dados estruturados: FAQPage a partir das FAQs do JSON
+            faqs_entidades = [
+                {
+                    "@type": "Question",
+                    "name": str(f.get("q", "")).strip(),
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": re.sub(r"<[^>]+>", "", str(f.get("a", ""))).strip(),
+                    },
+                }
+                for f in e.get("faqs", [])
+            ]
+            faqs_entidades = [f for f in faqs_entidades if f["name"] and f["acceptedAnswer"]["text"]]
+            if faqs_entidades:
+                schema_faq = json.dumps(
+                    {
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "inLanguage": "pt-BR",
+                        "mainEntity": faqs_entidades,
+                    },
+                    ensure_ascii=False,
+                    indent=2,
+                )
+                i = html_out.rfind("</head>")
+                tag_faq = ('  <script type="application/ld+json">\n'
+                           + schema_faq + "\n  </script>\n")
+                html_out = html_out[:i] + tag_faq + html_out[i:]
+
             saida = os.path.join(BASE, os.path.basename(arquivo))
             with io.open(saida, "w", encoding="utf-8", newline="\n") as f:
                 f.write(html_out)
