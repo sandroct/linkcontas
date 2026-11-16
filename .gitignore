@@ -8,3 +8,4 @@ dados-empresas-*.json
 conteudo-enel-sp.md
 injetar-ezoic.ps1
 fix-index-ezoic.ps1
+__pycache__/
