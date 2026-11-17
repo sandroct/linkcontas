@@ -88,6 +88,7 @@ Deixar o site LinkContas elegante, profissional, funcional e responsivo (mobile 
 - Cada artigo: H1 + 5–6 H2s + 5 FAQs com **FAQPage schema** (JSON validado no navegador) + BreadcrumbList de 3 níveis.
 - `css/style.css` → **v25** (novas classes `.logo-azul`, `.secao-nota` — sem `style=` inline; varredura zera). Sitemap: **36 URLs** (índice + 4 artigos).
 - Bugs corrigidos no caminho: `<title>` duplicado no template de artigo; caractere cirílico "о" infiltrado no JSON; `2²`→`2ª` no título do índice; placeholder `@@ARQUIVO@@` no og:url do índice.
+- **Menu superior com "Artigos"** (desktop + mobile, 38 páginas; `ativo` nas 5 páginas de artigo). `style.css` → **v26**: fix do botão "Ler artigo" invisível (regra `.artigo a` pintava o link de azul por cima do branco — `:not(.btn-acessar)` no `pagina-empresa.css`, v2) + media query 900–1120px para o menu de 8 itens não apertar.
 
 ## 📋 Próximos passos / pendências
 1. ~~README.md — estrutura atualizada~~ ✅ **Feito**.
