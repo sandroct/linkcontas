@@ -82,12 +82,12 @@
 
 .artigo strong { color: var(--cor-texto); font-weight: 700; }
 
-.artigo a:not(.cta-principal):not(.btn):not(.nav-empresas a) {
+.artigo a:not(.cta-principal):not(.btn):not(.btn-acessar):not(.nav-empresas a) {
   color: var(--cor-destaque);
   font-weight: 600;
 }
 
-.artigo a:not(.cta-principal):not(.btn):not(.nav-empresas a):hover {
+.artigo a:not(.cta-principal):not(.btn):not(.btn-acessar):not(.nav-empresas a):hover {
   text-decoration: underline;
 }
 
