@@ -77,6 +77,18 @@ Deixar o site LinkContas elegante, profissional, funcional e responsivo (mobile 
 - `dados.js?v=3` (novo catálogo). Páginas antigas regeneradas (data "verificado em" passou para 16/11/2026).
 - Obs: dados originais têm acentos faltando em alguns textos (ex.: "conta de agua", "pendencias") — mantido fiel à fonte; revisar quando o usuário quiser.
 
+## ✍️ SEO — artigos "como fazer" (etapa 2 — 16/11/2026)
+- **4 artigos publicados** (long-tail, público idoso/iniciante):
+  1. `como-tirar-2-via-conta-de-luz.html` — "Como tirar a 2ª via da conta de luz pela internet"
+  2. `como-pagar-conta-de-luz-atrasada.html` — "Como pagar a conta de luz atrasada sem cortar a energia"
+  3. `como-contestar-conta-de-luz.html` — "Como contestar uma conta de luz alta ou errada"
+  4. `como-transferir-conta-de-luz-para-outro-nome.html` — "Como transferir a conta de luz para o nome de outra pessoa"
+- Infra nova: `dados-artigos.json` (fonte), `gerar-artigos.py` (gerador com FAQPage automático), `template-artigo.html` (head/header/footer idênticos ao site), `artigos.html` (índice, schema CollectionPage).
+- **Links internos**: rodapé "Artigos" em **todas** as 38 páginas; seção "Artigos" na home (4 cards estáticos); bloco "Veja também" em cada artigo (cross-links artigo↔artigo↔páginas de empresa); breadcrumb Início > Artigos > página.
+- Cada artigo: H1 + 5–6 H2s + 5 FAQs com **FAQPage schema** (JSON validado no navegador) + BreadcrumbList de 3 níveis.
+- `css/style.css` → **v25** (novas classes `.logo-azul`, `.secao-nota` — sem `style=` inline; varredura zera). Sitemap: **36 URLs** (índice + 4 artigos).
+- Bugs corrigidos no caminho: `<title>` duplicado no template de artigo; caractere cirílico "о" infiltrado no JSON; `2²`→`2ª` no título do índice; placeholder `@@ARQUIVO@@` no og:url do índice.
+
 ## 📋 Próximos passos / pendências
 1. ~~README.md — estrutura atualizada~~ ✅ **Feito**.
 2. ~~Página de doação própria + link no rodapé~~ ✅ **Feito**: `doacao.html` criada, link nas 26 páginas, no sitemap e testada.
@@ -85,7 +97,7 @@ Deixar o site LinkContas elegante, profissional, funcional e responsivo (mobile 
 5. ~~Arquivo solto `C:\Users\Alessandro\Documents\PROJETOS\enel-sp.html`~~ ✅ **Feito**: era um arquivo **vazio (0 bytes)** de 13/11/2026, excluído; a página real do projeto (`pague-facil/enel-sp.html`, 17 KB) foi preservada.
 6. Decidir sobre scripts legados (`gerar-paginas-v2.ps1`, `validar*.ps1`, `patch-html*.ps1`) — mantidos por segurança, podem ser apagados com autorização.
 7. Conteúdo com acentos faltando nos JSONs originais (ex.: FAQ "Este site e a Light?") — é texto do usuário, não alterado.
-8. Considerar melhorias: PWA service worker, Schema.org FAQPage (faq.html e doacao.html), Lighthouse/SEO.
+8. Considerar melhorias: PWA service worker, Schema.org FAQPage em `faq.html`/`doacao.html` (páginas de empresa **e artigos** já têm), Lighthouse/SEO. **Etapa 3 do plano SEO**: velocidade (comprimir logos, lazy-load, defer) + alt nos logos + mais links "Veja também" nas páginas de empresa.
 9. Talvez exibir a contagem de favoritos no chip mesmo quando 0 (hoje some o badge, texto continua "Favoritos").
 
 ## ⚠️ Notas importantes
@@ -98,12 +110,13 @@ Deixar o site LinkContas elegante, profissional, funcional e responsivo (mobile 
 ## 📁 Arquivos-chave
 | Arquivo | Papel |
 |---|---|
-| `css/style.css` | Design System v3 — **v24** (cards, doações, chip favoritos) |
+| `css/style.css` | Design System v3 — **v25** (cards, doações, favoritos, `.logo-azul`, `.secao-nota`) |
 | `css/pagina-empresa.css` | Estilos do artigo (completo) |
-| `js/site.js` | **v4** — cards/favoritos/**filtro de favoritos**/rolarParaLista/sobre-categorias |
+| `js/site.js` | **v5** — cards/favoritos/filtros/rolarParaLista/Enter-na-busca |
 | `doacao.html` | Página de doação (Pix + 3 passos + FAQ), link no rodapé de todas as páginas |
-| `gerar-paginas-v3.py` + `template-pagina-empresa.html` | Regeneração das 16 páginas |
-| `dados-empresas-1/2/3.json` | Fonte dos dados |
+| `gerar-paginas-v3.py` + `template-pagina-empresa.html` | Regeneração das páginas de empresa (22) |
+| `gerar-artigos.py` + `template-artigo.html` + `dados-artigos.json` | Regeneração dos 4 artigos + `artigos.html` (índice) |
+| `dados-empresas-1/2/3/4.json` | Fonte dos dados das empresas |
 | `HANDOFF.md` | Este documento |
 | `index.html` | Home (limpa) |
 | `enel-sp.html`, `copasa.html` | Manuais (corrigidos) |
