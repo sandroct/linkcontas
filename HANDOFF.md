@@ -90,6 +90,15 @@ Deixar o site LinkContas elegante, profissional, funcional e responsivo (mobile 
 - Bugs corrigidos no caminho: `<title>` duplicado no template de artigo; caractere cirílico "о" infiltrado no JSON; `2²`→`2ª` no título do índice; placeholder `@@ARQUIVO@@` no og:url do índice.
 - **Menu superior com "Artigos"** (desktop + mobile, 38 páginas; `ativo` nas 5 páginas de artigo). `style.css` → **v26**: fix do botão "Ler artigo" invisível (regra `.artigo a` pintava o link de azul por cima do branco — `:not(.btn-acessar)` no `pagina-empresa.css`, v2) + media query 900–1120px para o menu de 8 itens não apertar.
 
+## 🏷️ SEO — variação da marca "Link Contas" com espaço (16/11/2026)
+- **Problema**: site aparece 1º para "linkcontas" (tudo junto), mas não aparece para **"Link Contas" (com espaço)** — o Google interpreta como termo genérico "link de pagamento" (Stripe Link, PagBank...).
+- **O que foi feito (on-page)**:
+  - Home: `<title>Link Contas (LinkContas) — Canais oficiais...`, meta description começando com "Link Contas:", hero-lead com a marca, schema **WebSite/Organization com `alternateName: "Link Contas"`**.
+  - `sobre.html`: título/meta/lead/h2/textos com a forma com espaço.
+  - `faq.html`: pergunta nova **"O que é o Link Contas?"** (1ª) + FAQPage regenerado (11 perguntas) + título "Perguntas frequentes — Link Contas (LinkContas)".
+  - **Rodapé em todas as 38 páginas**: "O Link Contas é a central de links...".
+- **Pendências off-page (usuário)**: criar perfis/diretórios com o nome "Link Contas" apontando para o site (Instagram/Facebook/YouTube/LinkedIn/diretórios de apps), monitorar "link contas" em Desempenho do Search Console, e entender que a query tem intenção genérica — é conquista gradual.
+
 ## 📋 Próximos passos / pendências
 1. ~~README.md — estrutura atualizada~~ ✅ **Feito**.
 2. ~~Página de doação própria + link no rodapé~~ ✅ **Feito**: `doacao.html` criada, link nas 26 páginas, no sitemap e testada.
