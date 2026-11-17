@@ -332,6 +332,95 @@
         { tipo: 'telefone', rotulo: 'Telefone', valor: '3003-6300 (segunda a sexta, 8h às 20h)' },
         { tipo: 'whatsapp', rotulo: 'WhatsApp', valor: '(11) 99575-2096 (atendimento automático)' }
       ]
+    },
+    {
+      id: 'energisa', nome: 'Energisa', categoria: 'energia',
+      sigla: 'EG', cor: '#E4002B', pagina: 'energisa.html',
+      url: 'https://servicos.energisa.com.br/segunda-via',
+      urlPagamento: 'https://servicos.energisa.com.br/segunda-via',
+      tipoCanal: 'Agência Digital — 2ª via e pagamento',
+      descricao: 'Conta de luz — MG, SP, MT, MS, PB, SE, TO, RO e AC',
+      alcance: 'nacional', estados: ['MG', 'SP', 'MT', 'MS', 'PB', 'SE', 'TO', 'RO', 'AC'], regiao: 'nacional',
+      aliases: ['energisa', 'gisa', 'energisa mg', 'energisa 2 via', 'segunda via energisa'],
+      verificado: '2026-11-16',
+      canais: [
+        { tipo: 'telefone', rotulo: 'Telefone', valor: 'MG 0800 032 0196 | MT 0800 6464 196 | MS 0800 722 7272 | PB 0800 083 0196 | SE 0800 079 0196 | TO 0800 721 3330 | RO 0800 647 0120 | AC 0800 647 7196' }
+      ]
+    },
+    {
+      id: 'coelba', nome: 'Neoenergia Coelba', categoria: 'energia',
+      sigla: 'CB', cor: '#005CA9', pagina: 'coelba.html',
+      url: 'https://agenciavirtual.neoenergia.com',
+      urlPagamento: 'https://agenciavirtual.neoenergia.com',
+      tipoCanal: 'Agência Virtual — 2ª via e pagamento',
+      descricao: 'Conta de luz — Bahia',
+      alcance: 'estadual', estados: ['BA'], regiao: 'nordeste',
+      aliases: ['coelba', 'neoenergia coelba', 'neoenergia bahia', 'coelba 2 via', 'coelba segunda via'],
+      verificado: '2026-11-16',
+      canais: [
+        { tipo: 'telefone', rotulo: 'Telefone', valor: '116 (central de teleatendimento)' },
+        { tipo: 'whatsapp', rotulo: 'WhatsApp', valor: '(71) 3370-6350' }
+      ]
+    },
+    {
+      id: 'celpe', nome: 'Neoenergia Celpe', categoria: 'energia',
+      sigla: 'CE', cor: '#F58220', pagina: 'celpe.html',
+      url: 'https://neoenergia.com/web/pernambuco/segunda-via-de-conta',
+      urlPagamento: 'https://neoenergia.com/web/pernambuco/segunda-via-de-conta',
+      tipoCanal: 'Site oficial — 2ª via e pagamento',
+      descricao: 'Conta de luz — Pernambuco',
+      alcance: 'estadual', estados: ['PE'], regiao: 'nordeste',
+      aliases: ['celpe', 'neoenergia celpe', 'neoenergia pernambuco', 'celpe 2 via', 'celpe segunda via'],
+      verificado: '2026-11-16',
+      canais: [
+        { tipo: 'telefone', rotulo: 'Telefone', valor: '116 (central de teleatendimento)' },
+        { tipo: 'whatsapp', rotulo: 'WhatsApp', valor: '(81) 3217-6990' }
+      ]
+    },
+    {
+      id: 'celesc', nome: 'Celesc', categoria: 'energia',
+      sigla: 'CC', cor: '#003DA5', pagina: 'celesc.html',
+      url: 'https://celesc.com.br/segunda-via',
+      urlPagamento: 'https://celesc.com.br/segunda-via',
+      tipoCanal: 'Site oficial — 2ª via e pagamento',
+      descricao: 'Conta de luz — Santa Catarina',
+      alcance: 'estadual', estados: ['SC'], regiao: 'sul',
+      aliases: ['celesc', 'celesc 2 via', 'celesc segunda via', 'luz santa catarina'],
+      verificado: '2026-11-16',
+      canais: [
+        { tipo: 'telefone', rotulo: 'Telefone', valor: '0800 048 0120 (atendimento comercial)' },
+        { tipo: 'whatsapp', rotulo: 'WhatsApp', valor: '(48) 99860-0067' }
+      ]
+    },
+    {
+      id: 'embasa', nome: 'Embasa', categoria: 'agua',
+      sigla: 'EM', cor: '#0055A5', pagina: 'embasa.html',
+      url: 'https://atendimentovirtual.embasa.ba.gov.br',
+      urlPagamento: 'https://atendimentovirtual.embasa.ba.gov.br',
+      tipoCanal: 'Atendimento Virtual — 2ª via e pagamento',
+      descricao: 'Conta de água — Bahia',
+      alcance: 'estadual', estados: ['BA'], regiao: 'nordeste',
+      aliases: ['embasa', 'embasa 2 via', 'embasa segunda via', 'agua bahia'],
+      verificado: '2026-11-16',
+      canais: [
+        { tipo: 'telefone', rotulo: 'Telefone', valor: '0800 055 0195' },
+        { tipo: 'whatsapp', rotulo: 'WhatsApp', valor: '(71) 9717-0999' }
+      ]
+    },
+    {
+      id: 'brisanet', nome: 'Brisanet', categoria: 'internet', categorias: ['telefone'],
+      sigla: 'BR', cor: '#00A859', pagina: 'brisanet.html',
+      url: 'https://brisacliente.brisanet.com.br/',
+      urlPagamento: 'https://brisacliente.brisanet.com.br/',
+      tipoCanal: 'Brisacliente — área do cliente',
+      descricao: 'Internet fibra ótica — Nordeste',
+      alcance: 'regional', estados: [], regiao: 'nordeste',
+      aliases: ['brisanet', 'brisacliente', 'brisanet 2 via', 'brisanet fatura'],
+      verificado: '2026-11-16',
+      canais: [
+        { tipo: 'telefone', rotulo: 'Telefone', valor: '10517 (SAC)' },
+        { tipo: 'whatsapp', rotulo: 'WhatsApp', valor: '(84) 98111-8525' }
+      ]
     }
   ];
 

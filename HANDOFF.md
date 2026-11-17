@@ -69,6 +69,14 @@ Deixar o site LinkContas elegante, profissional, funcional e responsivo (mobile 
 - README corrigido: o texto antigo citava `div.ad-placeholder` que **nunca existiram** no HTML; agora documenta o snippet real.
 - Varredura final passa a exigir `ca-pub-26774220962143682` em toda página.
 
+## 🔎 SEO — expansão (16/11/2026)
+- **6 novas empresas publicadas** (`dados-empresas-4.json` + `gerar-paginas-v3.py`): **Energisa**, **Neoenergia Coelba** (BA), **Neoenergia Celpe** (PE), **Celesc** (SC), **Embasa** (BA), **Brisanet** (Nordeste). URLs e telefones verificados em fontes oficiais (ANEEL, sites das empresas). Catálogo: **24 empresas** (era 18); sitemap com **31 URLs**.
+- Filtros atualizados: Energia 10, Água 5, Internet e TV 8, Telefone 6. Energisa aparece nos 9 estados que atende (filtro por estado de MG mostra CEMIG + Copasa + Energisa); Brisanet entra em Internet e Telefone.
+- Gerador atualizado: injeta `FAQPage` automaticamente nas regenerações.
+- Faltou no 1º write do JSON os campos `telefone`/`whatsapp` — corrigido (`fix-json4.py`); as 6 páginas mostram os canais oficiais.
+- `dados.js?v=3` (novo catálogo). Páginas antigas regeneradas (data "verificado em" passou para 16/11/2026).
+- Obs: dados originais têm acentos faltando em alguns textos (ex.: "conta de agua", "pendencias") — mantido fiel à fonte; revisar quando o usuário quiser.
+
 ## 📋 Próximos passos / pendências
 1. ~~README.md — estrutura atualizada~~ ✅ **Feito**.
 2. ~~Página de doação própria + link no rodapé~~ ✅ **Feito**: `doacao.html` criada, link nas 26 páginas, no sitemap e testada.
