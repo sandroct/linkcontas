@@ -1,7 +1,16 @@
 # HANDOFF — LinkContas (pague-facil)
 
 > Documento de progresso para continuidade entre sessões de agente.
-> **Atualizado em: 16/11/2026 (favicon boleto — commit `bde7bc2`)**
+> **Atualizado em: 19/11/2026 (Etapa 3 SEO — commit `4631084`)**
+
+## ⚡ Etapa 3 — velocidade + SEO técnico (19/11)
+- **Imagens comprimidas -74%** (175KB → 45KB): script `comprimir.py` (Pillow, lossless + quantize256 FASTOCTREE que preserva alfa) escolhendo sempre a menor; validado por diff numérico composto sobre branco (delta médio ≤4.5/255, **zero** pixels com delta>60 — visualmente idênticos). Destaques: `edp.png` 39.9KB→6.9KB, `oi.png` 10.9→2.8KB, `cpfl.png` 11.1→3.0KB, `og.png` 93.6→17.6KB.
+- **`alt` nos logos dos cards**: `js/site.js` → `alt="Logo da {nome}"` (antes `alt=""`); `site.js` bumpado para **v6** em todas as páginas.
+- **`defer`** em `dados.js`/`site.js`/`contador.js` (38 HTML +2 templates). Verificado em navegador: cards renderizam, filtro "Energia elétrica" lista as10, `window.linkcontas.contador` OK, console sem erros de JS. Scripts de terceiros (GTM/AdSense/Ezoic) **não tocados** — risco de quebrar monetização/consentimento.
+- **Seção "Veja também" nas24 páginas de empresa** (links internos = alavanca de SEO): energia → os4 artigos de luz + `artigos.html`; água/telefone/internet →2 empresas irmãs (escolha girando por página) + artigos; consultas → artigos + FAQ. Fonte única: **`veja_tambem.py`** (importado por `gerar-paginas-v3.py` via marca `@@VEJATAMBEM@@` no template). **Teste em sandbox**: gerador regenera as22 páginas **byte-idênticas** às publicadas (só a data pode diferir — hoje ambas19/11). Datas "Página atualizada em" das24 páginas atualizadas para19/11.
+- **Bug pré-existente corrigido**: link quebrado `como-contestar-conta-de-luz.html` → `como-economizar-conta-de-luz.html` (artigo nunca criado) — texto virou link simples, também no `dados-artigos.json` (fonte).
+- **Varredura nova** `varredura-etapa3.py` (temp — pode ser apagado com a limpeza; recriável): versões/defer/favicon/menu Artigos/mojibake/marcas @@/**links internos quebrados**/sitemap x arquivos/schemas → **NENHUM problema** (36 URLs no sitemap).
+- Publicado `4631084` → Pages `built`; no ar: defer v6, Veja também, `edp.png`6933B e `og.png`17599B confirmados.
 
 ## 🌐 Favicon PNG para o Google (16/11)
 - **Problema**: o Google exibia o globo genérico nos resultados porque o site só tinha `favicon.svg` (o Google não usa SVG para favicon de SERP).
@@ -115,7 +124,8 @@ Deixar o site LinkContas elegante, profissional, funcional e responsivo (mobile 
 5. ~~Arquivo solto `C:\Users\Alessandro\Documents\PROJETOS\enel-sp.html`~~ ✅ **Feito**: era um arquivo **vazio (0 bytes)** de 13/11/2026, excluído; a página real do projeto (`pague-facil/enel-sp.html`, 17 KB) foi preservada.
 6. Decidir sobre scripts legados (`gerar-paginas-v2.ps1`, `validar*.ps1`, `patch-html*.ps1`) — mantidos por segurança, podem ser apagados com autorização.
 7. Conteúdo com acentos faltando nos JSONs originais (ex.: FAQ "Este site e a Light?") — é texto do usuário, não alterado.
-8. Considerar melhorias: PWA service worker, Schema.org FAQPage em `faq.html`/`doacao.html` (páginas de empresa **e artigos** já têm), Lighthouse/SEO. **Etapa 3 do plano SEO**: velocidade (comprimir logos, lazy-load, defer) + alt nos logos + mais links "Veja também" nas páginas de empresa.
+8. ~~Considerar melhorias: Lighthouse/SEO. **Etapa 3 do plano SEO**~~ — ✅ **Feita em19/11** (`4631084`): logos -74%, `defer`, `alt`, "Veja também" nas24 páginas, link quebrado corrigido. Restam opcionais: PWA service worker, Schema.org FAQPage em `faq.html`/`doacao.html` (páginas de empresa **e artigos** já têm), Lighthouse real para medir ganho de performance.
+8b. **Sugerido ao usuário**: pedir re-indexação no Search Console de páginas que mudaram bastante (home +2-3 empresas) para o Google processar os novos links internos; monitorar Core Web Vitals no GSC.
 9. Talvez exibir a contagem de favoritos no chip mesmo quando 0 (hoje some o badge, texto continua "Favoritos").
 
 ## ⚠️ Notas importantes
@@ -128,9 +138,10 @@ Deixar o site LinkContas elegante, profissional, funcional e responsivo (mobile 
 ## 📁 Arquivos-chave
 | Arquivo | Papel |
 |---|---|
-| `css/style.css` | Design System v3 — **v25** (cards, doações, favoritos, `.logo-azul`, `.secao-nota`) |
-| `css/pagina-empresa.css` | Estilos do artigo (completo) |
-| `js/site.js` | **v5** — cards/favoritos/filtros/rolarParaLista/Enter-na-busca |
+| `css/style.css` | Design System v3 - **v26** (cards, doações, favoritos, `.logo-azul`, `.secao-nota`) |
+| `css/pagina-empresa.css` | Estilos das páginas de empresa/artigos (v2) |
+| `js/site.js` | **v6** - cards/favoritos/filtros/rolarParaLista/Enter-na-busca/`alt` nos logos (carrega com `defer`) |
+| `veja_tambem.py` | Fonte única do bloco "Veja também" (usado pelo gerador e pela inserção em massa) |
 | `doacao.html` | Página de doação (Pix + 3 passos + FAQ), link no rodapé de todas as páginas |
 | `gerar-paginas-v3.py` + `template-pagina-empresa.html` | Regeneração das páginas de empresa (22) |
 | `gerar-artigos.py` + `template-artigo.html` + `dados-artigos.json` | Regeneração dos 4 artigos + `artigos.html` (índice) |
@@ -144,4 +155,4 @@ Deixar o site LinkContas elegante, profissional, funcional e responsivo (mobile 
 |---|---|
 | `bump-v.py` / `bump-v24.py` | Bump de cache-bust em todas as páginas (último: v24/v4) |
 | `add-link-doacao.py` | Insere `<li>Doação</li>` na coluna Links do rodapé |
-| `varredura-final.py` | Varredura de consistência (mojibake, versões, doações, rodapé, sitemap) |
+| `varredura-etapa3.py` (temp) | Varredura de consistência (versões/defer, favicon, links internos quebrados, sitemap, schemas) — era `varredura-final.py`, perdido na limpeza do temp |
