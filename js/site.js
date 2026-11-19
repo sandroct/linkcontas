@@ -303,7 +303,7 @@
       // o logo, se existir, fica por cima e se remove ao falhar.
       var logoHtml = '<span class="logo-sigla">' + (emp.sigla || '?') + '</span>';
       if (emp.logo) {
-        logoHtml += '<img src="' + emp.logo + '" alt="" loading="lazy" ' +
+        logoHtml += '<img src="' + emp.logo + '" alt="Logo da ' + emp.nome + '" loading="lazy" ' +
           'style="position:absolute; inset:0;" onerror="this.remove()">';
       }
 

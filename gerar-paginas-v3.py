@@ -26,6 +26,8 @@ import re
 import sys
 from datetime import date
 
+from veja_tambem import montar_veja_tambem
+
 BASE = os.path.dirname(os.path.abspath(__file__))
 TEMPLATE_PATH = os.path.join(BASE, "template-pagina-empresa.html")
 
@@ -162,6 +164,9 @@ def main():
                 "@@CANAIS@@": canais_html,
                 "@@DICAS@@": dicas_html,
                 "@@FAQSHTML@@": faqs_html,
+                "@@VEJATAMBEM@@": montar_veja_tambem(
+                    e.get("categoriaSlug", ""), os.path.basename(arquivo)
+                ) + "\n",
             }
             for marca, valor in substituicoes.items():
                 html_out = html_out.replace(marca, valor)
