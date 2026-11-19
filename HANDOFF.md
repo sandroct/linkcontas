@@ -1,7 +1,14 @@
 # HANDOFF — LinkContas (pague-facil)
 
 > Documento de progresso para continuidade entre sessões de agente.
-> **Atualizado em: 15/11/2026 (rodada 3)**
+> **Atualizado em: 16/11/2026 (favicon PNG — commit `48805a8`)**
+
+## 🌐 Favicon PNG para o Google (16/11)
+- **Problema**: o Google exibia o globo genérico nos resultados porque o site só tinha `favicon.svg` (o Google não usa SVG para favicon de SERP).
+- **Solução**: rasterizar o SVG original com Chrome headless (`--headless --screenshot --default-background-color=00000000` em `favicon-render.html`), gerando PNGs idênticos ao desenho original com Pillow: `favicon-32.png`, `favicon-48.png`, `icon-192.png`, `icon-512.png` (512 → LANCZOS) + `apple-touch-icon.png` **regenerado** (180x180, agora com cantos transparentes).
+- **38 páginas**: `<link rel="icon">` agora declara os PNGs (32/48/192) **antes** do SVG (fallback). `manifest.webmanifest` ganhou `icon-512.png` e `icon-192.png`.
+- **Publicado** `48805a8` → Pages `built`; verificado no ar: HTML com links PNG, `favicon-48.png` 200 `image/png`, manifest com os dois PNGs.
+- **Aviso ao usuário**: o Google **cacheia** o favicon antigo — pode levar dias/semanas para trocar na SERP. Imediato: nova aba/aba de dispositivo mostra o ícone novo. Para forçar: URL Inspection no Search Console → Solicitar indexação da home.
 
 ## 🎯 Objetivo
 Deixar o site LinkContas elegante, profissional, funcional e responsivo (mobile + desktop), preservando a base/conteúdo existente (sem reconstruir do zero).
