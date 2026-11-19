@@ -1,13 +1,14 @@
 # HANDOFF — LinkContas (pague-facil)
 
 > Documento de progresso para continuidade entre sessões de agente.
-> **Atualizado em: 16/11/2026 (favicon PNG — commit `48805a8`)**
+> **Atualizado em: 16/11/2026 (favicon boleto — commit `bde7bc2`)**
 
 ## 🌐 Favicon PNG para o Google (16/11)
 - **Problema**: o Google exibia o globo genérico nos resultados porque o site só tinha `favicon.svg` (o Google não usa SVG para favicon de SERP).
 - **Solução**: rasterizar o SVG original com Chrome headless (`--headless --screenshot --default-background-color=00000000` em `favicon-render.html`), gerando PNGs idênticos ao desenho original com Pillow: `favicon-32.png`, `favicon-48.png`, `icon-192.png`, `icon-512.png` (512 → LANCZOS) + `apple-touch-icon.png` **regenerado** (180x180, agora com cantos transparentes).
 - **38 páginas**: `<link rel="icon">` agora declara os PNGs (32/48/192) **antes** do SVG (fallback). `manifest.webmanifest` ganhou `icon-512.png` e `icon-192.png`.
 - **Publicado** `48805a8` → Pages `built`; verificado no ar: HTML com links PNG, `favicon-48.png` 200 `image/png`, manifest com os dois PNGs.
+- **Redesign p/ pedido do usuário** (`bde7bc2`): favicon trocado pelo estilo **boleto** — fundo azul `#2563eb`, página branca (rx 5), barra azul + linha clara `#bfdbfe`, código de barras navy `#0f2c62`. Fonte: `favicon-boleto.html` (temp) → Chrome headless 512 → Pillow → sobrescreve os 5 PNGs + `favicon.svg` (mesmo desenho, sem alterar HTML/manifest — mesmos nomes de arquivo). Verificado no ar (`favicon-48.png` 200, novo tamanho de bytes).
 - **Aviso ao usuário**: o Google **cacheia** o favicon antigo — pode levar dias/semanas para trocar na SERP. Imediato: nova aba/aba de dispositivo mostra o ícone novo. Para forçar: URL Inspection no Search Console → Solicitar indexação da home.
 
 ## 🎯 Objetivo
