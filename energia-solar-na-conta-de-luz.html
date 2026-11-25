@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <!-- Aplica o tema ANTES da renderização (evita flash claro no tema escuro) -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('linkcontas-tema') ||
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'escuro' : 'claro');
+        if (t === 'escuro') document.documentElement.setAttribute('data-tema', 'escuro');
+      } catch (e) {}
+    })();
+  </script>
+  <!-- Google Tag Manager -->
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-KTZBMW3W"></script>
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2674220962143682" crossorigin="anonymous"></script>
+  <!-- End Google AdSense -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  </script>
+  <!-- End Google Tag Manager -->
+  <!-- Ezoic: scripts de privacidade -->
+  <script data-cfasync="false" src="https://cmp.gatekeeperconsent.com/min.js"></script>
+  <script data-cfasync="false" src="https://the.gatekeeperconsent.com/cmp.min.js"></script>
+  <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+  <script>window.ezstandalone = window.ezstandalone || {};ezstandalone.cmd = ezstandalone.cmd || [];</script>
+  <script src="//ezoicanalytics.com/analytics.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#020617">
+  <title>Energia solar na conta de luz: como a geração aparece | LinkContas</title>
+  <meta name="description" content="Conta de luz com energia solar: como funciona geração própria, o que é injeção de energia na rede, créditos e como entender o extrato da fatura.">
+  <link rel="canonical" href="https://linkcontas.com.br/energia-solar-na-conta-de-luz.html">
+  <meta property="og:title" content="Energia solar na conta de luz: como a geração aparece | LinkContas">
+  <meta property="og:description" content="Conta de luz com energia solar: como funciona geração própria, o que é injeção de energia na rede, créditos e como entender o extrato da fatura.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://linkcontas.com.br/energia-solar-na-conta-de-luz.html">
+  <meta property="og:image" content="https://linkcontas.com.br/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="LinkContas">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=26">
+  <link rel="stylesheet" href="css/pagina-empresa.css?v=2">
+  <script type="application/ld+json">
+[
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://linkcontas.com.br/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Artigos",
+      "item": "https://linkcontas.com.br/artigos.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Energia solar na conta de luz: como funciona",
+      "item": "https://linkcontas.com.br/energia-solar-na-conta-de-luz.html"
+    }
+  ]
+}
+]
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "pt-BR",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Com energia solar preciso pagar alguma coisa na conta?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Em geral, sobra um valor baixo: a taxa mínima de uso da rede (disponibilidade) e o que consumir além dos créditos. Com bons créditos, a conta costuma ficar próxima de zero."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Os créditos da energia solar expiram?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim, em geral há validade (muitas empresas usam 60 meses) e o crédito é vinculado ao cadastro e ao endereço. Confira a regra da sua concessionária."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Se eu vender a casa, os créditos vão junto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A geração e os créditos ficam vinculados ao imóvel e ao contrato. Informe a empresa e faça a transferência de titularidade para o novo morador continuar usufruindo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Por que minha conta veio com valor mesmo com painéis?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Os motivos mais comuns: créditos esgotados, mês de muito consumo, geração baixa (céu nublado, painel sujo) ou conta estimada. Confira os campos de geração e consumo na fatura."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Este site instala painéis solares?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não. O LinkContas é independente e organiza links oficiais das empresas de conta. Para instalar, busque orçamentos de instaladores credenciados e confira a regra da sua concessionária."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+<header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="LinkContas — Página inicial">
+        <span class="logo-icon">
+          <svg viewBox="0 0 32 36" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="2" width="26" height="32" rx="4" fill="#ffffff" stroke="#1d4ed8" stroke-width="2.5"/>
+            <rect x="8" y="8" width="16" height="2.6" rx="1.3" fill="#2563eb"/>
+            <rect x="8" y="13.5" width="11" height="2.2" rx="1.1" fill="#cbd5e1"/>
+            <rect x="8" y="17.8" width="14" height="4" rx="2" fill="#e2e8f0"/>
+            <g class="barcode">
+              <rect x="8" y="23" width="2.4" height="8" fill="#0f172a"/>
+              <rect x="11.8" y="23" width="1.4" height="8" fill="#0f172a"/>
+              <rect x="14.6" y="23" width="3" height="8" fill="#0f172a"/>
+              <rect x="19" y="23" width="1.4" height="8" fill="#0f172a"/>
+              <rect x="21.8" y="23" width="2.4" height="8" fill="#0f172a"/>
+            </g>
+          </svg>
+        </span>
+        <span class="logo-text">LinkContas</span>
+      </a>
+
+      <!-- Navegação desktop -->
+      <nav class="nav-principal" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html" class="nav-link">Início</a></li>
+          <li><a href="index.html#grid-empresas" class="nav-link">Empresas</a></li>
+          <li><a href="index.html#categorias" class="nav-link">Categorias</a></li>
+          <li><a href="artigos.html" class="nav-link">Artigos</a></li>
+          <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contato.html" class="nav-link">Contato</a></li>
+          <li><a href="doacao.html" class="nav-link">Doação</a></li>
+        </ul>
+      </nav>
+
+      <div class="user-actions">
+        <button id="tema-toggle" class="btn-tema" aria-label="Alternar tema claro/escuro" title="Alternar tema">
+          <span class="icone-tema"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span>
+        </button>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-mobile">
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menu mobile -->
+    <nav class="menu-mobile" id="menu-mobile" aria-label="Navegação mobile">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="index.html#grid-empresas">Empresas</a></li>
+        <li><a href="index.html#categorias">Categorias</a></li>
+        <li><a href="artigos.html">Artigos</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="doacao.html">Doação</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="conteudo">
+    <div class="container pagina-empresa">
+      <nav class="breadcrumb" aria-label="Você está aqui">
+        <a href="index.html">Início</a>
+        <span class="breadcrumb-separador" aria-hidden="true">></span>
+        <a href="artigos.html">Artigos</a>
+        <span class="breadcrumb-separador" aria-hidden="true">></span>
+        <span aria-current="page">Energia solar na conta</span>
+      </nav>
+
+      <article class="artigo">
+        <h1>Energia solar na conta de luz: como funciona</h1>
+        <span class="atualizacao">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          Página atualizada em 25/11/2026
+        </span>
+
+<p>Painéis solares no telhado geram energia para a casa — e o que sobra pode ser <strong>injetado na rede</strong> e virar <strong>crédito</strong> para usar depois. Na conta, isso aparece de forma diferente do comum: com campos de <strong>geração</strong>, <strong>injeção</strong> e <strong>créditos</strong>.</p>
+
+        <p>Neste artigo você entende como funciona o sistema de créditos, o que cada campo da fatura significa, o que fazer quando os créditos acabam e como conferir se tudo está saindo do jeito certo.</p>
+
+        <div class="artigo-cta">
+          <a class="cta-principal" href="index.html#grid-empresas">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            Ver todas as empresas
+          </a>
+          <p class="cta-nota">Escolha a sua empresa e vá direto ao site oficial dela.</p>
+        </div>
+
+        <h2>Como funciona o gerador solar na prática</h2>
+<p>O painel converte sol em energia. Durante o dia, a casa consome primeiro o que o painel gera. Se a geração <strong>ultrapassa</strong> o consumo, o excesso é injetado na rede da empresa e vira <strong>crédito</strong> com validade (normalmente até <strong>60 meses</strong>, variando por empresa). À noite, a casa consome da rede e usa os créditos acumulados.</p><p>Por isso a conta de quem tem solar costuma vir com valor baixo ou zero: a energia comprada é abatida pelos créditos gerados.</p>
+
+        <h2>O que cada campo da fatura significa</h2>
+<ul><li><strong>Energia consumida</strong>: o que a casa puxou da rede (sem contar o painel).</li><li><strong>Energia gerada</strong>: o que os painéis produziram.</li><li><strong>Energia injetada</strong>: o que foi enviado para a rede (virou crédito).</li><li><strong>Créditos usados</strong>: o quanto do mês foi pago com créditos acumulados.</li><li><strong>Valor total</strong>: o que sobrou para pagar, depois de abater tudo.</li></ul><p>Não entendeu algum campo? O guia <a href="como-ler-a-conta-de-luz.html">como ler a conta de luz</a> explica a fatura inteira, campo por campo.</p>
+
+        <h2>Por que a conta veio alta mesmo com solar</h2>
+<p>Motivos possíveis:</p><ul><li><strong>Créditos acabaram</strong> (estação chuvosa ou dias nublados reduziram a geração).</li><li><strong>Mês de consumo alto</strong>: chuveiro, ar-condicionado e festas de fim de ano.</li><li><strong>Painel sujo ou com defeito</strong>: a geração cai sem você perceber.</li><li><strong>Sistema desligado</strong>: inversor com falha — confira o display.</li><li><strong>Conta estimada</strong>: confira a leitura, veja <a href="como-ler-o-medidor-de-luz.html">como ler o medidor</a>.</li></ul><p>Se o valor não bate com o esperado, compare geração e consumo nos últimos meses na área do cliente (muitas empresas mostram gráfico) e, na dúvida, <a href="como-contestar-conta-de-luz.html">conteste</a>.</p>
+
+        <h2>Consórcio, troca de titularidade e mudança de imóvel</h2>
+<p>Se o imóvel mudar de dono, os créditos e o cadastro do sistema são vinculados ao <strong>contrato e ao endereço</strong>: em geral, a geração acompanha o imóvel e o novo titular herda o cadastro — faça a <a href="como-transferir-conta-de-luz-para-outro-nome.html">transferência de titularidade</a> e informe a empresa sobre o sistema solar.</p><p>Em prédios, o sistema pode ser <strong>compartilhado</strong> (geração compartilhada), com rateio dos créditos entre os moradores conforme a cota de cada um.</p>
+
+        <h2>Vale a pena instalar? Como começar</h2>
+<p>A conta cai muito e o sistema se paga em anos. Antes de contratar:</p><ol><li>Analise 12 meses da sua fatura (histórico no site da empresa) para dimensionar o sistema.</li><li>Peça orçamentos a <strong>várias</strong> empresas, confira se instalam conforme a <strong>ABS</strong> (norma técnica) e o que dizem clientes reais.</li><li>Veja as regras da sua concessionária sobre geração (cada empresa tem limite de potência e regras próprias).</li><li>Não pague nada por "aprovação" na empresa: o cadastro é feito pelo instalador junto com a concessionária.</li></ol><div class="alerta-golpe"><p><strong>Golpe do vendedor de painéis:</strong> desconfie de quem promete "conta zero garantida" por WhatsApp, pede sinal por Pix sem contrato ou diz ser "parceiro oficial da concessionária". A empresa de energia não vende nem indica painéis.</p></div>
+
+        <h2>Veja também</h2>
+        <ul>
+          <li><a href="como-ler-a-conta-de-luz.html">Como ler a conta de luz campo por campo</a></li>
+          <li><a href="conta-de-luz-aumentou-o-que-fazer.html">Conta de luz aumentou? O que fazer</a></li>
+          <li><a href="como-economizar-conta-de-luz.html">Como economizar na conta de luz</a></li>
+          <li><a href="como-transferir-conta-de-luz-para-outro-nome.html">Transferir a conta para outro nome</a></li>
+          <li><a href="artigos.html">Todos os artigos do LinkContas</a></li>
+          <li><a href="faq.html">Perguntas frequentes do site</a></li>
+        </ul>
+
+        <h2>Perguntas frequentes</h2>
+        <div class="faq">
+          <details>
+            <summary>Com energia solar preciso pagar alguma coisa na conta?</summary>
+            <p>Em geral, sobra um valor baixo: a taxa mínima de uso da rede (disponibilidade) e o que consumir além dos créditos. Com bons créditos, a conta costuma ficar próxima de zero.</p>
+          </details>
+          <details>
+            <summary>Os créditos da energia solar expiram?</summary>
+            <p>Sim, em geral há validade (muitas empresas usam 60 meses) e o crédito é vinculado ao cadastro e ao endereço. Confira a regra da sua concessionária.</p>
+          </details>
+          <details>
+            <summary>Se eu vender a casa, os créditos vão junto?</summary>
+            <p>A geração e os créditos ficam vinculados ao imóvel e ao contrato. Informe a empresa e faça a transferência de titularidade para o novo morador continuar usufruindo.</p>
+          </details>
+          <details>
+            <summary>Por que minha conta veio com valor mesmo com painéis?</summary>
+            <p>Os motivos mais comuns: créditos esgotados, mês de muito consumo, geração baixa (céu nublado, painel sujo) ou conta estimada. Confira os campos de geração e consumo na fatura.</p>
+          </details>
+          <details>
+            <summary>Este site instala painéis solares?</summary>
+            <p>Não. O LinkContas é independente e organiza links oficiais das empresas de conta. Para instalar, busque orçamentos de instaladores credenciados e confira a regra da sua concessionária.</p>
+          </details>
+        </div>
+
+        <div class="ajudou">
+          <h3>Este artigo ajudou você?</h3>
+          <div class="ajudou-botoes">
+            <button class="ajudou-btn" data-resposta="sim">&#128578; Sim, me ajudou</button>
+            <button class="ajudou-btn nao" data-resposta="nao">&#128533; Não, preciso de mais ajuda</button>
+          </div>
+        </div>
+
+        <nav class="nav-empresas" aria-label="Navegação entre páginas">
+          <a href="index.html">&larr; Ver todas as empresas</a>
+          <a href="artigos.html">Todos os artigos &rarr;</a>
+        </nav>
+      </article>
+    </div>
+  </main>
+
+<footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <a class="logo" href="index.html" aria-label="LinkContas — Página inicial">
+          <span class="logo-icon">
+            <svg viewBox="0 0 32 36" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="2" width="26" height="32" rx="4" fill="#ffffff" stroke="#1d4ed8" stroke-width="2.5"/>
+              <rect x="8" y="8" width="16" height="2.6" rx="1.3" fill="#2563eb"/>
+              <rect x="8" y="13.5" width="11" height="2.2" rx="1.1" fill="#cbd5e1"/>
+              <rect x="8" y="17.8" width="14" height="4" rx="2" fill="#e2e8f0"/>
+              <g class="barcode">
+                <rect x="8" y="23" width="2.4" height="8" fill="#0f172a"/>
+                <rect x="11.8" y="23" width="1.4" height="8" fill="#0f172a"/>
+                <rect x="14.6" y="23" width="3" height="8" fill="#0f172a"/>
+                <rect x="19" y="23" width="1.4" height="8" fill="#0f172a"/>
+                <rect x="21.8" y="23" width="2.4" height="8" fill="#0f172a"/>
+              </g>
+            </svg>
+          </span>
+          <span class="logo-text">LinkContas</span>
+        </a>
+        <p class="footer-desc">O Link Contas &#233; a central de links para os sites oficiais de empresas de contas de consumo.</p>
+        <p class="footer-lema">&#128153; Criando SITES E APPS para ajudar a população.<br>Fazer o bem é o meu lema.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="index.html">Todas as empresas</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="artigos.html">Artigos</a></li>
+          <li><a href="termos.html">Termos de Uso</a></li>
+          <li><a href="privacidade.html">Política de Privacidade</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="doacao.html">Doação</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Aviso legal</h4>
+        <p>O LinkContas é um site independente e gratuito que organiza links oficiais. Não somos responsáveis pelos conteúdos, valores ou serviços das empresas terceiras. Sempre confirme os dados no site oficial da concessionária.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright">&copy; 2026 LinkContas. Todos os direitos reservados.</div>
+    </div>
+  </footer>
+
+  <button id="btn-voltar-topo" class="btn-voltar-topo" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="js/site.js?v=6" defer></script>
+  <script src="js/contador.js?v=2" defer></script>
+  <script>
+  (function () {
+    var box = document.querySelector('.ajudou');
+    var botoes = document.querySelector('.ajudou-botoes');
+    if (!box || !botoes) return;
+    botoes.querySelectorAll('.ajudou-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var sim = btn.getAttribute('data-resposta') === 'sim';
+        botoes.remove();
+        var msg = document.createElement('p');
+        msg.className = 'ajudou-obrigado';
+        msg.textContent = sim
+          ? 'Obrigado pelo seu feedback! Ficamos felizes em ajudar. 💙'
+          : 'Obrigado por avisar! Vamos melhorar. Se precisar, fale com a gente na página de Contato.';
+        box.appendChild(msg);
+      });
+    });
+  })();
+  </script>
+</body>
+</html>

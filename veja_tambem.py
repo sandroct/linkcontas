@@ -98,6 +98,10 @@ def montar_veja_tambem(categoria_slug, arquivo):
             links = irmas + list(ARTIGOS_INTERNET)
     else:
         links = [
+            ("como-sair-do-serasa-e-nome-negativado.html",
+             "Nome negativado? Como sair do Serasa"),
+            ("conta-de-luz-negativada.html",
+             "Conta de luz negativada no Serasa"),
             ("artigos.html", "Ver todos os artigos do LinkContas"),
             ("faq.html", "Perguntas frequentes do LinkContas"),
         ]

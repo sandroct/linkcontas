@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <!-- Aplica o tema ANTES da renderização (evita flash claro no tema escuro) -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('linkcontas-tema') ||
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'escuro' : 'claro');
+        if (t === 'escuro') document.documentElement.setAttribute('data-tema', 'escuro');
+      } catch (e) {}
+    })();
+  </script>
+  <!-- Google Tag Manager -->
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-KTZBMW3W"></script>
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2674220962143682" crossorigin="anonymous"></script>
+  <!-- End Google AdSense -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  </script>
+  <!-- End Google Tag Manager -->
+  <!-- Ezoic: scripts de privacidade -->
+  <script data-cfasync="false" src="https://cmp.gatekeeperconsent.com/min.js"></script>
+  <script data-cfasync="false" src="https://the.gatekeeperconsent.com/cmp.min.js"></script>
+  <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+  <script>window.ezstandalone = window.ezstandalone || {};ezstandalone.cmd = ezstandalone.cmd || [];</script>
+  <script src="//ezoicanalytics.com/analytics.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#020617">
+  <title>Como reclamar de operadora na Anatel (passo a passo) | LinkContas</title>
+  <meta name="description" content="Reclamação de telefone, internet ou TV contra a operadora: como funciona a Anatel, prazos, o que fazer antes e como registrar reclamação grátis.">
+  <link rel="canonical" href="https://linkcontas.com.br/como-reclamar-de-operadora-na-anatel.html">
+  <meta property="og:title" content="Como reclamar de operadora na Anatel (passo a passo) | LinkContas">
+  <meta property="og:description" content="Reclamação de telefone, internet ou TV contra a operadora: como funciona a Anatel, prazos, o que fazer antes e como registrar reclamação grátis.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://linkcontas.com.br/como-reclamar-de-operadora-na-anatel.html">
+  <meta property="og:image" content="https://linkcontas.com.br/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="LinkContas">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=26">
+  <link rel="stylesheet" href="css/pagina-empresa.css?v=2">
+  <script type="application/ld+json">
+[
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://linkcontas.com.br/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Artigos",
+      "item": "https://linkcontas.com.br/artigos.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Como reclamar de uma operadora na Anatel",
+      "item": "https://linkcontas.com.br/como-reclamar-de-operadora-na-anatel.html"
+    }
+  ]
+}
+]
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "pt-BR",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Registrar reclamação na Anatel é pago?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não, é totalmente gratuito. Desconfie de qualquer site ou pessoa que cobre para \"abrir na Anatel\" — é golpe."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Em quanto tempo a operadora responde?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Após a Anatel notificar, o prazo costuma ser de 10 a 15 dias. Você acompanha pelo número da reclamação informado no envio."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Preciso tentar com a empresa antes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "É fortemente recomendado: ter protocolo da operadora deixa a análise mais rápida e demonstra que você tentou resolver. Sem protocolo, a Anatel ainda aceita, mas pode demorar mais."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A Anatel resolve problema de conta de luz?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não. Telecomunicações (telefone, internet, TV) são da Anatel; energia e água são de outra natureza — use o atendimento da concessionária e, se preciso, o Procon."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O que fazer se a cobrança continua depois do cancelamento?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Guarde o comprovante do cancelamento e o protocolo, registre reclamação na Anatel e, se persistir, abra registro no Procon e negocie o acerto. Não pague o que não é seu sem contestar."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+<header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="LinkContas — Página inicial">
+        <span class="logo-icon">
+          <svg viewBox="0 0 32 36" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="2" width="26" height="32" rx="4" fill="#ffffff" stroke="#1d4ed8" stroke-width="2.5"/>
+            <rect x="8" y="8" width="16" height="2.6" rx="1.3" fill="#2563eb"/>
+            <rect x="8" y="13.5" width="11" height="2.2" rx="1.1" fill="#cbd5e1"/>
+            <rect x="8" y="17.8" width="14" height="4" rx="2" fill="#e2e8f0"/>
+            <g class="barcode">
+              <rect x="8" y="23" width="2.4" height="8" fill="#0f172a"/>
+              <rect x="11.8" y="23" width="1.4" height="8" fill="#0f172a"/>
+              <rect x="14.6" y="23" width="3" height="8" fill="#0f172a"/>
+              <rect x="19" y="23" width="1.4" height="8" fill="#0f172a"/>
+              <rect x="21.8" y="23" width="2.4" height="8" fill="#0f172a"/>
+            </g>
+          </svg>
+        </span>
+        <span class="logo-text">LinkContas</span>
+      </a>
+
+      <!-- Navegação desktop -->
+      <nav class="nav-principal" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html" class="nav-link">Início</a></li>
+          <li><a href="index.html#grid-empresas" class="nav-link">Empresas</a></li>
+          <li><a href="index.html#categorias" class="nav-link">Categorias</a></li>
+          <li><a href="artigos.html" class="nav-link">Artigos</a></li>
+          <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contato.html" class="nav-link">Contato</a></li>
+          <li><a href="doacao.html" class="nav-link">Doação</a></li>
+        </ul>
+      </nav>
+
+      <div class="user-actions">
+        <button id="tema-toggle" class="btn-tema" aria-label="Alternar tema claro/escuro" title="Alternar tema">
+          <span class="icone-tema"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span>
+        </button>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-mobile">
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menu mobile -->
+    <nav class="menu-mobile" id="menu-mobile" aria-label="Navegação mobile">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="index.html#grid-empresas">Empresas</a></li>
+        <li><a href="index.html#categorias">Categorias</a></li>
+        <li><a href="artigos.html">Artigos</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="doacao.html">Doação</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="conteudo">
+    <div class="container pagina-empresa">
+      <nav class="breadcrumb" aria-label="Você está aqui">
+        <a href="index.html">Início</a>
+        <span class="breadcrumb-separador" aria-hidden="true">></span>
+        <a href="artigos.html">Artigos</a>
+        <span class="breadcrumb-separador" aria-hidden="true">></span>
+        <span aria-current="page">Reclamar na Anatel</span>
+      </nav>
+
+      <article class="artigo">
+        <h1>Como reclamar de uma operadora na Anatel</h1>
+        <span class="atualizacao">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          Página atualizada em 25/11/2026
+        </span>
+
+<p>Filas de espera, cobrança indevida, internet que não funciona, cobrança após cancelamento: quando a operadora não resolve, quem resolve é a <strong>Anatel</strong> — a agência reguladora do setor de telecomunicações. O registro é <strong>gratuito</strong> e costuma dar resultado.</p>
+
+        <p>Neste artigo você vê quando vale reclamar na Anatel, o que fazer antes (para não perder tempo), como registrar a reclamação passo a passo e o que esperar dos prazos.</p>
+
+        <div class="artigo-cta">
+          <a class="cta-principal" href="index.html#grid-empresas">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            Ver todas as empresas
+          </a>
+          <p class="cta-nota">Escolha a sua empresa e vá direto ao site oficial dela.</p>
+        </div>
+
+        <h2>Quando a Anatel pode ajudar</h2>
+<ul><li>Cobrança indevida ou após o cancelamento.</li><li>Ativação ou portabilidade que demorou além do prazo legal.</li><li>Bloqueio sem explicação ou cobrança de fidelidade abusiva.</li><li>Sinal ruim não resolvido, cancelamento recusado, contrato não respeitado.</li><li>Não atendimento no prazo de resposta da própria empresa.</li></ul><p>A Anatel <strong>não</strong> resolve problemas de fatura de luz, água ou conteúdo de terceiros — para isso existe a concessionária e o Procon.</p>
+
+        <h2>Antes de ir à Anatel: tente a empresa</h2>
+<p>A Anatel trabalha melhor quando você mostra que tentou antes. Faça e guarde:</p><ol><li><strong>Reclamação no atendimento</strong> da operadora (site, aplicativo ou SAC) — anote o <strong>número de protocolo</strong>.</li><li><strong>Prazo de resposta</strong>: em geral 5 dias úteis (10 para serviços complexos). Espere, se puder.</li><li><strong>Evidências</strong>: prints da tela, faturas, contrato, datas e nomes de quem atendeu.</li></ol><p>Já tentou tudo e nada? É hora da Anatel. (Dica: protocolos da própria empresa aceleram muito a análise.)</p>
+
+        <h2>Passo a passo para registrar a reclamação</h2>
+<ol><li>Acesse o site oficial da <strong>Anatel</strong> (digite "Anatel" no Google e confira o endereço; desconfie de sites parecidos).</li><li>Procure por <strong>Consumidor</strong> → <strong>Registrar reclamação</strong> (Central de Atendimento ao Consumidor — SAC Digital).</li><li>Informe seus dados, a operadora e o tipo de serviço (telefone, celular, internet, TV).</li><li>Descreva o problema com <strong>datas, valores e protocolos</strong>. Seja objetivo: o que aconteceu, o que você pediu e o que a empresa disse.</li><li>Anexe as provas (prints e faturas).</li><li>Envie e <strong>guarde o número da reclamação</strong>.</li></ol><p>Atenção: a Anatel pode pedir seu <strong>CPF</strong> e dados do contrato — use apenas o site oficial.</p>
+
+        <h2>Prazos: quanto tempo leva?</h2>
+<p>Após o registro, a Anatel notifica a operadora e ela tem prazo para responder (costuma ser de <strong>10 a 15 dias</strong>, variando). Você acompanha o andamento pelo número da reclamação. Se a resposta não resolver, há etapa de análise da própria Anatel.</p><p>Enquanto isso, <strong>não espere para usar seus direitos</strong>: por exemplo, em cancelamento você pode exigir o cancelamento imediato conforme a regra da fidelidade — veja <a href="como-cancelar-internet.html">como cancelar a internet</a> e <a href="como-cancelar-plano-de-celular.html">como cancelar o plano de celular</a>.</p>
+
+        <h2>Outros canais que ajudam junto</h2>
+<ul><li><strong>Procon / juizado</strong>: para valores e danos morais, o caminho é o Procon ou o Juizado Cível (pequenas causas).</li><li><strong>Reclame Aqui / SPC / Consumidor.gov.br</strong>: registros públicos que as empresas costumam responder.</li><li><strong>Portabilidade e fidelidade</strong>: conheça <a href="como-trocar-de-operadora-levando-o-numero.html">como trocar de operadora levando o número</a> antes de reclamar — em muitos casos a troca resolve mais rápido.</li></ul><div class="alerta-golpe"><p><strong>Existe "Anatel" falsa?</strong> Existe. Golpistas cobram por "abrir reclamação na Anatel" ou pedem dados bancários. O registro é <strong>gratuito</strong> e feito só nos canais oficiais da agência.</p></div>
+
+        <h2>Veja também</h2>
+        <ul>
+          <li><a href="como-cancelar-plano-de-celular.html">Como cancelar o plano de celular</a></li>
+          <li><a href="como-cancelar-internet.html">Como cancelar a internet sem dor de cabeça</a></li>
+          <li><a href="como-trocar-de-operadora-levando-o-numero.html">Portabilidade: trocar de operadora</a></li>
+          <li><a href="internet-lenta-o-que-fazer.html">Internet lenta? O que fazer</a></li>
+          <li><a href="artigos.html">Todos os artigos do LinkContas</a></li>
+          <li><a href="faq.html">Perguntas frequentes do site</a></li>
+        </ul>
+
+        <h2>Perguntas frequentes</h2>
+        <div class="faq">
+          <details>
+            <summary>Registrar reclamação na Anatel é pago?</summary>
+            <p>Não, é totalmente gratuito. Desconfie de qualquer site ou pessoa que cobre para "abrir na Anatel" — é golpe.</p>
+          </details>
+          <details>
+            <summary>Em quanto tempo a operadora responde?</summary>
+            <p>Após a Anatel notificar, o prazo costuma ser de 10 a 15 dias. Você acompanha pelo número da reclamação informado no envio.</p>
+          </details>
+          <details>
+            <summary>Preciso tentar com a empresa antes?</summary>
+            <p>É fortemente recomendado: ter protocolo da operadora deixa a análise mais rápida e demonstra que você tentou resolver. Sem protocolo, a Anatel ainda aceita, mas pode demorar mais.</p>
+          </details>
+          <details>
+            <summary>A Anatel resolve problema de conta de luz?</summary>
+            <p>Não. Telecomunicações (telefone, internet, TV) são da Anatel; energia e água são de outra natureza — use o atendimento da concessionária e, se preciso, o Procon.</p>
+          </details>
+          <details>
+            <summary>O que fazer se a cobrança continua depois do cancelamento?</summary>
+            <p>Guarde o comprovante do cancelamento e o protocolo, registre reclamação na Anatel e, se persistir, abra registro no Procon e negocie o acerto. Não pague o que não é seu sem contestar.</p>
+          </details>
+        </div>
+
+        <div class="ajudou">
+          <h3>Este artigo ajudou você?</h3>
+          <div class="ajudou-botoes">
+            <button class="ajudou-btn" data-resposta="sim">&#128578; Sim, me ajudou</button>
+            <button class="ajudou-btn nao" data-resposta="nao">&#128533; Não, preciso de mais ajuda</button>
+          </div>
+        </div>
+
+        <nav class="nav-empresas" aria-label="Navegação entre páginas">
+          <a href="index.html">&larr; Ver todas as empresas</a>
+          <a href="artigos.html">Todos os artigos &rarr;</a>
+        </nav>
+      </article>
+    </div>
+  </main>
+
+<footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <a class="logo" href="index.html" aria-label="LinkContas — Página inicial">
+          <span class="logo-icon">
+            <svg viewBox="0 0 32 36" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="2" width="26" height="32" rx="4" fill="#ffffff" stroke="#1d4ed8" stroke-width="2.5"/>
+              <rect x="8" y="8" width="16" height="2.6" rx="1.3" fill="#2563eb"/>
+              <rect x="8" y="13.5" width="11" height="2.2" rx="1.1" fill="#cbd5e1"/>
+              <rect x="8" y="17.8" width="14" height="4" rx="2" fill="#e2e8f0"/>
+              <g class="barcode">
+                <rect x="8" y="23" width="2.4" height="8" fill="#0f172a"/>
+                <rect x="11.8" y="23" width="1.4" height="8" fill="#0f172a"/>
+                <rect x="14.6" y="23" width="3" height="8" fill="#0f172a"/>
+                <rect x="19" y="23" width="1.4" height="8" fill="#0f172a"/>
+                <rect x="21.8" y="23" width="2.4" height="8" fill="#0f172a"/>
+              </g>
+            </svg>
+          </span>
+          <span class="logo-text">LinkContas</span>
+        </a>
+        <p class="footer-desc">O Link Contas &#233; a central de links para os sites oficiais de empresas de contas de consumo.</p>
+        <p class="footer-lema">&#128153; Criando SITES E APPS para ajudar a população.<br>Fazer o bem é o meu lema.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="index.html">Todas as empresas</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="artigos.html">Artigos</a></li>
+          <li><a href="termos.html">Termos de Uso</a></li>
+          <li><a href="privacidade.html">Política de Privacidade</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="doacao.html">Doação</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Aviso legal</h4>
+        <p>O LinkContas é um site independente e gratuito que organiza links oficiais. Não somos responsáveis pelos conteúdos, valores ou serviços das empresas terceiras. Sempre confirme os dados no site oficial da concessionária.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright">&copy; 2026 LinkContas. Todos os direitos reservados.</div>
+    </div>
+  </footer>
+
+  <button id="btn-voltar-topo" class="btn-voltar-topo" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="js/site.js?v=6" defer></script>
+  <script src="js/contador.js?v=2" defer></script>
+  <script>
+  (function () {
+    var box = document.querySelector('.ajudou');
+    var botoes = document.querySelector('.ajudou-botoes');
+    if (!box || !botoes) return;
+    botoes.querySelectorAll('.ajudou-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var sim = btn.getAttribute('data-resposta') === 'sim';
+        botoes.remove();
+        var msg = document.createElement('p');
+        msg.className = 'ajudou-obrigado';
+        msg.textContent = sim
+          ? 'Obrigado pelo seu feedback! Ficamos felizes em ajudar. 💙'
+          : 'Obrigado por avisar! Vamos melhorar. Se precisar, fale com a gente na página de Contato.';
+        box.appendChild(msg);
+      });
+    });
+  })();
+  </script>
+</body>
+</html>

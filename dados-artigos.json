@@ -83,6 +83,10 @@
       {
         "href": "como-tirar-2-via-conta-de-agua.html",
         "texto": "Como tirar a 2ª via da conta de água"
+      },
+      {
+        "href": "como-pagar-conta-de-luz-com-pix.html",
+        "texto": "Pagar a conta de luz com Pix"
       }
     ]
   },
@@ -170,6 +174,14 @@
       {
         "href": "como-religar-energia-apos-corte.html",
         "texto": "Já cortou? Como religar a energia"
+      },
+      {
+        "href": "como-pagar-conta-de-luz-com-pix.html",
+        "texto": "Quer pagar agora? Pix passo a passo"
+      },
+      {
+        "href": "conta-de-luz-no-nome-de-morador-anterior.html",
+        "texto": "Conta no nome de outra pessoa?"
       }
     ]
   },
@@ -253,6 +265,10 @@
       {
         "href": "como-contestar-conta-de-agua.html",
         "texto": "Conta de água com erro? Como contestar"
+      },
+      {
+        "href": "conta-de-luz-aumentou-o-que-fazer.html",
+        "texto": "Conta subiu sem motivo? Veja as causas"
       }
     ]
   },
@@ -585,6 +601,10 @@
       {
         "href": "faq.html",
         "texto": "Perguntas frequentes do site"
+      },
+      {
+        "href": "conta-de-agua-com-vazamento-o-que-fazer.html",
+        "texto": "Desconfia de vazamento? Como confirmar"
       }
     ]
   },
@@ -751,6 +771,14 @@
       {
         "href": "artigos.html",
         "texto": "Todos os artigos do site"
+      },
+      {
+        "href": "tarifa-branca-energia-quem-pode-aderir.html",
+        "texto": "Tarifa branca compensa para você?"
+      },
+      {
+        "href": "como-economizar-agua-em-casa.html",
+        "texto": "Economizar água também abaixa a conta"
       }
     ]
   },
@@ -834,6 +862,10 @@
       {
         "href": "contato.html",
         "texto": "Fale conosco"
+      },
+      {
+        "href": "tarifa-branca-energia-quem-pode-aderir.html",
+        "texto": "Outra tarifa com desconto: tarifa branca"
       }
     ]
   },
@@ -913,6 +945,10 @@
       {
         "href": "contato.html",
         "texto": "Fale conosco"
+      },
+      {
+        "href": "como-sair-do-serasa-e-nome-negativado.html",
+        "texto": "Nome negativado: como sair do Serasa"
       }
     ]
   },
@@ -996,6 +1032,10 @@
       {
         "href": "artigos.html",
         "texto": "Todos os artigos do site"
+      },
+      {
+        "href": "como-ler-o-medidor-de-luz.html",
+        "texto": "Como ler o medidor de luz"
       }
     ]
   },
@@ -1079,6 +1119,10 @@
       {
         "href": "oi.html",
         "texto": "Oi: contas e atendimento"
+      },
+      {
+        "href": "como-reclamar-de-operadora-na-anatel.html",
+        "texto": "Operadora não resolve? Reclame na Anatel"
       }
     ]
   },
@@ -1162,6 +1206,10 @@
       {
         "href": "contato.html",
         "texto": "Fale conosco"
+      },
+      {
+        "href": "como-reclamar-de-operadora-na-anatel.html",
+        "texto": "Recusaram o cancelamento? Reclame na Anatel"
       }
     ]
   },
@@ -1324,6 +1372,1002 @@
       {
         "href": "contato.html",
         "texto": "Fale conosco"
+      }
+    ]
+  },
+  {
+    "id": "conta-de-luz-no-nome-de-morador-anterior",
+    "arquivo": "conta-de-luz-no-nome-de-morador-anterior.html",
+    "nomeCurto": "Conta no nome de outra pessoa",
+    "titulo": "Conta de luz no nome de morador anterior: o que fazer | LinkContas",
+    "metaDesc": "Conta de luz no nome de quem morava antes? Veja como transferir a titularidade, o que fazer com dívidas antigas e como não pagar conta de outra pessoa.",
+    "h1": "Conta de luz no nome do morador anterior: o que fazer",
+    "verificado": "25/11/2026",
+    "intro": [
+      "<p>Você mudou de casa e a conta de luz ainda vem no nome de quem morava antes — ou pior: você mora no imóvel há anos e descobriu que a fatura nunca foi transferida. Isso é mais comum do que parece e <strong>tem solução simples</strong>.</p>",
+      "<p>Neste artigo você entende por que isso acontece, como transferir a titularidade para o seu nome, o que fazer com dívidas antigas e o que fazer se a empresa cobrar de você uma conta que não é sua.</p>"
+    ],
+    "secoes": [
+      {
+        "h2": "Por que a conta de luz continua no nome do morador anterior",
+        "html": "<p>Quando um imóvel muda de morador, a <strong>concessionária não fica sabendo automaticamente</strong>. A conta continua sendo emitida para o titular anterior até que alguém peça a transferência. Quem mora lá e não transferiu acaba recebendo faturas em nome de outra pessoa — e algumas empresas até cortam o serviço por falta de pagamento do titular antigo.</p><p>Também pode acontecer o contrário: o imóvel foi vendido, o vendedor não transferiu, e você recebe notificação de dívida de quem morou ali antes.</p>"
+      },
+      {
+        "h2": "Passo a passo para transferir a titularidade",
+        "html": "<p>A transferência (chamada de <strong>troca de titularidade</strong> ou <strong>alteração de cadastro</strong>) é gratuita na maioria das empresas e é feita assim:</p><ol><li>Entre no site oficial da sua concessionária. Use os botões da <a href=\"index.html#grid-empresas\">lista do LinkContas</a> para não cair em site falso.</li><li>Procure por <strong>Serviços</strong>, <strong>Alteração cadastral</strong> ou <strong>Troca de titularidade</strong>.</li><li>Cadastre-se ou entre com o CPF do <strong>novo titular</strong> (você).</li><li>Informe o número do cliente, o endereço e os dados pedidos.</li><li>Envie os documentos digitalizados (veja a lista abaixo).</li><li>Acompanhe o pedido: o prazo costuma ser de <strong>5 a 30 dias</strong>, dependendo da empresa.</li></ol><p>Não achou a opção no site? Ligue no atendimento oficial (o número está na conta ou no site da empresa) e peça a troca de titularidade.</p>"
+      },
+      {
+        "h2": "Documentos necessários",
+        "html": "<p>Reúna antes de começar:</p><ul><li><strong>RG ou CNH do novo titular</strong> (e do anterior, se disponível).</li><li><strong>CPF do novo titular.</strong></li><li><strong>Comprovante de residência</strong> recente no nome do novo titular — ou, se ainda não estiver no seu nome, o contrato de aluguel, o IPTU ou a escritura do imóvel.</li><li><strong>Número do cliente</strong> ou último código de barras da conta.</li></ul><p>É morador e o imóvel é de terceiros? Mesmo assim dá para transferir: muitas empresas aceitam o contrato de aluguel como comprovante de residência.</p>"
+      },
+      {
+        "h2": "Dívida antiga: você precisa pagar?",
+        "html": "<p>Regra prática: <strong>você não é obrigado a pagar conta de luz do período em que não morava no imóvel</strong> — se você não consumiu aquela energia, aquela cobrança não é sua. O que pode acontecer:</p><ul><li><strong>Dívida em nome do morador anterior</strong>: é dele. A empresa pode cobrá-lo, não você.</li><li><strong>Dívida no nome do vendedor/imóvel</strong>: em algumas empresas o débito fica atrelado ao endereço. Nesse caso, peça negociação ou peça à empresa que separe a dívida do cadastro — muitas exigem o pagamento em transferências de imóvel vendido, então confirme o que vale para a sua empresa.</li><li><strong>Você já pagou sem ter consumido</strong>: tem direito à contestação e ao acerto — veja <a href=\"como-contestar-conta-de-luz.html\">como contestar a conta de luz</a>.</li></ul><p>Na dúvida, fale com a empresa pelo canal oficial e explique a data em que você entrou no imóvel.</p>"
+      },
+      {
+        "h2": "E se a energia for cortada por dívida do anterior?",
+        "html": "<p>Se o corte acontecer por falta de pagamento do titular antigo, a solução é acelerar a troca de titularidade e regularizar a situação. Em geral:</p><ol><li>Peça a transferência imediatamente.</li><li>Negocie ou pague o que for devido ao imóvel (se a empresa exigir).</li><li>Depois, solicite a <a href=\"como-religar-energia-apos-corte.html\">religação da energia</a> — em algumas empresas a religação é gratuita quando a dívida é do cadastro anterior e você já é o novo titular.</li></ol><div class=\"alerta-golpe\"><p><strong>Cuidado com \"intermediários\".</strong> Golpistas oferecem \"transferência expressa\" cobrando dinheiro. A troca de titularidade é feita <strong>direto com a empresa, gratuitamente</strong>. Nunca pague terceiros para isso e nunca informe senha de banco.</p></div>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Posso transferir a conta de luz para o meu nome se a conta está no nome de outra pessoa?",
+        "a": "Sim. É um procedimento normal chamado troca de titularidade, feito no site ou atendimento da empresa, com CPF, comprovante de residência e documentos do imóvel. Na maioria das empresas é gratuito."
+      },
+      {
+        "q": "Sou obrigado a pagar a dívida de luz do morador anterior?",
+        "a": "Você não é obrigado a pagar o que você não consumiu. Em transferências de imóvel comprado, algumas empresas exigem a regularização do débito antes da troca — confirme a regra da sua concessionária e, se preferir, negocie o valor."
+      },
+      {
+        "q": "Quanto tempo demora a troca de titularidade?",
+        "a": "Varia de 5 a 30 dias na maioria das empresas. Enquanto isso, continue pagando as faturas para evitar corte e guarde o comprovante do pedido."
+      },
+      {
+        "q": "A conta continua vindo no nome antigo. Isso é problema?",
+        "a": "É um risco: se o titular antigo não pagar, o corte pode acontecer no endereço onde você mora. Peça a transferência o quanto antes — é grátis e resolve o problema."
+      },
+      {
+        "q": "Este site faz a transferência de titularidade?",
+        "a": "Não. O LinkContas é independente e organiza apenas os links oficiais das empresas. A transferência é feita direto com a concessionária, pelo site oficial dela."
+      }
+    ],
+    "vejaTambem": [
+      {
+        "href": "como-transferir-conta-de-luz-para-outro-nome.html",
+        "texto": "Como transferir a conta de luz para outro nome"
+      },
+      {
+        "href": "como-fazer-ligacao-nova-de-energia.html",
+        "texto": "Ligação nova de energia: como pedir"
+      },
+      {
+        "href": "como-religar-energia-apos-corte.html",
+        "texto": "Energia cortada? Como religar"
+      },
+      {
+        "href": "como-contestar-conta-de-luz.html",
+        "texto": "Conta de luz errada? Como contestar"
+      },
+      {
+        "href": "artigos.html",
+        "texto": "Todos os artigos do LinkContas"
+      },
+      {
+        "href": "faq.html",
+        "texto": "Perguntas frequentes do site"
+      }
+    ]
+  },
+  {
+    "id": "como-pagar-conta-de-luz-com-pix",
+    "arquivo": "como-pagar-conta-de-luz-com-pix.html",
+    "nomeCurto": "Pagar conta de luz com Pix",
+    "titulo": "Como pagar a conta de luz com Pix (passo a passo) | LinkContas",
+    "metaDesc": "Passo a passo para pagar a conta de luz com Pix pelo celular ou computador, com comprovante na hora e sem cair em golpe.",
+    "h1": "Como pagar a conta de luz com Pix",
+    "verificado": "25/11/2026",
+    "intro": [
+      "<p>Pagar a conta de luz com <strong>Pix</strong> é o método mais rápido: o pagamento confirma em segundos, funciona 24 horas por dia (inclusive fins de semana) e você fica com o comprovante na hora. Quase todas as empresas de energia já aceitam.</p>",
+      "<p>Neste artigo você vê o passo a passo para pagar com Pix pelo site e pelo aplicativo, o que fazer se o Pix não caiu na empresa e como identificar um Pix falso — golpe na conta de luz é comum.</p>"
+    ],
+    "secoes": [
+      {
+        "h2": "Pagar com Pix pelo site da empresa",
+        "html": "<ol><li>Entre no site oficial da sua concessionária. Use os botões da <a href=\"index.html#grid-empresas\">lista do LinkContas</a> — assim você garante que está no site certo.</li><li>Faça login com CPF e senha (ou cadastre-se: é rápido).</li><li>Abra a fatura em aberto e clique em <strong>Pagar</strong>.</li><li>Escolha <strong>Pix</strong>. O site mostra o <strong>QR Code</strong> e, em geral, também a <strong>chave Pix</strong> copia-e-cola.</li><li>Pelo celular: abra o app do seu banco, escolha <strong>Pix</strong>, <strong>Ler QR Code</strong> (aponte a câmera) ou <strong>Pix copia e cola</strong>, cole o código e confirme.</li><li><strong>Guarde o comprovante</strong>: print da tela ou o comprovante gerado pelo banco.</li></ol><p>O pagamento costuma ser reconhecido pela empresa em poucos minutos, raramente até 1 hora útil.</p>"
+      },
+      {
+        "h2": "Pagar com Pix pelo aplicativo da empresa",
+        "html": "<p>Se a empresa tem aplicativo oficial (para Android e iPhone), o caminho é parecido:</p><ol><li>Abra o aplicativo e entre com seu CPF.</li><li>Abra a fatura e toque em <strong>Pagar</strong>.</li><li>Escolha <strong>Pix</strong> e escaneie o QR Code com a câmera do app do banco — ou copie a chave.</li><li>Confirme no banco e salve o comprovante.</li></ol><p>Baixe o aplicativo apenas pela <strong>Play Store</strong> ou <strong>App Store</strong> e confira se o desenvolvedor é o da empresa. Versões piratas pedem dados do cartão e roubam dinheiro.</p>"
+      },
+      {
+        "h2": "E se o pagamento não aparecer na empresa?",
+        "html": "<p>O Pix confirma em segundos, mas às vezes o crédito demora um pouco para aparecer no sistema da concessionária. Se já se passou 1 hora e a conta continua em aberto:</p><ul><li>Confira no app do banco se o pagamento foi <strong>concluído</strong> (não pendente) e guarde o <strong>end-to-end ID</strong> do Pix — é o código que prova o pagamento.</li><li>Atualize a tela da fatura ou saia e entre de novo no site.</li><li>Se ainda assim não baixar, fale com o <strong>atendimento oficial</strong> da empresa e informe o comprovante.</li></ul><p>Não pague de novo no susto: verifique primeiro. Pagamento em duplicidade costuma ser devolvido, mas gera dor de cabeça.</p>"
+      },
+      {
+        "h2": "Conta de luz atrasada: o Pix muda alguma coisa?",
+        "html": "<p>Não. O Pix serve para pagar no prazo ou em atraso: no caso de atraso, o valor exibido já vem com <strong>multa e juros</strong> calculados. Pagar rápido com Pix é justamente a melhor forma de evitar que a dívida cresça e que a energia seja cortada — veja <a href=\"como-pagar-conta-de-luz-atrasada.html\">como pagar a conta de luz atrasada</a>.</p><p>Se o valor está impossível, negocie antes do corte: muitas empresas permitem parcelar pelo próprio site.</p>"
+      },
+      {
+        "h2": "Como não cair em golpe do Pix na conta de luz",
+        "html": "<div class=\"alerta-golpe\"><p><strong>1. Pix só no site/app oficial.</strong> Nunca pague por link recebido por WhatsApp, SMS ou mensagem no Facebook. Golpe clássico: \"sua energia será cortada hoje, pague aqui\".</p><p><strong>2. Confira o nome de quem recebe.</strong> Na confirmação do Pix, o nome mostrado deve ser o da <strong>empresa de energia</strong> (por exemplo, o nome fantasia da concessionária). Se aparecer o nome de uma pessoa, é golpe.</p><p><strong>3. Nunca informe senha nem dados do cartão.</strong> O Pix pede apenas a chave/QR Code; o pagamento sai da sua conta com você logado no seu próprio banco.</p></div>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Todas as empresas de luz aceitam Pix?",
+        "a": "Quase todas já aceitam. Confira na área do cliente: se a opção Pix aparecer na hora de pagar, está disponível. Se não aparecer, use o boleto — ele continua válido."
+      },
+      {
+        "q": "O Pix da conta de luz cai na hora?",
+        "a": "O pagamento confirma em segundos e o comprovante fica disponível na hora. A baixa na fatura costuma ser imediata, mas pode levar até cerca de 1 hora em algumas empresas."
+      },
+      {
+        "q": "Posso pagar a conta de luz de outra pessoa com Pix?",
+        "a": "Pode. Basta gerar o código Pix da fatura (no site/app da empresa) e pagar normalmente. O pagamento é identificado pelo endereço ou número do cliente."
+      },
+      {
+        "q": "Paguei com Pix e a conta continuou em aberto, e agora?",
+        "a": "Espere cerca de 1 hora e atualize a página. Se não refletir, fale com o atendimento oficial informando o comprovante e o end-to-end ID do Pix. Não repita o pagamento sem verificar."
+      },
+      {
+        "q": "Este site cobra para gerar o Pix da conta de luz?",
+        "a": "Não. O LinkContas é independente e gratuito: apenas direciona você para o site oficial da empresa. Nós não geramos, recebemos ou processamos pagamentos."
+      }
+    ],
+    "vejaTambem": [
+      {
+        "href": "como-pagar-conta-de-luz-atrasada.html",
+        "texto": "Conta de luz atrasada? Como pagar sem cortar"
+      },
+      {
+        "href": "como-tirar-2-via-conta-de-luz.html",
+        "texto": "Como tirar a 2ª via da conta de luz"
+      },
+      {
+        "href": "como-pagar-conta-de-agua-atrasada.html",
+        "texto": "Conta de água atrasada? Como pagar"
+      },
+      {
+        "href": "como-economizar-conta-de-luz.html",
+        "texto": "Como economizar na conta de luz"
+      },
+      {
+        "href": "artigos.html",
+        "texto": "Todos os artigos do LinkContas"
+      },
+      {
+        "href": "faq.html",
+        "texto": "Perguntas frequentes do site"
+      }
+    ]
+  },
+  {
+    "id": "conta-de-luz-aumentou-o-que-fazer",
+    "arquivo": "conta-de-luz-aumentou-o-que-fazer.html",
+    "nomeCurto": "Conta de luz aumentou",
+    "titulo": "Conta de luz aumentou sem motivo? O que fazer | LinkContas",
+    "metaDesc": "Conta de luz veio mais cara do que o normal? Veja as 8 causas mais comuns, como conferir o consumo e como contestar se houve erro.",
+    "h1": "Conta de luz aumentou sem motivo: o que fazer",
+    "verificado": "25/11/2026",
+    "intro": [
+      "<p>Abriu a conta e o valor subiu? Primeiro: <strong>não pague achando normal</strong>. Um aumento sem mudança de consumo costuma ter explicação — e algumas vezes é erro da empresa, o que dá para <strong>contestar e ter dinheiro de volta</strong>.</p>",
+      "<p>Neste artigo você vê as causas mais comuns de aumento na conta de luz, como conferir o consumo no próprio fatura e o passo a passo para contestar se a conta estiver errada.</p>"
+    ],
+    "secoes": [
+      {
+        "h2": "As 8 causas mais comuns de aumento",
+        "html": "<ul><li><strong>Leitura estimada</strong>: o leitor não foi e a empresa usou o consumo médio. Se a leitura real for menor, o ajuste cai na fatura seguinte.</li><li><strong>Faixa de consumo maior</strong>: muitas empresas cobram caro depois de um limite (ex.: acima de 200 kWh). Passou um pouquinho, pagou muito mais.</li><li><strong>Troca de tarifa ou reajuste</strong>: revisões anuais de tarifa aumentam o preço do kWh.</li><li><strong>Calor ou frio extremo</strong>: ar-condicionado e aquecedor trabalham mais.</li><li><strong>Aparelhos velhos ou com defeito</strong>: geladeira velha e chuveiro velho são campeões de consumo.</li><li><strong>Fuga de energia (vazamento elétrico)</strong>: algo consome energia mesmo com tudo desligado.</li><li><strong>Conta antiga quitando atraso</strong>: você pagou uma fatura antiga junto.</li><li><strong>Erro na leitura ou na conta</strong>: erro de número, consumo dobrado, cobrança duplicada.</li></ul><p>O caminho é: <strong>conferir a fatura antes de se preocupar</strong>. O campo <strong>Consumo (kWh)</strong> e a <strong>leitura</strong> estão impressos na conta — veja <a href=\"como-ler-a-conta-de-luz.html\">como ler a conta de luz campo por campo</a>.</p>"
+      },
+      {
+        "h2": "Passo a passo para conferir se a conta está certa",
+        "html": "<ol><li>Compare o <strong>consumo em kWh</strong> deste mês com os 2 ou 3 meses anteriores (faturas antigas ficam na área do cliente).</li><li>Confira a <strong>leitura atual</strong> e a anterior: a diferença deve ser igual ao consumo cobrado.</li><li>Veja se a leitura foi <strong>real ou estimada</strong> (a fatura indica).</li><li>Some as faturas antigas que você pagou junto — às vezes o aumento é só de uma fatura parada.</li><li>Confira se houve <strong>reajuste de tarifa</strong>: o preço do kWh costuma aparecer impresso e muda com aviso prévio.</li></ol><p>A conta fechou e não bateu? É hora de contestar.</p>"
+      },
+      {
+        "h2": "Como contestar a conta de luz alta",
+        "html": "<p>A contestação é gratuita e é direito do consumidor. O passo a passo está completo no guia <a href=\"como-contestar-conta-de-luz.html\">como contestar uma conta de luz</a>, mas o resumo é:</p><ol><li>Entre no site oficial da empresa (use os botões da <a href=\"index.html#grid-empresas\">lista do LinkContas</a>).</li><li>Abra a fatura e clique em <strong>Contestar</strong> ou <strong>Divergência</strong>.</li><li>Descreva o problema e, se tiver, envie foto do <strong>medidor</strong> e das faturas antigas.</li><li>Guarde o protocolo. A empresa tem prazo legal para responder (em geral 15 dias).</li><li>Não pague o valor contestado até a resposta, se a empresa permitir — e confirme isso por escrito.</li></ol>"
+      },
+      {
+        "h2": "Contestação de leitura estimada: como funciona",
+        "html": "<p>Se a sua conta veio com <strong>leitura estimada</strong> e o valor subiu, você pode pedir a <strong>leitura real</strong>. O leitor vai até o medidor, a empresa refaz a conta e, se você pagou a mais, o valor é <strong>abatido da próxima fatura</strong> ou devolvido.</p><p>Enquanto isso, dá para diminuir o consumo: veja <a href=\"como-economizar-conta-de-luz.html\">12 dicas para economizar na conta de luz</a> — várias são grátis.</p>"
+      },
+      {
+        "h2": "Quando procurar a empresa (e quando é erro seu)",
+        "html": "<p>Procura a empresa quando: o consumo não bate com a leitura; houve cobrança duplicada; a leitura foi estimada e você quer a real; ou o valor mudou sem reajuste nenhum.</p><p>Já quando: a conta está certa e o consumo subiu por causa de calor/frio, equipamento velho ou uma fatura antiga — o caminho é economizar e, se fizer sentido, <a href=\"como-transferir-conta-de-luz-para-outro-nome.html\">ajustar o cadastro</a> ou negociações.</p><div class=\"alerta-golpe\"><p><strong>Golpe clássico:</strong> ligação ou WhatsApp dizendo \"sua conta aumentou, clique aqui para regularizar\". A empresa <strong>não</strong> cobra por Pix por mensagem. Entre sempre pelo site oficial.</p></div>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Minha conta de luz subiu e não mudou nada em casa, por quê?",
+        "a": "As causas mais comuns são leitura estimada, aumento do preço do kWh (reajuste), fatura antiga somada e faixa de consumo mais cara. Confira o consumo em kWh nas faturas antigas e compare antes de contestar."
+      },
+      {
+        "q": "Quem paga a mais por leitura estimada?",
+        "a": "Se a leitura real for menor do que a estimada, a empresa ajusta: o crédito aparece na fatura seguinte. Você também pode pedir a leitura real diretamente."
+      },
+      {
+        "q": "Posso não pagar a conta enquanto contesto?",
+        "a": "Depende da empresa: muitas permitem manter a fatura em aberto durante a análise, mas nem todas. Pergunte no atendimento oficial e guarde o protocolo da contestação."
+      },
+      {
+        "q": "Em quanto tempo a empresa responde a contestação?",
+        "a": "O prazo costuma ser de 15 dias, mas pode variar conforme a empresa e o estado. Se o prazo passar, abra uma nova reclamação pelo protocolo no atendimento oficial."
+      },
+      {
+        "q": "Este site resolve contestação de conta?",
+        "a": "Não. O LinkContas é um site independente que organiza links oficiais. A contestação é feita direto com a concessionária, pelo site ou atendimento oficial dela."
+      }
+    ],
+    "vejaTambem": [
+      {
+        "href": "como-contestar-conta-de-luz.html",
+        "texto": "Como contestar uma conta de luz alta ou errada"
+      },
+      {
+        "href": "como-ler-a-conta-de-luz.html",
+        "texto": "Como ler a conta de luz: campo por campo"
+      },
+      {
+        "href": "como-economizar-conta-de-luz.html",
+        "texto": "Como economizar na conta de luz"
+      },
+      {
+        "href": "como-pagar-conta-de-luz-atrasada.html",
+        "texto": "Conta de luz atrasada? Como pagar"
+      },
+      {
+        "href": "artigos.html",
+        "texto": "Todos os artigos do LinkContas"
+      },
+      {
+        "href": "faq.html",
+        "texto": "Perguntas frequentes do site"
+      }
+    ]
+  },
+  {
+    "id": "tarifa-branca-energia-quem-pode-aderir",
+    "arquivo": "tarifa-branca-energia-quem-pode-aderir.html",
+    "nomeCurto": "Tarifa branca de energia",
+    "titulo": "Tarifa branca: como funciona e quem pode aderir | LinkContas",
+    "metaDesc": "O que é a tarifa branca de energia elétrica, quem pode aderir, como calcular se compensa e o passo a passo para pedir no site da empresa.",
+    "h1": "Tarifa branca de energia: como funciona e quem pode aderir",
+    "verificado": "25/11/2026",
+    "intro": [
+      "<p>A <strong>tarifa branca</strong> cobra a energia de forma diferente: o valor do kWh varia conforme o <strong>horário</strong> — fica mais barata fora de pico e mais cara no horário de ponta. Para quem consegue usar pesados nesse período, a conta pode cair bastante.</p>",
+      "<p>Mas nem todo mundo se beneficia. Neste artigo você entende como funciona, quem pode aderir, como calcular se compensa para a sua casa e o passo a passo para pedir — gratuitamente — no site da empresa.</p>"
+    ],
+    "secoes": [
+      {
+        "h2": "O que é a tarifa branca",
+        "html": "<p>Na tarifa <strong>convencional</strong>, você paga sempre o mesmo preço por kWh. Na <strong>tarifa branca</strong>, a energia é dividida em três períodos:</p><ul><li><strong>Ponta (horário caro)</strong>: dias úteis, das 18h às 21h — o kWh sai mais caro.</li><li><strong>Fora de ponta (horário barato)</strong>: todos os outros horários — o kWh sai bem mais barato.</li><li><strong>Médio</strong>: usada em algumas contas para cálculo intermediário.</li></ul><p>Ou seja: você é incentivado a usar chuveiro, máquina de lavar, forno e ar-condicionado <strong>fora das 18h às 21h</strong> em dias úteis.</p>"
+      },
+      {
+        "h2": "Quem pode aderir",
+        "html": "<p>Na prática, pode aderir quem:</p><ul><li>É <strong>cliente residencial</strong> (e também clientes rurais e alguns comerciais, conforme a regra do estado).</li><li>Tem <strong>medidor bi-horário ou horômetro</strong> (mede os períodos de forma automática). Se o seu medidor não for compatível, a empresa pode precisar trocá-lo.</li><li>Não tem pendências com a empresa.</li></ul><p>A adesão é <strong>gratuita</strong> e pode ser pedida pelo site, aplicativo ou atendimento da concessionária. Regras podem variar por estado e empresa — confirme com a sua.</p>"
+      },
+      {
+        "h2": "Como saber se compensa para você",
+        "html": "<p>Faça esta conta simples:</p><ol><li>Abra 3 faturas antigas e anote o <strong>consumo em kWh</strong> (ou entre no site e veja o histórico).</li><li>Pense em quando você usa os aparelhos que mais consomem: <strong>ar-condicionado, chuveiro elétrico, máquina de lavar, forno, cooktop</strong>.</li><li>Se boa parte desse uso acontece <strong>fora de 18h–21h em dias úteis</strong> (manhã, tarde, noite após 21h, fins de semana), provavelmente compensa.</li><li>Se quase tudo acontece no fim da tarde/noite (chegou do trabalho e ligou tudo), pode não compensar.</li></ol><p><strong>Dica:</strong> ligue o ar-condicionado para resfriar um pouco antes das 18h e evite chuveiro e máquina nesse horário. Com pequenos ajustes, muita gente economiza na tarifa branca.</p>"
+      },
+      {
+        "h2": "Passo a passo para aderir",
+        "html": "<ol><li>Entre no site oficial da sua empresa — use os botões da <a href=\"index.html#grid-empresas\">lista do LinkContas</a>.</li><li>Faça login e procure por <strong>Tarifa branca</strong>, <strong>Tarifa de tempo real</strong> ou <strong>Adesão</strong>.</li><li>Confirme os dados do endereço e o tipo do seu medidor.</li><li>Envie o pedido. A empresa confirma em alguns dias.</li><li>Depois da ativação, <strong>estude as faturas por 2 ou 3 meses</strong>: se não compensar, você pode voltar para a tarifa convencional (em geral há uma espera entre trocas — confirme na sua empresa).</li></ol><p>Lembrete: a troca é gratuita, não pague ninguém para \"ativar tarifa branca\".</p>"
+      },
+      {
+        "h2": "Vantagens e desvantagens",
+        "html": "<p><strong>Vantagens:</strong> kWh bem mais barato na maior parte do dia; economia para quem tem uso flexível; adesão gratuita.</p><p><strong>Desvantagens:</strong> kWh caro entre 18h e 21h; quem chega em casa à noite e liga tudo tende a pagar mais; exige atenção ao horário e, às vezes, medidor adequado.</p><div class=\"alerta-golpe\"><p><strong>Desconfie de quem cobra por adesão.</strong> A tarifa branca é pedida direto na empresa, gratuitamente. Golpistas oferecem \"adesão expressa\" por Pix — é fraude.</p></div>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "A tarifa branca compensa para todo mundo?",
+        "a": "Não. Compensa para quem usa a maior parte da energia fora das 18h às 21h em dias úteis. Quem concentra o uso nesse horário tende a pagar mais. Compare seu consumo e hábitos antes de aderir."
+      },
+      {
+        "q": "A adesão à tarifa branca é paga?",
+        "a": "Não, é gratuita. Se alguém pedir dinheiro para \"ativar\", é golpe — peça direto no site da concessionária."
+      },
+      {
+        "q": "Posso voltar para a tarifa normal?",
+        "a": "Na maioria das empresas, sim, mas há período mínimo de permanência entre trocas (costuma ser alguns meses). Confirme a regra da sua empresa antes de aderir."
+      },
+      {
+        "q": "O medidor da minha casa é compatível?",
+        "a": "Se o medidor for bi-horário (duas tarifas) ou horômetro, em geral é. Se não for, a empresa informa na hora da adesão se é necessária troca do equipamento."
+      },
+      {
+        "q": "O que é horário de ponta na tarifa branca?",
+        "a": "Dias úteis, das 18h às 21h. Nesse período o kWh é mais caro. Todos os outros horários (inclusive madrugada, manhã, tarde e fim de semana) ficam mais baratos."
+      }
+    ],
+    "vejaTambem": [
+      {
+        "href": "como-economizar-conta-de-luz.html",
+        "texto": "Como economizar na conta de luz"
+      },
+      {
+        "href": "tarifa-social-conta-de-luz.html",
+        "texto": "Tarifa social: quem tem direito"
+      },
+      {
+        "href": "como-ler-a-conta-de-luz.html",
+        "texto": "Como ler a conta de luz"
+      },
+      {
+        "href": "conta-de-luz-aumentou-o-que-fazer.html",
+        "texto": "Conta de luz aumentou? O que fazer"
+      },
+      {
+        "href": "artigos.html",
+        "texto": "Todos os artigos do LinkContas"
+      },
+      {
+        "href": "faq.html",
+        "texto": "Perguntas frequentes do site"
+      }
+    ]
+  },
+  {
+    "id": "como-ler-o-medidor-de-luz",
+    "arquivo": "como-ler-o-medidor-de-luz.html",
+    "nomeCurto": "Como ler o medidor de luz",
+    "titulo": "Como ler o medidor de luz (relógio de luz) em casa | LinkContas",
+    "metaDesc": "Passo a passo para ler o medidor de luz (relógio digital ou de discos), conferir o consumo e mandar a leitura para a empresa.",
+    "h1": "Como ler o medidor de luz (relógio de luz) da sua casa",
+    "verificado": "25/11/2026",
+    "intro": [
+      "<p>O medidor de luz — o famoso <strong>relógio</strong> instalado na sua casa — mostra quanto de energia você consumiu. Saber ler ele ajuda a <strong>conferir se a conta está certa</strong>, acompanhar o consumo e até mandar a leitura para a empresa quando ela pedir.</p>",
+      "<p>Neste artigo você aprende a ler medidores digitais e os antigos de discos, a calcular o consumo do período e a enviar a leitura pelos canais oficiais.</p>"
+    ],
+    "secoes": [
+      {
+        "h2": "Onde fica o medidor e o que significam os números",
+        "html": "<p>O medidor fica geralmente em um quadro na entrada da casa, no poste do lote ou no hall do prédio. Ele tem:</p><ul><li><strong>Um visor com números</strong> — é o contador total de kWh já consumido.</li><li><strong>O nome da empresa</strong> e, em alguns modelos, um <strong>lacre</strong> (não abra nem remova — é crime mexer no medidor).</li><li><strong>Um LED</strong> que pisca (em modelos digitais): cada pulso representa uma quantidade de energia (o valor está escrito no aparelho, ex.: 1.000 imp/kWh).</li></ul>"
+      },
+      {
+        "h2": "Como ler o medidor digital",
+        "html": "<ol><li>Anote <strong>todos os números</strong> mostrados no visor (normalmente 5 a 7 dígitos).</li><li>Se aparecer uma tela alternando, procure a que tem a unidade <strong>kWh</strong> — é essa que importa.</li><li>Não anote os dígitos vermelhos ou menores no final, se houver: em alguns medidores os últimos dígitos são decimais. Na dúvida, fotografe o visor inteiro.</li></ol><p>Exemplo: se o visor mostra <strong>004823 kWh</strong>, a casa já consumiu 4.823 kWh desde a instalação (ou desde o último zera).</p>"
+      },
+      {
+        "h2": "Como ler o medidor antigo (com discos)",
+        "html": "<p>Os modelos antigos têm discos que giram e uma linha de números em janelinhas:</p><ol><li>Anote os números da <strong>esquerda para a direita</strong>.</li><li>Se a última janelinha tiver outra cor (vermelha ou com moldura), ela costuma ser <strong>decimal</strong> — ignore para fins de cobrança, a menos que a empresa diga o contrário.</li><li>Confira o giro do disco: ele deve girar quando você liga um aparelho grande (ex.: chuveiro). Com tudo desligado, um disco girando pode indicar <strong>vazamento elétrico</strong> — motivo para pedir vistoria.</li></ol>"
+      },
+      {
+        "h2": "Como calcular o consumo do período",
+        "html": "<p>O consumo entre duas leituras é uma subtração:</p><ul><li>Leitura atual: <strong>4.823 kWh</strong></li><li>Leitura anterior: <strong>4.610 kWh</strong></li><li>Consumo do período: <strong>213 kWh</strong></li></ul><p>Compare esse número com o <strong>consumo cobrado na fatura</strong>: se bater, a conta está certa. Se não bater, confira se houve leitura estimada — e veja <a href=\"como-contestar-conta-de-luz.html\">como contestar a conta de luz</a>. Aprenda também <a href=\"como-ler-a-conta-de-luz.html\">a ler cada campo da fatura</a>.</p>"
+      },
+      {
+        "h2": "Como enviar a leitura para a empresa",
+        "html": "<p>Quando a empresa pede a leitura (ou para regularizar uma estimativa), o envio é gratuito:</p><ol><li>Entre no site oficial da concessionária (use os botões da <a href=\"index.html#grid-empresas\">lista do LinkContas</a>).</li><li>Procure por <strong>Enviar leitura</strong> ou <strong>Leitura do medidor</strong>.</li><li>Informe o CPF do titular e o número do medidor (está impresso no aparelho).</li><li>Digite os números anotados e envie. Guarde o comprovante.</li></ol><p>Algumas empresas aceitam a leitura por aplicativo ou WhatsApp oficial, com foto do visor.</p><div class=\"alerta-golpe\"><p><strong>Nunca abra o medidor nem retire o lacre.</strong> Além de perigoso, é infração e pode gerar cobrança por fraude. Leitura se faz olhando o visor — sempre por fora.</p></div>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Meu medidor não mostra número, o que faço?",
+        "a": "Pode estar com o visor apagado ou em modo de rolagem: aguarde alguns segundos e fotografe. Se continuar sem sinal, informe pelo atendimento oficial da empresa — pode ser defeito do equipamento."
+      },
+      {
+        "q": "Todos os números do medidor contam?",
+        "a": "Contam os dígitos inteiros em kWh. Janelinhas em outra cor ou com moldura costumam ser decimais. Na dúvida, fotografe tudo e envie pela ferramenta oficial de leitura."
+      },
+      {
+        "q": "O LED do meu medidor fica piscando com tudo desligado?",
+        "a": "Piscar devagar é normal (consumo mínimo dos aparelhos em espera). Piscar muito com tudo desligado pode indicar vazamento elétrico — peça uma vistoria pelo canal oficial."
+      },
+      {
+        "q": "A empresa pode recusar a leitura que eu mandei?",
+        "a": "Ela pode pedir confirmação ou uma foto do visor. Se o prazo passar, fale com o atendimento oficial informando o envio. Não deixe de enviar: sem leitura, a conta vem estimada."
+      },
+      {
+        "q": "Quem lê o medidor da minha casa é o leitor da empresa?",
+        "a": "Em geral sim, o leitor faz a ronda em alguns meses. Em outros períodos a empresa estima. Por isso a leitura enviada pelo cliente ajuda a manter a conta fiel ao consumo real."
+      }
+    ],
+    "vejaTambem": [
+      {
+        "href": "como-ler-a-conta-de-luz.html",
+        "texto": "Como ler a conta de luz campo por campo"
+      },
+      {
+        "href": "como-contestar-conta-de-luz.html",
+        "texto": "Conta errada? Como contestar"
+      },
+      {
+        "href": "conta-de-luz-aumentou-o-que-fazer.html",
+        "texto": "Conta de luz aumentou sem motivo"
+      },
+      {
+        "href": "como-economizar-conta-de-luz.html",
+        "texto": "Como economizar na conta de luz"
+      },
+      {
+        "href": "artigos.html",
+        "texto": "Todos os artigos do LinkContas"
+      },
+      {
+        "href": "faq.html",
+        "texto": "Perguntas frequentes do site"
+      }
+    ]
+  },
+  {
+    "id": "energia-solar-na-conta-de-luz",
+    "arquivo": "energia-solar-na-conta-de-luz.html",
+    "nomeCurto": "Energia solar na conta",
+    "titulo": "Energia solar na conta de luz: como a geração aparece | LinkContas",
+    "metaDesc": "Conta de luz com energia solar: como funciona geração própria, o que é injeção de energia na rede, créditos e como entender o extrato da fatura.",
+    "h1": "Energia solar na conta de luz: como funciona",
+    "verificado": "25/11/2026",
+    "intro": [
+      "<p>Painéis solares no telhado geram energia para a casa — e o que sobra pode ser <strong>injetado na rede</strong> e virar <strong>crédito</strong> para usar depois. Na conta, isso aparece de forma diferente do comum: com campos de <strong>geração</strong>, <strong>injeção</strong> e <strong>créditos</strong>.</p>",
+      "<p>Neste artigo você entende como funciona o sistema de créditos, o que cada campo da fatura significa, o que fazer quando os créditos acabam e como conferir se tudo está saindo do jeito certo.</p>"
+    ],
+    "secoes": [
+      {
+        "h2": "Como funciona o gerador solar na prática",
+        "html": "<p>O painel converte sol em energia. Durante o dia, a casa consome primeiro o que o painel gera. Se a geração <strong>ultrapassa</strong> o consumo, o excesso é injetado na rede da empresa e vira <strong>crédito</strong> com validade (normalmente até <strong>60 meses</strong>, variando por empresa). À noite, a casa consome da rede e usa os créditos acumulados.</p><p>Por isso a conta de quem tem solar costuma vir com valor baixo ou zero: a energia comprada é abatida pelos créditos gerados.</p>"
+      },
+      {
+        "h2": "O que cada campo da fatura significa",
+        "html": "<ul><li><strong>Energia consumida</strong>: o que a casa puxou da rede (sem contar o painel).</li><li><strong>Energia gerada</strong>: o que os painéis produziram.</li><li><strong>Energia injetada</strong>: o que foi enviado para a rede (virou crédito).</li><li><strong>Créditos usados</strong>: o quanto do mês foi pago com créditos acumulados.</li><li><strong>Valor total</strong>: o que sobrou para pagar, depois de abater tudo.</li></ul><p>Não entendeu algum campo? O guia <a href=\"como-ler-a-conta-de-luz.html\">como ler a conta de luz</a> explica a fatura inteira, campo por campo.</p>"
+      },
+      {
+        "h2": "Por que a conta veio alta mesmo com solar",
+        "html": "<p>Motivos possíveis:</p><ul><li><strong>Créditos acabaram</strong> (estação chuvosa ou dias nublados reduziram a geração).</li><li><strong>Mês de consumo alto</strong>: chuveiro, ar-condicionado e festas de fim de ano.</li><li><strong>Painel sujo ou com defeito</strong>: a geração cai sem você perceber.</li><li><strong>Sistema desligado</strong>: inversor com falha — confira o display.</li><li><strong>Conta estimada</strong>: confira a leitura, veja <a href=\"como-ler-o-medidor-de-luz.html\">como ler o medidor</a>.</li></ul><p>Se o valor não bate com o esperado, compare geração e consumo nos últimos meses na área do cliente (muitas empresas mostram gráfico) e, na dúvida, <a href=\"como-contestar-conta-de-luz.html\">conteste</a>.</p>"
+      },
+      {
+        "h2": "Consórcio, troca de titularidade e mudança de imóvel",
+        "html": "<p>Se o imóvel mudar de dono, os créditos e o cadastro do sistema são vinculados ao <strong>contrato e ao endereço</strong>: em geral, a geração acompanha o imóvel e o novo titular herda o cadastro — faça a <a href=\"como-transferir-conta-de-luz-para-outro-nome.html\">transferência de titularidade</a> e informe a empresa sobre o sistema solar.</p><p>Em prédios, o sistema pode ser <strong>compartilhado</strong> (geração compartilhada), com rateio dos créditos entre os moradores conforme a cota de cada um.</p>"
+      },
+      {
+        "h2": "Vale a pena instalar? Como começar",
+        "html": "<p>A conta cai muito e o sistema se paga em anos. Antes de contratar:</p><ol><li>Analise 12 meses da sua fatura (histórico no site da empresa) para dimensionar o sistema.</li><li>Peça orçamentos a <strong>várias</strong> empresas, confira se instalam conforme a <strong>ABS</strong> (norma técnica) e o que dizem clientes reais.</li><li>Veja as regras da sua concessionária sobre geração (cada empresa tem limite de potência e regras próprias).</li><li>Não pague nada por \"aprovação\" na empresa: o cadastro é feito pelo instalador junto com a concessionária.</li></ol><div class=\"alerta-golpe\"><p><strong>Golpe do vendedor de painéis:</strong> desconfie de quem promete \"conta zero garantida\" por WhatsApp, pede sinal por Pix sem contrato ou diz ser \"parceiro oficial da concessionária\". A empresa de energia não vende nem indica painéis.</p></div>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Com energia solar preciso pagar alguma coisa na conta?",
+        "a": "Em geral, sobra um valor baixo: a taxa mínima de uso da rede (disponibilidade) e o que consumir além dos créditos. Com bons créditos, a conta costuma ficar próxima de zero."
+      },
+      {
+        "q": "Os créditos da energia solar expiram?",
+        "a": "Sim, em geral há validade (muitas empresas usam 60 meses) e o crédito é vinculado ao cadastro e ao endereço. Confira a regra da sua concessionária."
+      },
+      {
+        "q": "Se eu vender a casa, os créditos vão junto?",
+        "a": "A geração e os créditos ficam vinculados ao imóvel e ao contrato. Informe a empresa e faça a transferência de titularidade para o novo morador continuar usufruindo."
+      },
+      {
+        "q": "Por que minha conta veio com valor mesmo com painéis?",
+        "a": "Os motivos mais comuns: créditos esgotados, mês de muito consumo, geração baixa (céu nublado, painel sujo) ou conta estimada. Confira os campos de geração e consumo na fatura."
+      },
+      {
+        "q": "Este site instala painéis solares?",
+        "a": "Não. O LinkContas é independente e organiza links oficiais das empresas de conta. Para instalar, busque orçamentos de instaladores credenciados e confira a regra da sua concessionária."
+      }
+    ],
+    "vejaTambem": [
+      {
+        "href": "como-ler-a-conta-de-luz.html",
+        "texto": "Como ler a conta de luz campo por campo"
+      },
+      {
+        "href": "conta-de-luz-aumentou-o-que-fazer.html",
+        "texto": "Conta de luz aumentou? O que fazer"
+      },
+      {
+        "href": "como-economizar-conta-de-luz.html",
+        "texto": "Como economizar na conta de luz"
+      },
+      {
+        "href": "como-transferir-conta-de-luz-para-outro-nome.html",
+        "texto": "Transferir a conta para outro nome"
+      },
+      {
+        "href": "artigos.html",
+        "texto": "Todos os artigos do LinkContas"
+      },
+      {
+        "href": "faq.html",
+        "texto": "Perguntas frequentes do site"
+      }
+    ]
+  },
+  {
+    "id": "como-economizar-agua-em-casa",
+    "arquivo": "como-economizar-agua-em-casa.html",
+    "nomeCurto": "Economizar água em casa",
+    "titulo": "Como economizar água em casa (e abaixar a conta) | LinkContas",
+    "metaDesc": "17 dicas práticas para economizar água em casa e reduzir a conta: banho, vaso sanitário, máquina de lavar, vazamento e hábitos fáceis.",
+    "h1": "Como economizar água em casa e abaixar a conta",
+    "verificado": "25/11/2026",
+    "intro": [
+      "<p>Economizar água não exige reforma nem gastar dinheiro: na maioria das casas dá para <strong>reduzir de 10% a 30%</strong> só mudando hábitos e consertando vazamentos. E o melhor: cada litro economizado é <strong>água, energia e dinheiro</strong> a menos — porque aquecer água também cobra na <a href=\"como-economizar-conta-de-luz.html\">conta de luz</a>.</p>",
+      "<p>Neste artigo você vê 17 dicas práticas, do banho ao vaso sanitário, além de como descobrir se existe vazamento escondido — o vilão silencioso da conta de água alta.</p>"
+    ],
+    "secoes": [
+      {
+        "h2": "No banheiro: onde mora o maior consumo",
+        "html": "<ul><li><strong>Encurtar o banho</strong> em 2 minutos economiza até 12 litros por vez (um chuveiro de 8 min gasta cerca de 80 litros).</li><li><strong>Não deixar a água correr</strong> ao escovar os dentes ou fazer a barba: com a torneira aberta são cerca de 6 litros por minuto.</li><li><strong>Fechar o vaso ao dar descarga</strong> — não é preciso deixar enchendo.</li><li><strong>Fechar a torneira</strong> ao ensaboar louça à mão.</li></ul>"
+      },
+      {
+        "h2": "Na cozinha e na lavanderia",
+        "html": "<ul><li><strong>Lavar louça em bacia</strong> em vez de sob a torneira aberta economiza dezenas de litros.</li><li><strong>Deixar a louça acumular</strong> para lavar de uma vez só (muita água para pouca louça desperdiça).</li><li><strong>Usar a máquina só com carga cheia</strong> e no ciclo econômico quando possível.</li><li><strong>Não deixe comida descongelando sob a torneira</strong>: use pote com água ou o próprio micro-ondas.</li><li><strong>Regar jardim no início da manhã ou à noite</strong> para evaporar menos — e em dias de chuva, pule.</li></ul>"
+      },
+      {
+        "h2": "Descubra se tem vazamento (teste de 5 minutos)",
+        "html": "<p>O vazamento é o maior vilão da conta alta: um fio d'água pode gastar <strong>milhares de litros por mês</strong> sem você perceber. Teste assim:</p><ol><li>Anote o número do <a href=\"como-ler-o-medidor-de-luz.html\">medidor de água</a> (o hidrômetro) ou o número da fatura.</li><li>Não use NADA de água por 5 minutos (torneiras, vaso, máquina, chuveiro, geladeira com degelo automático).</li><li>Volte ao medidor: se o número <strong>mudou</strong>, existe vazamento.</li></ol><p>Suspeitas comuns: vaso sanitário pingando (colore a água da caixa com corante ou colorante de alimentos e veja se a cor desce), torneira pingando, chuveiro escorrendo e mangueira com furo.</p>"
+      },
+      {
+        "h2": "Conserto rápido vs. obra",
+        "html": "<p>Vários reparos são rápidos e baratos: vedação da torneira, troca do mecanismo da descarga, reparo do flapper do vaso, troca da bóia da caixa d'água. Se o vazamento é na tubulação embutida, vale pedir uma <strong>vistoria</strong> — no fim, consertar sai mais barato do que pagar a conta crescendo.</p><p>Se a conta veio alta demais mesmo sem achar vazamento, veja <a href=\"como-contestar-conta-de-agua.html\">como contestar a conta de água</a>.</p>"
+      },
+      {
+        "h2": "Vale a pena economizar mesmo morando sozinho?",
+        "html": "<p>Vale: mesmo quem mora sozinho pode reduzir bastante — e há empresas com <strong>tarifa por faixa de consumo</strong>, onde quanto mais você consome, mais caro fica cada litro. Estourar a faixa faz a conta subir desproporcionalmente.</p><p>Para entender os valores, veja <a href=\"como-ler-a-conta-de-luz.html\">como ler uma fatura</a> (a lógica das faixas é igual) e acompanhe sua fatura mês a mês na área do cliente da empresa.</p><div class=\"alerta-golpe\"><p><strong>Cuidado com \"economizadores\" mágicos.</strong> Produtos que prometem cortar 50% da conta instalados na torneira, sem comprovação, costumam ser golpe. Economia de verdade é hábito + conserto de vazamento.</p></div>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Quanto dá para economizar por mês?",
+        "a": "Varia, mas hábitos simples (banho mais curto, fechar torneira, máquina com carga cheia) costumam render de 10% a 30%. Consertar um vazamento escondido pode reduzir muito mais."
+      },
+      {
+        "q": "Meu vaso pinga e eu não escuto, como confirmar?",
+        "a": "Colore a água da caixa com corante ou colorante de alimentos: se a cor aparecer na bowl sem você dar descarga, o vaso está vazando. Outro jeito: o teste do medidor por 5 minutos."
+      },
+      {
+        "q": "Economizar água afeta a qualidade de vida?",
+        "a": "Não. As dicas são conforto igual: só encurtar o banho, fechar torneira ao ensaboar, usar bacia na louça e consertar vazamentos. Nada de passar frio ou sujeira."
+      },
+      {
+        "q": "A conta veio alta mesmo economizando, o que faço?",
+        "a": "Faça o teste de vazamento no medidor. Se não achar, compare o consumo com meses anteriores e, se não fechar, conteste a fatura pelo canal oficial da empresa — é grátis."
+      },
+      {
+        "q": "Este site vende produto de economia de água?",
+        "a": "Não. O LinkContas é independente e gratuito: organizamos links oficiais das empresas e dicas para o dia a dia das contas."
+      }
+    ],
+    "vejaTambem": [
+      {
+        "href": "conta-de-agua-com-vazamento-o-que-fazer.html",
+        "texto": "Conta de água alta por vazamento? Como agir"
+      },
+      {
+        "href": "como-contestar-conta-de-agua.html",
+        "texto": "Conta de água veio alta? Como contestar"
+      },
+      {
+        "href": "como-economizar-conta-de-luz.html",
+        "texto": "Como economizar na conta de luz"
+      },
+      {
+        "href": "como-pagar-conta-de-agua-atrasada.html",
+        "texto": "Conta de água atrasada? Como pagar"
+      },
+      {
+        "href": "artigos.html",
+        "texto": "Todos os artigos do LinkContas"
+      },
+      {
+        "href": "faq.html",
+        "texto": "Perguntas frequentes do site"
+      }
+    ]
+  },
+  {
+    "id": "conta-de-agua-com-vazamento-o-que-fazer",
+    "arquivo": "conta-de-agua-com-vazamento-o-que-fazer.html",
+    "nomeCurto": "Conta de água e vazamento",
+    "titulo": "Conta de água alta por vazamento: o que fazer | LinkContas",
+    "metaDesc": "Conta de água suspeita de vazamento? Veja como fazer o teste do medidor, consertar, pedir vistoria e contestar a cobrança com direito a abatimento.",
+    "h1": "Conta de água alta por vazamento: o que fazer",
+    "verificado": "25/11/2026",
+    "intro": [
+      "<p>Conta de água subiu do nada e você desconfia de vazamento? O problema é invisível — pode ser um fio d'água no vaso, uma tubulação embutida ou a bóia da caixa. A boa notícia: dá para <strong>provar</strong> que existe vazamento e, em muitos casos, <strong>contestar a cobrança</strong> com abatimento.</p>",
+      "<p>Neste artigo você aprende a confirmar o vazamento com um teste simples, a pedir vistoria oficial e como funciona a contestação por vazamento escondido.</p>"
+    ],
+    "secoes": [
+      {
+        "h2": "Primeiro: confirme se há vazamento",
+        "html": "<ol><li>Feche <strong>todos</strong> os usos de água: torneiras, chuveiro, vaso, máquina de lavar, purificador e regador. Confira se ninguém vai usar nada por alguns minutos.</li><li>Anote a leitura do <strong>hidrômetro</strong> (medidor de água, geralmente na caixa ou no gramado).</li><li>Espere de <strong>15 a 30 minutos</strong>.</li><li>Volte e leia de novo: se o número <strong>avançou</strong>, existe vazamento — ponto final.</li></ol><p>Se não avançou, a conta alta pode ter outra explicação: consumo real maior, leitura errada ou cobrança duplicada — veja <a href=\"como-contestar-conta-de-agua.html\">como contestar a conta de água</a>.</p>"
+      },
+      {
+        "h2": "Ache a origem do vazamento",
+        "html": "<p>Checklist do mais fácil para o mais difícil:</p><ul><li><strong>Vaso sanitário</strong>: pinga sem dar descarga. Corante na caixa mostra o vazamento em segundos.</li><li><strong>Torneiras e chuveiro</strong>: pingam ou escorrem (troca de vedação resolve).</li><li><strong>Bóia da caixa d'água</strong>: se a caixa transborda ou enche sem parar, a bóia está desregulada ou com defeito.</li><li><strong>Mangueiras e regadores</strong>: furados.</li><li><strong>Tubulação embutida</strong>: mancha na parede, som de água corrente com tudo fechado ou hidrômetro andando mesmo com tudo fechado. Aí é <strong>vistoria da empresa ou do encanador</strong>.</li></ul>"
+      },
+      {
+        "h2": "Peça a vistoria da empresa",
+        "html": "<p>A vistoria é gratuita em muitas empresas e é o caminho oficial para comprovar o vazamento:</p><ol><li>Entre no site oficial (use os botões da <a href=\"index.html#grid-empresas\">lista do LinkContas</a>).</li><li>Procure por <strong>Vistoria</strong>, <strong>Suspensão de cobrança</strong> ou <strong>Ausência de uso</strong>.</li><li>Informe o endereço e descreva o problema.</li><li>No dia, deixe o medidor acessível e, se possível, presente alguém.</li><li>Guarde o protocolo e o resultado.</li></ol><p>Algumas empresas permitem enviar o teste do medidor por <strong>foto/vídeo</strong> pelo aplicativo, sem esperar o leitor.</p>"
+      },
+      {
+        "h2": "Direito ao abatimento (suspensão de cobrança)",
+        "html": "<p>Se comprovado que houve <strong>vazamento em parte não faturável</strong> (tubulação da empresa/área de serviço) ou ausência de uso, o consumidor pode ter direito à <strong>suspensão ou redução da cobrança</strong> por um período — as regras variam por empresa e estado, e há limite de vezes por ano.</p><p>Na prática: a empresa suspende a cobrança enquanto durar a causa, e você paga só a taxa mínima (ou nada, conforme a regra). Conserte o vazamento rápido — a suspensão não dura para sempre.</p>"
+      },
+      {
+        "h2": "E se a empresa não reconhecer?",
+        "html": "<p>Peça a resposta <strong>por escrito</strong> com o protocolo. Se a decisão não convencer:</p><ol><li>Faça um novo teste do medidor e <strong>fotografe/vídeo</strong> com data.</li><li>Abra reclamação nos canais oficiais da empresa.</li><li>Se persistir, procure o <strong>procon</strong> do seu estado ou a <strong>ouvidoria</strong> da concessionária com todos os protocolos.</li></ol><p>Enquanto isso, não deixe a conta virar <a href=\"como-pagar-conta-de-agua-atrasada.html\">dívida atrasada</a>: negocie ou pague o que for incontestável para evitar corte.</p><div class=\"alerta-golpe\"><p><strong>Nunca contrate \"agente oficial\" que aparece sem ser chamado.</strong> Vistoria é pedida pelo canal oficial. Golpe comum: cobrar pela entrada no sistema de \"abatimento automático\".</p></div>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Vazamento na minha casa dá direito a abatimento?",
+        "a": "Vazamento em parte da sua responsabilidade é consertado por você. O abatimento costuma se aplicar a vazamento em área da empresa ou ausência de uso — confirme a regra da sua concessionária na vistoria."
+      },
+      {
+        "q": "Quanto tempo demora a vistoria?",
+        "a": "Varia conforme a empresa, de alguns dias a algumas semanas. Se o risco de corte for iminente, informe isso no pedido e negocie o prazo pelo canal oficial."
+      },
+      {
+        "q": "Paguei a conta mesmo com vazamento, perdi o direito?",
+        "a": "Não necessariamente: a contestação pode ser feita depois, com o comprovante de pagamento e as provas do vazamento. Mas quanto antes abrir, melhor."
+      },
+      {
+        "q": "O medidor andar um pouquinho é vazamento?",
+        "a": "Um avanço muito pequeno pode ser variação mínima do equipamento. Avanço claro e constante com tudo fechado indica vazamento. Faça o teste de 30 minutos para ter certeza."
+      },
+      {
+        "q": "Este site faz vistoria ou contestação?",
+        "a": "Não. O LinkContas organiza apenas os links oficiais das empresas. Vistoria e contestação são pedidas direto na concessionária, pelos canais oficiais dela."
+      }
+    ],
+    "vejaTambem": [
+      {
+        "href": "como-contestar-conta-de-agua.html",
+        "texto": "Como contestar uma conta de água alta"
+      },
+      {
+        "href": "como-economizar-agua-em-casa.html",
+        "texto": "Como economizar água em casa"
+      },
+      {
+        "href": "como-pagar-conta-de-agua-atrasada.html",
+        "texto": "Conta de água atrasada? Como pagar"
+      },
+      {
+        "href": "como-tirar-2-via-conta-de-agua.html",
+        "texto": "Como tirar a 2ª via da conta de água"
+      },
+      {
+        "href": "artigos.html",
+        "texto": "Todos os artigos do LinkContas"
+      },
+      {
+        "href": "faq.html",
+        "texto": "Perguntas frequentes do site"
+      }
+    ]
+  },
+  {
+    "id": "como-reclamar-de-operadora-na-anatel",
+    "arquivo": "como-reclamar-de-operadora-na-anatel.html",
+    "nomeCurto": "Reclamar na Anatel",
+    "titulo": "Como reclamar de operadora na Anatel (passo a passo) | LinkContas",
+    "metaDesc": "Reclamação de telefone, internet ou TV contra a operadora: como funciona a Anatel, prazos, o que fazer antes e como registrar reclamação grátis.",
+    "h1": "Como reclamar de uma operadora na Anatel",
+    "verificado": "25/11/2026",
+    "intro": [
+      "<p>Filas de espera, cobrança indevida, internet que não funciona, cobrança após cancelamento: quando a operadora não resolve, quem resolve é a <strong>Anatel</strong> — a agência reguladora do setor de telecomunicações. O registro é <strong>gratuito</strong> e costuma dar resultado.</p>",
+      "<p>Neste artigo você vê quando vale reclamar na Anatel, o que fazer antes (para não perder tempo), como registrar a reclamação passo a passo e o que esperar dos prazos.</p>"
+    ],
+    "secoes": [
+      {
+        "h2": "Quando a Anatel pode ajudar",
+        "html": "<ul><li>Cobrança indevida ou após o cancelamento.</li><li>Ativação ou portabilidade que demorou além do prazo legal.</li><li>Bloqueio sem explicação ou cobrança de fidelidade abusiva.</li><li>Sinal ruim não resolvido, cancelamento recusado, contrato não respeitado.</li><li>Não atendimento no prazo de resposta da própria empresa.</li></ul><p>A Anatel <strong>não</strong> resolve problemas de fatura de luz, água ou conteúdo de terceiros — para isso existe a concessionária e o Procon.</p>"
+      },
+      {
+        "h2": "Antes de ir à Anatel: tente a empresa",
+        "html": "<p>A Anatel trabalha melhor quando você mostra que tentou antes. Faça e guarde:</p><ol><li><strong>Reclamação no atendimento</strong> da operadora (site, aplicativo ou SAC) — anote o <strong>número de protocolo</strong>.</li><li><strong>Prazo de resposta</strong>: em geral 5 dias úteis (10 para serviços complexos). Espere, se puder.</li><li><strong>Evidências</strong>: prints da tela, faturas, contrato, datas e nomes de quem atendeu.</li></ol><p>Já tentou tudo e nada? É hora da Anatel. (Dica: protocolos da própria empresa aceleram muito a análise.)</p>"
+      },
+      {
+        "h2": "Passo a passo para registrar a reclamação",
+        "html": "<ol><li>Acesse o site oficial da <strong>Anatel</strong> (digite \"Anatel\" no Google e confira o endereço; desconfie de sites parecidos).</li><li>Procure por <strong>Consumidor</strong> → <strong>Registrar reclamação</strong> (Central de Atendimento ao Consumidor — SAC Digital).</li><li>Informe seus dados, a operadora e o tipo de serviço (telefone, celular, internet, TV).</li><li>Descreva o problema com <strong>datas, valores e protocolos</strong>. Seja objetivo: o que aconteceu, o que você pediu e o que a empresa disse.</li><li>Anexe as provas (prints e faturas).</li><li>Envie e <strong>guarde o número da reclamação</strong>.</li></ol><p>Atenção: a Anatel pode pedir seu <strong>CPF</strong> e dados do contrato — use apenas o site oficial.</p>"
+      },
+      {
+        "h2": "Prazos: quanto tempo leva?",
+        "html": "<p>Após o registro, a Anatel notifica a operadora e ela tem prazo para responder (costuma ser de <strong>10 a 15 dias</strong>, variando). Você acompanha o andamento pelo número da reclamação. Se a resposta não resolver, há etapa de análise da própria Anatel.</p><p>Enquanto isso, <strong>não espere para usar seus direitos</strong>: por exemplo, em cancelamento você pode exigir o cancelamento imediato conforme a regra da fidelidade — veja <a href=\"como-cancelar-internet.html\">como cancelar a internet</a> e <a href=\"como-cancelar-plano-de-celular.html\">como cancelar o plano de celular</a>.</p>"
+      },
+      {
+        "h2": "Outros canais que ajudam junto",
+        "html": "<ul><li><strong>Procon / juizado</strong>: para valores e danos morais, o caminho é o Procon ou o Juizado Cível (pequenas causas).</li><li><strong>Reclame Aqui / SPC / Consumidor.gov.br</strong>: registros públicos que as empresas costumam responder.</li><li><strong>Portabilidade e fidelidade</strong>: conheça <a href=\"como-trocar-de-operadora-levando-o-numero.html\">como trocar de operadora levando o número</a> antes de reclamar — em muitos casos a troca resolve mais rápido.</li></ul><div class=\"alerta-golpe\"><p><strong>Existe \"Anatel\" falsa?</strong> Existe. Golpistas cobram por \"abrir reclamação na Anatel\" ou pedem dados bancários. O registro é <strong>gratuito</strong> e feito só nos canais oficiais da agência.</p></div>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Registrar reclamação na Anatel é pago?",
+        "a": "Não, é totalmente gratuito. Desconfie de qualquer site ou pessoa que cobre para \"abrir na Anatel\" — é golpe."
+      },
+      {
+        "q": "Em quanto tempo a operadora responde?",
+        "a": "Após a Anatel notificar, o prazo costuma ser de 10 a 15 dias. Você acompanha pelo número da reclamação informado no envio."
+      },
+      {
+        "q": "Preciso tentar com a empresa antes?",
+        "a": "É fortemente recomendado: ter protocolo da operadora deixa a análise mais rápida e demonstra que você tentou resolver. Sem protocolo, a Anatel ainda aceita, mas pode demorar mais."
+      },
+      {
+        "q": "A Anatel resolve problema de conta de luz?",
+        "a": "Não. Telecomunicações (telefone, internet, TV) são da Anatel; energia e água são de outra natureza — use o atendimento da concessionária e, se preciso, o Procon."
+      },
+      {
+        "q": "O que fazer se a cobrança continua depois do cancelamento?",
+        "a": "Guarde o comprovante do cancelamento e o protocolo, registre reclamação na Anatel e, se persistir, abra registro no Procon e negocie o acerto. Não pague o que não é seu sem contestar."
+      }
+    ],
+    "vejaTambem": [
+      {
+        "href": "como-cancelar-plano-de-celular.html",
+        "texto": "Como cancelar o plano de celular"
+      },
+      {
+        "href": "como-cancelar-internet.html",
+        "texto": "Como cancelar a internet sem dor de cabeça"
+      },
+      {
+        "href": "como-trocar-de-operadora-levando-o-numero.html",
+        "texto": "Portabilidade: trocar de operadora"
+      },
+      {
+        "href": "internet-lenta-o-que-fazer.html",
+        "texto": "Internet lenta? O que fazer"
+      },
+      {
+        "href": "artigos.html",
+        "texto": "Todos os artigos do LinkContas"
+      },
+      {
+        "href": "faq.html",
+        "texto": "Perguntas frequentes do site"
+      }
+    ]
+  },
+  {
+    "id": "numero-desativado-por-que-o-chip-foi-suspenso",
+    "arquivo": "numero-desativado-por-que-o-chip-foi-suspenso.html",
+    "nomeCurto": "Chip suspenso / número desativado",
+    "titulo": "Número desativado: por que o chip foi suspenso e como reativar | LinkContas",
+    "metaDesc": "Seu número foi suspenso ou desativado? Veja os motivos (falta de recarga, dívida, roubo), como reativar o chip e o que fazer com o número.",
+    "h1": "Número desativado: por que o chip foi suspenso e como reativar",
+    "verificado": "25/11/2026",
+    "intro": [
+      "<p>Você liga e descobre que o número está <strong>desativado</strong>: \"o número solicitado está fora de área\" ou simplesmente ninguém atende. Em geral o chip foi <strong>suspenso</strong> — e quase sempre dá para resolver.</p>",
+      "<p>Neste artigo você vê os motivos mais comuns (falta de recarga, dívida, chip com defeito, bloqueio por roubo), como reativar em cada caso e o que fazer se o número não voltar mais.</p>"
+    ],
+    "secoes": [
+      {
+        "h2": "Por que o chip foi suspenso",
+        "html": "<ul><li><strong>Falta de recarga (pré-pago)</strong>: muitas operadoras suspendem após um período sem uso (em geral de 3 a 6 meses — confirme na sua).</li><li><strong>Dívida em aberto (pós-pago)</strong>: linha bloqueada por falta de pagamento; há cobrança de religação em alguns casos.</li><li><strong>Fraude ou uso indevido</strong>: a operadora bloqueia por suspeita.</li><li><strong>Chip com defeito ou desgastado</strong>: o chip pifou, o número continua vivo.</li><li><strong>Pedido de bloqueio (roubo/furto)</strong>: se você pediu bloqueio, é preciso desbloquear.</li><li><strong>Inadimplência do CPF</strong>: dívidas podem gerar bloqueio de linhas novas, mas raramente de linha ativa já usada.</li></ul>"
+      },
+      {
+        "h2": "Como reativar (pré-pago e pós-pago)",
+        "html": "<ol><li><strong>Entre no site ou aplicativo oficial</strong> da operadora (use os botões da <a href=\"index.html#grid-empresas\">lista do LinkContas</a>).</li><li>Procure por <strong>Reativar linha</strong>, <strong>Desbloquear chip</strong> ou <strong>Religar</strong>.</li><li>Informe o CPF do titular e o número. Em muitos casos a reativação é feita ali mesmo.</li><li>Se for dívida, negocie: algumas empresas permitem religação pagando parte; outras exigem a quitação. Peça o valor total e o prazo antes de pagar.</li><li>Não funcionou? Ligue no <strong>atendimento oficial</strong> (não em números de terceiros) ou vá a uma loja com <strong>documento com foto + CPF</strong>.</li></ol><p>Se o chip está com defeito, a loja troca o chip e <strong>o número é o mesmo</strong>.</p>"
+      },
+      {
+        "h2": "E o WhatsApp, banco e redes sociais do número?",
+        "html": "<p>O número é a chave de muita coisa. Enquanto a reativação não sai:</p><ul><li><strong>WhatsApp</strong>: pode ficar inacessível (o login depende do SMS). Informe contatos por outros meios.</li><li><strong>Bancos e apps</strong>: a maioria permite trocar o telefone cadastrado <strong>dentro do próprio app</strong> (com senha/face) — não precisa de número ativo, mas faça o antes que possível.</li><li><strong>2FA por SMS</strong>: se perder o número, troque o canal de verificação nos serviços.</li></ul><p>Se o número <strong>não voltar</strong>, a melhor estratégia é: reativar um número novo, e migrar cadastros aos poucos — priorize banco, e-mail e WhatsApp.</p>"
+      },
+      {
+        "h2": "Número não volta: quando trocar",
+        "html": "<p>Se a operadora informou que o número foi <strong>definitivamente cancelado</strong> (geralmente depois de longo período de suspensão), não há como recuperar. Aí:</p><ol><li>Pegue um chip novo (muitas empresas têm número novo na hora, no pré-pago).</li><li>Atualize o telefone no <strong>banco</strong>, <strong>e-mail</strong>, <strong>WhatsApp</strong> e nos principais apps.</li><li>Avise contatos importantes.</li></ol><p>Quer evitar isso no futuro? No pré-pago, faça uma <strong>recarga mínima de vez em quando</strong> ou ative um plano baixinho — o uso mantém a linha viva.</p><div class=\"alerta-golpe\"><p><strong>Cuidado com \"reativação\" por WhatsApp.</strong> Golpe clássico: mensagem dizendo \"seu número será cancelado, clique aqui\" ou pede código recebido por SMS. Operadora <strong>nunca</strong> pede código de SMS para terceiros.</p></div>"
+      },
+      {
+        "h2": "Linha pós-pago cancelada: fidelidade e cobrança",
+        "html": "<p>Se a linha foi cancelada por dívida, a empresa pode cobrar o valor em aberto + multa. Confira se a cobrança está certa (veja <a href=\"como-cancelar-plano-de-celular.html\">como cancelar o plano de celular</a> para entender fidelidade e direitos). Se houver erro, negocie com protocolo e, se preciso, registre <a href=\"como-reclamar-de-operadora-na-anatel.html\">reclamação na Anatel</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Meu número foi suspenso por falta de recarga, como voltar?",
+        "a": "Entre no site/app da operadora e procure reativar linha, ou ligue no atendimento oficial / vá à loja com CPF e documento. Em muitos casos a reativação é imediata e gratuita."
+      },
+      {
+        "q": "Quanto tempo até o número ser cancelado de vez?",
+        "a": "Varia por operadora e tipo de plano: no pré-pago, em geral de 3 a 6 meses sem uso. Confirme na sua operadora — e mantenha ao menos uma recarga por período para não perder."
+      },
+      {
+        "q": "Preciso pagar para religar a linha pós-pago?",
+        "a": "Se há dívida, em geral sim — ou a empresa aceita negociação parcelada. Peça o detalhamento por escrito e guarde o comprovante."
+      },
+      {
+        "q": "O chip é novo, o número é o mesmo?",
+        "a": "Sim. Na troca de chip por defeito, o número permanece. Já número novo só em caso de linha definitivamente cancelada."
+      },
+      {
+        "q": "Reativação é feita por terceiros?",
+        "a": "Não. Só no canal oficial da operadora. Golpistas cobram por \"reativação expressa\" ou pedem código de SMS — nunca informe códigos recebidos."
+      }
+    ],
+    "vejaTambem": [
+      {
+        "href": "como-cancelar-plano-de-celular.html",
+        "texto": "Como cancelar o plano de celular"
+      },
+      {
+        "href": "como-reclamar-de-operadora-na-anatel.html",
+        "texto": "Como reclamar na Anatel"
+      },
+      {
+        "href": "como-trocar-de-operadora-levando-o-numero.html",
+        "texto": "Trocar de operadora levando o número"
+      },
+      {
+        "href": "como-cancelar-internet.html",
+        "texto": "Como cancelar a internet"
+      },
+      {
+        "href": "artigos.html",
+        "texto": "Todos os artigos do LinkContas"
+      },
+      {
+        "href": "faq.html",
+        "texto": "Perguntas frequentes do site"
+      }
+    ]
+  },
+  {
+    "id": "como-cancelar-plano-de-celular",
+    "arquivo": "como-cancelar-plano-de-celular.html",
+    "nomeCurto": "Cancelar plano de celular",
+    "titulo": "Como cancelar o plano de celular sem dor de cabeça | LinkContas",
+    "metaDesc": "Passo a passo para cancelar linha e plano de celular: fidelidade, multa, direitos, o que fazer se recusarem e como manter o número.",
+    "h1": "Como cancelar o plano de celular sem dor de cabeça",
+    "verificado": "25/11/2026",
+    "intro": [
+      "<p>Quer cancelar o plano de celular, mas teme multa, enrolação ou perder o número? Calma: <strong>cancelar é direito seu</strong> — o que pode existir é multa de fidelidade <strong>dentro da regra legal</strong> (e ela é limitada).</p>",
+      "<p>Neste artigo você vê o passo a passo para cancelar certo, quando a multa é legal, como negociar, o que fazer se a empresa recusar e como <strong>levar o número para outra operadora</strong> (portabilidade).</p>"
+    ],
+    "secoes": [
+      {
+        "h2": "Antes de cancelar: veja se vale trocar ou só negociar",
+        "html": "<ul><li><strong>Quer outro plano</strong>: faça a <a href=\"como-trocar-de-operadora-levando-o-numero.html\">portabilidade</a> — o número vai junto, é grátis e sem cancelar antes.</li><li><strong>Preço alto</strong>: ligue/negocie primeiro; empresas costumam oferecer plano melhor para reter.</li><li><strong>Não usa mais</strong>: cancele. Se for pré-pago, basta parar de recarregar — em geral não há multa nem cobrança (confirme).</li></ul>"
+      },
+      {
+        "h2": "Passo a passo para cancelar",
+        "html": "<ol><li>Entre no site ou aplicativo oficial da operadora (use os botões da <a href=\"index.html#grid-empresas\">lista do LinkContas</a>).</li><li>Procure por <strong>Cancelamento de linha</strong> ou fale com o atendimento informando o <strong>CPF do titular</strong> e o número.</li><li>Peça o <strong>detalhamento por escrito</strong>: valor da multa, data de encerramento e o que vence.</li><li>Confirme se quer manter o número (portabilidade) ou encerrar definitivamente.</li><li>Guarde o <strong>protocolo de cancelamento</strong> — é sua prova.</li><li>Confira a fatura final alguns dias depois e, se vier cobrança a mais, <a href=\"como-reclamar-de-operadora-na-anatel.html\">reclame na Anatel</a>.</li></ol>"
+      },
+      {
+        "h2": "Quando a multa de fidelidade é legal",
+        "html": "<p>A regra vale assim:</p><ul><li>Só existe multa se houve <strong>benefício comercial</strong> (desconto, aparelho, franquia maior) e você está <strong>dentro do prazo</strong> de fidelidade.</li><li>O valor da multa deve ser <strong>proporcional</strong> ao tempo restante — não pode ser o valor cheio de todos os meses.</li><li>Sem benefício, <strong>não tem multa</strong>: pode cancelar a hora quiser.</li></ul><p>Pediu o cancelamento dentro do prazo e a empresa insistiu em cobrar o valor cheio? É indevido — registre reclamação na Anatel e no Procon.</p>"
+      },
+      {
+        "h2": "Se recusarem o cancelamento",
+        "html": "<ol><li>Repita o pedido <strong>por escrito</strong> (chat do site/app ou e-mail) e anote protocolo.</li><li>Cite a data do pedido: a partir dela, a empresa não pode manter a cobrança.</li><li>Se não resolver em 5 dias úteis, registre <a href=\"como-reclamar-de-operadora-na-anatel.html\">reclamação na Anatel</a>.</li><li>Se cobrarem indevidamente, abra no Procon e peça o acerto.</li></ol><p>Na dúvida sobre direitos, o passo a passo completo está em <a href=\"como-cancelar-internet.html\">como cancelar a internet</a> — a lógica da fidelidade é a mesma para qualquer serviço.</p>"
+      },
+      {
+        "h2": "Cancelar e manter o número: a portabilidade",
+        "html": "<p>Dá para trocar de operadora <strong>sem perder o número</strong>: a portabilidade é gratuita, feita em até 3 dias úteis (muitas vezes na hora) e você <strong>não precisa cancelar antes</strong> — a própria nova operadora resolve. Veja o guia completo <a href=\"como-trocar-de-operadora-levando-o-numero.html\">como trocar de operadora levando o número</a>.</p><p>Se o plano é pré-pago, atenção: faça uma recarga no número antigo <strong>antes</strong> da portabilidade para a linha não ser suspensa durante o processo.</p><div class=\"alerta-golpe\"><p><strong>Cuidado com atalhos de cancelamento.</strong> Nunca envie documento nem senha por WhatsApp de \"suporte\" que te abordou. Atendimento só nos canais oficiais da operadora.</p></div>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Preciso pagar multa para cancelar o plano de celular?",
+        "a": "Só se houver fidelidade com benefício e você estiver dentro do prazo, e o valor é proporcional ao tempo restante. Sem benefício comercial, não há multa."
+      },
+      {
+        "q": "A empresa pode recusar meu cancelamento?",
+        "a": "Não. Registrado o pedido, ela deve encerrar. Se recusar ou demorar, registre reclamação na Anatel com o protocolo — é gratuito."
+      },
+      {
+        "q": "Como cancelar sem perder o número?",
+        "a": "Faça a portabilidade: a nova operadora carrega seu número e encerra o antigo, sem custo e sem você precisar cancelar antes."
+      },
+      {
+        "q": "Meu plano é pré-pago, preciso cancelar algo?",
+        "a": "Em geral, basta parar de recarregar: a linha é suspensa e, depois de um tempo, cancelada. Não há cobrança recorrente no pré-pago."
+      },
+      {
+        "q": "Posso cancelar por telefone?",
+        "a": "Pode, pelo atendimento oficial da operadora, informando o CPF do titular. Peça o número do protocolo e confirme por escrito — o canal online costuma deixar registro melhor."
+      }
+    ],
+    "vejaTambem": [
+      {
+        "href": "como-trocar-de-operadora-levando-o-numero.html",
+        "texto": "Trocar de operadora levando o número"
+      },
+      {
+        "href": "como-reclamar-de-operadora-na-anatel.html",
+        "texto": "Como reclamar na Anatel"
+      },
+      {
+        "href": "como-cancelar-internet.html",
+        "texto": "Como cancelar a internet"
+      },
+      {
+        "href": "numero-desativado-por-que-o-chip-foi-suspenso.html",
+        "texto": "Número desativado? Como reativar"
+      },
+      {
+        "href": "artigos.html",
+        "texto": "Todos os artigos do LinkContas"
+      },
+      {
+        "href": "faq.html",
+        "texto": "Perguntas frequentes do site"
+      }
+    ]
+  },
+  {
+    "id": "como-sair-do-serasa-e-nome-negativado",
+    "arquivo": "como-sair-do-serasa-e-nome-negativado.html",
+    "nomeCurto": "Sair do Serasa / nome negativado",
+    "titulo": "Nome negativado no Serasa: como sair rápido | LinkContas",
+    "metaDesc": "Nome no Serasa e dívidas? Veja como consultar grátis, negociar dívida, pagar e tirar o nome — e quanto tempo leva para sair.",
+    "h1": "Nome negativado no Serasa: como consultar e sair",
+    "verificado": "25/11/2026",
+    "intro": [
+      "<p>Nome negativado trava crédito, e às vezes até o aluguel. A boa notícia: <strong>consultar é grátis</strong>, dá para <strong>negociar</strong> a maioria das dívidas e, depois do pagamento, o nome sai do registro em poucos dias.</p>",
+      "<p>Neste artigo você vê como consultar seu CPF no Serasa sem pagar nada, como negociar dívida de conta de luz e água, o que fazer se a dívida não é sua e quanto tempo demora para o nome limpar.</p>"
+    ],
+    "secoes": [
+      {
+        "h2": "Como consultar grátis (sem pagar)",
+        "html": "<ol><li>Acesse o site oficial do <strong>Serasa</strong> (digite \"Serasa\" no Google e confira o endereço) ou o site do <strong>BCB</strong> (Banco Central) para ver todos os registros.</li><li>Informe seu <strong>CPF</strong> — consulta ao CPF é gratuita, sem cadastro obrigatório.</li><li>Veja a lista de dívidas: valor, empresa credora e status.</li><li>Também vale olhar o <strong>registro positivo</strong>: bom histórico ajuda no crédito.</li></ol><div class=\"alerta-golpe\"><p><strong>Consulta de Serasa é grátis.</strong> Sites que cobram por \"limpar o nome\" ou \"sair do Serasa hoje\" são golpe. E ninguém tira sua dívida: só o pagamento regulariza.</p></div>"
+      },
+      {
+        "h2": "Passo a passo para negociar a dívida",
+        "html": "<ol><li>Identifique a dívida: quem é o credor (empresa de luz, água, banco, loja) e o valor total.</li><li>Entre no site oficial do credor ou ligue no atendimento — para conta de energia/água, use os botões da <a href=\"index.html#grid-empresas\">lista do LinkContas</a>.</li><li>Peça o <strong>detalhamento</strong> (valor original, juros, multa) e uma <strong>proposta de parcelamento</strong>.</li><li>Negocie um valor que caiba no bolso. Em muitas empresas dá para parcelar em várias vezes.</li><li><strong>Pague a primeira parcela na hora</strong> e guarde o comprovante do acordo.</li></ol><p>A negociação não é vergonha: é direito. E pagar a primeira parcela mostra boa-fé — é o que costuma tirar o nome do registro.</p>"
+      },
+      {
+        "h2": "Quanto tempo demora para o nome sair?",
+        "html": "<p>Após o pagamento (ou acordo cumprido), o credor deve <strong>comunicar o registro</strong> — em geral em <strong>1 a 5 dias úteis</strong>. O Serasa atualiza o cadastro nesse prazo; consulte de novo depois. Se passar de uma semana e o nome continuar lá, ligue para a empresa informando o comprovante e peça a baixa.</p><p>Importante: <strong>dívidas pagas ficam no histórico por 5 anos</strong>, mas como <strong>quitadas</strong> — isso não impede crédito, e inclusive conta como história positiva. Negativado ≠ histórico negativo para sempre.</p>"
+      },
+      {
+        "h2": "A dívida não é minha / valor errado",
+        "html": "<ul><li><strong>CPF usado por outra pessoa</strong>: peça a exclusão ao credor e ao Serasa com provas (BO, declaração). O Banco Central também tem canal para contestação de cadastro.</li><li><strong>Valor errado ou já pago</strong>: envie os comprovantes ao credor e peça a correção.</li><li><strong>Conta de luz no nome de morador anterior</strong>: veja o guia <a href=\"conta-de-luz-no-nome-de-morador-anterior.html\">conta de luz no nome do morador anterior</a>.</li></ul><p>Se a empresa não resolver, registre reclamação no <strong>Procon</strong> com os protocolos.</p>"
+      },
+      {
+        "h2": "Negociação de conta de luz e água",
+        "html": "<p>Para <strong>energia</strong>, muitas empresas permitem negociar no próprio site, em <strong>Negociação de débitos</strong>, com parcelamento antes do corte — veja <a href=\"como-pagar-conta-de-luz-atrasada.html\">como pagar a conta de luz atrasada</a>. Se o nome já negativou, a negociação costuma exigir quitação ou primeiro pagamento maior; negocie sempre por escrito.</p><p>Para <strong>água</strong>, o caminho é o mesmo: <a href=\"como-pagar-conta-de-agua-atrasada.html\">como pagar a conta de água atrasada</a>. E se a dívida é de energia com nome no Serasa, o guia <a href=\"conta-de-luz-negativada.html\">conta de luz negativada</a> traz o passo a passo específico.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Consultar o Serasa é pago?",
+        "a": "Não. Consultar CPF e dívidas no Serasa e no Banco Central é gratuito. Desconfie de qualquer site que cobre por isso ou promete \"limpar o nome\" sem pagamento da dívida."
+      },
+      {
+        "q": "Depois de pagar, quanto tempo leva para o nome sair?",
+        "a": "Em geral de 1 a 5 dias úteis após o credor comunicar a quitação. Se passar uma semana e não sair, envie o comprovante ao credor e peça a baixa imediata."
+      },
+      {
+        "q": "Dívida paga fica no histórico?",
+        "a": "Sim, por 5 anos, porém como quitada — isso não bloqueia crédito e conta como histórico bom no registro positivo."
+      },
+      {
+        "q": "Posso negociar parcelando a dívida inteira?",
+        "a": "Na maioria dos casos sim: credores e empresas de conta costumam oferecer parcelamento. Peça a proposta por escrito e guarde o comprovante da primeira parcela."
+      },
+      {
+        "q": "Minha dívida é de conta de luz no nome de outra pessoa, o que faço?",
+        "a": "Você não é obrigado a pagar o que não consumiu. Veja o guia sobre conta no nome do morador anterior e, se o nome foi negativado por engano, conteste com o credor e no Procon com provas."
+      }
+    ],
+    "vejaTambem": [
+      {
+        "href": "conta-de-luz-negativada.html",
+        "texto": "Conta de luz negativada no Serasa"
+      },
+      {
+        "href": "como-pagar-conta-de-luz-atrasada.html",
+        "texto": "Conta de luz atrasada? Como pagar"
+      },
+      {
+        "href": "como-pagar-conta-de-agua-atrasada.html",
+        "texto": "Conta de água atrasada? Como pagar"
+      },
+      {
+        "href": "conta-de-luz-no-nome-de-morador-anterior.html",
+        "texto": "Conta no nome do morador anterior"
+      },
+      {
+        "href": "serasa.html",
+        "texto": "Serasa: página oficial no LinkContas"
+      },
+      {
+        "href": "faq.html",
+        "texto": "Perguntas frequentes do site"
       }
     ]
   }
