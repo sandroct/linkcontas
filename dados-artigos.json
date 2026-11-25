@@ -6,7 +6,7 @@
     "titulo": "Como tirar a 2ª via da conta de luz pela internet | LinkContas",
     "metaDesc": "Passo a passo simples para tirar a 2ª via da conta de luz pelo celular ou computador, sem sair de casa. Veja o que precisa ter em mãos e como evitar golpes.",
     "h1": "Como tirar a 2ª via da conta de luz pela internet",
-    "verificado": "16/11/2026",
+    "verificado": "24/11/2026",
     "intro": [
       "<p>Perdeu a conta de luz e não sabe onde está? Fique tranquilo: hoje dá para tirar a <strong>2ª via pela internet</strong>, pelo celular ou pelo computador, em poucos minutos e sem sair de casa. O melhor de tudo: o serviço é <strong>gratuito</strong> e é feito no site oficial da empresa.</p>",
       "<p>Neste artigo mostramos, em palavras simples, o que você precisa ter em mãos, o passo a passo completo e onde pedir a 2ª via de cada empresa. Também deixamos dicas para você <strong>não cair em golpe</strong>, já que é comum aparecerem sites falsos no Google que cobram para fazer algo que a empresa dá de graça.</p>"
@@ -79,6 +79,10 @@
       {
         "href": "faq.html",
         "texto": "Perguntas frequentes do site"
+      },
+      {
+        "href": "como-tirar-2-via-conta-de-agua.html",
+        "texto": "Como tirar a 2ª via da conta de água"
       }
     ]
   },
@@ -89,7 +93,7 @@
     "titulo": "Como pagar a conta de luz atrasada sem cortar a energia | LinkContas",
     "metaDesc": "Conta de luz atrasada? Veja o passo a passo para pagar, como negociar o parcelamento e o que fazer se a energia já foi cortada. Informação simples e segura.",
     "h1": "Como pagar a conta de luz atrasada sem cortar a energia",
-    "verificado": "16/11/2026",
+    "verificado": "24/11/2026",
     "intro": [
       "<p>A conta de luz atrasou e você está com medo do corte? Respire fundo: <strong>ainda dá tempo de resolver</strong>. O pagamento da fatura atrasada é feito pelo mesmo caminho do normal — pelo site oficial, aplicativo ou Pix — e muitas empresas permitem <strong>parcelar a dívida</strong> ou negociar o valor.</p>",
       "<p>Neste artigo você aprende a pagar a conta em atraso do jeito certo (sem cair em golpe), a negociar com a empresa e o que fazer se a energia já foi cortada. Tudo explicado em palavras simples.</p>"
@@ -162,6 +166,10 @@
       {
         "href": "contato.html",
         "texto": "Fale conosco"
+      },
+      {
+        "href": "como-religar-energia-apos-corte.html",
+        "texto": "Já cortou? Como religar a energia"
       }
     ]
   },
@@ -172,15 +180,15 @@
     "titulo": "Como contestar uma conta de luz alta: passo a passo | LinkContas",
     "metaDesc": "Conta de luz veio maior que o normal? Saiba como contestar, quais documentos juntar, o prazo de resposta e o que fazer se a empresa não resolver.",
     "h1": "Como contestar uma conta de luz alta ou errada",
-    "verificado": "16/11/2026",
+    "verificado": "24/11/2026",
     "intro": [
       "<p>A conta de luz veio muito maior que a do mês passado e você não sabe por quê? Calma: <strong>contestar é um direito seu</strong> e o processo é gratuito. A empresa é obrigada a analisar o pedido e dar uma resposta em até 30 dias (ou até 10 dias úteis, se você pedir medição de novo).</p>",
-      "<p>Neste artigo você vê quando vale a pena contestar, o passo a passo completo, os documentos que aceleram a análise e o que fazer se a empresa não resolver. Serve para conta de luz e também para conta de água.</p>"
+      "<p>Neste artigo você vê quando vale a pena contestar, o passo a passo completo, os documentos que aceleram a análise e o que fazer se a empresa não resolver. Serve para conta de luz e também para <a href=\"como-contestar-conta-de-agua.html\">contestar a conta de água</a>.</p>"
     ],
     "secoes": [
       {
         "h2": "Quando vale a pena contestar a conta",
-        "html": "<p>Nem todo aumento é erro, mas estes casos quase sempre merecem contestação:</p><ul><li><strong>Veio muito maior que o normal</strong>, sem mudança de hábito (mesma rotina, mesmo aparelhos).</li><li><strong>Leitura estimada</strong> — quando a empresa não conseguiu ler o medidor e cobrou uma estimativa.</li><li><strong>Conta com vícios ou defeitos</strong> — a casa ficou sem energia, o medidor está quebrado ou acelerando.</li><li><strong>Multa ou cobrança que você não reconhece.</strong></li><li><strong>Conta de quem morava antes</strong>, no seu endereço.</li></ul><p>Se a subida é por uso de ar-condicionado no verão ou secadora no inverno, a contestação não vai ajudar — mas a dica de economizar pode.</p>"
+        "html": "<p>Nem todo aumento é erro, mas estes casos quase sempre merecem contestação:</p><ul><li><strong>Veio muito maior que o normal</strong>, sem mudança de hábito (mesma rotina, mesmo aparelhos).</li><li><strong>Leitura estimada</strong> — quando a empresa não conseguiu ler o medidor e cobrou uma estimativa.</li><li><strong>Conta com vícios ou defeitos</strong> — a casa ficou sem energia, o medidor está quebrado ou acelerando.</li><li><strong>Multa ou cobrança que você não reconhece.</strong></li><li><strong>Conta de quem morava antes</strong>, no seu endereço.</li></ul><p>Se a subida é por uso de ar-condicionado no verão ou secadora no inverno, a contestação não vai ajudar — mas a <a href=\"como-economizar-conta-de-luz.html\">dica de economizar</a> pode.</p>"
       },
       {
         "h2": "Passo a passo para contestar",
@@ -237,6 +245,14 @@
       {
         "href": "faq.html",
         "texto": "Perguntas frequentes do site"
+      },
+      {
+        "href": "como-economizar-conta-de-luz.html",
+        "texto": "Quer gastar menos? Como economizar"
+      },
+      {
+        "href": "como-contestar-conta-de-agua.html",
+        "texto": "Conta de água com erro? Como contestar"
       }
     ]
   },
@@ -247,7 +263,7 @@
     "titulo": "Como transferir a conta de luz para o nome de outra pessoa | LinkContas",
     "metaDesc": "Mudou de casa ou quer colocar a conta de luz no seu nome? Veja como transferir a titularidade, o que a empresa pede e o que fazer com dívidas antigas.",
     "h1": "Como transferir a conta de luz para o nome de outra pessoa",
-    "verificado": "16/11/2026",
+    "verificado": "24/11/2026",
     "intro": [
       "<p>Mudou de casa, alugou um imóvel ou quer colocar a conta de luz no seu nome? A transferência de titularidade é um processo gratuito, feito no site oficial da empresa ou presencialmente na loja de atendimento. E o mais importante: <strong>precisa ser feita logo depois da mudança</strong>, porque quem mora no imóvel é quem responde pela conta.</p>",
       "<p>Neste artigo você vê quem pode transferir, o que a empresa pede, o passo a passo e o que acontece com dívidas antigas — a parte que mais gera confusão.</p>"
@@ -312,6 +328,998 @@
       {
         "href": "copasa.html",
         "texto": "Copasa: troca de titular (MG)"
+      },
+      {
+        "href": "contato.html",
+        "texto": "Fale conosco"
+      },
+      {
+        "href": "como-fazer-ligacao-nova-de-energia.html",
+        "texto": "Imóvel novo? Ligação nova de energia"
+      }
+    ]
+  },
+  {
+    "id": "como-tirar-2-via-conta-de-agua",
+    "arquivo": "como-tirar-2-via-conta-de-agua.html",
+    "nomeCurto": "2ª via da conta de água",
+    "titulo": "Como tirar a 2ª via da conta de água pela internet | LinkContas",
+    "metaDesc": "Passo a passo para tirar a 2ª via da conta de água pelo celular ou computador, sem sair de casa. O serviço é grátis e feito no site oficial da empresa.",
+    "h1": "Como tirar a 2ª via da conta de água pela internet",
+    "verificado": "24/11/2026",
+    "intro": [
+      "<p>Perdeu a conta de água e precisa pagar hoje? Fique tranquilo: dá para pedir a <strong>2ª via pela internet</strong>, pelo celular ou pelo computador, em poucos minutos e sem sair de casa. O serviço é <strong>gratuito</strong> e é feito direto no site oficial da empresa.</p>",
+      "<p>Neste artigo você vê o que precisa ter em mãos, o passo a passo completo, onde pedir a 2ª via de cada empresa de água e como <strong>evitar golpes</strong> — é comum aparecerem sites falsos no Google que cobram para emitir algo que a empresa dá de graça.</p>"
+    ],
+    "secoes": [
+      {
+        "h2": "O que você precisa ter em mãos antes de começar",
+        "html": "<p>Reúna estes itens antes de entrar no site. Com eles o processo fica bem mais rápido:</p><ul><li><strong>O CPF do titular</strong> — é a pessoa cujo nome está escrito na conta.</li><li><strong>O número do cliente ou do hidrômetro</strong> — fica impresso na conta antiga, geralmente perto do seu endereço.</li><li><strong>Um e-mail ou número de celular</strong> — só na primeira vez, para criar seu acesso e recuperar a senha depois.</li><li><strong>A conta do mês passado (se tiver)</strong> — ajuda a conferir se os valores estão parecidos.</li></ul><p>Não tem a conta antiga em mãos? Sem problema: na maioria das empresas basta entrar com o <strong>CPF do titular</strong> e informar o endereço para localizar a conta.</p>"
+      },
+      {
+        "h2": "Passo a passo para pedir a 2ª via pelo computador",
+        "html": "<ol><li>Escolha a sua empresa na <a href=\"index.html#grid-empresas\">lista de empresas do LinkContas</a> e clique no botão da página. Ele leva você direto ao site oficial.</li><li>Na tela da empresa, procure por <strong>2ª via</strong>, <strong>Faturas</strong> ou <strong>Minha conta</strong>.</li><li>Se for a primeira vez, escolha <strong>Cadastrar</strong> ou <strong>Entrar</strong> e informe o CPF, o número do cliente e um e-mail ou celular para criar uma senha.</li><li>Com o acesso feito, abra a fatura do mês desejado. O valor e a data de vencimento aparecem na tela.</li><li>Clique em <strong>Baixar</strong> ou <strong>Imprimir</strong> para salvar a conta em formato PDF no computador.</li></ol><p>Pronto: a conta está salva e você pode imprimir quantas vezes quiser, sem pagar nada.</p>"
+      },
+      {
+        "h2": "Como pedir a 2ª via pelo celular",
+        "html": "<p>O processo no celular é muito parecido, por três caminhos:</p><ul><li><strong>Pelo navegador do celular</strong>: use o Chrome, Safari ou Firefox, entre no site oficial da empresa e siga os mesmos passos do computador.</li><li><strong>Pelo aplicativo oficial</strong>: quase todas as empresas têm aplicativo gratuito para Android e iPhone. Baixe pela Play Store ou pela App Store e confira se o nome do desenvolvedor é o da empresa.</li><li><strong>Pelo WhatsApp oficial</strong>: algumas empresas enviam a fatura por mensagem. Confirme o número no site oficial antes de conversar — números parecidos podem ser de golpistas.</li></ul><p>Dica prática: depois de baixar, guarde o arquivo em uma pasta do celular chamada <strong>\"contas de água\"</strong>. Assim você encontra tudo rapidinho no mês que vem.</p>"
+      },
+      {
+        "h2": "Onde pedir a 2ª via de cada empresa de água",
+        "html": "<p>Montamos uma página própria para cada empresa, com o link oficial e o passo a passo do zero:</p><ul><li><a href=\"sabesp.html\">Sabesp</a> — conta de água em São Paulo</li><li><a href=\"copasa.html\">Copasa</a> — conta de água em Minas Gerais</li><li><a href=\"sanepar.html\">Sanepar</a> — conta de água no Paraná</li><li><a href=\"embasa.html\">Embasa</a> — conta de água na Bahia</li><li><a href=\"cedae.html\">Cedae</a> — conta de água no Rio de Janeiro</li></ul><p>Não encontrou a sua empresa? <a href=\"index.html#grid-empresas\">Veja a lista completa do LinkContas</a> — ou <a href=\"contato.html\">peça a inclusão pelo nosso formulário</a>.</p>"
+      },
+      {
+        "h2": "Atenção: 3 dicas para não cair em golpe",
+        "html": "<div class=\"alerta-golpe\"><p><strong>1. A 2ª via é sempre gratuita.</strong> Se um site pedir pagamento, cartão de crédito ou senha do banco para emitir sua conta de água, é golpe. Desligue e use o botão oficial.</p><p><strong>2. Desconfie dos primeiros resultados do Google.</strong> Às vezes os primeiros são anúncios pagos de golpistas. Confira se o endereço do site é o mesmo do botão desta página.</p><p><strong>3. Nunca informe a senha do banco.</strong> Nenhuma empresa de água pede a senha do seu banco por telefone, WhatsApp ou site. Quem pedir, é golpe.</p></div>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Tirar a 2ª via da conta de água pela internet é pago?",
+        "a": "Não. O serviço é gratuito no site oficial da empresa. Se algum site pedir dinheiro, cartão ou senha do banco para emitir sua conta de água, é golpe — feche a página e entre pelo botão oficial."
+      },
+      {
+        "q": "Não tenho a conta antiga, consigo tirar a 2ª via?",
+        "a": "Sim. Na maioria das empresas basta entrar com o CPF do titular e informar o endereço. Em algumas, o número do cliente é obrigatório — nesses casos o atendimento oficial ajuda a encontrar pelo endereço."
+      },
+      {
+        "q": "A conta venceu, posso pedir a 2ª via?",
+        "a": "Pode, e é justamente aí que a 2ª via mais serve. O site mostra a conta já com multa e juros do atraso, para você pagar o valor exato e evitar o corte."
+      },
+      {
+        "q": "Quanto tempo demora para a conta aparecer no site?",
+        "a": "Assim que a empresa emite a fatura — normalmente alguns dias antes do vencimento — ela já aparece na área do cliente. Se não encontrar, fale com o atendimento oficial."
+      },
+      {
+        "q": "Este site é da empresa de água?",
+        "a": "Não. O LinkContas é um site independente que organiza os links oficiais das empresas. Não cobramos nada e não pedimos seus dados bancários. Clique no botão oficial para ir direto ao site da empresa."
+      }
+    ],
+    "vejaTambem": [
+      {
+        "href": "como-pagar-conta-de-agua-atrasada.html",
+        "texto": "Conta de água atrasada? Como pagar sem cortar"
+      },
+      {
+        "href": "como-contestar-conta-de-agua.html",
+        "texto": "Conta de água veio alta? Como contestar"
+      },
+      {
+        "href": "como-tirar-2-via-conta-de-luz.html",
+        "texto": "Como tirar a 2ª via da conta de luz"
+      },
+      {
+        "href": "sabesp.html",
+        "texto": "Sabesp: 2ª via de água (SP)"
+      },
+      {
+        "href": "copasa.html",
+        "texto": "Copasa: 2ª via de água (MG)"
+      },
+      {
+        "href": "faq.html",
+        "texto": "Perguntas frequentes do site"
+      }
+    ]
+  },
+  {
+    "id": "como-pagar-conta-de-agua-atrasada",
+    "arquivo": "como-pagar-conta-de-agua-atrasada.html",
+    "nomeCurto": "Conta de água atrasada",
+    "titulo": "Como pagar a conta de água atrasada sem cortar | LinkContas",
+    "metaDesc": "Conta de água atrasada? Veja o passo a passo para pagar com Pix ou boleto, como negociar a dívida e o que fazer se a água já foi cortada.",
+    "h1": "Como pagar a conta de água atrasada sem cortar",
+    "verificado": "24/11/2026",
+    "intro": [
+      "<p>A conta de água atrasou e você está com medo do corte? Respire fundo: <strong>ainda dá tempo de resolver</strong>. O pagamento é feito pelo mesmo caminho do normal — pelo site oficial, aplicativo ou Pix — e muitas empresas permitem <strong>parcelar a dívida</strong> ou negociar o valor antes do corte.</p>",
+      "<p>Neste artigo você aprende a pagar a conta em atraso do jeito certo (sem cair em golpe), a negociar com a empresa e o que fazer se a água já foi cortada. Tudo explicado em palavras simples.</p>"
+    ],
+    "secoes": [
+      {
+        "h2": "O que acontece quando a conta de água atrasa",
+        "html": "<p>O corte não acontece no primeiro dia de atraso. Na prática, a empresa cobra uma <strong>multa</strong> e <strong>juros</strong> por dia de atraso, e o corte só vem depois de um período — que varia conforme o estado e a empresa. Antes disso, você recebe avisos por mensagem, e-mail ou na porta.</p><p>Por isso a regra é simples: <strong>quanto antes pagar, menos você paga</strong>. E se o valor está difícil, fale com a empresa antes do corte — em muitos casos é possível parcelar.</p>"
+      },
+      {
+        "h2": "Passo a passo para pagar com Pix ou boleto",
+        "html": "<ol><li>Entre no site oficial da sua empresa. Use os botões da <a href=\"index.html#grid-empresas\">lista do LinkContas</a> — assim você não cai em site falso.</li><li>Faça seu acesso com CPF e senha (ou cadastre-se agora, é rápido).</li><li>Abra a fatura em aberto. O sistema já mostra o valor com multa e juros incluídos.</li><li>Escolha a forma de pagamento: <strong>Pix</strong> (o mais rápido, confirma na hora), <strong>boleto</strong> (pode levar até 1 dia útil para compensar) ou <strong>cartão de crédito</strong> em algumas empresas.</li><li>Confirme e <strong>guarde o comprovante</strong> — print da tela ou o arquivo do boleto pago.</li><li>Se a compensação demorar, entre em contato pelo canal oficial informando o comprovante.</li></ol><p>Atenção ao boleto vencido: ele continua válido, mas o valor já inclui as penalidades do atraso. Não use boleto antigo guardado — baixe sempre o mais recente.</p>"
+      },
+      {
+        "h2": "Dá para parcelar ou negociar a dívida de água?",
+        "html": "<p>Dá, e é mais comum do que parece. Muitas empresas permitem negociar pelo próprio site, na área do cliente, em uma opção chamada <strong>Negociação</strong>, <strong>Parcelamento</strong> ou <strong>Regularização de débitos</strong>. Em outras, você precisa falar com o atendimento.</p><ul><li>Tenha o CPF do titular em mãos.</li><li>Tenha uma ideia do que consegue pagar por mês.</li><li>Negocie antes do corte: depois que corta, costuma haver taxa de religação.</li></ul><p>Negociou? Pague a primeira parcela na hora e guarde o acordo. Se a proposta parecer alta demais, pergunte sobre o parcelamento em mais vezes — é direito seu tentar.</p>"
+      },
+      {
+        "h2": "A água já foi cortada: como religar",
+        "html": "<p>Se o corte já aconteceu, o caminho é pagar a dívida + taxa de religação e pedir a religação pelo canal oficial. Em muitos casos, o pagamento pelo site já libera a religação automaticamente, e a água volta em poucas horas ou no dia seguinte.</p><ul><li>Pague o valor total mostrado no site (dívida + religação).</li><li>Guarde o comprovante.</li><li>Confirme o prazo de religação no site ou pelo atendimento oficial.</li><li>Se passar o prazo, ligue no número oficial da empresa e informe o comprovante.</li></ul><p>Se você está com dificuldade séria para pagar, pergunte por programas sociais e descontos — várias empresas têm tarifa social para famílias de baixa renda.</p>"
+      },
+      {
+        "h2": "Atenção: 3 dicas para não cair em golpe",
+        "html": "<div class=\"alerta-golpe\"><p><strong>1. Ninguém liga pedindo Pix para \"evitar corte\".</strong> Golpistas usam esse medo. O pagamento só é feito no site oficial da empresa.</p><p><strong>2. Confira o nome do recebedor no Pix.</strong> Deve ser o nome oficial da empresa — nunca o nome de uma pessoa.</p><p><strong>3. Não clique em link de mensagem ou e-mail.</strong> Digite você mesmo o endereço ou use os botões da <a href=\"index.html#grid-empresas\">nossa lista</a>.</p></div>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Quanto tempo leva para cortar a água depois do atraso?",
+        "a": "Varia por empresa e estado, mas costuma ser de semanas a alguns meses, sempre com avisos antes. O mais importante: quanto antes pagar, menos multa e juros você acumula."
+      },
+      {
+        "q": "Posso pagar a conta de água atrasada com Pix?",
+        "a": "Sim. Entre no site oficial, abra a fatura em aberto e escolha Pix. O código é gerado na hora e o pagamento costuma ser confirmado imediatamente."
+      },
+      {
+        "q": "Como parcelar a dívida de água?",
+        "a": "Na área do cliente da empresa, procure por Negociação ou Parcelamento de débitos. Se não aparecer no site, fale com o atendimento oficial e peça o parcelamento antes do corte."
+      },
+      {
+        "q": "Já paguei mas a água continua cortada. E agora?",
+        "a": "Guarde o comprovante e fale com o atendimento oficial informando o pagamento. Em muitas empresas a religação é automática; em outras, o atendimento aciona o pedido. Se o prazo passou, cobre com o comprovante em mãos."
+      },
+      {
+        "q": "Este site pode pagar ou negociar minha conta?",
+        "a": "Não. O LinkContas é um site independente que organiza os links oficiais das empresas. Pagamento e negociação só acontecem nos canais oficiais da empresa, que levamos você até eles."
+      }
+    ],
+    "vejaTambem": [
+      {
+        "href": "como-tirar-2-via-conta-de-agua.html",
+        "texto": "Como tirar a 2ª via da conta de água"
+      },
+      {
+        "href": "como-contestar-conta-de-agua.html",
+        "texto": "Conta veio alta? Como contestar a água"
+      },
+      {
+        "href": "como-pagar-conta-de-luz-atrasada.html",
+        "texto": "Conta de luz atrasada? Como pagar"
+      },
+      {
+        "href": "sanepar.html",
+        "texto": "Sanepar: conta de água (PR)"
+      },
+      {
+        "href": "sabesp.html",
+        "texto": "Sabesp: conta de água (SP)"
+      },
+      {
+        "href": "contato.html",
+        "texto": "Fale conosco"
+      }
+    ]
+  },
+  {
+    "id": "como-contestar-conta-de-agua",
+    "arquivo": "como-contestar-conta-de-agua.html",
+    "nomeCurto": "Contestar conta de água",
+    "titulo": "Como contestar uma conta de água alta ou errada | LinkContas",
+    "metaDesc": "Conta de água veio maior que o normal? Saiba como contestar, o que fotografar, o prazo de resposta da empresa e o que fazer se não resolverem.",
+    "h1": "Como contestar uma conta de água alta ou errada",
+    "verificado": "24/11/2026",
+    "intro": [
+      "<p>A conta de água veio muito maior que a do mês passado e você não sabe por quê? Calma: <strong>contestar é um direito seu</strong> e o processo é gratuito. A empresa é obrigada a analisar o pedido e dar uma resposta — em geral em até 30 dias.</p>",
+      "<p>Neste artigo você vê quando vale a pena contestar, o passo a passo completo, o que fotografar para acelerar a análise e o que fazer se a empresa não resolver. Serve para conta de água de qualquer estado.</p>"
+    ],
+    "secoes": [
+      {
+        "h2": "Quando vale a pena contestar a conta de água",
+        "html": "<p>Nem todo aumento é erro, mas estes casos quase sempre merecem contestação:</p><ul><li><strong>Veio muito maior que o normal</strong>, sem mudança de hábito (mesma rotina, mesma morada).</li><li><strong>Leitura errada ou estimada</strong> — quando a empresa não conseguiu ler o hidrômetro e cobrou uma estimativa.</li><li><strong>Vazamento</strong> — teve buraco, trinca ou reparo? Se o vazamento é interno (na sua casa), a conta sobe mesmo; se for externo, na calçada ou na rede, o conserto é da empresa e o consumo não é seu.</li><li><strong>Cobrança duplicada</strong> ou valor que não bate com a fatura anterior.</li><li><strong>Conta de quem morava antes</strong>, no seu endereço.</li></ul><p>Se a subida é por mais banhos no verão ou visita de família, a contestação não vai ajudar — mas <a href=\"como-economizar-conta-de-luz.html\">dicas de economia</a> valem para a água também.</p>"
+      },
+      {
+        "h2": "Passo a passo para contestar",
+        "html": "<ol><li>Entre no site oficial da sua empresa, pela <a href=\"index.html#grid-empresas\">lista do LinkContas</a>.</li><li>Faça seu acesso e abra a fatura contestada.</li><li>Procure por <strong>Contestar</strong>, <strong>Reclamação</strong> ou <strong>Pedido de revisão</strong>. Em algumas empresas, o caminho é pelo <strong>Atendimento</strong> ou por formulário.</li><li>Escreva o motivo em palavras simples: <em>\"a conta veio R$ X, o normal é R$ Y, não houve mudança de uso\"</em>.</li><li>Anexe as fotos: leitura do hidrômetro com a data, contas dos meses anteriores e, se houve vazamento ou reparo, a data em que aconteceu.</li><li>Envie e <strong>guarde o número do protocolo</strong>. É com ele que você acompanha.</li></ol><p>Se a resposta vier rápida demais e sem resolver, você pode pedir <strong>medição nova</strong> — uma conferência da leitura no seu endereço.</p>"
+      },
+      {
+        "h2": "Prazos: quanto tempo a empresa tem para responder",
+        "html": "<p>O prazo mais comum é de <strong>até 30 dias</strong> contados do pedido. Em alguns estados há regras específicas para água, com prazos diferentes — por isso, anote a data do envio e o protocolo.</p><p>Se a empresa responder antes, mas sem resolver, não desista: leia a resposta, junte novas provas (uma foto da leitura ajuda muito) e responda pelo mesmo protocolo. E se o prazo passar sem resposta, cobre — protocolo em mãos é a sua prova.</p>"
+      },
+      {
+        "h2": "O que fazer se a empresa não resolver",
+        "html": "<p>Se a resposta não veio, ou você não concorda com ela, o caminho é escalar:</p><ol><li><strong>Ouvidoria da própria empresa</strong> — é a segunda instância; o número está no rodapé da fatura e no site oficial.</li><li><strong>SAC ou ouvidoria do estado</strong> — o atendimento de consumo do seu estado.</li><li><strong>Consumidor.gov.br</strong> — site do governo federal: você registra a reclamação e a empresa é obrigada a responder.</li><li><strong>Juizado Especial Cível</strong> — para valores pequenos, é gratuito e não precisa de advogado.</li></ol><p>Em toda etapa, mantenha os protocolos em mãos. E lembre: <strong>contestar não corta sua água</strong> — a empresa não pode cortar o serviço enquanto a reclamação está em análise.</p>"
+      },
+      {
+        "h2": "Dicas para a análise sair mais rápido",
+        "html": "<ul><li><strong>Fotografe o hidrômetro</strong> com a data visível — antes e depois da contestação.</li><li><strong>Guarde as últimas faturas</strong> (no site você baixa o histórico) para comparar o consumo mês a mês.</li><li><strong>Anote o que mudou na casa</strong>: visita de família, enchente, conserto de vazamento.</li><li><strong>Responda rápido</strong> se a empresa pedir mais informações.</li></ul><p>Quanto mais organizada a sua resposta, menos vai e volta — e mais rápido o problema é resolvido.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Quanto tempo leva a empresa a responder uma contestação de água?",
+        "a": "O prazo mais comum é de até 30 dias, contados do pedido. Anote a data e o protocolo: se o prazo passar, você pode cobrar e reclamar nos órgãos de consumo."
+      },
+      {
+        "q": "A empresa pode cortar a água enquanto eu contesto?",
+        "a": "Não é permitido cortar o serviço por esse valor enquanto a reclamação está em análise. Se cortarem mesmo assim, guarde o protocolo e reclame na ouvidoria do estado."
+      },
+      {
+        "q": "Preciso pagar a conta enquanto processo a contestação?",
+        "a": "O ideal é pagar o valor que não está em disputa, para não acumular juros. Se o valor todo está em disputa, fale com o atendimento oficial antes do vencimento e informe o protocolo."
+      },
+      {
+        "q": "Contestar custa alguma coisa?",
+        "a": "Não. O processo é gratuito e pode ser feito pelo site oficial da empresa. Desconfie de qualquer pessoa ou site que cobre para contestar por você."
+      },
+      {
+        "q": "Serve para contestar a conta de luz também?",
+        "a": "Sim. O passo a passo é quase idêntico — veja o nosso guia <a href=\"como-contestar-conta-de-luz.html\">Como contestar uma conta de luz</a>."
+      }
+    ],
+    "vejaTambem": [
+      {
+        "href": "como-contestar-conta-de-luz.html",
+        "texto": "Como contestar a conta de luz"
+      },
+      {
+        "href": "como-tirar-2-via-conta-de-agua.html",
+        "texto": "Como tirar a 2ª via para comparar"
+      },
+      {
+        "href": "como-pagar-conta-de-agua-atrasada.html",
+        "texto": "Conta de água atrasada? Como pagar"
+      },
+      {
+        "href": "copasa.html",
+        "texto": "Copasa: contestar conta (MG)"
+      },
+      {
+        "href": "sabesp.html",
+        "texto": "Sabesp: contestar conta (SP)"
+      },
+      {
+        "href": "faq.html",
+        "texto": "Perguntas frequentes do site"
+      }
+    ]
+  },
+  {
+    "id": "como-religar-energia-apos-corte",
+    "arquivo": "como-religar-energia-apos-corte.html",
+    "nomeCurto": "Religar a energia",
+    "titulo": "Como religar a energia depois do corte por falta de pagamento | LinkContas",
+    "metaDesc": "Energia cortada por falta de pagamento? Passo a passo para religar, quanto custa a religação, prazos e o que fazer se a luz não voltar.",
+    "h1": "Como religar a energia depois do corte por falta de pagamento",
+    "verificado": "24/11/2026",
+    "intro": [
+      "<p>A energia foi cortada por falta de pagamento? A boa notícia é que <strong>religar é possível</strong> — e, na maioria das empresas, o próprio pagamento pelo site já aciona a religação. O processo é simples: quitar a dívida, pagar a taxa (se houver) e esperar o prazo oficial.</p>",
+      "<p>Neste artigo você vê o passo a passo para religar pela internet, quanto costuma custar, prazos e o que fazer se a luz não voltar. Também deixamos dicas para <strong>não cair em golpe</strong> — há quem cobre \"taxa de religação\" por fora, e isso é fraude.</p>"
+    ],
+    "secoes": [
+      {
+        "h2": "Por que a energia foi cortada",
+        "html": "<p>O corte costuma acontecer depois de uma dívida acumulada, avisos (mensagem, e-mail ou aviso na porta) e um prazo para regularizar. Cada empresa e cada estado têm regras próprias, mas o roteiro é sempre parecido: <strong>aviso → multa e juros → corte</strong>.</p><p>Depois do corte, para religar é preciso <strong>regularizar a dívida</strong> e, em muitos casos, pagar uma <strong>taxa de religação</strong>. Quanto antes você resolver, menos juros você acumula e mais rápido a luz volta.</p>"
+      },
+      {
+        "h2": "Passo a passo para religar pela internet",
+        "html": "<ol><li>Entre no site oficial da sua empresa pelos botões da <a href=\"index.html#grid-empresas\">lista do LinkContas</a> — assim você garante que é o site certo.</li><li>Faça seu acesso com CPF e senha.</li><li>Abra a área do cliente e procure por <strong>Religação</strong>, <strong>Regularização de débitos</strong> ou <strong>Pedido de religação</strong>.</li><li>O site mostra o valor total: dívida + multa + juros + taxa de religação (quando aplicável).</li><li>Pague por <strong>Pix</strong> — é a forma mais rápida e costuma acionar a religação na hora.</li><li>Guarde o comprovante e anote o prazo de religação informado na tela.</li></ol>"
+      },
+      {
+        "h2": "Quanto custa e quanto tempo leva?",
+        "html": "<p><strong>O custo</strong> é o valor da dívida regularizada mais a taxa de religação, quando a empresa cobra. O valor é regulado e muda de empresa para empresa e de estado para estado — o site sempre mostra o total antes de você pagar.</p><p><strong>O prazo</strong> também varia: muitas empresas religam em poucas horas ou no dia útil seguinte após o pagamento confirmado; outras informam prazo maior. O prazo exato aparece na tela depois do pagamento ou pelo atendimento oficial.</p><p>Se alguém pedir um valor extra \"por fora\" para religar mais rápido, é golpe: a religação só é pedida e paga nos canais oficiais.</p>"
+      },
+      {
+        "h2": "Já paguei e a luz não voltou. E agora?",
+        "html": "<ol><li>Confira o <strong>comprovante</strong> e o prazo informado no site.</li><li>Se o prazo já passou, fale com o atendimento oficial (número do rodapé da fatura ou site) e informe o comprovante e o protocolo.</li><li>Peça um <strong>novo protocolo</strong> da sua ligação e anote o nome de quem atendeu.</li><li>Se a empresa não resolver, registre reclamação no <strong>SAC do estado</strong> e no <strong>consumidor.gov.br</strong>.</li></ol><p>Em casos raros, a religação exige vistoria — por exemplo, se o medidor foi lacrado ou danificado. O atendimento oficial informa quando é o caso.</p>"
+      },
+      {
+        "h2": "Atenção: 3 dicas para não cair em golpe",
+        "html": "<div class=\"alerta-golpe\"><p><strong>1. Ninguém liga ou manda mensagem pedindo Pix para religar.</strong> O pagamento é sempre feito por você, no site oficial da empresa.</p><p><strong>2. Confira o nome do recebedor no Pix.</strong> Deve ser o nome oficial da empresa — nunca o nome de uma pessoa.</p><p><strong>3. Não clique em link de SMS ou WhatsApp.</strong> Digite o endereço do site você mesmo ou use os botões da <a href=\"index.html#grid-empresas\">nossa lista</a>.</p></div>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Quanto tempo demora para religar a energia?",
+        "a": "Depende da empresa e do estado, mas muitas religam em poucas horas ou no dia útil seguinte após o pagamento. O prazo exato é informado na tela depois do pagamento ou pelo atendimento."
+      },
+      {
+        "q": "Quanto custa a religação da luz?",
+        "a": "É o valor da dívida regularizada mais a taxa de religação, quando a empresa cobra. O valor é regulado e aparece no site antes de você pagar — desconfie de cobranças \"por fora\"."
+      },
+      {
+        "q": "Posso religar mesmo com a dívida muito antiga?",
+        "a": "Sim. Na maioria dos casos basta regularizar o valor total. Se o valor está difícil, negocie o parcelamento antes de pagar — muitas empresas fazem isso pelo próprio site."
+      },
+      {
+        "q": "A religação é automática?",
+        "a": "No pagamento por Pix ou cartão no site, costuma ser automática. Em outras situações, o pedido é registrado e o atendimento aciona a religação. Confirme o prazo depois de pagar."
+      },
+      {
+        "q": "Não tenho dinheiro para pagar tudo agora. E agora?",
+        "a": "Fale com a empresa antes: dá para negociar e parcelar em muitos casos. Também existem programas sociais com desconto para famílias de baixa renda — pergunte no canal oficial."
+      }
+    ],
+    "vejaTambem": [
+      {
+        "href": "como-pagar-conta-de-luz-atrasada.html",
+        "texto": "Conta de luz atrasada? Como pagar sem cortar"
+      },
+      {
+        "href": "conta-de-luz-negativada.html",
+        "texto": "Conta negativada no Serasa? Como resolver"
+      },
+      {
+        "href": "enel-sp.html",
+        "texto": "Enel SP: pagamento e religação"
+      },
+      {
+        "href": "cemig.html",
+        "texto": "CEMIG: religação (MG)"
+      },
+      {
+        "href": "light.html",
+        "texto": "Light: conta de luz (Rio de Janeiro)"
+      },
+      {
+        "href": "contato.html",
+        "texto": "Fale conosco"
+      }
+    ]
+  },
+  {
+    "id": "como-economizar-conta-de-luz",
+    "arquivo": "como-economizar-conta-de-luz.html",
+    "nomeCurto": "Economizar na conta de luz",
+    "titulo": "Como economizar na conta de luz: dicas simples que funcionam | LinkContas",
+    "metaDesc": "Contas de luz subindo? Veja dicas fáceis para gastar menos energia em casa, os aparelhos que mais consomem e como conferir se sua fatura está correta.",
+    "h1": "Como economizar na conta de luz: dicas simples que funcionam",
+    "verificado": "24/11/2026",
+    "intro": [
+      "<p>A conta de luz sobe todo mês e você não sabe por quê? A maioria dos gastos escondidos está em <strong>hábitos pequenos</strong> e em aparelhos antigos — não é preciso comprar nada caro para começar a economizar.</p>",
+      "<p>Neste artigo você vê as dicas mais eficazes, os aparelhos que mais gastam na casa e como descobrir se a sua fatura está mesmo certa. Tudo em palavras simples, sem termos técnicos.</p>"
+    ],
+    "secoes": [
+      {
+        "h2": "Por que a conta de luz sobe tanto",
+        "html": "<p>Três motivos explicam quase tudo:</p><ul><li><strong>O preço da energia mudou</strong> — a tarifa é reajustada periodicamente e vale para todo mundo.</li><li><strong>Seu consumo aumentou</strong> — mais tempo em casa, mais aparelhos ligados, verão mais quente ou inverno mais frio.</li><li><strong>Você passou de faixa de consumo</strong> — em várias distribuidoras, quanto mais kWh você consome no mês, mais cara fica cada faixa extra. Quem economiza um pouco às vezes cai para uma faixa mais barata e a economia dobra.</li></ul><p>Antes de culpar a empresa, vale conferir a fatura: <a href=\"como-ler-a-conta-de-luz.html\">entender a conta</a> é o primeiro passo para gastar menos.</p>"
+      },
+      {
+        "h2": "12 dicas para gastar menos em casa",
+        "html": "<ol><li><strong>Diminua o tempo no chuveiro</strong> — o chuveiro elétrico é um dos maiores consumidores da casa.</li><li><strong>Ajuste o ar-condicionado para 23–24 °C</strong> — cada grau a menos gasta bem mais energia.</li><li><strong>Troque lâmpadas por LED</strong> — o LED consome cerca de 80% a menos que a incandescente e dura muito mais.</li><li><strong>Desligue da tomada o que fica em espera</strong> — TV, computador, carregador e videogame gastam mesmo \"desligados\".</li><li><strong>Confira a geladeira</strong> — boa vedação, temperatura moderada e nada de comida quente dentro.</li><li><strong>Lave roupa só com a máquina cheia</strong> e use o programa econômico.</li><li><strong>Seque a roupa no varal</strong> sempre que der — a secadora é famosa por puxar a conta.</li><li><strong>Cozinhe com tampa</strong> e prefira panela de pressão: economiza tempo e energia.</li><li><strong>Atualize aparelhos muito antigos</strong> — geladeira e ar-condicionado velhos gastam o dobro.</li><li><strong>Limpe os filtros do ar-condicionado</strong> — sujo, ele trabalha mais e gasta mais.</li><li><strong>Acompanhe o consumo mensal</strong> no site ou aplicativo da empresa.</li><li><strong>Confira se a fatura está certa</strong> — erro de leitura é mais comum do que parece.</li></ol>"
+      },
+      {
+        "h2": "Os aparelhos que mais gastam na casa",
+        "html": "<p>Se você tem pouco tempo, comece por aqui — estes são os que mais pesam na fatura:</p><ul><li><strong>Aquecimento elétrico</strong>: chuveiro, secadora e forno elétrico. São ligados por pouco tempo, mas a potência é altíssima.</li><li><strong>Ar-condicionado</strong>: ligado por horas, principalmente no verão, é o campeão de muitas casas.</li><li><strong>Geladeira e freezer</strong>: ligados 24 horas por dia — um modelo velho ou com vedação ruim consome muito mais.</li><li><strong>Iluminação</strong>: pesa mais quando ainda há lâmpadas antigas na casa.</li><li><strong>TV, computador e videogame em espera</strong>: sozinhos parecem nada, somados todo mês viram valor.</li></ul><p>Regra prática: ataque primeiro os itens de cima. Depois, corrigir o resto fica quase automático.</p>"
+      },
+      {
+        "h2": "Como conferir se sua conta está correta",
+        "html": "<p>Economizar só ajuda se a fatura estiver certa. Três verificações rápidas:</p><ul><li><strong>Compare com os meses anteriores</strong> — baixe as faturas antigas na área do cliente e veja se o consumo segue o mesmo padrão.</li><li><strong>Confira a leitura do medidor</strong> — o número na conta bate com o que está escrito no medidor da sua casa? Se não, pode haver erro.</li><li><strong>Desconfie de leitura estimada</strong> — quando a empresa não conseguiu ler, o valor é uma estimativa e pode vir alto.</li></ul><p>Achou um erro? <a href=\"como-contestar-conta-de-luz.html\">Veja como contestar a conta de luz</a> — é gratuito e é seu direito.</p>"
+      },
+      {
+        "h2": "Quem pode pagar menos: a tarifa social",
+        "html": "<p>Se a sua família é de baixa renda, você pode ter direito à <strong>tarifa social</strong>: um desconto legal que aparece direto na fatura. O cadastro é feito no site da empresa e não custa nada.</p><p>O desconto é para famílias inscritas nos programas sociais do governo (como o CadÚnico). Se você já recebe o Bolsa Família ou é cadastrado, vale conferir — veja o passo a passo em <a href=\"tarifa-social-conta-de-luz.html\">Tarifa social da conta de luz</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Quanto posso economizar com essas dicas?",
+        "a": "Varia de casa para casa. Mudanças pequenas (LED, desligar a espera) já aparecem no mês seguinte; as maiores vêm do chuveiro, do ar-condicionado e de aparelhos antigos — que pesam muito mais na fatura."
+      },
+      {
+        "q": "Desligar o aparelho da tomada mesmo com tudo desligado gasta?",
+        "a": "Sim. Muitos aparelhos ficam em modo de espera e consomem energia o tempo todo. Desligar da tomada (ou usar uma régua com botão) elimina esse gasto."
+      },
+      {
+        "q": "Trocar todas as lâmpadas por LED compensa?",
+        "a": "Compensa: o LED consome cerca de 80% a menos que a lâmpada incandescente e dura anos. O investimento se paga em poucos meses."
+      },
+      {
+        "q": "Minha conta veio com leitura estimada. O que fazer?",
+        "a": "Informe a leitura real do medidor pelo site ou aplicativo da empresa (quase todas têm autoleitura). Se a estimativa veio alta demais, você pode contestar — o valor é corrigido na fatura seguinte."
+      },
+      {
+        "q": "O LinkContas vende ou instala alguma coisa?",
+        "a": "Não. O LinkContas é um site independente e gratuito que organiza os links oficiais das empresas. Não vendemos produtos nem serviços — só levamos você até o site oficial."
+      }
+    ],
+    "vejaTambem": [
+      {
+        "href": "como-ler-a-conta-de-luz.html",
+        "texto": "Como ler a conta de luz"
+      },
+      {
+        "href": "tarifa-social-conta-de-luz.html",
+        "texto": "Tarifa social: como ter direito"
+      },
+      {
+        "href": "como-contestar-conta-de-luz.html",
+        "texto": "Conta com erro? Como contestar"
+      },
+      {
+        "href": "enel-sp.html",
+        "texto": "Enel SP: área do cliente"
+      },
+      {
+        "href": "energisa.html",
+        "texto": "Energisa: conta de luz"
+      },
+      {
+        "href": "artigos.html",
+        "texto": "Todos os artigos do site"
+      }
+    ]
+  },
+  {
+    "id": "tarifa-social-conta-de-luz",
+    "arquivo": "tarifa-social-conta-de-luz.html",
+    "nomeCurto": "Tarifa social da luz",
+    "titulo": "Tarifa social da conta de luz: como saber se você tem direito | LinkContas",
+    "metaDesc": "O que é a tarifa social da luz, quem tem direito, como ativar de graça no site da empresa e por que o desconto pode sumir da fatura.",
+    "h1": "Tarifa social da conta de luz: como saber se você tem direito",
+    "verificado": "24/11/2026",
+    "intro": [
+      "<p>A <strong>tarifa social</strong> é um desconto legal na conta de luz para famílias de baixa renda. Ela já existe em todo o Brasil, é gratuita e o desconto aparece direto na fatura — mas muita gente nem sabe que tem direito, ou perde o desconto sem entender por quê.</p>",
+      "<p>Neste artigo você entende o que é, quem pode ativar, o passo a passo para pedir no site da empresa e o que fazer se o desconto sumiu. Sem pagar nada e sem precisar de ninguém para \"apadrinhar\" o cadastro.</p>"
+    ],
+    "secoes": [
+      {
+        "h2": "O que é a tarifa social da luz",
+        "html": "<p>A tarifa social é um programa do governo federal, aplicado pelas distribuidoras de energia: quem tem renda baixa paga <strong>menos por kWh</strong> na conta. O desconto é aplicado automaticamente na fatura, todo mês, enquanto as condições continuarem valendo.</p><p>Ela não muda nada na sua ligação: a luz é a mesma, o medidor é o mesmo. Muda só o valor cobrado — para menos.</p>"
+      },
+      {
+        "h2": "Quem tem direito ao desconto",
+        "html": "<p>Em resumo, quem se enquadra:</p><ul><li><strong>Famílias inscritas no CadÚnico</strong> — o cadastro único do governo federal, usado pelos programas sociais, como o Bolsa Família.</li><li><strong>Consumo dentro do limite do programa</strong> — o desconto é pensado para lares que não gastam muita energia; quem consome muito pode sair da faixa.</li><li><strong>Dados atualizados</strong> — o cadastro precisa estar válido e vinculado ao CPF da titular da conta.</li></ul><p>Os critérios exatos (renda, número de pessoas no lar, consumo) podem mudar com o tempo. Por isso, a forma segura de saber é <strong>consultar na própria empresa</strong>: se você tem direito, o atendimento confirma em minutos.</p>"
+      },
+      {
+        "h2": "Passo a passo para ativar a tarifa social",
+        "html": "<ol><li>Confirme se o seu CPF (ou o da titular) está no CadÚnico — o atendimento da Caixa ou o posto de atendimento social pode conferir.</li><li>Entre no site oficial da sua empresa pela <a href=\"index.html#grid-empresas\">lista do LinkContas</a>.</li><li>Faça seu acesso e procure por <strong>Tarifa Social</strong>, <strong>Programa Social</strong> ou <strong>Desconto social</strong>.</li><li>Informe o CPF e o NIS (número do CadÚnico) da titular e envie os documentos que o site pedir.</li><li>Anote o <strong>protocolo</strong> e acompanhe a análise.</li><li>Com a aprovação, o desconto já aparece nas próximas faturas.</li></ol><p>Não sabe se está no CadÚnico ou travou no processo? <a href=\"contato.html\">Fale com a gente</a> — te indicamos o caminho oficial certo, sem custo.</p>"
+      },
+      {
+        "h2": "Por que o desconto pode parar de aparecer",
+        "html": "<p>O desconto sumiu da fatura? Confira estas causas comuns:</p><ul><li><strong>Cadastro desatualizado</strong> — o CadÚnico precisa de renovação periódica; se venceu, o desconto é suspenso.</li><li><strong>Mudança de titularidade</strong> — a conta mudou de nome e o vínculo com o cadastro se perdeu.</li><li><strong>Consumo acima do limite</strong> — se a família gastou mais que a faixa permitida, o desconto sai nesse mês.</li><li><strong>Saída do programa social</strong> — quem deixou de receber o benefício sai da tarifa social.</li></ul><p>Em todos os casos, a solução é a mesma: atualizar o cadastro e reativar o desconto no site da empresa.</p>"
+      },
+      {
+        "h2": "Atenção: a ativação é sempre gratuita",
+        "html": "<div class=\"alerta-golpe\"><p><strong>1. Ninguém cobra para ativar a tarifa social.</strong> Se uma pessoa ou site pedir dinheiro para \"colocar sua conta no programa\", é golpe.</p><p><strong>2. Não informe seus dados por WhatsApp desconhecido.</strong> A ativação é feita por você, no site oficial da empresa ou em atendimento presencial.</p><p><strong>3. Cuidado com quem promete \"tarifa social vitalícia\".</strong> O desconto depende da renda e do cadastro — precisa ser mantido atualizado.</p></div>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Quanto é o desconto da tarifa social?",
+        "a": "O tamanho do desconto varia conforme a empresa, o consumo e as regras vigentes do programa — por isso é melhor conferir direto na sua distribuidora, que mostra o valor na fatura."
+      },
+      {
+        "q": "Preciso pagar alguma coisa para ativar?",
+        "a": "Nunca. A ativação é gratuita e é feita por você no site oficial da empresa. Desconfie de qualquer cobrança por isso."
+      },
+      {
+        "q": "Recebo Bolsa Família, já tenho direito?",
+        "a": "Quem é beneficiário de programas sociais e está no CadÚnico é justamente o público da tarifa social. Falta só o passo de vincular o cadastro à sua conta de luz no site da empresa."
+      },
+      {
+        "q": "Por que meu desconto sumiu da fatura?",
+        "a": "As causas mais comuns são cadastro desatualizado no CadÚnico, mudança de titularidade ou consumo acima do limite. Atualize o cadastro e reative o desconto pelo site da empresa."
+      },
+      {
+        "q": "A tarifa social vale para a conta de água também?",
+        "a": "Para a água, há programas sociais em algumas empresas e estados — pergunte no canal oficial da sua empresa de água. No site da <a href=\"index.html#grid-empresas\">lista do LinkContas</a> você encontra o acesso a todas elas."
+      }
+    ],
+    "vejaTambem": [
+      {
+        "href": "como-economizar-conta-de-luz.html",
+        "texto": "Como economizar na conta de luz"
+      },
+      {
+        "href": "como-pagar-conta-de-luz-atrasada.html",
+        "texto": "Conta atrasada? Como negociar"
+      },
+      {
+        "href": "energisa.html",
+        "texto": "Energisa: atendimento e tarifas"
+      },
+      {
+        "href": "ceee.html",
+        "texto": "CEEE Equatorial: conta de luz (RS)"
+      },
+      {
+        "href": "celpe.html",
+        "texto": "Celpe: conta de luz (PE)"
+      },
+      {
+        "href": "contato.html",
+        "texto": "Fale conosco"
+      }
+    ]
+  },
+  {
+    "id": "conta-de-luz-negativada",
+    "arquivo": "conta-de-luz-negativada.html",
+    "nomeCurto": "Conta de luz negativada",
+    "titulo": "Conta de luz negativada no Serasa: como verificar e quitar | LinkContas",
+    "metaDesc": "Conta de luz negativada? Veja como saber se seu CPF foi negativado, como quitar ou parcelar a dívida e como remover o nome depois do pagamento.",
+    "h1": "Conta de luz negativada: como verificar e quitar a dívida",
+    "verificado": "24/11/2026",
+    "intro": [
+      "<p>Descobriu que sua conta de luz foi <strong>negativada</strong> e o nome está no Serasa? Não entre em pânico: dá para resolver — quitar, parcelar e até tirar o nome de volta. O importante é agir rápido, porque a negativação trava crédito, cartão e financiamento.</p>",
+      "<p>Neste artigo você entende o que é a negativação, como conferir se foi negativado, como regularizar a dívida no site da empresa e o que fazer se a cobrança for indevida.</p>"
+    ],
+    "secoes": [
+      {
+        "h2": "O que significa a conta de luz negativada",
+        "html": "<p>Quando uma dívida de energia fica muito tempo sem pagamento e todas as tentativas de cobrança falham, a empresa pode registrar o débito nos <strong>bureaus de crédito</strong> (como Serasa e Boa Vista). A partir daí, a negativação aparece na consulta do seu CPF.</p><p>Na prática, isso significa dificuldade para pegar empréstimo, parcelar compras e até alugar imóvel. Mas atenção: a negativação não é automática nem infinita — a empresa precisa seguir o processo, e <strong>pagando ou negociando, o nome sai</strong>.</p>"
+      },
+      {
+        "h2": "Como saber se seu CPF foi negativado",
+        "html": "<ol><li>Consulte seu CPF no site oficial do <strong>Serasa</strong> (serasa.com.br) — a consulta é gratuita e não precisa pagar nada.</li><li>Confira também o <strong>Boa Vista</strong> e o <strong>SPC</strong>, outros bancos de crédito usados por empresas.</li><li>Leia a consulta com atenção: ela mostra o nome da empresa credora, o valor e a data — assim você confirma se é mesmo a conta de luz.</li><li>Se aparecer a conta de luz, o próximo passo é regularizar direto na distribuidora.</li></ol><p>Quer entender melhor como a consulta funciona? Veja o nosso guia <a href=\"serasa.html\">Serasa: consultar pendências e negociar dívidas</a>.</p>"
+      },
+      {
+        "h2": "Como quitar ou parcelar a dívida",
+        "html": "<ol><li>Entre no site oficial da sua empresa pelos botões da <a href=\"index.html#grid-empresas\">lista do LinkContas</a>.</li><li>Faça seu acesso e procure por <strong>Regularização de débitos</strong>, <strong>Negociação</strong> ou <strong>Dívidas em aberto</strong>.</li><li>Veja as opções: quitar com desconto à vista ou parcelar em mais vezes — o valor de cada proposta aparece na tela.</li><li>Escolha a opção que cabe no seu bolso e <strong>pague a primeira parcela na hora</strong> (ou o valor total).</li><li>Guarde o comprovante: é a sua prova de regularização.</li></ol><p>Quanto antes negociar, melhores as condições. Depois que a negativação acontece, às vezes ainda dá para negociar com desconto — mas não espere piorar.</p>"
+      },
+      {
+        "h2": "Depois de pagar, quando o nome sai?",
+        "html": "<p>Depois do pagamento ou do acordo, a empresa informa o bureau de crédito e <strong>a restrição é removida em poucos dias</strong>. O passo a passo:</p><ul><li>Guarde o comprovante de pagamento ou o acordo.</li><li>Consulte o CPF de novo depois de alguns dias, para confirmar que a negativação saiu.</li><li>Se passar uma semana e o nome continuar lá, fale com a empresa pelo canal oficial informando o comprovante.</li><li>Se ainda assim não sair, registre reclamação no consumidor.gov.br com o comprovante anexado.</li></ul>"
+      },
+      {
+        "h2": "E se a negativação for indevida?",
+        "html": "<p>Negativaram você por engano, a conta já foi paga ou o valor está errado? Você pode e <strong>deve</strong> contestar:</p><ol><li>Entre em contato com a empresa pelo canal oficial e peça a <strong>retirada imediata</strong> do nome, informando as provas (comprovante de pagamento, protocolo).</li><li>Registre reclamação na <strong>ouvidoria da empresa</strong> e no <strong>consumidor.gov.br</strong>.</li><li>Se a negativação for mantida de forma injusta, você pode pedir a correção e, em caso de prejuízo, buscar uma indenização — para isso, guarde todas as provas e, se necessário, procure o Juizado Especial Cível (é gratuito).</li></ol>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Quanto tempo fica negativado depois de pagar a conta de luz?",
+        "a": "Assim que a empresa confirma o pagamento, ela informa o bureau e a restrição costuma sair em poucos dias. Se passar cerca de uma semana e o nome ainda aparecer, cobre a empresa com o comprovante em mãos."
+      },
+      {
+        "q": "Posso parcelar a conta de luz que foi negativada?",
+        "a": "Em geral, sim. Entre no site da empresa, procure Regularização ou Negociação e veja as parcelas disponíveis. Negociar e pagar a primeira parcela é o caminho mais rápido para regularizar."
+      },
+      {
+        "q": "A negativação trava o meu crédito?",
+        "a": "Sim. Enquanto o nome estiver negativado, é difícil contratar empréstimo, parcelar compras e até alugar imóvel. Por isso vale regularizar o quanto antes."
+      },
+      {
+        "q": "Quem negativa a minha conta: o Serasa ou a empresa?",
+        "a": "Quem registra a dívida é a empresa de energia. O Serasa (e os outros bureaus) apenas armazena e informa a informação na consulta do CPF."
+      },
+      {
+        "q": "Fui negativado sem nunca receber aviso. E agora?",
+        "a": "Peça à empresa a comprovação dos avisos e confira o valor com o histórico de faturas. Se a negativação for indevida, exija a retirada imediata e registre reclamação no consumidor.gov.br."
+      }
+    ],
+    "vejaTambem": [
+      {
+        "href": "como-pagar-conta-de-luz-atrasada.html",
+        "texto": "Conta de luz atrasada? Como pagar"
+      },
+      {
+        "href": "como-religar-energia-apos-corte.html",
+        "texto": "Energia cortada? Como religar"
+      },
+      {
+        "href": "serasa.html",
+        "texto": "Serasa: consultar e negociar dívidas"
+      },
+      {
+        "href": "como-contestar-conta-de-luz.html",
+        "texto": "Cobrança indevida? Como contestar"
+      },
+      {
+        "href": "contato.html",
+        "texto": "Fale conosco"
+      }
+    ]
+  },
+  {
+    "id": "como-ler-a-conta-de-luz",
+    "arquivo": "como-ler-a-conta-de-luz.html",
+    "nomeCurto": "Ler a conta de luz",
+    "titulo": "Como ler a conta de luz: entenda cada número da fatura | LinkContas",
+    "metaDesc": "Não entende a conta de luz? Veja o que significa cada campo: consumo em kWh, tarifa, faixas, leitura estimada, impostos e como conferir se está tudo certo.",
+    "h1": "Como ler a conta de luz: entenda cada número da fatura",
+    "verificado": "24/11/2026",
+    "intro": [
+      "<p>A conta de luz chega cheia de números e você assina sem olhar? Entender a fatura é mais fácil do que parece — e é a melhor forma de <strong>pegar erro de cobrança</strong> e <strong>descobrir onde economizar</strong>.</p>",
+      "<p>Neste artigo a gente explica, campo por campo, o que significa cada parte da conta: consumo, tarifa, faixas, leitura estimada, impostos e parcelas. No fim, você lê qualquer fatura sozinho.</p>"
+    ],
+    "secoes": [
+      {
+        "h2": "As partes da conta de luz",
+        "html": "<p>Toda fatura tem mais ou menos os mesmos blocos:</p><ul><li><strong>Cabeçalho</strong>: nome do titular, endereço, número da unidade consumidora (o código da sua casa) e o período de consumo.</li><li><strong>Leitura e consumo</strong>: a leitura anterior, a leitura atual e a diferença entre as duas — que é o seu <strong>consumo em kWh</strong>.</li><li><strong>Tarifa</strong>: o valor de cada kWh. Às vezes há mais de uma tarifa (faixas), e a conta soma as partes.</li><li><strong>Impostos e encargos</strong>: os tributos que entram no valor final.</li><li><strong>Parcelas e negociações</strong>: se você tem dívida parcelada, ela aparece aqui — é o primeiro lugar para olhar quando a conta muda de valor.</li><li><strong>Taxa de iluminação pública</strong>: em várias cidades, um valor definido pela prefeitura vem na fatura.</li><li><strong>Vencimento e formas de pagamento</strong>: data, Pix, boleto e cartão.</li></ul>"
+      },
+      {
+        "h2": "Como calcular o seu consumo",
+        "html": "<p>O cálculo é uma subtração:</p><p><strong>Leitura atual − leitura anterior = consumo do mês (em kWh)</strong></p><p>Se a leitura anterior era 1.240 e a atual é 1.310, você consumiu 70 kWh no mês. Para conferir o valor, multiplique o consumo pela tarifa e compare com o total da fatura — dá uma diferença pequena por causa dos impostos, mas nada absurdo.</p><p>O kWh é a unidade de energia: é o que um aparelho de 1.000 watts gasta em 1 hora. Um chuveiro elétrico (7.000 watts) ligado por uns 8 minutos já gasta cerca de 1 kWh.</p>"
+      },
+      {
+        "h2": "Faixas de consumo: por que passar de faixa encarece",
+        "html": "<p>Em várias distribuidoras, a tarifa é dividida em <strong>faixas</strong>: a primeira faixa (menos consumo) tem um preço e, quando você passa do limite, a parte que ultrapassa sai mais cara. Por isso, dois meses com o mesmo uso podem dar valores diferentes.</p><p>É também por isso que economizar pouca coisa às vezes faz diferença grande: se você cair para a faixa mais barata, todos os kWh do mês passam a valer menos.</p><p>Se a sua conta tem faixas, o valor de cada uma aparece na linha da tarifa. Confira nos últimos meses se você andou subindo de faixa.</p>"
+      },
+      {
+        "h2": "Leitura estimada: como identificar",
+        "html": "<p>Quando a empresa não consegue ler o medidor (obras, porta trancada, medidor difícil), ela cobra uma <strong>estimativa</strong> — um valor calculado com base no seu consumo médio dos meses anteriores.</p><p>Como identificar: a fatura vem marcada com a letra <strong>E</strong> ou com o texto \"leitura estimada\". O problema é que a estimativa pode errar para cima. Depois, quando a leitura real acontece, a diferença é compensada na fatura seguinte.</p><p>Dica: muitas empresas têm <strong>autoleitura</strong> — você tira uma foto do medidor e envia pelo app ou site, e a estimativa é evitada. Vale ativar.</p>"
+      },
+      {
+        "h2": "Quando desconfiar de um erro na conta",
+        "html": "<p>Peça uma revisão se:</p><ul><li>O valor está <strong>muito acima</strong> do habitual, sem explicação (mesma rotina, mesma casa).</li><li>A leitura da fatura <strong>não bate</strong> com a do seu medidor.</li><li>O consumo subiu de forma estranha <strong>de um mês para o outro</strong>.</li><li>Aparece cobrança que você <strong>não reconhece</strong> (taxa, multa, parcela antiga).</li></ul><p>Nesses casos, <a href=\"como-contestar-conta-de-luz.html\">veja como contestar a conta de luz</a> — é grátis e a empresa é obrigada a responder. E para pegar a fatura antiga e comparar, use a <a href=\"como-tirar-2-via-conta-de-luz.html\">2ª via da conta de luz</a>.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "O que significa kWh na conta de luz?",
+        "a": "É a unidade de energia consumida — o que a empresa cobra. É a diferença entre a leitura atual e a anterior do medidor da sua casa."
+      },
+      {
+        "q": "Como sei se a conta está correta?",
+        "a": "Compare a leitura da fatura com a do seu medidor, confira o consumo dos meses anteriores e veja se entrou alguma parcela ou cobrança nova. Se não bater, conteste."
+      },
+      {
+        "q": "Por que a conta subiu sem eu mudar nada?",
+        "a": "As causas comuns: reajuste de tarifa, leitura estimada compensando mês baixo, aparelho com defeito ou entrada em faixa de consumo mais cara."
+      },
+      {
+        "q": "O que é a taxa de iluminação pública?",
+        "a": "É uma cobrança municipal que vem na fatura e mantém as ruas iluminadas. O valor é definido pela prefeitura — se parecer errado, confira na prefeitura da sua cidade."
+      },
+      {
+        "q": "A leitura da conta tem que bater com o medidor?",
+        "a": "Sim. Se a leitura impressa for diferente da do medidor, pode haver erro — tire uma foto e conteste a fatura."
+      }
+    ],
+    "vejaTambem": [
+      {
+        "href": "como-tirar-2-via-conta-de-luz.html",
+        "texto": "Como tirar a 2ª via da conta de luz"
+      },
+      {
+        "href": "como-contestar-conta-de-luz.html",
+        "texto": "Conta com erro? Como contestar"
+      },
+      {
+        "href": "como-economizar-conta-de-luz.html",
+        "texto": "Como economizar na conta de luz"
+      },
+      {
+        "href": "enel-sp.html",
+        "texto": "Enel SP: área do cliente"
+      },
+      {
+        "href": "cemig.html",
+        "texto": "CEMIG: faturas (MG)"
+      },
+      {
+        "href": "artigos.html",
+        "texto": "Todos os artigos do site"
+      }
+    ]
+  },
+  {
+    "id": "como-trocar-de-operadora-levando-o-numero",
+    "arquivo": "como-trocar-de-operadora-levando-o-numero.html",
+    "nomeCurto": "Trocar de operadora",
+    "titulo": "Como trocar de operadora levando o número (portabilidade) | LinkContas",
+    "metaDesc": "Portabilidade: como trocar de operadora mantendo o número de telefone, é pago, quanto demora e o que fazer antes de cancelar a linha antiga.",
+    "h1": "Como trocar de operadora levando o número",
+    "verificado": "24/11/2026",
+    "intro": [
+      "<p>Quer trocar de operadora, mas <strong>não quer perder o número</strong>? É direito seu: chama-se <strong>portabilidade</strong>, é <strong>gratuita</strong> e o pedido é feito na operadora que você escolheu — sem precisar avisar a antiga.</p>",
+      "<p>Neste artigo você vê o passo a passo completo, o que fazer (e o que não fazer) antes de cancelar a linha, e como evitar perder o número na hora da troca.</p>"
+    ],
+    "secoes": [
+      {
+        "h2": "O que é a portabilidade do número",
+        "html": "<p>Portabilidade é a mudança de operadora <strong>mantendo o mesmo número de telefone</strong>. Ela é regulada pela Anatel e é gratuita para você — não existe cobrança para pedir nem para receber o número novo.</p><p>O pedido é feito <strong>na operadora nova</strong>: você informa o número atual e o CPF, e a troca acontece em poucos dias úteis. Quando concluída, a linha antiga para de funcionar e a nova entra no lugar — com o mesmo número, no chip novo.</p>"
+      },
+      {
+        "h2": "Passo a passo para trocar mantendo o número",
+        "html": "<ol><li><strong>Escolha a nova operadora e o plano</strong> (pré-pago ou pós-pago). Compare no site antes de decidir.</li><li><strong>Peda a portabilidade</strong> — no site, aplicativo ou loja da operadora nova, informando o número e o CPF do titular.</li><li><strong>Não cancele a linha antiga!</strong> Aguarde a portabilidade concluir: se a linha for cancelada antes, o número pode voltar para a operadora antiga e você perde ele.</li><li><strong>Receba o chip novo</strong> e ative conforme a instrução da operadora.</li><li><strong>Confira se funcionou</strong>: faça uma ligação e receba uma do número antigo. Quando tudo ok, pode encerrar o contrato antigo.</li></ol><p>A operadora avisa por SMS ou e-mail quando a portabilidade é concluída — esse é o momento de trocar o chip.</p>"
+      },
+      {
+        "h2": "Pré-pago, pós-pago e fidelidade: o que saber",
+        "html": "<ul><li><strong>Pré-pago</strong>: a portabilidade funciona igual. Atenção: o saldo e os bônus da linha antiga <strong>não migram</strong> — use antes de trocar.</li><li><strong>Pós-pago</strong>: confira se há pendências de pagamento. Débitos em aberto podem complicar o processo — quite ou negocie antes.</li><li><strong>Fidelidade</strong>: só existe multa se você contratou com <strong>aparelho subsidiado</strong> (celular com desconto). Sem aparelho, não tem multa — pode trocar. Se tem, o valor da multa é proporcional ao que falta.</li><li><strong>Linha fixa (telefone de casa)</strong>: a portabilidade também existe para o número fixo.</li></ul><p>Não tem certeza se está na fidelidade? Confira o contrato ou pergunte para a operadora antiga antes de pedir a troca.</p>"
+      },
+      {
+        "h2": "Quanto tempo demora a troca",
+        "html": "<p>O prazo da portabilidade é curto: na prática, a maioria das trocas acontece <strong>em poucos dias úteis</strong> após o pedido. A própria operadora informa o prazo no momento da solicitação.</p><p>Enquanto isso, sua linha antiga continua funcionando normalmente — não fique sem telefone esperando. Quando a portabilidade concluir, você recebe o aviso e ativa o chip novo.</p>"
+      },
+      {
+        "h2": "Atenção: 3 dicas para não cair em golpe",
+        "html": "<div class=\"alerta-golpe\"><p><strong>1. A portabilidade é grátis.</strong> Se alguém pedir dinheiro para \"liberar o número\" ou \"fazer a troca\", é golpe.</p><p><strong>2. Cuidado com quem pede dados por mensagem.</strong> CPF e código de chip só na loja ou site oficial da operadora.</p><p><strong>3. Não clique em link de SMS \"destravando\" seu número.</strong> Digite o endereço do site você mesmo ou vá ao canal oficial.</p></div>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Trocar de operadora mantendo o número é pago?",
+        "a": "Não. A portabilidade é gratuita e garantida pela Anatel. Qualquer cobrança por isso é golpe."
+      },
+      {
+        "q": "Quanto tempo demora a portabilidade?",
+        "a": "Em geral, poucos dias úteis. A operadora nova informa o prazo no pedido e avisa por SMS ou e-mail quando a troca é concluída."
+      },
+      {
+        "q": "Posso trocar se estou em fidelidade?",
+        "a": "Se você não pegou aparelho com desconto, não há multa e pode trocar. Se há aparelho subsidiado, confira o contrato: a multa é proporcional ao que resta do período."
+      },
+      {
+        "q": "Posso cancelar a operadora antiga antes de a portabilidade concluir?",
+        "a": "Não — espere a troca terminar. Se a linha antiga for cancelada antes, o número pode voltar ao acervo da operadora e você perde ele."
+      },
+      {
+        "q": "Meu plano é pré-pago, funciona igual?",
+        "a": "Sim. A única diferença é que saldo e bônus não migram: use o que resta antes de trocar o chip."
+      }
+    ],
+    "vejaTambem": [
+      {
+        "href": "como-cancelar-internet.html",
+        "texto": "Como cancelar a internet sem dor"
+      },
+      {
+        "href": "internet-lenta-o-que-fazer.html",
+        "texto": "Internet lenta? Testes antes de trocar"
+      },
+      {
+        "href": "vivo.html",
+        "texto": "Vivo: contas e atendimento"
+      },
+      {
+        "href": "claro.html",
+        "texto": "Claro: contas e atendimento"
+      },
+      {
+        "href": "tim.html",
+        "texto": "TIM: contas e atendimento"
+      },
+      {
+        "href": "oi.html",
+        "texto": "Oi: contas e atendimento"
+      }
+    ]
+  },
+  {
+    "id": "como-cancelar-internet",
+    "arquivo": "como-cancelar-internet.html",
+    "nomeCurto": "Cancelar a internet",
+    "titulo": "Como cancelar a internet: passo a passo e seus direitos | LinkContas",
+    "metaDesc": "Quer cancelar a internet? Veja como fazer, quando a multa de fidelidade é legal, como devolver o modem e o que fazer se a operadora recusar.",
+    "h1": "Como cancelar a internet: passo a passo e seus direitos",
+    "verificado": "24/11/2026",
+    "intro": [
+      "<p>Cancelar a internet pode parecer uma briga, mas <strong>não precisa ser</strong>: existe um caminho certo, seus direitos estão do seu lado e a operadora é obrigada a atender o pedido. O segredo é fazer tudo <strong>por escrito e com protocolo</strong>.</p>",
+      "<p>Neste artigo você vê o passo a passo para cancelar, quando a multa de fidelidade é legal, o que fazer com o modem emprestado e como agir se a operadora dificultar.</p>"
+    ],
+    "secoes": [
+      {
+        "h2": "Seus direitos ao cancelar",
+        "html": "<ul><li><strong>Arrependimento em 7 dias</strong>: se você contratou à distância (pelo site, telefone ou aplicativo), pode cancelar em até 7 dias da contratação, sem pagar nada — é o direito de arrependimento do Código de Defesa do Consumidor.</li><li><strong>Sem \"trava\" no cancelamento</strong>: a operadora não pode criar obstáculos — se o contrato foi feito online, o cancelamento também precisa ser possível por canais acessíveis.</li><li><strong>Informação clara de multa</strong>: qualquer cobrança de fidelidade precisa estar no contrato que você assinou, com o valor explicado.</li></ul>"
+      },
+      {
+        "h2": "Passo a passo para cancelar sem dor de cabeça",
+        "html": "<ol><li><strong>Reúna as informações</strong>: CPF do titular, número do cliente e, se tiver, o contrato.</li><li><strong>Escolha o canal oficial</strong> da operadora — site, aplicativo, SAC ou loja. Use os links da <a href=\"index.html#grid-empresas\">lista do LinkContas</a>.</li><li><strong>Pedido por escrito</strong>: prefira formulário ou mensagem (fica registrado). Diga: \"quero cancelar o contrato de internet, titular [nome], nº [cliente]\".</li><li><strong>Anote o protocolo</strong> e a data. É a sua prova.</li><li><strong>Devolva os equipamentos emprestados</strong> (modem/roteador) e guarde o comprovante de devolução.</li><li><strong>Confira a fatura final</strong>: nenhum valor deve entrar depois do cancelamento confirmado.</li></ol>"
+      },
+      {
+        "h2": "Fidelidade e multa: quando é legal",
+        "html": "<p>A multa de fidelidade <strong>só existe quando há cláusula no contrato</strong> — e, na prática, quase sempre ela está ligada a uma <strong>promoção ou aparelho com desconto</strong>. Confira:</p><ul><li><strong>Sem cláusula no contrato</strong>: não há multa.</li><li><strong>Com cláusula e dentro do período</strong>: a multa é cobrada de forma proporcional ao que falta para acabar a fidelidade.</li><li><strong>Contratou há menos de 7 dias e à distância</strong>: pode cancelar sem multa nesse prazo.</li><li><strong>A operadora não informou a multa antes</strong>: você pode contestar a cobrança.</li></ul><p>Peça sempre a <strong>memória de cálculo</strong> da multa: como ela foi chegada naquele valor. Se não derem, é motivo para reclamar.</p>"
+      },
+      {
+        "h2": "Equipamentos emprestados: modem e roteador",
+        "html": "<p>Muitos planos deixam o modem e o roteador em empréstimo — eles são da operadora e precisam voltar. Na hora do cancelamento:</p><ol><li>Pergunte no canal oficial <strong>onde devolver</strong> e em quanto tempo.</li><li>Leve o equipamento com o <strong>acessório de alimentação</strong> (a \"fonte\"), se tiver.</li><li>Receba o <strong>comprovante de devolução</strong> — sem ele, a operadora pode cobrar depois.</li><li>Confira se a cobrança dos equipamentos saiu da fatura final.</li></ol>"
+      },
+      {
+        "h2": "Recusaram ou dificultaram o cancelamento?",
+        "html": "<p>Se a operadora se recusar, sumir com o pedido ou inventar dificuldade:</p><ol><li>Guarde todos os protocolos e prints de tela.</li><li><strong>Abra reclamação na ouvidoria da própria empresa</strong> e aguarde a resposta formal.</li><li>Registre no <strong>consumidor.gov.br</strong> — a empresa é obrigada a responder.</li><li><strong>Reclame à Anatel</strong>, a reguladora de telecomunicações, pelo portal oficial dela.</li><li>Se nada resolver, o <strong>Juizado Especial Cível</strong> é gratuito e não precisa de advogado.</li></ol>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Posso cancelar a internet em 7 dias sem pagar nada?",
+        "a": "Se a contratação foi à distância (site, telefone, aplicativo), sim: são 7 dias corridos para arrependimento sem custo. Depois desse prazo, valem as regras do contrato."
+      },
+      {
+        "q": "Quando a multa de fidelidade é legal?",
+        "a": "Quando ela está prevista no contrato que você assinou, normalmente em troca de desconto ou aparelho. O valor cobrado é proporcional ao período que falta."
+      },
+      {
+        "q": "Como devolver o modem da operadora?",
+        "a": "No ponto de atendimento indicado pela operadora, com todos os acessórios. Peça e guarde o comprovante de devolução — é a sua prova."
+      },
+      {
+        "q": "A operadora pode recusar meu cancelamento?",
+        "a": "Não. Se recusar ou dificultar, guarde os protocolos e reclame na ouvidoria da empresa, no consumidor.gov.br e na Anatel."
+      },
+      {
+        "q": "Cancelando a internet, perco o número do telefone fixo?",
+        "a": "O número do fixo pode ser levado para outra operadora por portabilidade — faça o pedido na operadora nova antes de encerrar o contrato antigo."
+      }
+    ],
+    "vejaTambem": [
+      {
+        "href": "como-trocar-de-operadora-levando-o-numero.html",
+        "texto": "Trocar de operadora mantendo o número"
+      },
+      {
+        "href": "internet-lenta-o-que-fazer.html",
+        "texto": "Internet lenta? Testes antes de trocar"
+      },
+      {
+        "href": "vivo.html",
+        "texto": "Vivo: contas e atendimento"
+      },
+      {
+        "href": "oi.html",
+        "texto": "Oi: contas e atendimento"
+      },
+      {
+        "href": "claro.html",
+        "texto": "Claro: contas e atendimento"
+      },
+      {
+        "href": "contato.html",
+        "texto": "Fale conosco"
+      }
+    ]
+  },
+  {
+    "id": "internet-lenta-o-que-fazer",
+    "arquivo": "internet-lenta-o-que-fazer.html",
+    "nomeCurto": "Internet lenta",
+    "titulo": "Internet lenta: o que fazer antes de trocar de plano | LinkContas",
+    "metaDesc": "Internet lenta em casa? Faça os testes certos para descobrir se o problema é do wifi, do roteador ou da operadora — e como reclamar com protocolo.",
+    "h1": "Internet lenta: o que fazer antes de trocar de plano",
+    "verificado": "24/11/2026",
+    "intro": [
+      "<p>A internet está lenta e a primeira vontade é trocar de plano — mas calma: em muitos casos o problema <strong>não é a velocidade contratada</strong>, e sim o wifi, o roteador ou o horário de pico. Antes de gastar mais, faça os testes certos.</p>",
+      "<p>Neste artigo você aprende a descobrir onde está o problema em três passos, a melhorar o sinal da casa e a reclamar certo quando a culpa é mesmo da operadora.</p>"
+    ],
+    "secoes": [
+      {
+        "h2": "Por que a internet fica lenta",
+        "html": "<ul><li><strong>Sinal wifi fraco</strong> — distância do roteador, paredes grossas e andares diferentes derrubam a velocidade.</li><li><strong>Muitos aparelhos ligados ao mesmo tempo</strong> — celular, TV, notebook e console dividindo a mesma conexão.</li><li><strong>Horário de pico</strong> — à noite, quando todo mundo está em casa, a rede sofre mais.</li><li><strong>Roteador antigo ou mal posicionado</strong> — no canto do armário, ele não espalha o sinal.</li><li><strong>Plano menor do que a sua necessidade</strong> — aí sim, vale pensar em trocar.</li><li><strong>Problema na rede da operadora</strong> — se a velocidade entregue está bem abaixo da contratada.</li></ul>"
+      },
+      {
+        "h2": "Teste em 3 passos para descobrir o culpado",
+        "html": "<ol><li><strong>Reinicie o roteador</strong> — desligue, espere 1 minuto e ligue de novo. Muita gente resolve o problema aí.</li><li><strong>Conecte um computador no cabo</strong> (direto no roteador) e faça um teste de velocidade. Se no cabo está bom e no wifi está ruim, o problema é o sinal da casa.</li><li><strong>Compare com o contratado</strong> e repita o teste em outro horário. Se está lento nos dois modos e em vários horários, o problema é da operadora.</li></ol><p>Repare: esses testes eliminam metade das dúvidas — e te dão argumentos na reclamação.</p>"
+      },
+      {
+        "h2": "Como melhorar o wifi em casa",
+        "html": "<ul><li><strong>Posicione o roteador no centro da casa</strong>, elevado (em uma prateleira) e longe de metal, micro-ondas e paredes grossas.</li><li><strong>Separe as redes</strong>: a de 2,4 GHz vai mais longe; a de 5 GHz é mais rápida perto. Use a certa para cada aparelho.</li><li><strong>Atualize o firmware</strong> do roteador — correções de segurança e desempenho saem em atualizações.</li><li><strong>Reduza aparelhos conectados</strong> — TVs em streaming, tablets e celulares em espera consomem banda.</li><li><strong>Use um repetidor ou mesh</strong> se a casa for grande ou tiver pontos sem sinal.</li></ul><p>Depois de mexer, repita o teste: se melhorou, era isso — e você evitou trocar de plano à toa.</p>"
+      },
+      {
+        "h2": "Quando o problema é mesmo da operadora",
+        "html": "<p>Se o teste no cabo está longe do contratado em vários horários, é hora de reclamar — do jeito certo:</p><ol><li>Abra chamado no site ou aplicativo da operadora (canais da <a href=\"index.html#grid-empresas\">lista do LinkContas</a>).</li><li>Informe o <strong>valor contratado</strong> e os <strong>resultados dos seus testes</strong>, com data e hora.</li><li>Peça um <strong>prazo</strong> e anote o protocolo.</li><li>Se não resolver, registre reclamação no <strong>consumidor.gov.br</strong> — e, se persistir, na Anatel, a reguladora de telecomunicações.</li></ol><p>Reclamar com dados é muito mais eficiente do que só dizer \"está lento\": a empresa consegue verificar a rede com o que você informou.</p>"
+      },
+      {
+        "h2": "Vale a pena trocar de plano ou de operadora?",
+        "html": "<p>Depois dos testes e das reclamações, se a velocidade contratada ainda não atende sua casa, compare as opções:</p><ul><li><strong>Quantas pessoas usam</strong> e para quê (vídeo, jogos, trabalho remoto).</li><li><strong>Velocidade real</strong> dos planos — não só o número do anúncio.</li><li><strong>Fidelidade e equipamento</strong> do plano atual (veja <a href=\"como-cancelar-internet.html\">como cancelar a internet</a>).</li><li><strong>Leve o número junto</strong> se tiver telefone fixo — a <a href=\"como-trocar-de-operadora-levando-o-numero.html\">portabilidade</a> é gratuita.</li></ul><p>Na nossa lista você encontra as empresas de internet atendidas: <a href=\"vivo.html\">Vivo</a>, <a href=\"brisanet.html\">Brisanet</a>, <a href=\"gigamaisfibra.html\">Gigamais</a> e outras.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Qual velocidade de internet preciso ter?",
+        "a": "Depende do uso: para navegar e assistir em uma tela, dezenas de Mbps bastam; para casa com várias telas, streaming em alta definição e jogos, quanto mais melhor. Repare na velocidade real dos testes, não só na do anúncio."
+      },
+      {
+        "q": "Meu plano é de 100 Mbps e vem muito menos. E agora?",
+        "a": "Faça o teste com computador no cabo, em horários diferentes. Se a velocidade estiver bem abaixo do contratado, abra chamado com protocolo e informe os testes; se não resolver, reclame no consumidor.gov.br e na Anatel."
+      },
+      {
+        "q": "Reiniciar o roteador realmente ajuda?",
+        "a": "Sim, com frequência. O roteador acumula uso e pode travar. Reiniciar limpa a memória e costuma melhorar o desempenho — vale tentar antes de qualquer coisa."
+      },
+      {
+        "q": "Qual a diferença entre 2,4 GHz e 5 GHz?",
+        "a": "A rede de 2,4 GHz alcança mais longe e atravessa paredes melhor, mas é mais lenta. A de 5 GHz é mais rápida e ideal para perto do roteador. O ideal é usar as duas, conforme o aparelho."
+      },
+      {
+        "q": "Trocando de operadora, perco o número de telefone?",
+        "a": "Se o seu plano tem telefone fixo, o número pode ser levado para a outra operadora por portabilidade — pedindo na operadora nova antes de cancelar o contrato antigo."
+      }
+    ],
+    "vejaTambem": [
+      {
+        "href": "como-cancelar-internet.html",
+        "texto": "Como cancelar a internet"
+      },
+      {
+        "href": "como-trocar-de-operadora-levando-o-numero.html",
+        "texto": "Trocar de operadora mantendo o número"
+      },
+      {
+        "href": "brisanet.html",
+        "texto": "Brisanet: internet (PE/BA)"
+      },
+      {
+        "href": "gigamaisfibra.html",
+        "texto": "Gigamais: fibra (CE)"
+      },
+      {
+        "href": "vivo.html",
+        "texto": "Vivo: internet e contas"
+      },
+      {
+        "href": "artigos.html",
+        "texto": "Todos os artigos do site"
+      }
+    ]
+  },
+  {
+    "id": "como-fazer-ligacao-nova-de-energia",
+    "arquivo": "como-fazer-ligacao-nova-de-energia.html",
+    "nomeCurto": "Ligação nova de energia",
+    "titulo": "Como fazer ligação nova de energia elétrica | LinkContas",
+    "metaDesc": "Casa nova ou imóvel desativado? Passo a passo para pedir ligação nova de luz, documentos, taxa e prazo — e como pedir a água junto.",
+    "h1": "Como fazer ligação nova de energia elétrica",
+    "verificado": "24/11/2026",
+    "intro": [
+      "<p>Comprou ou alugou um imóvel e a <strong>luz está desligada</strong>? O processo se chama <strong>ligação nova</strong> (ou religação de imóvel desativado) e é pedido no site da empresa de energia da sua região — sem precisar sair de casa.</p>",
+      "<p>Neste artigo você vê quando se pede, o que ter em mãos, o passo a passo, quanto costuma custar e como adiantar também a ligação de água.</p>"
+    ],
+    "secoes": [
+      {
+        "h2": "O que é ligação nova e quando se pede",
+        "html": "<p>A ligação nova serve para dois casos:</p><ul><li><strong>Imóvel novo</strong> — construção ou endereço que nunca teve energia.</li><li><strong>Imóvel desativado</strong> — a ligação foi desligada há tempo (casa vazia, imóvel parado) e precisa ser reativada.</li></ul><p>Se a luz está no nome de outra pessoa e você só quer <strong>mudar o titular</strong>, não é ligação nova — é transferência de titularidade. Confira o guia <a href=\"como-transferir-conta-de-luz-para-outro-nome.html\">Como transferir a conta de luz para o nome de outra pessoa</a>.</p>"
+      },
+      {
+        "h2": "O que você precisa ter em mãos",
+        "html": "<ul><li><strong>CPF do solicitante</strong> (titular).</li><li><strong>Documento do imóvel</strong> — escritura, matrícula, contrato de aluguel ou outro documento que comprove a posse.</li><li><strong>Comprovante de residência</strong> ou o endereço completo com CEP.</li><li><strong>Telefone e e-mail</strong> para receber as atualizações.</li><li><strong>Conhecimento da empresa da sua cidade</strong> — a distribuidora é por região, não por escolha: veja na <a href=\"index.html#grid-empresas\">lista do LinkContas</a>.</li></ul>"
+      },
+      {
+        "h2": "Passo a passo para pedir",
+        "html": "<ol><li>Descubra a <strong>empresa de energia da sua cidade</strong> na <a href=\"index.html#grid-empresas\">lista do LinkContas</a> e clique no botão oficial.</li><li>Faça seu acesso com CPF e senha.</li><li>Procure por <strong>Ligação nova</strong>, <strong>Nova ligação</strong>, <strong>Ativação</strong> ou <strong>Reativação</strong>.</li><li>Preencha o endereço completo, informe o tipo de imóvel (residencial ou comercial) e anexe os documentos pedidos.</li><li>Confira o valor da taxa (se houver) e pague pela forma indicada no site.</li><li>Envie e anote o <strong>número do protocolo</strong> — é com ele que você acompanha o andamento.</li></ol>"
+      },
+      {
+        "h2": "Quanto custa e quanto tempo leva",
+        "html": "<p><strong>O custo</strong>: existe uma <strong>taxa de ligação nova</strong>, que é regulada e muda conforme a empresa e o tipo de ligação. O valor aparece no site antes de você confirmar — desconfie de cobrança \"por fora\", por telefone ou mensagem, é golpe.</p><p><strong>O prazo</strong>: quando não há obra na rede, a ligação costuma sair em poucos dias úteis. Se for preciso estender a rede até o imóvel (obra externa), pode levar mais tempo — a empresa informa o prazo depois de recebido o pedido.</p><p>Dica: peça a ligação assim que fechar a mudança. Assim você evita ficar sem luz nos primeiros dias no imóvel.</p>"
+      },
+      {
+        "h2": "E a ligação nova de água?",
+        "html": "<p>A lógica é a mesma: a empresa de água da sua região recebe o pedido, cobra a taxa (quando houver) e agenda a ligação. Os documentos também são parecidos (CPF, documento do imóvel, endereço).</p><p>Empresas de água atendidas no LinkContas: <a href=\"sabesp.html\">Sabesp</a> (SP), <a href=\"copasa.html\">Copasa</a> (MG), <a href=\"sanepar.html\">Sanepar</a> (PR), <a href=\"embasa.html\">Embasa</a> (BA) e <a href=\"cedae.html\">Cedae</a> (RJ). Faça os dois pedidos junto, antes da mudança.</p>"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Ligação nova de luz é grátis?",
+        "a": "Não. Existe uma taxa de ligação nova, regulada, e o valor aparece no site da empresa antes do pagamento. Desconfie de qualquer cobrança extra pedida por telefone ou mensagem."
+      },
+      {
+        "q": "Preciso de contrato ou advogado para pedir a ligação?",
+        "a": "Não. Basta o CPF do solicitante, o documento do imóvel e o endereço. Todo o processo é feito no site da empresa."
+      },
+      {
+        "q": "Quanto tempo demora para ligar a luz em casa nova?",
+        "a": "Sem obra na rede, costuma ser poucos dias úteis. Se for preciso estender a rede até o imóvel, demora mais — a empresa informa o prazo depois do pedido."
+      },
+      {
+        "q": "A luz está no nome de outra pessoa. Faço ligação nova?",
+        "a": "Não. Quando já existe ligação ativa, o processo é transferência de titularidade — veja o guia de transferência da conta de luz."
+      },
+      {
+        "q": "Posso pedir a água junto com a luz?",
+        "a": "Sim. Faça o pedido na empresa de energia e na empresa de água da sua região, com os mesmos documentos — idealmente antes da mudança."
+      }
+    ],
+    "vejaTambem": [
+      {
+        "href": "como-transferir-conta-de-luz-para-outro-nome.html",
+        "texto": "Já tem luz? Como transferir a titularidade"
+      },
+      {
+        "href": "como-tirar-2-via-conta-de-luz.html",
+        "texto": "Como tirar a 2ª via da conta de luz"
+      },
+      {
+        "href": "enel-sp.html",
+        "texto": "Enel SP: atendimento"
+      },
+      {
+        "href": "sabesp.html",
+        "texto": "Sabesp: ligação de água (SP)"
       },
       {
         "href": "contato.html",

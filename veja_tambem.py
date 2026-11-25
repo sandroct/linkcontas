@@ -8,8 +8,9 @@ Fonte única usada por:
 
 Regra de relevância:
   - energia   -> os 4 artigos de conta de luz + índice de artigos
-  - agua/telefone/internet -> 2 empresas irmãs da mesma categoria (girando
-    a escolha para variar os links entre as páginas) + índice de artigos
+  - agua      -> 2 irmãs + artigos de água (2ª via e atrasada) + índice
+  - telefone  -> 2 irmãs + artigos de troca de operadora/cancelar + índice
+  - internet  -> 2 irmãs + artigos de internet lenta/cancelar + índice
   - consultas (e categorias futuras) -> índice de artigos + FAQ
 """
 import os
@@ -23,6 +24,30 @@ ARTIGOS_LUZ = [
      "Como contestar uma conta de luz alta ou errada"),
     ("como-transferir-conta-de-luz-para-outro-nome.html",
      "Como transferir a conta de luz para o nome de outra pessoa"),
+    ("artigos.html", "Ver todos os artigos do LinkContas"),
+]
+
+ARTIGOS_AGUA = [
+    ("como-tirar-2-via-conta-de-agua.html",
+     "Como tirar a 2ª via da conta de água pela internet"),
+    ("como-pagar-conta-de-agua-atrasada.html",
+     "Como pagar a conta de água atrasada sem cortar"),
+    ("artigos.html", "Ver todos os artigos do LinkContas"),
+]
+
+ARTIGOS_TELEFONE = [
+    ("como-trocar-de-operadora-levando-o-numero.html",
+     "Como trocar de operadora levando o número"),
+    ("como-cancelar-internet.html",
+     "Como cancelar a internet sem dor de cabeça"),
+    ("artigos.html", "Ver todos os artigos do LinkContas"),
+]
+
+ARTIGOS_INTERNET = [
+    ("internet-lenta-o-que-fazer.html",
+     "Internet lenta? Testes antes de trocar de plano"),
+    ("como-cancelar-internet.html",
+     "Como cancelar a internet sem dor de cabeça"),
     ("artigos.html", "Ver todos os artigos do LinkContas"),
 ]
 
@@ -64,11 +89,13 @@ def montar_veja_tambem(categoria_slug, arquivo):
         grupo = IRMAOS[cat]
         idx = next((i for i, (f, _) in enumerate(grupo) if f == arq), 0)
         n = len(grupo)
-        links = [
-            grupo[(idx + 1) % n],
-            grupo[(idx + 2) % n],
-            ("artigos.html", "Ver todos os artigos do LinkContas"),
-        ]
+        irmas = [grupo[(idx + 1) % n], grupo[(idx + 2) % n]]
+        if cat == "agua":
+            links = irmas + list(ARTIGOS_AGUA)
+        elif cat == "telefone":
+            links = irmas + list(ARTIGOS_TELEFONE)
+        else:  # internet
+            links = irmas + list(ARTIGOS_INTERNET)
     else:
         links = [
             ("artigos.html", "Ver todos os artigos do LinkContas"),
