@@ -1,7 +1,22 @@
 # HANDOFF — LinkContas (pague-facil)
 
 > Documento de progresso para continuidade entre sessões de agente.
-> **Atualizado em: 19/11/2026 (Etapa 3 SEO — commit `4631084`)**
+> **Atualizado em: 25/11/2026 (Etapa 4 — expansão de artigos — commits `8b75334` + `7b9b5f2`)**
+
+## 📝 Etapa 4 — +12 artigos para reverter "Conteúdo de baixo valor" do AdSense (25/11/2026)
+- **Contexto**: em 24/11 a revisão do AdSense mudou para "Requer atenção — Conteúdo de baixo valor" (o ads.txt já está "Autorizado"). Resposta aprovada pelo usuário: **expandir o conteúdo original** — de 4 para **16 artigos**.
+- **12 artigos novos** (mesma fórmula: H1 + 2 parágrafos de intro + 4–5 H2s + 5 FAQs com FAQPage schema + bloco "Veja também" + BreadcrumbList):
+  - **água**: `como-tirar-2-via-conta-de-agua`, `como-pagar-conta-de-agua-atrasada`, `como-contestar-conta-de-agua`
+  - **energia**: `como-religar-energia-apos-corte`, `como-economizar-conta-de-luz` (reativa o link que estava "texto simples" desde a Etapa 3), `tarifa-social-conta-de-luz`, `conta-de-luz-negativada`, `como-ler-a-conta-de-luz`, `como-fazer-ligacao-nova-de-energia`
+  - **telecom**: `como-trocar-de-operadora-levando-o-numero` (portabilidade), `como-cancelar-internet`, `internet-lenta-o-que-fazer`
+- **Fonte única mantida**: `dados-artigos.json` (16 itens) + `gerar-artigos.py` + `template-artigo.html`. Os 4 artigos existentes foram atualizados com cross-links (contestar→economizar e →contestar-agua; veja também ganhou religar / 2ª via de água / ligação nova).
+- **Bugs corrigidos no caminho**: `</body></html>` duplicado no fim do `template-artigo.html` (gerava lixo nos16 HTMLs); breadcrumb com ListItem duplicado no `artigos.html`; typo `<ulli>` (3×, corrigido na origem antes de gerar).
+- **Hubs**: `artigos.html` → 16 cards numerados 01–16, CollectionPage com 16 entradas, meta/OG "16 guias", intro atualizada, data 25/11; `index.html` → badge **"16 dicas"** + 8 cards (05–08 = mesmos da numeração do índice).
+- **`veja_tambem.py`**: água/telefone/internet agora trazem **2 artigos relevantes + 2 irmãs + índice** (5 links, igual energia). Atualização em massa nas **13 páginas** dessas categorias via `atualizar-veja-tambem.py` (dry-run → aplicar, **0 erros**, formato idêntico ao do gerador). `enel-sp.html` é manual (não está nos `dados-empresas-*.json`) → override de categoria no script.
+- **Sitemap**: **48 URLs** (+12 artigos; `lastmod 2026-11-25` em todas as alteradas). Datas dos selos "Página atualizada em" alinhadas ao dia real (artigos 25/11, 13 páginas de empresa 25 de novembro) — `7b9b5f2`.
+- **Validação**: `varredura-etapa3.py` → **NENHUM problema** (48 HTMLs, 48 URLs, links internos todos resolvem); navegador local → home com badge 16 + 8 cards, `artigos.html` com 16 cards, artigo novo com H1/5 FAQs/schema/alerta-golpe, console **sem erros**, Sabesp com "Veja também" de 5 links.
+- **Publicado**: `8b75334` + `7b9b5f2` → Pages **built**; no ar: sitemap com as 12 URLs novas e o artigo `tarifa-social-conta-de-luz.html` completo.
+- **Próximo passo do usuário**: no painel do AdSense, clicar em **"Solicitar revisão"** depois que o Google indexar as páginas novas (ou imediatamente — o conteúdo já está no ar).
 
 ## ⚡ Etapa 3 — velocidade + SEO técnico (19/11)
 - **Imagens comprimidas -74%** (175KB → 45KB): script `comprimir.py` (Pillow, lossless + quantize256 FASTOCTREE que preserva alfa) escolhendo sempre a menor; validado por diff numérico composto sobre branco (delta médio ≤4.5/255, **zero** pixels com delta>60 — visualmente idênticos). Destaques: `edp.png` 39.9KB→6.9KB, `oi.png` 10.9→2.8KB, `cpfl.png` 11.1→3.0KB, `og.png` 93.6→17.6KB.
@@ -126,6 +141,7 @@ Deixar o site LinkContas elegante, profissional, funcional e responsivo (mobile 
 7. Conteúdo com acentos faltando nos JSONs originais (ex.: FAQ "Este site e a Light?") — é texto do usuário, não alterado.
 8. ~~Considerar melhorias: Lighthouse/SEO. **Etapa 3 do plano SEO**~~ — ✅ **Feita em19/11** (`4631084`): logos -74%, `defer`, `alt`, "Veja também" nas24 páginas, link quebrado corrigido. Restam opcionais: PWA service worker, Schema.org FAQPage em `faq.html`/`doacao.html` (páginas de empresa **e artigos** já têm), Lighthouse real para medir ganho de performance.
 8b. **Sugerido ao usuário**: pedir re-indexação no Search Console de páginas que mudaram bastante (home +2-3 empresas) para o Google processar os novos links internos; monitorar Core Web Vitals no GSC.
+8c. ~~Expandir conteúdo para reverter "Conteúdo de baixo valor" do AdSense~~ ✅ **Feito em 25/11** (Etapa 4: 4 → 16 artigos). **Usuário**: aguardar indexação (ou pedir no GSC) e clicar em **"Solicitar revisão"** no painel do AdSense; acompanhar se o status muda de "Requer atenção".
 9. Talvez exibir a contagem de favoritos no chip mesmo quando 0 (hoje some o badge, texto continua "Favoritos").
 
 ## ⚠️ Notas importantes
@@ -144,7 +160,7 @@ Deixar o site LinkContas elegante, profissional, funcional e responsivo (mobile 
 | `veja_tambem.py` | Fonte única do bloco "Veja também" (usado pelo gerador e pela inserção em massa) |
 | `doacao.html` | Página de doação (Pix + 3 passos + FAQ), link no rodapé de todas as páginas |
 | `gerar-paginas-v3.py` + `template-pagina-empresa.html` | Regeneração das páginas de empresa (22) |
-| `gerar-artigos.py` + `template-artigo.html` + `dados-artigos.json` | Regeneração dos 4 artigos + `artigos.html` (índice) |
+| `gerar-artigos.py` + `template-artigo.html` + `dados-artigos.json` | Regeneração dos **16 artigos** (`artigos.html` índice é manual) |
 | `dados-empresas-1/2/3/4.json` | Fonte dos dados das empresas |
 | `HANDOFF.md` | Este documento |
 | `index.html` | Home (limpa) |
