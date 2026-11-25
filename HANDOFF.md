@@ -1,7 +1,22 @@
 # HANDOFF — LinkContas (pague-facil)
 
 > Documento de progresso para continuidade entre sessões de agente.
-> **Atualizado em: 25/11/2026 (Etapa 4 — expansão de artigos — commits `8b75334` + `7b9b5f2`)**
+> **Atualizado em: 25/11/2026 (Etapa 4b — 28 artigos — commit `5dff4ab`)**
+
+## 📝 Etapa 4b — mais 12 artigos (28 no total) (25/11/2026)
+- **Continuação da Etapa 4** (pedido do usuário: "continue ampliando") para fortalecer ainda mais o conteúdo contra "Conteúdo de baixo valor" do AdSense.
+- **12 artigos novos** (mesma fórmula: intro 2 parágrafos + 4–5 H2s + 5 FAQs com FAQPage + "Veja também" + BreadcrumbList; `verificado` 25/11/2026):
+  - **energia (6)**: `conta-de-luz-no-nome-de-morador-anterior`, `como-pagar-conta-de-luz-com-pix`, `conta-de-luz-aumentou-o-que-fazer`, `tarifa-branca-energia-quem-pode-aderir`, `como-ler-o-medidor-de-luz`, `energia-solar-na-conta-de-luz`
+  - **água (2)**: `como-economizar-agua-em-casa`, `conta-de-agua-com-vazamento-o-que-fazer`
+  - **telecom (4)**: `como-reclamar-de-operadora-na-anatel`, `numero-desativado-por-que-o-chip-foi-suspenso`, `como-cancelar-plano-de-celular`, `como-sair-do-serasa-e-nome-negativado`
+- **Fontes temporárias desta rodada** (`%TEMP%\opencode\novos_artigos\`): `novos2.py` (lote 2), `add-artigos2.py` (merge idempotente + cross-links). Pipeline do projeto inalterado: `dados-artigos.json` → `gerar-artigos.py` + `template-artigo.html`.
+- **Cross-links adicionados nos artigos existentes** via `add-artigos2.py`: pagar-pix ↔ atrasada, aumento ↔ contestar, medidor ↔ ler-conta, tarifa-branca ↔ economizar/tarifa-social, vazamento ↔ contestar-agua, Anatel ↔ cancelar-internet/portabilidade, serasa ↔ negativada, morador-anterior ↔ atrasada.
+- **Hubs**: `artigos.html` → 28 cards numerados 01–28, CollectionPage com 28 entradas, meta/OG "28 guias", intro "São 28 guias"; `index.html` → badge **"28 dicas"** (grid auto-fill absorve).
+- **`veja_tambem.py`**: categoria `consultas` (serasa.html) agora traz os 2 artigos de Serasa + índice + FAQ (4 links; era 2). Atualização em massa: só `serasa.html` mudou, 0 erros.
+- **Sitemap**: 48 → **60 URLs** (`lastmod 2026-11-25` nas 12 novas).
+- **Validação**: `verificar.py` → JSON ok, 28 artigos, estrutura completa, 0 marcadores `@@` (152 "links quebrados" = falsos positivos de assets com `?v=`); `varredura-etapa3.py` → **60 HTMLs, 60 URLs, NENHUM problema**; navegador local → hub com 28 cards, badge 28, artigo novo H1/5 FAQs/schema, Serasa "Veja também" 4 links corretos (sem auto-link), console **sem erros**.
+- **Publicado**: `5dff4ab` → Pages **built**; no ar confirmado: sitemap 60 URLs, artigo Serasa completo, hub 28 cards, badge 28.
+- **Próximo passo do usuário**: pedir indexação no GSC (home + alguns artigos novos) e clicar em **"Solicitar revisão"** no AdSense.
 
 ## 📝 Etapa 4 — +12 artigos para reverter "Conteúdo de baixo valor" do AdSense (25/11/2026)
 - **Contexto**: em 24/11 a revisão do AdSense mudou para "Requer atenção — Conteúdo de baixo valor" (o ads.txt já está "Autorizado"). Resposta aprovada pelo usuário: **expandir o conteúdo original** — de 4 para **16 artigos**.
@@ -160,7 +175,7 @@ Deixar o site LinkContas elegante, profissional, funcional e responsivo (mobile 
 | `veja_tambem.py` | Fonte única do bloco "Veja também" (usado pelo gerador e pela inserção em massa) |
 | `doacao.html` | Página de doação (Pix + 3 passos + FAQ), link no rodapé de todas as páginas |
 | `gerar-paginas-v3.py` + `template-pagina-empresa.html` | Regeneração das páginas de empresa (22) |
-| `gerar-artigos.py` + `template-artigo.html` + `dados-artigos.json` | Regeneração dos **16 artigos** (`artigos.html` índice é manual) |
+| `gerar-artigos.py` + `template-artigo.html` + `dados-artigos.json` | Regeneração dos **28 artigos** (`artigos.html` índice é manual) |
 | `dados-empresas-1/2/3/4.json` | Fonte dos dados das empresas |
 | `HANDOFF.md` | Este documento |
 | `index.html` | Home (limpa) |
