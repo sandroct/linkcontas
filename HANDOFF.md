@@ -159,6 +159,20 @@ Deixar o site LinkContas elegante, profissional, funcional e responsivo (mobile 
   - **Rodapé em todas as 38 páginas**: "O Link Contas é a central de links...".
 - **Pendências off-page (usuário)**: criar perfis/diretórios com o nome "Link Contas" apontando para o site (Instagram/Facebook/YouTube/LinkedIn/diretórios de apps), monitorar "link contas" em Desempenho do Search Console, e entender que a query tem intenção genérica — é conquista gradual.
 
+## 🎯 Rodada AdSense — "Conteúdo de baixo valor" (26/11/2026)
+- **Contexto**: mesmo após os 40 artigos, o AdSense rejeitou de novo com "Encontramos violações da política → Conteúdo de baixo valor". Auditoria apontou: **0 imagens** no site inteiro, sem autor/revisão visível, sem fontes, 66 páginas 100% templadas e sem sinal de curadoria — os 3 critérios do Google (qualidade, curadoria/manutenção, interesse do usuário) ficavam fracos.
+- **O que foi feito** (commit `8fc7281`, Pages `built`, tudo verificado no ar):
+  1. **Ilustração por categoria em todos os 40 artigos** (`<figure class="artigo-figura">` com SVG leve, alt real, `loading="lazy"`): `assets/artigos/{energia,agua,telecom,consultas}.svg` — gerados à mão em SVG porque o gerador de imagem falhou por credencial. Campo `categoria` novo em `dados-artigos.json` (20 energia / 10 água / 9 telecom / 1 consultas).
+  2. **Seção "Fontes oficiais"** em cada artigo (`@@FONTES@@` no template, dict `FONTES` por categoria no gerador): ANEEL/MME, ANA/SNIS, ANATEL, Serasa/BCB + Consumidor.gov.br, com nota sobre data de verificação.
+  3. **Selo "Revisão editorial LinkContas"** ao lado da data no topo de cada artigo e no hub.
+  4. **Schema `Article`** por artigo (`@@SCHEMAARTIGO@@`): headline, `datePublished`/`dateModified` (deriva de `verificado`), `author` = Redação LinkContas (→ `sobre.html`), publisher, image. JSON-LD de todos os 72 HTMLs validado.
+  5. **`sobre.html`**: seção "Como produzimos e revisamos os conteúdos" (4 etapas: fontes oficiais → escrita → revisão com data → atualização contínua) + nota de transparência.
+  6. **`index.html`**: seção editorial "Conteúdo revisado, com fonte e data" (3 cards + link para a metodologia).
+  7. **`artigos.html`**: parágrafo "Como estes guias são feitos" + selo de revisão.
+- **CSS**: `pagina-empresa.css` → **v3** (`.artigo-figura`, `.fontes-lista`, `.fontes-nota`), `style.css` → **v27** (`.sobre-nota-editorial`) — bump em todas as 74 páginas.
+- **Validações**: `verificar.py` (JSON ok, 0 marcadores), `varredura-etapa3.py` (**NENHUM problema**, 72 HTMLs/72 URLs — script ajustado para esperar v27/v3), `checagem-adsense.py` (40 figuras + fontes + Article + selo, 0 erros), teste local no servidor 8749 e **checagem no ar** (artigo, home, sobre, SVG — todos com o conteúdo novo).
+- **Próximo passo do usuário**: clicar em **"Confirme que corrigi os problemas"** + **"Pedir revisão"** no AdSense. Se rejeitar de novo, o próximo passo é aumentar a densidade de conteúdo *por página* (texto próprio nas páginas de empresa) — quantidade já não é o gargalo.
+
 ## 📋 Próximos passos / pendências
 1. ~~README.md — estrutura atualizada~~ ✅ **Feito**.
 2. ~~Página de doação própria + link no rodapé~~ ✅ **Feito**: `doacao.html` criada, link nas 26 páginas, no sitemap e testada.
@@ -169,7 +183,7 @@ Deixar o site LinkContas elegante, profissional, funcional e responsivo (mobile 
 7. Conteúdo com acentos faltando nos JSONs originais (ex.: FAQ "Este site e a Light?") — é texto do usuário, não alterado.
 8. ~~Considerar melhorias: Lighthouse/SEO. **Etapa 3 do plano SEO**~~ — ✅ **Feita em19/11** (`4631084`): logos -74%, `defer`, `alt`, "Veja também" nas24 páginas, link quebrado corrigido. Restam opcionais: PWA service worker, Schema.org FAQPage em `faq.html`/`doacao.html` (páginas de empresa **e artigos** já têm), Lighthouse real para medir ganho de performance.
 8b. **Sugerido ao usuário**: pedir re-indexação no Search Console de páginas que mudaram bastante (home +2-3 empresas) para o Google processar os novos links internos; monitorar Core Web Vitals no GSC.
-8c. ~~Expandir conteúdo para reverter "Conteúdo de baixo valor" do AdSense~~ ✅ **Feito 25–26/11** (Etapas 4/4b/4c: 4 → **40 artigos**). **Usuário**: aguardar indexação (ou pedir no GSC) e clicar em **"Solicitar revisão"** no painel do AdSense; acompanhar se o status muda de "Requer atenção".
+8c. ~~Expandir conteúdo para reverter "Conteúdo de baixo valor" do AdSense~~ ✅ **Feito 25–26/11** (Etapas 4/4b/4c: 4 → **40 artigos**) + **rodada de qualidade 26/11** (imagens, fontes oficiais, Article schema, selo de revisão, metodologia — ver seção própria acima). **Usuário**: clicar em **"Confirme que corrigi os problemas"** + **"Pedir revisão"** no painel do AdSense.
 9. Talvez exibir a contagem de favoritos no chip mesmo quando 0 (hoje some o badge, texto continua "Favoritos").
 
 ## ⚠️ Notas importantes
@@ -182,13 +196,13 @@ Deixar o site LinkContas elegante, profissional, funcional e responsivo (mobile 
 ## 📁 Arquivos-chave
 | Arquivo | Papel |
 |---|---|
-| `css/style.css` | Design System v3 - **v26** (cards, doações, favoritos, `.logo-azul`, `.secao-nota`) |
-| `css/pagina-empresa.css` | Estilos das páginas de empresa/artigos (v2) |
+| `css/style.css` | Design System v3 - **v27** (cards, doações, favoritos, `.logo-azul`, `.secao-nota`, `.sobre-nota-editorial`) |
+| `css/pagina-empresa.css` | Estilos das páginas de empresa/artigos (**v3**: `.artigo-figura`, `.fontes-lista`, `.fontes-nota`) |
 | `js/site.js` | **v6** - cards/favoritos/filtros/rolarParaLista/Enter-na-busca/`alt` nos logos (carrega com `defer`) |
 | `veja_tambem.py` | Fonte única do bloco "Veja também" (usado pelo gerador e pela inserção em massa) |
 | `doacao.html` | Página de doação (Pix + 3 passos + FAQ), link no rodapé de todas as páginas |
 | `gerar-paginas-v3.py` + `template-pagina-empresa.html` | Regeneração das páginas de empresa (22) |
-| `gerar-artigos.py` + `template-artigo.html` + `dados-artigos.json` | Regeneração dos **40 artigos** (`artigos.html` índice é manual) |
+| `gerar-artigos.py` + `template-artigo.html` + `dados-artigos.json` | Regeneração dos **40 artigos** (`artigos.html` índice é manual); gera figura por categoria, "Fontes oficiais" e schema Article |
 | `dados-empresas-1/2/3/4.json` | Fonte dos dados das empresas |
 | `HANDOFF.md` | Este documento |
 | `index.html` | Home (limpa) |
