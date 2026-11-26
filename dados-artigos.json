@@ -92,7 +92,8 @@
         "href": "onde-pagar-a-conta-de-luz-e-de-agua.html",
         "texto": "Onde pagar a conta de luz e de água"
       }
-    ]
+    ],
+    "categoria": "energia"
   },
   {
     "id": "como-pagar-conta-de-luz-atrasada",
@@ -187,7 +188,8 @@
         "href": "conta-de-luz-no-nome-de-morador-anterior.html",
         "texto": "Conta no nome de outra pessoa?"
       }
-    ]
+    ],
+    "categoria": "energia"
   },
   {
     "id": "como-contestar-conta-de-luz",
@@ -274,7 +276,8 @@
         "href": "conta-de-luz-aumentou-o-que-fazer.html",
         "texto": "Conta subiu sem motivo? Veja as causas"
       }
-    ]
+    ],
+    "categoria": "energia"
   },
   {
     "id": "como-transferir-conta-de-luz-para-outro-nome",
@@ -357,7 +360,8 @@
         "href": "como-fazer-ligacao-nova-de-energia.html",
         "texto": "Imóvel novo? Ligação nova de energia"
       }
-    ]
+    ],
+    "categoria": "energia"
   },
   {
     "id": "como-tirar-2-via-conta-de-agua",
@@ -444,7 +448,8 @@
         "href": "como-ler-a-conta-de-agua.html",
         "texto": "Como ler a conta de água campo por campo"
       }
-    ]
+    ],
+    "categoria": "agua"
   },
   {
     "id": "como-pagar-conta-de-agua-atrasada",
@@ -531,7 +536,8 @@
         "href": "como-religar-agua-apos-corte.html",
         "texto": "Água já cortada? Religação passo a passo"
       }
-    ]
+    ],
+    "categoria": "agua"
   },
   {
     "id": "como-contestar-conta-de-agua",
@@ -618,7 +624,8 @@
         "href": "conta-de-agua-com-vazamento-o-que-fazer.html",
         "texto": "Desconfia de vazamento? Como confirmar"
       }
-    ]
+    ],
+    "categoria": "agua"
   },
   {
     "id": "como-religar-energia-apos-corte",
@@ -705,7 +712,8 @@
         "href": "como-religar-agua-apos-corte.html",
         "texto": "Água cortada? Como religar"
       }
-    ]
+    ],
+    "categoria": "energia"
   },
   {
     "id": "como-economizar-conta-de-luz",
@@ -800,7 +808,8 @@
         "href": "mercado-livre-de-energia-como-funciona.html",
         "texto": "Mercado livre: dá para economizar?"
       }
-    ]
+    ],
+    "categoria": "energia"
   },
   {
     "id": "tarifa-social-conta-de-luz",
@@ -887,7 +896,8 @@
         "href": "tarifa-branca-energia-quem-pode-aderir.html",
         "texto": "Outra tarifa com desconto: tarifa branca"
       }
-    ]
+    ],
+    "categoria": "energia"
   },
   {
     "id": "conta-de-luz-negativada",
@@ -970,7 +980,8 @@
         "href": "como-sair-do-serasa-e-nome-negativado.html",
         "texto": "Nome negativado: como sair do Serasa"
       }
-    ]
+    ],
+    "categoria": "energia"
   },
   {
     "id": "como-ler-a-conta-de-luz",
@@ -1057,7 +1068,8 @@
         "href": "como-ler-o-medidor-de-luz.html",
         "texto": "Como ler o medidor de luz"
       }
-    ]
+    ],
+    "categoria": "energia"
   },
   {
     "id": "como-trocar-de-operadora-levando-o-numero",
@@ -1144,7 +1156,8 @@
         "href": "como-reclamar-de-operadora-na-anatel.html",
         "texto": "Operadora não resolve? Reclame na Anatel"
       }
-    ]
+    ],
+    "categoria": "telecom"
   },
   {
     "id": "como-cancelar-internet",
@@ -1235,7 +1248,8 @@
         "href": "plano-de-internet-sem-fidelidade.html",
         "texto": "Internet sem fidelidade: como escolher"
       }
-    ]
+    ],
+    "categoria": "telecom"
   },
   {
     "id": "internet-lenta-o-que-fazer",
@@ -1322,7 +1336,8 @@
         "href": "como-mudar-de-plano-de-internet.html",
         "texto": "Mudou de plano e continua lenta?"
       }
-    ]
+    ],
+    "categoria": "telecom"
   },
   {
     "id": "como-fazer-ligacao-nova-de-energia",
@@ -1405,7 +1420,8 @@
         "href": "como-fazer-ligacao-nova-de-agua.html",
         "texto": "Quer pedir a água também? Ligação nova de água"
       }
-    ]
+    ],
+    "categoria": "energia"
   },
   {
     "id": "conta-de-luz-no-nome-de-morador-anterior",
@@ -1492,7 +1508,8 @@
         "href": "conta-de-luz-no-nome-de-quem-faleceu.html",
         "texto": "Conta no nome de pessoa falecido?"
       }
-    ]
+    ],
+    "categoria": "energia"
   },
   {
     "id": "como-pagar-conta-de-luz-com-pix",
@@ -1579,7 +1596,8 @@
         "href": "paguei-a-conta-de-luz-errado-ou-duplo.html",
         "texto": "Pix errado? Como pedir estorno"
       }
-    ]
+    ],
+    "categoria": "energia"
   },
   {
     "id": "conta-de-luz-aumentou-o-que-fazer",
@@ -1666,7 +1684,8 @@
         "href": "mercado-livre-de-energia-como-funciona.html",
         "texto": "Alternativa: mercado livre de energia"
       }
-    ]
+    ],
+    "categoria": "energia"
   },
   {
     "id": "tarifa-branca-energia-quem-pode-aderir",
@@ -1749,7 +1768,8 @@
         "href": "faq.html",
         "texto": "Perguntas frequentes do site"
       }
-    ]
+    ],
+    "categoria": "energia"
   },
   {
     "id": "como-ler-o-medidor-de-luz",
@@ -1832,7 +1852,8 @@
         "href": "faq.html",
         "texto": "Perguntas frequentes do site"
       }
-    ]
+    ],
+    "categoria": "energia"
   },
   {
     "id": "energia-solar-na-conta-de-luz",
@@ -1915,7 +1936,8 @@
         "href": "faq.html",
         "texto": "Perguntas frequentes do site"
       }
-    ]
+    ],
+    "categoria": "energia"
   },
   {
     "id": "como-economizar-agua-em-casa",
@@ -1998,7 +2020,8 @@
         "href": "faq.html",
         "texto": "Perguntas frequentes do site"
       }
-    ]
+    ],
+    "categoria": "agua"
   },
   {
     "id": "conta-de-agua-com-vazamento-o-que-fazer",
@@ -2081,7 +2104,8 @@
         "href": "faq.html",
         "texto": "Perguntas frequentes do site"
       }
-    ]
+    ],
+    "categoria": "agua"
   },
   {
     "id": "como-reclamar-de-operadora-na-anatel",
@@ -2164,7 +2188,8 @@
         "href": "faq.html",
         "texto": "Perguntas frequentes do site"
       }
-    ]
+    ],
+    "categoria": "telecom"
   },
   {
     "id": "numero-desativado-por-que-o-chip-foi-suspenso",
@@ -2247,7 +2272,8 @@
         "href": "faq.html",
         "texto": "Perguntas frequentes do site"
       }
-    ]
+    ],
+    "categoria": "telecom"
   },
   {
     "id": "como-cancelar-plano-de-celular",
@@ -2334,7 +2360,8 @@
         "href": "como-falar-com-o-atendimento-da-operadora.html",
         "texto": "Atalhos para falar com a operadora"
       }
-    ]
+    ],
+    "categoria": "telecom"
   },
   {
     "id": "como-sair-do-serasa-e-nome-negativado",
@@ -2417,7 +2444,8 @@
         "href": "faq.html",
         "texto": "Perguntas frequentes do site"
       }
-    ]
+    ],
+    "categoria": "consultas"
   },
   {
     "id": "mercado-livre-de-energia-como-funciona",
@@ -2500,7 +2528,8 @@
         "href": "faq.html",
         "texto": "Perguntas frequentes do site"
       }
-    ]
+    ],
+    "categoria": "energia"
   },
   {
     "id": "conta-de-luz-no-imovel-vazio",
@@ -2583,7 +2612,8 @@
         "href": "faq.html",
         "texto": "Perguntas frequentes do site"
       }
-    ]
+    ],
+    "categoria": "energia"
   },
   {
     "id": "paguei-a-conta-de-luz-errado-ou-duplo",
@@ -2666,7 +2696,8 @@
         "href": "faq.html",
         "texto": "Perguntas frequentes do site"
       }
-    ]
+    ],
+    "categoria": "energia"
   },
   {
     "id": "conta-de-agua-aumentou-sem-motivo",
@@ -2749,7 +2780,8 @@
         "href": "faq.html",
         "texto": "Perguntas frequentes do site"
       }
-    ]
+    ],
+    "categoria": "agua"
   },
   {
     "id": "como-ler-a-conta-de-agua",
@@ -2832,7 +2864,8 @@
         "href": "faq.html",
         "texto": "Perguntas frequentes do site"
       }
-    ]
+    ],
+    "categoria": "agua"
   },
   {
     "id": "como-fazer-ligacao-nova-de-agua",
@@ -2915,7 +2948,8 @@
         "href": "faq.html",
         "texto": "Perguntas frequentes do site"
       }
-    ]
+    ],
+    "categoria": "agua"
   },
   {
     "id": "como-religar-agua-apos-corte",
@@ -2998,7 +3032,8 @@
         "href": "faq.html",
         "texto": "Perguntas frequentes do site"
       }
-    ]
+    ],
+    "categoria": "agua"
   },
   {
     "id": "plano-de-internet-sem-fidelidade",
@@ -3081,7 +3116,8 @@
         "href": "faq.html",
         "texto": "Perguntas frequentes do site"
       }
-    ]
+    ],
+    "categoria": "telecom"
   },
   {
     "id": "conta-de-luz-no-nome-de-quem-faleceu",
@@ -3164,7 +3200,8 @@
         "href": "faq.html",
         "texto": "Perguntas frequentes do site"
       }
-    ]
+    ],
+    "categoria": "energia"
   },
   {
     "id": "onde-pagar-a-conta-de-luz-e-de-agua",
@@ -3247,7 +3284,8 @@
         "href": "faq.html",
         "texto": "Perguntas frequentes do site"
       }
-    ]
+    ],
+    "categoria": "agua"
   },
   {
     "id": "como-falar-com-o-atendimento-da-operadora",
@@ -3330,7 +3368,8 @@
         "href": "faq.html",
         "texto": "Perguntas frequentes do site"
       }
-    ]
+    ],
+    "categoria": "telecom"
   },
   {
     "id": "como-mudar-de-plano-de-internet",
@@ -3413,6 +3452,7 @@
         "href": "faq.html",
         "texto": "Perguntas frequentes do site"
       }
-    ]
+    ],
+    "categoria": "telecom"
   }
 ]

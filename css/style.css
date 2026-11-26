@@ -1512,6 +1512,25 @@ section { scroll-margin-top: 84px; }
   color: #fff;
 }
 
+/* ===== Nota editorial (Sobre / Home) ===== */
+.sobre-nota-editorial {
+  margin-top: 26px;
+  background: var(--cor-fundo);
+  border: 1px solid var(--cor-borda);
+  border-left: 4px solid var(--cor-destaque);
+  border-radius: 14px;
+  padding: 20px 22px;
+}
+
+.sobre-nota-editorial p {
+  margin: 0;
+  color: var(--cor-texto-suave);
+  font-size: 0.98rem;
+  line-height: 1.75;
+}
+
+.sobre-nota-editorial a { font-weight: 700; }
+
 /* Compromisso */
 .compromisso-card {
   background: var(--cor-card);

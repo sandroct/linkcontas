@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Ilustração de uma gota d'água com ondas">
+  <rect width="1200" height="675" fill="#ffffff"/>
+  <ellipse cx="600" cy="575" rx="330" ry="24" fill="#eff6ff"/>
+  <path d="M600 110 C600 110 380 330 380 450 A220 220 0 0 0 820 450 C820 330 600 110 600 110 Z" fill="#2563eb"/>
+  <path d="M600 110 C600 110 470 250 430 340 A220 220 0 0 0 470 540 C410 470 470 300 600 110 Z" fill="#3b82f6"/>
+  <path d="M520 470 a80 80 0 0 0 160 0 a80 80 0 0 0 -160 0" fill="#93c5fd" opacity="0.55"/>
+  <path d="M240 505 q45 -34 90 0 t90 0 t90 0" fill="none" stroke="#93c5fd" stroke-width="14" stroke-linecap="round"/>
+  <path d="M690 505 q45 -34 90 0 t90 0 t90 0" fill="none" stroke="#93c5fd" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="300" cy="250" r="16" fill="#bfdbfe"/>
+  <circle cx="900" cy="300" r="22" fill="#bfdbfe"/>
+  <circle cx="865" cy="215" r="12" fill="#dbeafe"/>
+</svg>

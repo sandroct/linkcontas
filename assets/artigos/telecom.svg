@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Ilustração de um celular com sinal de wifi">
+  <rect width="1200" height="675" fill="#ffffff"/>
+  <ellipse cx="600" cy="585" rx="300" ry="22" fill="#eff6ff"/>
+  <rect x="475" y="150" width="250" height="430" rx="34" fill="#0f2c62"/>
+  <rect x="497" y="196" width="206" height="338" rx="14" fill="#eff6ff"/>
+  <rect x="565" y="166" width="70" height="10" rx="5" fill="#2563eb"/>
+  <circle cx="600" cy="560" r="14" fill="#2563eb"/>
+  <g fill="none" stroke="#2563eb" stroke-width="16" stroke-linecap="round">
+    <path d="M548 372 a74 74 0 0 1 104 0"/>
+    <path d="M520 330 a114 114 0 0 1 160 0"/>
+  </g>
+  <circle cx="600" cy="404" r="16" fill="#2563eb"/>
+  <g stroke="#93c5fd" stroke-width="12" stroke-linecap="round">
+    <line x1="330" y1="230" x2="330" y2="290"/>
+    <line x1="295" y1="260" x2="365" y2="260"/>
+    <line x1="870" y1="430" x2="870" y2="490"/>
+    <line x1="835" y1="460" x2="905" y2="460"/>
+  </g>
+  <circle cx="880" cy="220" r="34" fill="#dbeafe"/>
+  <path d="M862 220 l12 12 l24 -26" fill="none" stroke="#2563eb" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

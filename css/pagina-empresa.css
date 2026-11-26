@@ -378,6 +378,72 @@
   padding: 0 18px 17px;
 }
 
+/* ===== Figura de capa do artigo ===== */
+.artigo-figura {
+  margin: 26px 0 30px;
+  border: 1px solid var(--cor-borda);
+  border-radius: 16px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.artigo-figura img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.artigo-figura figcaption {
+  font-size: 0.88rem;
+  color: var(--cor-texto-suave);
+  padding: 11px 16px 13px;
+  border-top: 1px solid var(--cor-borda);
+  background: var(--cor-fundo);
+}
+
+/* ===== Fontes oficiais ===== */
+.fontes-lista {
+  list-style: none !important;
+  padding: 0;
+  margin: 0 0 14px;
+  display: grid;
+  gap: 9px;
+}
+
+.fontes-lista li {
+  margin-bottom: 0 !important;
+  padding-left: 26px;
+  position: relative;
+}
+
+.fontes-lista li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.42em;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: var(--cor-destaque-suave);
+  border: 3px solid var(--cor-destaque);
+}
+
+.fontes-lista a {
+  font-weight: 600;
+}
+
+.fontes-nota {
+  font-size: 0.92rem;
+  color: var(--cor-texto-suave);
+  background: var(--cor-fundo);
+  border: 1px dashed var(--cor-borda);
+  border-radius: 12px;
+  padding: 12px 15px;
+  margin: 0 !important;
+}
+
 /* ===== "Este artigo ajudou?" ===== */
 .ajudou {
   background: var(--cor-fundo);
