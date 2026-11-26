@@ -1,7 +1,20 @@
 # HANDOFF — LinkContas (pague-facil)
 
 > Documento de progresso para continuidade entre sessões de agente.
-> **Atualizado em: 25/11/2026 (Etapa 4b — 28 artigos — commit `5dff4ab`)**
+> **Atualizado em: 26/11/2026 (Etapa 4c — 40 artigos — commit `bcacdef`)**
+
+## 📝 Etapa 4c — mais 12 artigos (40 no total) (26/11/2026)
+- **Terceira expansão** de conteúdo original (mesma fórmula: intro 2 parágrafos + 4–5 H2s + 5 FAQs com FAQPage + "Veja também" + BreadcrumbList; datas alinhadas ao dia real **26/11/2026**).
+- **12 artigos novos**:
+  - **energia (5)**: `mercado-livre-de-energia-como-funciona`, `conta-de-luz-no-imovel-vazio` (consumo mínimo), `paguei-a-conta-de-luz-errado-ou-duplo` (estorno), `conta-de-luz-no-nome-de-quem-faleceu` (herança), `onde-pagar-a-conta-de-luz-e-de-agua`
+  - **água (4)**: `conta-de-agua-aumentou-sem-motivo`, `como-ler-a-conta-de-agua`, `como-fazer-ligacao-nova-de-agua`, `como-religar-agua-apos-corte`
+  - **telecom (3)**: `plano-de-internet-sem-fidelidade`, `como-falar-com-o-atendimento-da-operadora`, `como-mudar-de-plano-de-internet`
+- **Fontes temporárias**: `novos3.py` + `add-artigos3.py` (merge idempotente + 12 cross-links) + `ajustar-datas3.py` (datas + inserção das 12 URLs no sitemap) em `%TEMP%\opencode\novos_artigos\`.
+- **Hubs**: `artigos.html` → **40 cards 01–40**, CollectionPage com 40 entradas, meta/OG "40 guias", selo 26/11; `index.html` → badge **"40 dicas"**.
+- **Sitemap**: 60 → **72 URLs**; `lastmod 2026-11-26` nas 12 novas + nas 12 cross-linked + home + hub.
+- **Validação**: `verificar.py` → JSON ok, 40 artigos, estrutura completa, 0 marcadores; `varredura-etapa3.py` → **72 HTMLs, 72 URLs, NENHUM problema**; navegador local (servidor 8749) → hub 40 cards, badge 40, artigo novo com H1/5 FAQs/schema, console sem erros do site (só bloqueio de ad-block em script da Ezoic).
+- **Publicado**: `bcacdef` → Pages **built**; no ar: sitemap 72 URLs, hub 40 cards, meta 40, hasPart 40, artigo religação-da-água completo com selo 26/11.
+- **Próximo passo do usuário**: pedir indexação no GSC e clicar em **"Solicitar revisão"** no AdSense.
 
 ## 📝 Etapa 4b — mais 12 artigos (28 no total) (25/11/2026)
 - **Continuação da Etapa 4** (pedido do usuário: "continue ampliando") para fortalecer ainda mais o conteúdo contra "Conteúdo de baixo valor" do AdSense.
@@ -156,7 +169,7 @@ Deixar o site LinkContas elegante, profissional, funcional e responsivo (mobile 
 7. Conteúdo com acentos faltando nos JSONs originais (ex.: FAQ "Este site e a Light?") — é texto do usuário, não alterado.
 8. ~~Considerar melhorias: Lighthouse/SEO. **Etapa 3 do plano SEO**~~ — ✅ **Feita em19/11** (`4631084`): logos -74%, `defer`, `alt`, "Veja também" nas24 páginas, link quebrado corrigido. Restam opcionais: PWA service worker, Schema.org FAQPage em `faq.html`/`doacao.html` (páginas de empresa **e artigos** já têm), Lighthouse real para medir ganho de performance.
 8b. **Sugerido ao usuário**: pedir re-indexação no Search Console de páginas que mudaram bastante (home +2-3 empresas) para o Google processar os novos links internos; monitorar Core Web Vitals no GSC.
-8c. ~~Expandir conteúdo para reverter "Conteúdo de baixo valor" do AdSense~~ ✅ **Feito em 25/11** (Etapa 4: 4 → 16 artigos). **Usuário**: aguardar indexação (ou pedir no GSC) e clicar em **"Solicitar revisão"** no painel do AdSense; acompanhar se o status muda de "Requer atenção".
+8c. ~~Expandir conteúdo para reverter "Conteúdo de baixo valor" do AdSense~~ ✅ **Feito 25–26/11** (Etapas 4/4b/4c: 4 → **40 artigos**). **Usuário**: aguardar indexação (ou pedir no GSC) e clicar em **"Solicitar revisão"** no painel do AdSense; acompanhar se o status muda de "Requer atenção".
 9. Talvez exibir a contagem de favoritos no chip mesmo quando 0 (hoje some o badge, texto continua "Favoritos").
 
 ## ⚠️ Notas importantes
@@ -175,7 +188,7 @@ Deixar o site LinkContas elegante, profissional, funcional e responsivo (mobile 
 | `veja_tambem.py` | Fonte única do bloco "Veja também" (usado pelo gerador e pela inserção em massa) |
 | `doacao.html` | Página de doação (Pix + 3 passos + FAQ), link no rodapé de todas as páginas |
 | `gerar-paginas-v3.py` + `template-pagina-empresa.html` | Regeneração das páginas de empresa (22) |
-| `gerar-artigos.py` + `template-artigo.html` + `dados-artigos.json` | Regeneração dos **28 artigos** (`artigos.html` índice é manual) |
+| `gerar-artigos.py` + `template-artigo.html` + `dados-artigos.json` | Regeneração dos **40 artigos** (`artigos.html` índice é manual) |
 | `dados-empresas-1/2/3/4.json` | Fonte dos dados das empresas |
 | `HANDOFF.md` | Este documento |
 | `index.html` | Home (limpa) |
