@@ -1,7 +1,19 @@
 # HANDOFF — LinkContas (pague-facil)
 
 > Documento de progresso para continuidade entre sessões de agente.
-> **Atualizado em: 26/11/2026 (Etapa 4c — 40 artigos — commit `bcacdef`)**
+> **Atualizado em: 27/11/2026 (Integração Spec Kit — SDD + gates no repo)**
+
+## 🧭 Integração Spec Kit — metodologia SDD no projeto (27/11/2026)
+- **Pedido**: ler https://github.com/github/spec-kit e integrar o conhecimento ao projeto. Escolha do usuário: **estrutura + conhecimento** (sem CLI `specify` — não há `uv`/`specify` no ambiente; feito à mão, fiel aos templates oficiais, serve para qualquer agente).
+- **Lido**: README, `spec-driven.md` (metodologia SDD completa), AGENTS.md do Spec Kit, guia de projetos existentes (`docs/how-to/existing-projects.md`), constituição oficial, todos os templates (spec/plan/tasks/checklist), integração `opencode` e comando `specify` oficial (`templates/commands/specify.md`).
+- **`AGENTS.md` (novo, raiz)**: fluxo SDD adaptado em 7 passos (constituição → specify → plan → tasks → implement → converge → checklist), tabela de equivalência `/speckit.*`, estrutura do projeto, nota brownfield. É o ponto de entrada automático de qualquer agente.
+- **`.specify/memory/constitution.md` (novo)**: constituição do LinkContas **v1.0.0** com 6 princípios — I. preservar conteúdo base; II. verificação obrigatória (NÃO NEGOCIÁVEL); III. fonte única + geradores; IV. Design System versionado; V. terceiros intocáveis; VI. confiança/SEO/privacidade — + restrições, fluxo/gates, governança e Relatório de Sinronia.
+- **`.specify/templates/`**: `spec-template.md`, `plan-template.md` (com Constitution Check I–VI), `tasks-template.md`, `checklist-template.md` — todos em português, adaptados ao pipeline estático (caminhos reais: `dados-artigos.json`, `gerar-artigos.py`, `veja_tambem.py`, sitemap, bump `?v=`).
+- **`.opencode/commands/`** (5 comandos): `/speckit.constitution`, `/speckit.specify`, `/speckit.plan`, `/speckit.tasks`, `/speckit.implement`, `/speckit.converge` — invocáveis no chat do OpenCode.
+- **`.specify/scripts/check-prerequisites.py` (novo)**: autocontido (sem dependências), resolve feature via env/`feature.json`, aceita `specs/…` na raiz ou `.specify/specs/…`; testado: sem feature → exit 1 com instrução; com feature → lista docs; `--require-tasks` → exit 1 até existir tasks.md; `--json` válido.
+- **`verificacoes/` (gates viraram parte do repo)**: antes só existiam no temp — agora versionados: `verificar.py`, `varredura.py`, `valida-jsonld.py`, `checagem-adsense.py`, `auditoria-conteudo.py` + **`rodar-todos.py`** (roda os 5, exit 1 se qualquer um falhar). Paths hardcoded → derivados de `__file__` (portável). Corrigidos falsos positivos: `?v=` ignorado nos links, assets checados no disco, templates pulados no JSON-LD, UTF-8 no console.
+- **Validação**: `rodar-todos.py` → **Todos os gates passaram.** (exit 0) com a estrutura nova no lugar.
+- **Uso**: mudança delimitada nova = ler constituição → `/speckit.specify` → `/speckit.plan` → `/speckit.tasks` → `/speckit.implement` → `/speckit.converge`; nunca pular os gates do Art. II.
 
 ## 📝 Etapa 4c — mais 12 artigos (40 no total) (26/11/2026)
 - **Terceira expansão** de conteúdo original (mesma fórmula: intro 2 parágrafos + 4–5 H2s + 5 FAQs com FAQPage + "Veja também" + BreadcrumbList; datas alinhadas ao dia real **26/11/2026**).
@@ -185,6 +197,7 @@ Deixar o site LinkContas elegante, profissional, funcional e responsivo (mobile 
 8b. **Sugerido ao usuário**: pedir re-indexação no Search Console de páginas que mudaram bastante (home +2-3 empresas) para o Google processar os novos links internos; monitorar Core Web Vitals no GSC.
 8c. ~~Expandir conteúdo para reverter "Conteúdo de baixo valor" do AdSense~~ ✅ **Feito 25–26/11** (Etapas 4/4b/4c: 4 → **40 artigos**) + **rodada de qualidade 26/11** (imagens, fontes oficiais, Article schema, selo de revisão, metodologia — ver seção própria acima). **Usuário**: clicar em **"Confirme que corrigi os problemas"** + **"Pedir revisão"** no painel do AdSense.
 9. Talvez exibir a contagem de favoritos no chip mesmo quando 0 (hoje some o badge, texto continua "Favoritos").
+10. **Spec Kit integrado (27/11)**: para a próxima mudança delimitada, seguir o fluxo em `AGENTS.md` (constituição → `/speckit.specify` → `/speckit.plan` → `/speckit.tasks` → `/speckit.implement` → `/speckit.converge`); rodar `python verificacoes/rodar-todos.py` antes de todo commit.
 
 ## ⚠️ Notas importantes
 - Python 3.11: `C:\Users\Alessandro\AppData\Local\Programs\Python\Python311\python.exe`; só PowerShell 5.1 (sem pwsh/node). Trabalhar UTF-8 sempre via Python.
@@ -204,11 +217,21 @@ Deixar o site LinkContas elegante, profissional, funcional e responsivo (mobile 
 | `gerar-paginas-v3.py` + `template-pagina-empresa.html` | Regeneração das páginas de empresa (22) |
 | `gerar-artigos.py` + `template-artigo.html` + `dados-artigos.json` | Regeneração dos **40 artigos** (`artigos.html` índice é manual); gera figura por categoria, "Fontes oficiais" e schema Article |
 | `dados-empresas-1/2/3/4.json` | Fonte dos dados das empresas |
+| `AGENTS.md` | **Fluxo SDD adaptado do Spec Kit** (ponto de entrada dos agentes) |
+| `.specify/memory/constitution.md` | Constituição vinculante v1.0.0 (Art. I–VI) |
+| `.specify/templates/` | Modelos spec/plan/tasks/checklist em português |
+| `.specify/specs/` | Especificações vivas por feature (`NNN-nome/`) |
+| `.specify/scripts/check-prerequisites.py` | Checa pré-requisitos do fluxo (spec/plan/tasks) |
+| `.opencode/commands/speckit.*.md` | Comandos `/speckit.specify|.plan|.tasks|.implement|.converge|.constitution` |
+| `verificacoes/rodar-todos.py` | **Runner dos 5 gates** (Art. II — rodar antes de todo commit) |
 | `HANDOFF.md` | Este documento |
 | `index.html` | Home (limpa) |
 | `enel-sp.html`, `copasa.html` | Manuais (corrigidos) |
 
 ## 🛠️ Scripts de apoio (temp — fora do projeto)
+> **Nota (27/11/2026)**: os gates de verificação foram **promovidos ao repositório**
+> em `verificacoes/` (ver seção Spec Kit acima). Os arquivos no temp continuam
+> como cópia de trabalho; a fonte passa a ser `verificacoes/`.
 | Script | Função |
 |---|---|
 | `bump-v.py` / `bump-v24.py` | Bump de cache-bust em todas as páginas (último: v24/v4) |
